@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <script src="Scripts/easyui/jquery.easyui.min.js"></script>
+    <script src="Scripts/easyui/easyui-lang-zh_CN.js"></script>
+    <link href="Scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="Scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <!--[if lt IE 8]> <script src="Scripts/json2.js"></script> <![endif]-->
+    <script>
+        $(function () {
+            var khbm = getQueryString("khbm")
+            $("#btnSearch").click(function () {
+                search();
+            })
+            $("#grid1").datagrid({
+                url: 'FenceHandler.ashx',
+                queryParams: { action: "getShdzList", khbm: khbm },
+                idField: "rownumber",
+                columns: [
+                    [
+                        { field: 'khmc', title: '客户名称', width: 80, halign: 'center', align: 'center', sortable: true },
+                        { field: 'dz_sf', title: '省份', width: 80, halign: 'center', align: 'center', sortable: true },
+                        { field: 'dz_dq', title: '地区', width: 80, halign: 'center', align: 'center', sortable: true },
+                        { field: 'dz_lm', title: '路名', width: 80, halign: 'center', align: 'center', sortable: true },
+                        { field: 'shdz', title: '收货地址', width: 110, halign: 'center', align: 'center', sortable: true },
+                        { field: 'scmc', title: '市场', width: 80, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'type', title: '围栏类型', width: 110, halign: 'center', align: 'center',
+                            formatter: function (val) {
+                                if (val == "0")
+                                    return "圆形"
+                                else if (val == "1")
+                                    return "多边形"
+                            }
+                        },
+                        { field: 'jd', title: '经度', width: 110, halign: 'center', align: 'center', sortable: true },
+                        { field: 'wd', title: '纬度', width: 110, halign: 'center', align: 'center', sortable: true },
+                        { field: 'fw', title: '范围', width: 110, halign: 'center', align: 'center', sortable: true },
+                        { field: 'points', title: '多边形点', width: 110, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'sfgx', title: '是否共享', width: 110, halign: 'center', align: 'center',
+                            formatter: function (val) {
+                                if (val == "Y")
+                                    return "是"
+                                else  
+                                    return "否"
+                            }
+                        },
+                    ]
+                ],
+                width: "100%",
+                height: $(window).height() - 110,
+                singleSelect: true,
+                rownumbers: true,
+                pagination: true,
+                pageSize: 30,
+                toolbar: [{
+                    text: '选择围栏', handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        $.post('FenceHandler.ashx', { action: "getCreatFenceUrl", json: JSON.stringify(row) }, function (res) {
+                            res = JSON.parse(res)
+                            $("#frmMap").attr("src", res.data)
+                        })
+                    }
+                }, '-', {
+                    text: '新增', handler: function () {
+                        $("#form1").form("reset")
+                        if (khbm) {
+                            $("#txtkhbm").combobox("setValue", khbm)
+                        }
+                        $("#divEdit").window("open")
+                    }
+                }, '-', {
+                    text: '修改', handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        if (!row) {
+                            return false
+                        }
+                        $("#form1").form("load", row)
+                        $("#cbksfgx").attr("checked", row.sfgx == 'Y')
+                        $("#txtkhbm").combobox("setValue", row.yw_khbm)
+                        $("#divEdit").window("open")
+                    }
+                }, '-', {
+                    text: '删除', handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        if (!row) {
+                            return false
+                        }
+                        $.messager.confirm('确认', '您确认想要删除记录吗？', function (r) {
+                            if (r)
+                                $.getJSON("FenceHandler.ashx", { action: "delShdz", khbm: row.yw_khbm, cxh: row.cxh }, function (res) {
+                                    if (res.result) {
+                                        $("#grid1").datagrid("reload")
+                                    } else {
+                                        $.messager.alert('错误', '删除失败');
+                                    }
+                                })
+                        });
+                    }
+                }]
+            });
+
+            $.getJSON("FenceHandler.ashx", { action: "getAllGncgs" }, function (res) {
+                if (res.result) {
+                    $("#txtkhbm").combobox({
+                        data: res.rows,
+                        valueField: "yw_khbm",
+                        textField: "khmc"
+                    })
+                }
+            })
+            $("#btnSave").click(function () { save() })
+        })
+
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return undefined;
+        }
+
+        function search(khbm) {
+            var khbm = getQueryString("khbm")
+            $("#grid1").datagrid("load", { action: "getShdzList", khbm: khbm, khmc: $("#txtkhmc").val(), shdz: $("#txtshdz").val() })
+        }
+
+        function save() {
+            var data = {};
+            var formArray = $("#form1").serializeArray();
+            $.each(formArray, function (i, item) {
+                data[item.name] = item.value;
+            });
+            data.sfgx = $("#ckbsfgx").prop("checked")?'Y':'N'
+            $.post("FenceHandler.ashx", { action: "saveShdz", json: JSON.stringify(data), cxh: data.cxh }, function (res) {
+                res = $.parseJSON(res)
+                if (res.result) {
+                    $("#divEdit").window("close")
+                    $("#grid1").datagrid("reload")
+                } else {
+                    $.messager.alert('错误', '保存失败');
+                }
+            })
+
+        }
+    </script>
+    <style>
+        #form1 {
+            padding: 5px;
+        }
+
+            #form1 > div {
+                margin-top: 10px;
+            }
+    </style>
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'west',collapsible:true,split:true,title:'基本信息'" style="width:500px">
+        <div style="margin:10px 20px">
+            <span class="lableTxt">客户名称：</span>
+            <input class="easyui-textbox " type="text" id="txtkhmc" />
+            <span class="lableTxt">收货地址：</span>
+            <input class="easyui-textbox" type="text" id="txtshdz" />
+            <a href="javascript:void(0)" class="easyui-linkbutton" id="btnSearch"
+               data-options="iconCls:'icon-search'" style="width: 80px; height: 26px;">查询</a>
+        </div>
+        <div id="grid1"></div>
+    </div>
+    <div data-options="region:'center'">
+        <iframe id="frmMap" style="border:0;width:100%;height:100%;" width="100%" height="100%"></iframe>
+    </div>
+    <div id="divEdit" class="easyui-dialog" title="收货地址" style="width:320px;height:300px;"
+         data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+        <form id="form1">
+            <div>
+                <span>客户：</span><input type="text" name="yw_khbm" id="txtkhbm" style="width:200px" />
+                <input type="hidden" name="cxh" />
+            </div>
+            <div>
+                <span>省份：</span><input type="text" name="dz_sf" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>地区：</span><input type="text" name="dz_dq" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>路名：</span><input type="text" name="dz_lm" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>收货地址：</span><input type="text" name="shdz" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>市场：</span><input type="text" name="scmc" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>是否共享：</span><input type="checkbox" id="ckbsfgx" />
+            </div>
+            <div>
+                <span>经度：</span><input type="text" name="jd" readonly="readonly" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>纬度：</span><input type="text" name="wd" readonly="readonly" class="easyui-textbox" style="width:200px" />
+            </div>
+            <div>
+                <span>范围：</span><input type="text" name="fw" readonly="readonly" class="easyui-textbox" style="width:200px" />
+            </div>
+        </form>
+        <a href="javascript:void(0)" class="easyui-linkbutton" id="btnSave"
+           data-options="iconCls:'icon-search'" style="width: 80px; height: 26px;">保存</a>
+    </div>
+</body>
+</html>

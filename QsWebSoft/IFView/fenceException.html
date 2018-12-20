@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>电子围栏异常监控</title>
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <script src="Scripts/easyui/jquery.easyui.min.js"></script>
+    <script src="Scripts/easyui/easyui-lang-zh_CN.js"></script>
+    <link href="Scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="Scripts/easyui/themes/icon.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <script>
+        $(function () {
+            $("#btnSearch").click(function () {
+                $("#grid1").datagrid("load", getSearchParam())
+            })
+            $("#grid1").datagrid({
+                url: 'FenceHandler.ashx',
+                queryParams: getSearchParam(),
+                idField: "rownumber",
+                columns: [
+                    [
+                        { field: 'rwbh', title: '任务编号', width: 80, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'type', title: '类型', width: 80, halign: 'center', align: 'center', formatter: function (val) {
+                                if (val == "0")
+                                    return "围栏异常"
+                                else
+                                    return "其他异常"
+                            }
+                        },
+                        { field: 'des', title: '异常描述', width: 300, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cjsj', title: '时间', width: 180, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cph', title: '车牌号', width: 100, halign: 'center', align: 'center', sortable: true },
+                        { field: 'dz_xx', title: '地址', width: 180, halign: 'center', align: 'center', sortable: true },
+                        { field: 'wlxh', title: '物流序号', width: 80, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'state', title: '进出状态', width: 80, halign: 'center', align: 'center', formatter: function (val) {
+                                if (val == "0") {
+                                    return "进围栏"
+                                } else if (val == "1") {
+                                    return "出围栏"
+                                } else {
+                                    return ""
+                                }
+                            }
+                        },
+                        {
+                            field: 'status', title: '处理状态', width: 80, halign: 'center', align: 'center', formatter: function (val) {
+                                if (val == "0") {
+                                    return "未处理"
+                                } else if (val == "1") {
+                                    return "已处理"
+                                } else if (val == "2") {
+                                    return "已忽略"
+                                }
+                            }
+                        }
+                    ]
+                ],
+                remoteSort: true,
+                width: "100%",
+                height: $(window).height() - 110,
+                singleSelect: true,
+                rownumbers: true,
+                pagination: true,
+                pageSize: 30,
+                toolbar: [{
+                    text: '终止任务',
+                    handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        if (!row) {
+                            return false
+                        }
+                        $.getJSON("FenceHandler.ashx", { action: "stopFenceTask", rwbh: row.rwbh, id: row.id }, function (res) {
+                            if (res.result) {
+                                $("#grid1").datagrid("reload")
+                            } else {
+                                alert(res.msg)
+                            }
+                        })
+                    }
+                }, '-', {
+                    text: '日志详细',
+                    handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        if (!row) {
+                            return false
+                        }
+                        $("#grid2").datagrid("load", { action: "getLogListByRwbh", rwbh: row.rwbh })
+                        $("#divInfo").window("open")
+                    }
+                }, '-', {
+                    text: '删除',
+                    handler: function () {
+                        var row = $("#grid1").datagrid("getSelected")
+                        if (!row) {
+                            return false
+                        }
+                        $.getJSON("FenceHandler.ashx", { action: "delFenceTask",  id: row.id }, function (res) {
+                            if (res.result) {
+                                $("#grid1").datagrid("reload")
+                            } else {
+                                alert(res.msg)
+                            }
+                        })
+                    }
+                }
+                ]
+            });
+            $("#grid2").datagrid({
+                url: 'FenceHandler.ashx',
+                queryParams: { action: "getLogListByRwbh" },
+                idField: "rownumber",
+                columns: [
+                    [
+                        { field: 'rwbh', title: '任务编号', width: 80, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'type', title: '类型', width: 80, halign: 'center', align: 'center', formatter: function (val) {
+                                if (val == "0")
+                                    return "围栏异常"
+                                else
+                                    return "其他异常"
+                            }
+                        },
+                        { field: 'des', title: '异常描述', width: 300, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cjsj', title: '时间', width: 180, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cph', title: '车牌号', width: 100, halign: 'center', align: 'center', sortable: true },
+                        { field: 'dz_xx', title: '地址', width: 180, halign: 'center', align: 'center', sortable: true },
+                        { field: 'wlxh', title: '物流序号', width: 80, halign: 'center', align: 'center', sortable: true },
+                        {
+                            field: 'state', title: '进出状态', width: 80, halign: 'center', align: 'center', formatter: function (val) {
+                                if (val == "0") {
+                                    return "进围栏"
+                                } else if (val == "1") {
+                                    return "出围栏"
+                                } else {
+                                    return ""
+                                }
+                            }
+                        }
+                    ]
+                ],
+                remoteSort: true,
+                height: 300,
+                singleSelect: true,
+                rownumbers: true,
+                pagination: false
+            });
+            $("#grid3").datagrid({
+                idField: "rownumber",
+                columns: [
+                    [
+                        { field: 'wlxh', title: '物流序号', width: 80, halign: 'center', align: 'center', sortable: true },
+                        { field: 'rwmc', title: '任务名称', width: 300, halign: 'center', align: 'center', sortable: true },
+                        { field: 'jdzwlsj', title: '进电子围栏时间', width: 180, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cph', title: '出电子围栏时间', width: 100, halign: 'center', align: 'center', sortable: true },
+                        { field: 'state', title: '节点状态', width: 180, halign: 'center', align: 'center', sortable: true }
+                    ]
+                ],
+                remoteSort: true,
+                width: "100%",
+                height: $(window).height() - 110,
+                singleSelect: true,
+                rownumbers: true,
+                pagination: true,
+                pageSize: 30
+            });
+        })
+
+
+
+        function getSearchParam() {
+            var param = { action: "getErrLog" };
+            param.kssj = $("#txtkssj").datebox('getValue')
+            param.jssj = $("#txtjssj").datebox('getValue')
+            param.status = $("#txtstatus").combobox("getValue")
+            param.query = $("#txtquery").val();
+            return param
+        }
+
+        function getTaskInfo() {
+
+        }
+    </script>
+</head>
+<body>
+    <div style="margin:10px 20px">
+        <span class="lableTxt">筛选：</span>
+        <input  type="text" id="txtquery" placeholder="车牌号/任务编号" />
+        <span class="lableTxt">开始时间：</span>
+        <input class="easyui-datebox" type="text" id="txtkssj" />
+        <span class="lableTxt">结束时间：</span>
+        <input class="easyui-datebox" type="text" id="txtjssj" />
+        <span class="lableTxt">状态：</span>
+        <select id="txtstatus" class="easyui-combobox" style="width:120px">
+            <option value="">全部</option>
+            <option value="0" selected>未处理</option>
+            <option value="1">已处理</option>
+            <option value="2">已删除</option>
+            <option value="3">自动终止</option>
+        </select>
+        <a href="javascript:void(0)" class="easyui-linkbutton" id="btnSearch"
+           data-options="iconCls:'icon-search'" style="width: 80px; height: 26px;">查询</a>
+    </div>
+    <div id="grid1"></div>
+
+    <div id="divInfo" class="easyui-dialog" title="日志" style="width:620px;height:350px;"
+         data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+        <div id="grid2"></div>
+    </div>
+
+    <div id="divTask" class="easyui-dialog" title="任务详细" style="width:620px;height:450px;"
+         data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+        <form id="form_wlgz">
+            <div>
+                <span class="lableTxt">任务编号：</span>
+                <input type="text" name="rwbh" />
+            </div>
+            <div>
+                <span class="lableTxt">车牌号：</span>
+                <input type="text" name="cph" />
+            </div>
+            <div>
+                <span class="lableTxt">任务开始时间：</span>
+                <input type="text" name="rwkssj" />
+            </div>
+        </form>
+        <div id="grid3"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ocr.webservice.novaone.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="OcrInvokeServiceImpl" targetNamespace="http://ocr.webservice.novaone.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ocr.webservice.novaone.com/">
+      <xsd:element name="queryMainInfoList" type="tns:queryMainInfoList" />
+      <xsd:complexType name="queryMainInfoList">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="token" type="xsd:string" />
+          <xsd:element minOccurs="0" name="invoiceNo" type="xsd:string" />
+          <xsd:element minOccurs="0" name="billNo" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="queryMainInfoListResponse" type="tns:queryMainInfoListResponse" />
+      <xsd:complexType name="queryMainInfoListResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="queryInfo" type="tns:queryInfo" />
+      <xsd:complexType name="queryInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="requestXml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="queryInfoResponse" type="tns:queryInfoResponse" />
+      <xsd:complexType name="queryInfoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="queryMainInfoList">
+    <wsdl:part name="parameters" element="tns:queryMainInfoList" />
+  </wsdl:message>
+  <wsdl:message name="queryInfo">
+    <wsdl:part name="parameters" element="tns:queryInfo" />
+  </wsdl:message>
+  <wsdl:message name="queryInfoResponse">
+    <wsdl:part name="parameters" element="tns:queryInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryMainInfoListResponse">
+    <wsdl:part name="parameters" element="tns:queryMainInfoListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OcrInvokeServiceImplPortType">
+    <wsdl:operation name="queryMainInfoList">
+      <wsdl:input name="queryMainInfoList" message="tns:queryMainInfoList" />
+      <wsdl:output name="queryMainInfoListResponse" message="tns:queryMainInfoListResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryInfo">
+      <wsdl:input name="queryInfo" message="tns:queryInfo" />
+      <wsdl:output name="queryInfoResponse" message="tns:queryInfoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OcrInvokeServiceImplSoapBinding" type="tns:OcrInvokeServiceImplPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="queryMainInfoList">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryMainInfoList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryMainInfoListResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="queryInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="queryInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OcrInvokeServiceImpl">
+    <wsdl:port name="OcrInvokeServiceImplPort" binding="tns:OcrInvokeServiceImplSoapBinding">
+      <soap:address location="http://121.199.1.213:8080/ocr/services/ocr" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

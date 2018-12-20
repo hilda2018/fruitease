@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Head>
+    <billNo>COSU6090744990D</billNo>
+  </Head>
+  <body>
+    <flow>
+      <entryTime/>
+      <stepName>空箱出门</stepName>
+      <remark>该提单下共有0个箱子空箱出门</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-15 07:53:00</entryTime>
+      <stepName>重箱进港</stepName>
+      <remark>该提单下共有1个箱子重箱进港</remark>
+      <ctnNo>CBHU6403936</ctnNo>
+    </flow>
+    <flow>
+      <entryTime>2013-11-13 10:34:54</entryTime>
+      <stepName>预配发送</stepName>
+      <remark>船名:COSCOENGLAND，航次:002W</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-26 09:13:16</entryTime>
+      <stepName>报关状态</stepName>
+      <remark>报关单号:310120130517712601，最新流转状态:</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>海关查验</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>重箱装船</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-18 17:45:01</entryTime>
+      <stepName>离泊</stepName>
+      <remark>船名：COSCOENGLAND，航次：002W</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-19 10:38:29</entryTime>
+      <stepName>舱单发送</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+  </body>
+</Message>
+
+
+

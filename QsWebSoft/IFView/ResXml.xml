@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<freshport>
+
+  <!--执行结果 true-成功，false-失败-->
+  <flag></flag>
+  <!--错误日志-->
+  <msg>
+    <errormessage>
+      <errorid>port</errorid>
+      <errordata>对应的值上海没有转换成功</errordata>
+    </errormessage>
+    <errormessage>
+      <errorid>port</errorid>
+      <errordata>对应的值上海没有转换成功</errordata>
+    </errormessage>
+  </msg>
+</freshport>

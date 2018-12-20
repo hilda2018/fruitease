@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <script>
+
+        $(function () {
+            $("#btn2").click(function () {
+                $.post('FenceHandler.ashx', { action: "AddLogisticsMonitoringTest", id: $("#txt").val() }, function (res) {
+                    res = JSON.parse(res)
+                    console.log(res.data)
+                })
+            })
+            $("#btn3").click(function () {
+                $.post('FenceHandler.ashx', { action: "queryTaskByNoTest", id: $("#txt").val() }, function (res) {
+                    res = JSON.parse(res)
+                    console.log(res.data)
+                })
+            })
+
+            $("#btn5").click(function () {
+                $.post('FenceHandler.ashx', { action: "stopTaskTest", rwbh: $("#txt").val() }, function (res) {
+                    res = JSON.parse(res)
+                    console.log(res.data)
+                })
+            })
+
+            $("#btn4").click(function () {
+                $.post('FenceHandler.ashx', { action: "jumpFenceTest", rwbh: $("#txtrwbh").val(), wlxh: $("#txtwlxh").val() }, function (res) {
+                    res = JSON.parse(res)
+                    console.log(res.data)
+                })
+            })
+        })
+    </script>
+    <style>
+        .pannel > input{
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <div class="pannel">
+        <h4>添加、查询监控任务</h4>
+        任务编号： <input type="text" id="txt" /><br />
+        <input type="button" id="btn2" value="添加修改任务" />
+        <input type="button" id="btn3" value="查询任务" />
+        <input type="button" id="btn5" value="强制结束任务" />
+    </div>
+    <div class="pannel">
+        <h4>跳转任务到指定节点</h4>
+        任务编号： <input type="text" id="txtrwbh" /><br />
+        物流序号： <input type="number" id="txtwlxh" /><br />
+        <input type="button" id="btn4" value="测试" />
+    </div>
+
+</body>
+</html>

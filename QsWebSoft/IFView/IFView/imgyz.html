@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+        function init() {
+            document.getElementById("img1").src = "mergeImage.aspx?imgpath=" + getQueryString("imgpath");
+        }
+
+
+    </script>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+                padding: 0;
+            }
+
+            .noprint {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body onload="init()" style="width:100%;">
+    <div class="noprint">
+        <input type="button" id="btn1" value="打印"  onclick="window.print()" />
+    </div>
+    <img id="img1" height="1040px" alt="111" style="height:1040px;" />
+</body>
+</html>

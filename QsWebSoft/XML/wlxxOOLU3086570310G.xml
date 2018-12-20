@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Head>
+    <billNo>OOLU3086570310G</billNo>
+  </Head>
+  <body>
+    <flow>
+      <entryTime/>
+      <stepName>空箱出门</stepName>
+      <remark>该提单下共有0个箱子空箱出门</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-12-07 08:50:00</entryTime>
+      <stepName>重箱进港</stepName>
+      <remark>该提单下共有1个箱子重箱进港</remark>
+      <ctnNo>OOLU7694852</ctnNo>
+    </flow>
+    <flow>
+      <entryTime>2013-12-06 13:42:49</entryTime>
+      <stepName>预配发送</stepName>
+      <remark>船名:OSAKAEXPRESS，航次:40E50</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-12-07 09:57:24</entryTime>
+      <stepName>报关状态</stepName>
+      <remark>报关单号:310120130517536852，最新流转状态:单证放行</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>海关查验</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>重箱装船</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>离泊</stepName>
+      <remark>船名：OSAKAEXPRESS，航次：40E50</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>舱单发送</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+  </body>
+</Message>
+
+
+

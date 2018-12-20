@@ -1,0 +1,24 @@
+select yw_hddz.ywbh,
+yw_hddz.ztdh,
+yw_hddz_jzxxx.jzxh,
+yw_hddz.jcgzry,
+yw_hddz.khmc,
+yw_hddz.hz_spmc,
+yw_hddz.yjkgsj,
+yw_hddz.sjkgsj,
+yw_hddz.xhgqjc,
+yw_hddz.yghgfxsj,
+yw_hddz.hgfxsj,
+yw_hddz.yjhdsj,
+yw_hddz.sjhdsj,
+yfzfsj=(select MAX(zfsj) from yw_hddz_fksqd,yw_hddz_fksqd_cmd where yw_hddz_fksqd.sqdbh=yw_hddz_fksqd_cmd.sqdbh and zbrq>='2017-01-01' and yw_hddz_fksqd_cmd.ywbh=yw_hddz.ywbh),
+yw_hddz.wsbjsj,
+yw_hddz.cktgsj
+ FROM yw_hddz,   
+         yw_hddz_jzxxx  
+   WHERE ( yw_hddz.ywbh = yw_hddz_jzxxx.ywbh ) and  
+         ( datediff(dd,isnull(sjkgsj,yjkgsj),:ad_begin) < =0  ) AND  
+         ( datediff(dd,isnull(sjkgsj,yjkgsj),:ad_end) > =0  ) AND 
+         (yw_hddz.sjkgsj is null or (yw_hddz.sjkgsj is not null AND  
+         yw_hddz.hgfxsj is null) or (yw_hddz.hgfxsj is not null AND  
+         yw_hddz_jzxxx.htjhthsj is null))

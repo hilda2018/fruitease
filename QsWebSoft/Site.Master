@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QsWebSoft.SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="zh-CN" id="fruitease" runat="server">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;"  charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>水果通服务平台</title>
+    <!-- 加载框架运行库 -->
+    <link rel="shortcut icon" href="FHome/images/favicon.ico"/>
+    <link href="FHome/lib/css/easyui.css" rel="stylesheet" type="text/css"/>
+    <link href="FHome/lib/css/icon.css" rel="stylesheet" type="text/css"/>
+    <link href="FHome/lib/css/insdep_theme_default.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body id="mainFrame">
+		<div id="frame-all" >
+		    <!-- 头部   -->
+		    <div    class="fix" id="north">
+		            <div class="l ml240">
+		                <div class="inline_block"> <span>登录用户: </span><span ><%=Session["UserName"]%></span> <span><%=Session["Zlcqts"]%></span></div>
+		            </div>
+		            <div class="r">
+		                <a href="http://www.fruitease.com" target="_blank" >公司网站</a>
+		                <a href="#"  id="changePassword">修改密码 </a>
+		                <a href="/Help.aspx" target="_blank" > 帮助文档 </a>
+		                <a href="#" id="loginOut" > 退出系统</a>
+		            </div>
+
+		    </div>
+		   
+            <div id="main">
+                
+                <!--开始左侧菜单-->
+                <div id="west">
+                    <div id="menuBtn">  菜单 <a id="menuShift" href="javascript:;" > </a>  </div>
+                    <div id="wrapMenuContainer">
+                        <div id="menuContainerId" class="easyui-accordion" data-options="border:false,fit:true">
+                        </div>
+                    </div>
+                </div>
+	
+                <!-- 主要内容 -->
+                <div id="center">
+                    <div id="new">
+                        <div id="fruitEaseTabs" class="easyui-tabs" data-options="fit:true">
+                        </div>
+                    </div>
+                    <div id="old">
+                        <form id="Form1" runat="server" style="position: absolute!important; left: 0px!important;top: 0px!important; right: 0!important; bottom:0px!important; overflow:hidden!important;">
+                            <asp:contentplaceholder id="MainContent" runat="server"  />
+                        </form>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+		    <!-- 页脚 版权信息   -->
+		    <div id="south">
+		        <span>CopyRight&nbsp;2017&nbsp;&nbsp;fruitease.com&nbsp;版权所有</span>
+		    </div>
+            
+
+        </div>
+
+	</body>
+
+</html>

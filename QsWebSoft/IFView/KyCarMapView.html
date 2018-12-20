@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.7.1.min.js"></script>
+    <script src="Scripts/easyui/jquery.easyui.min.js"></script>
+    <script src="Scripts/easyui/easyui-lang-zh_CN.js"></script>
+    <link href="Scripts/easyui/themes/bootstrap/easyui.css" rel="stylesheet" />
+    <link href="Scripts/easyui/themes/icon.css" rel="stylesheet" />
+   
+    <script>
+        $(function () {
+
+            $('.control').css({ " width": "1000px", "height": "28px", "line-height": "28px", "margin": "0px", "marginBottom": "6px", "fontSize": "12px", "whiteSpace": "nowrap", "overflow": "auto" });
+
+            var from = getFrom();
+            var to = getTo();
+            $("#from").datebox("setValue", from)
+            $("#to").datebox("setValue", to)
+            var zt = $("#zt").combobox('getValue')
+            var gl = $("#gl").textbox('getValue')
+            var pc = $("#pc").textbox('getValue')
+            var jyddsdsc_xs = $("#jyddsdsc_xs").textbox('getValue')
+            var mdd = $("#mdd").textbox('getValue')
+            var jdrhkh = $("#jdrhkh").textbox('getValue')
+            $("#grid1").datagrid({
+                url: 'KyMapHandler.ashx',
+                checkOnSelect: false,
+                queryParams: { action: "getLicensePlateList", from: from, to: to, zt: zt, gl: gl, pc: pc, jyddsdsc_xs: jyddsdsc_xs, mdd: mdd, jdrhkh: jdrhkh },
+                idField: "rownumber",
+                columns: [
+                    [
+                        { checkbox: true, field: 'ck' },
+                        { field: 'cph', title: '车牌号', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sfybd', title: '北斗', width: 50, halign: 'center', align: 'left', sortable: true },
+                        { field: 'bdsbh', title: '北斗设备号', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'ywbh', title: '业务编号', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'khjc', title: '客户', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'hth', title: '合同号', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'hz_spmc', title: '商品', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'tpxx', title: '运单信息', width: 110, halign: 'center', align: 'right', sortable: true },
+                        { field: 'bczz', title: '本次装载', width: 110, halign: 'center', align: 'right', sortable: true },
+
+                        { field: 'ztdh', title: '提单号', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'xhgqjc', title: '卸货港区', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'cyr', title: '承运人', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'hcorhbh', title: '航班号', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'yjkgsj', title: '预计靠港时间', width: 130, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sjkgsj', title: '实际靠港时间', width: 130, halign: 'center', align: 'left', sortable: true },
+                        { field: 'hgfxsj', title: '海关放行时间', width: 130, halign: 'center', align: 'left', sortable: true },
+                        { field: 'hgfxsc', title: '放行时长', width: 120, halign: 'center', align: 'center', sortable: true },
+
+                        { field: 'htjhthsj_sjd', title: '后台计划提货时间', width: 120, halign: 'center', align: 'left', sortable: true },
+                        { field: 'cgqsj', title: '出港区时间', width: 130, halign: 'center', align: 'left', sortable: true },
+                        { field: 'thsc', title: '提货时长', width: 120, halign: 'center', align: 'center', sortable: true },
+
+                        { field: 'jyd_bz', title: '检疫点标志', width: 100, halign: 'center', align: 'center', sortable: true },
+                        { field: 'jydjc', title: '检疫点', width: 120, halign: 'center', align: 'left', sortable: true },
+                        { field: 'djydsj', title: '到检疫点时间', width: 130, halign: 'center', align: 'center', sortable: true },
+                        { field: 'cjydsj', title: '出检疫点时间', width: 130, halign: 'center', align: 'center', sortable: true },
+                        { field: 'zyxx', title: '目的地', width: 200, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sdsj', title: '送达时间', width: 130, halign: 'center', align: 'center', sortable: true },
+                        { field: 'bghgjc', title: '报关海关简称', width: 120, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sjshrmc', title: '实际收获人', width: 200, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sjccrq', title: '实际出车日期', width: 130, halign: 'center', align: 'center', sortable: true },
+                        { field: 'sj', title: '司机', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'sjlxfs', title: '司机联系方式', width: 110, halign: 'center', align: 'left', sortable: true },
+                        { field: 'cdjc', title: '车队', width: 100, halign: 'center', align: 'left', sortable: true },
+                        { field: 'gqdjydsc', title: '港区到检疫点时长', width: 150, halign: 'center', align: 'center', sortable: true },
+                        { field: 'jyddsdsc', title: '检疫点到送达时长', width: 150, halign: 'center', align: 'center', sortable: true },
+                        { field: 'gqdsdsc', title: '港区到送达时长', width: 150, halign: 'center', align: 'center', sortable: true },
+                        { field: 'jdrjc', title: '接单人', width: 110, halign: 'center', align: 'left', sortable: true },
+
+
+                    ]
+                ],
+                remoteSort: true,
+                width: "100%",
+                height: $(window).height() - 145,
+                singleSelect: false,
+                rownumbers: true,
+                pagination: true, rowStyler: function (index, row) {
+                    if (row.wcp == "Y") {
+                        return 'color:red;';
+                    }
+                },
+                pageSize: 30
+            });
+
+
+
+            $('#grid1').datagrid({
+                "onSortColumn": function () {
+                    $(this).datagrid('clearSelections');
+                    $(this).datagrid('uncheckAll');
+                }
+
+            });
+
+            //新增
+            $("#btnNew").click(function () {
+                $("#divNew").window("open")
+            })
+            //列表查询
+            $("#btnViewData").click(function () {
+                $("#grid1").datagrid('load', {
+                    action: "getLicensePlateList",
+                    from: $("#from").datebox('getValue'),
+                    to: $("#to").datebox('getValue'),
+                    zt: $("#zt").combobox('getValue'),
+                    gl: $("#gl").textbox('getValue'),
+                    pc: $("#pc").textbox('getValue'),
+                    jyddsdsc_xs: $("#jyddsdsc_xs").textbox('getValue'),
+                    mdd: $("#mdd").textbox('getValue'),
+                    jdrhkh: $("#jdrhkh").textbox('getValue')
+                });
+
+
+                $('#grid1').datagrid('clearSelections');
+                $('#grid1').datagrid('uncheckAll');
+
+            })
+            //查询地图
+            $("#btnViewMap").click(function () {
+
+                $("#sj").layout("collapse", "west");
+                var rows = $("#grid1").datagrid("getChecked")
+                if (rows == null || rows.length == 0)
+                    return;
+                var cph = "";
+                var aa = rows.length;
+                for (var i = 0; i < rows.length; i++) {
+                    var bdsbhaaa = rows[i].bdyssbh;
+                    if (rows[i].bdyssbh == null || rows[i].bdyssbh == "") {
+                        if (rows[i].cph != null) {
+                            if (cph.indexOf(rows[i].cph) < 0) {
+                                if (cph.length > 1) {
+                                    cph += ";"
+                                }
+                                cph += rows[i].cph
+                            }
+                        }
+                    } else {
+                        if (cph.indexOf(rows[i].bdyssbh) < 0) {
+                            if (cph.length > 1) {
+                                cph += ";"
+                            }
+                            cph += rows[i].bdyssbh
+                        };
+
+                    }
+
+                }
+                verify(cph)
+            })
+
+            //历史记录
+            $("#btnLasterView").click(function () {
+                $("#divHistory").window("open");
+                $("#grid_his").datagrid("reload")
+            })
+            //历史记录表格
+            $("#grid_his").datagrid({
+                url: 'KyMapHandler.ashx',
+                method: "get",
+                queryParams: {
+                    action: "GetMapViewHistory"
+                },
+                idField: "cph",
+                columns: [
+                    [
+                        { field: 'cph', title: '车牌号', width: 200, halign: 'center', align: 'left', sortable: false },
+                        { field: 'cjsj', title: '时间', width: 110, halign: 'center', align: 'center', sortable: false }
+                    ]
+                ],
+                width: "100%",
+                height: 350,
+                singleSelect: true,
+                onDblClickRow: function (index, row) {
+
+                    verify(row.cph, row.logid);
+                    $("#divHistory").window("close");
+                }
+            })
+
+            //新增查询事件
+            $("#btnNewView").click(function () {
+                var str = $("#txtNew").textbox("getValue");
+                if ($.trim(str) == "")
+                    return;
+                var cph = str.replace(",", ";").replace("，", ";")
+                $("#divNew").window("close")
+
+                verify(cph);
+            })
+
+        })
+        ///验证车牌号 并打开地图
+        var verify = function (cph, logid) {
+            $.messager.progress({
+                title: '提示',
+                msg: '车牌定位信息查询中，请稍候……',
+                text: ''
+            });
+
+            $.getJSON("KyMapHandler.ashx", { action: "VerifyLicensePlate", cph: cph, logid: logid, r: Math.random() }, function (res) {
+                $.messager.progress('close');
+                if (res.result) {
+                    if (!!res.msg) {
+                        var cph = res.msg
+                        var selectrows = $("#grid1").datagrid("getSelections");
+                        var wdwcp = "";
+                        for (var i = 0; i < selectrows.length; i++) {
+                            if (cph.indexOf(selectrows[i].cph) == -1) {
+                                var index = $("#grid1").datagrid("getRowIndex", selectrows[i].rownumber)
+
+                                if (selectrows[i].cph != null && selectrows[i].cph != "")
+                                    wdwcp += selectrows[i].cph + ","
+                                $("#grid1").datagrid("updateRow", {
+                                    index: index,
+                                    row: { wcp: "Y" }
+                                })
+                            }
+                        }
+
+                        if (wdwcp != "") {
+                            alert("车牌号：" + wdwcp + " 没找到地图定位信息");
+                        }
+                    }
+                    if (res.sfcph == null || res.sfcph == "") {
+                        alert("车牌号未查到!");
+                    } else {
+                        var url = "https://tms.freshport.com/tms/showMapMuli.do?hide=0&" + res.data;
+                        //var url = "https://192.168.1.160:9000/tms/showMapMuli.do?hide=0&" + res.data;
+                        $("#frmMap").attr("src", url);
+                    }
+                } else
+                    alert(res.msg);
+            })
+        }
+
+        var getFrom = function () {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() +1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+            return currentdate;
+        }
+
+        var getTo = function () {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) { 
+                strDate = "0" + strDate;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate;
+            return currentdate;
+        }
+    </script>
+<style>
+.control {
+		width: 1100px;
+		height: 28px;
+		line-height: 28px;margin:0px 0px 6px 0px;
+		white-space: nowrap;font-size:12px;overflow:auto;
+	}
+	.control span {
+    margin-right:4px;  margin-left:4px;
+	}
+
+	.control input{text-indent:8px;}
+</style>
+</head>
+<body class="easyui-layout" id = "sj" style="font-size:16px;">
+    <div id="divNew" class="easyui-dialog" title="输入车牌，多个用逗号分隔" style="width:320px;height:100px;"
+         data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+        <input type="text" id="txtNew" class="easyui-textbox" style="width:300px" />
+        <a href="javascript:void(0)" class="easyui-linkbutton" id="btnNewView"
+           data-options="iconCls:'icon-search'" style="width: 80px; height: 26px;">查询</a>
+    </div>
+    <div id="divHistory" class="easyui-dialog" title="历史记录(双击查看)" style="width:450px;height:400px;"
+         data-options="iconCls:'icon-save',resizable:true,modal:true,closed:true">
+        <div id="grid_his"></div>
+    </div>
+    <div data-options="region:'west',collapsible:true,title:'车辆列表',split:true" style="width:95%">
+        <div style="margin:10px 20px">
+            <span class="lableTxt">时间</span>
+            <input class="easyui-datebox " type="text" id="from" style="width:160px;height:26px;"/>
+            <span class="lableTxt">到</span>
+            <input class="easyui-datebox" type="text" id="to" style="width:160px;height:26px;/>
+            <span class="lableTxt">状态</span>
+           <select class="easyui-combobox" id="zt" style="width:180px;height:26px; padding: 6px 2px!important;">
+                <option value="WCGQ">未出港区</option>
+                <option value="YCGQJYWTG">已出港区未出检疫点</option>
+                <option value="WSD">已出(无需)检疫点未送达</option>
+                <option value="YSD">已送达</option>
+                <option value="QB">全部</option>
+            </select>
+            <span class="lableTxt">配车</span>
+            <select class="easyui-combobox" id="pc" style="width:80px;height:26px; padding: 6px 2px!important;">
+                <option value="QB">全部</option>
+                <option value="WPC">未配车</option>    
+                <option value="YPC">已配车</option>                             
+            </select>
+            <span class="lableTxt">过滤</span>
+            <input class="easyui-textbox" style="width:100px;height:26px" id="gl" />
+            
+        </div> 
+          
+
+        <div style="margin:10px 20px">
+            <a href="javascript:void(0)" class="easyui-linkbutton" id="btnViewData"
+               data-options="iconCls:'icon-search'" style="width: 80px; height: 26px;">读取</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" id="btnNew"
+               data-options="iconCls:'icon-add'" style="width: 100px; height: 26px;">预查北斗</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" id="btnViewMap"
+               data-options="iconCls:'icon-search'" style="width: 100px; height: 26px;">查询地图</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" id="btnLasterView"
+               data-options="iconCls:'icon-search'" style="width: 100px; height: 26px;">查询记录</a>
+            <span class="lableTxt">检疫到送达</span>
+            <input class="easyui-textbox" style="width:60px;height:26px" id="jyddsdsc_xs" />
+            <span class="lableTxt">小时</span>
+            <span class="lableTxt">目的地</span>
+            <input class="easyui-textbox" style="width:90px;height:26px" id="mdd" />
+            <span class="lableTxt">接单人或客户</span>
+            <input class="easyui-textbox" style="width:90px;height:26px" id="jdrhkh" />
+        </div>
+        <div id="grid1">
+        </div>
+    </div>
+    <div data-options="region:'center',collapsible:true,title:'地图'"  >
+        <iframe id="frmMap" style="border:0;width:100%;height:100%;" width="100%" height="100%"></iframe>
+    </div>
+</body>
+</html>

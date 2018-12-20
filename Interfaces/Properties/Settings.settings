@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Interfaces.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Interfaces_OCRWebServ_OcrInvokeServiceImpl" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://121.199.1.213:8080/ocr/services/ocr</Value>
+    </Setting>
+    <Setting Name="Interfaces_FreshPortSupplierSell_CommonInvokeServiceImpl" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.freshport.com:8088/foreignprocurement/services/sync</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

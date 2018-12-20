@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Head>
+    <billNo>E232046410J</billNo>
+  </Head>
+  <body>
+    <flow>
+      <entryTime/>
+      <stepName>空箱出门</stepName>
+      <remark>该提单下共有0个箱子空箱出门</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-11 06:04:00</entryTime>
+      <stepName>重箱进港</stepName>
+      <remark>该提单下共有1个箱子重箱进港</remark>
+      <ctnNo>YMLU5036123</ctnNo>
+    </flow>
+    <flow>
+      <entryTime>2013-11-11 10:07:06</entryTime>
+      <stepName>预配发送</stepName>
+      <remark>船名:COSCOGENOA，航次:008E</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-22 09:40:41</entryTime>
+      <stepName>报关状态</stepName>
+      <remark>报关单号:310120130517743746，最新流转状态:</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>海关查验</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>重箱装船</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>离泊</stepName>
+      <remark>船名：COSCOGENOA，航次：008E</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-15 18:14:25</entryTime>
+      <stepName>舱单发送</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+  </body>
+</Message>
+
+
+

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DBConnection-Web.config Connection String" description="DBConnection 应用程序在 web.config 中用来访问数据库的连接字符串。" defaultvalue="Server=www.fruitease.com;DataBase= zjnb; User ID=oheng;Pwd=Hongshen_110" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBConnection']/@connectionString" />
+  </parameter>
+  <parameter name="zjnbConnectionString-Web.config Connection String" description="zjnbConnectionString 应用程序在 web.config 中用来访问数据库的连接字符串。" defaultvalue="Data Source=www.fruitease.com;Initial Catalog=zjnb;User ID=oheng" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='zjnbConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

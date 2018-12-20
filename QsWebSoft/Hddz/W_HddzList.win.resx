@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="window.OnClient_PostOpen" xml:space="preserve">
+    <value>this.PostOpen</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_List_Clicked</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_List_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_List_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_ItemChanged" xml:space="preserve">
+    <value>this.dw_List_ItemChanged</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_KeyDown" xml:space="preserve">
+    <value>this.dw_List_EntertoTab</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_List_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_list.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="btn_stop.OnClient_Clicked" xml:space="preserve">
+    <value>this.Stop</value>
+  </metadata>
+  <metadata name="ddlb_ctr_area2.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="jyjyzs.OnClient_Clicked" xml:space="preserve">
+    <value>this.Jyjyzs</value>
+  </metadata>
+  <metadata name="欧恒代理协议ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Ohdlxy</value>
+  </metadata>
+  <metadata name="报关单ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Bgd</value>
+  </metadata>
+  <metadata name="归档文件ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Xswj</value>
+  </metadata>
+  <metadata name="采样凭证ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Cypz</value>
+  </metadata>
+  <metadata name="代理报关委托书ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.dlbgwts_Clicked</value>
+  </metadata>
+  <metadata name="ddlb_sd.OnClient_GetFocus" xml:space="preserve">
+    <value>this.ddlb_sdxz_getfocus</value>
+  </metadata>
+  <metadata name="ddlb_sd.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Sd</value>
+  </metadata>
+  <metadata name="ddlb_zbsd.OnClient_GetFocus" xml:space="preserve">
+    <value>this.ddlb_zbsdxz_getfocus</value>
+  </metadata>
+  <metadata name="ddlb_zbsd.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Zbsd</value>
+  </metadata>
+  <metadata name="sle_hth.OnClient_EditChanged" xml:space="preserve">
+    <value>this.slehth_EditChanged</value>
+  </metadata>
+  <metadata name="sle_tdh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sletdh_EditChanged</value>
+  </metadata>
+  <metadata name="sle_bgdh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.slebgdh_EditChanged</value>
+  </metadata>
+  <metadata name="ddlb_mdg.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_hwqd.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Hwqd</value>
+  </metadata>
+  <metadata name="m_bzqksm.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Bzqksm</value>
+  </metadata>
+  <metadata name="m_sybzsm.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Sybzsm</value>
+  </metadata>
+  <metadata name="m_spcns.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Spcns</value>
+  </metadata>
+  <metadata name="sle_ftdh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleftdh_EditChanged</value>
+  </metadata>
+  <metadata name="sle_gwgys.OnClient_EditChanged" xml:space="preserve">
+    <value>this.slectr_area2_EditChanged</value>
+  </metadata>
+  <metadata name="sle_jzxh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleJzxh_EditChanged</value>
+  </metadata>
+  <metadata name="sle_3.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleTgdh_EditChanged</value>
+  </metadata>
+  <metadata name="sle_tgdh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleBjh_EditChanged</value>
+  </metadata>
+  <metadata name="sle_sjshrmc.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleSjshrmc_EditChanged</value>
+  </metadata>
+  <metadata name="cbx_tycj.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="ddlb_jyj.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_18.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Fksqs</value>
+  </metadata>
+  <metadata name="m_fpsld.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Fpsld</value>
+  </metadata>
+  <metadata name="m_Whlj_Seaway.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Whlj_Seaway</value>
+  </metadata>
+  <metadata name="m_whljdf.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Whljdf</value>
+  </metadata>
+  <metadata name="m_whzhcd.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Whzhcd</value>
+  </metadata>
+  <metadata name="m_yxzm.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Yxzm</value>
+  </metadata>
+  <metadata name="m_mylhhdbh.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Ymlhhdbh</value>
+  </metadata>
+  <metadata name="m_OOCL_Dfhw.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_OOCL_Dfhw</value>
+  </metadata>
+  <metadata name="m_sjsc_MOL.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_sjsc_MOL</value>
+  </metadata>
+  <metadata name="m_xd_HMM_PH.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Xd_HMM_PH</value>
+  </metadata>
+  <metadata name="m_zycosco.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Zycosco22</value>
+  </metadata>
+  <metadata name="m_crhh.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Crhh11</value>
+  </metadata>
+  <metadata name="m_Whljyxbh.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Whljyxbh</value>
+  </metadata>
+  <metadata name="m_Zlyt.OnClient_Clicked" xml:space="preserve">
+    <value>this.print_Zlyt</value>
+  </metadata>
+  <metadata name="ddlb_rqlx.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="btn_read.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="sle_1.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sle_EditChanged</value>
+  </metadata>
+  <metadata name="sle_4.OnClient_EditChanged" xml:space="preserve">
+    <value>this.slewtdw_EditChanged</value>
+  </metadata>
+  <metadata name="sle_kh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.slesdtt_EditChanged</value>
+  </metadata>
+  <metadata name="sle_2.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sleycd_EditChanged</value>
+  </metadata>
+  <metadata name="ddlb_jdrjc.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="btn_tggz.OnClient_Clicked" xml:space="preserve">
+    <value>this.OpenTggz</value>
+  </metadata>
+  <metadata name="btn_help.OnClient_Clicked" xml:space="preserve">
+    <value>this.Help</value>
+  </metadata>
+  <metadata name="btn_ocrdq.OnClient_Clicked" xml:space="preserve">
+    <value>this.OcrDq</value>
+  </metadata>
+  <metadata name="btn_new.OnClient_Clicked" xml:space="preserve">
+    <value>this.New</value>
+  </metadata>
+  <metadata name="btn_duplicate.OnClient_Clicked" xml:space="preserve">
+    <value>this.Copy</value>
+  </metadata>
+  <metadata name="btn_delete.OnClient_Clicked" xml:space="preserve">
+    <value>this.Delete</value>
+  </metadata>
+  <metadata name="btn_open.OnClient_Clicked" xml:space="preserve">
+    <value>this.OpenWindow</value>
+  </metadata>
+  <metadata name="btn_save.OnClient_Clicked" xml:space="preserve">
+    <value>this.Save</value>
+  </metadata>
+  <metadata name="btn_yflr.OnClient_Clicked" xml:space="preserve">
+    <value>this.Yflr</value>
+  </metadata>
+  <metadata name="合同打印ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintContract</value>
+  </metadata>
+  <metadata name="m_sjmfht.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintSjmfContract</value>
+  </metadata>
+  <metadata name="发票打印ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintInvoice</value>
+  </metadata>
+  <metadata name="m_sjmffpdy.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintSjmfInvoice</value>
+  </metadata>
+  <metadata name="箱单打印ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintPackingList</value>
+  </metadata>
+  <metadata name="m_sjmfxd.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintSjmfPackingList</value>
+  </metadata>
+  <metadata name="直提货情况说明ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.PrintZthqksm</value>
+  </metadata>
+  <metadata name="btn_qksmdy.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_qksm</value>
+  </metadata>
+  <metadata name="btn_bzjsqs.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_bzjsqs</value>
+  </metadata>
+  <metadata name="btn_dlbgwts.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_dlbgwts</value>
+  </metadata>
+  <metadata name="航次证明ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_hczm</value>
+  </metadata>
+  <metadata name="二程船证明ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_ecczm</value>
+  </metadata>
+  <metadata name="代理协议ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_dlxy</value>
+  </metadata>
+  <metadata name="产地证ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_forma</value>
+  </metadata>
+  <metadata name="承诺书ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Cns</value>
+  </metadata>
+  <metadata name="担保函ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_dbh</value>
+  </metadata>
+  <metadata name="航华保函ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Print_Hhbh</value>
+  </metadata>
+  <metadata name="火龙果发票ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.pitaya</value>
+  </metadata>
+  <metadata name="btn_ycyy.OnClient_Clicked" xml:space="preserve">
+    <value>this.OpenYcyy</value>
+  </metadata>
+  <metadata name="btn_zgggbz.OnClient_Clicked" xml:space="preserve">
+    <value>this.Zgggbz</value>
+  </metadata>
+  <metadata name="btn_close.OnClient_Clicked" xml:space="preserve">
+    <value>this.Exit</value>
+  </metadata>
+  <metadata name="rb_zj.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="rb_qb.OnClient_Clicked" xml:space="preserve">
+    <value>this.RetrieveQb</value>
+  </metadata>
+  <metadata name="rb_hy.OnClient_Clicked" xml:space="preserve">
+    <value>this.RetrieveHy</value>
+  </metadata>
+  <metadata name="rb_ky.OnClient_Clicked" xml:space="preserve">
+    <value>this.RetrieveKy</value>
+  </metadata>
+  <metadata name="ddlb_fxzt.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="btn_3.OnClient_Clicked" xml:space="preserve">
+    <value>this.Downloadtp</value>
+  </metadata>
+  <metadata name="单列过滤ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter</value>
+  </metadata>
+  <metadata name="取消过滤ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle</value>
+  </metadata>
+  <metadata name="导出ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Dcrz</value>
+  </metadata>
+  <metadata name="刷新ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol</value>
+  </metadata>
+  <metadata name="选择复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect</value>
+  </metadata>
+  <metadata name="整列复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL</value>
+  </metadata>
+  <metadata name="恢复默认列ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover</value>
+  </metadata>
+</root>

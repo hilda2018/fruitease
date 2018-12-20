@@ -1,0 +1,2 @@
+WSDL: error WSDL1: 处理“http://blog.csdn.net/pinchw/article/details/6427151”时出错。
+      HTML 文档不包含 Web 服务发现信息。

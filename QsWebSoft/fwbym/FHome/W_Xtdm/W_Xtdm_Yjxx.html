@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="edge" charset="utf-8" />
+    <title>水果通服务平台</title>
+    <link href="../lib/css/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/easyui_animation.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/easyui_plus.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/icon.css" rel="stylesheet" type="text/css" />
+    <!---oheng css -->
+    <link href="../css/oheng.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!--region-主体内容-->
+    <div class="fixedFull" id="WarningInformation">
+        <!---搜索项 -->
+        <div class="fix" id="topList">
+            <form id="ohForm" class="mt2em">
+                <div class="inline_block mr1em mb1em">
+                    <a id="helpDocument" href="javascript:;" class="form_a">
+                        <i class="icon-help icon_"></i>
+                        <span class="mrHalfem">帮助文档</span></a>
+                </div>
+                <div class="inline_block mr1em mb1em">
+                    <a id="closeWindow" href="javascript:;" class="form_a">
+                        <i class="icon-remove icon_"></i>
+                        <span class="mrHalfem">关闭</span></a>
+                </div>
+                <div class="inline_block mr1em mb1em">
+                    <label class="mrHalfem">业务编号</label>
+                    <input name="ywbh" class="ui-input w100" /></div>
+                <div class="inline_block mr1em mb1em">
+                    <label class="mrHalfem">人员</label>
+                    <input class="ui-input w100" name="ry" /></div>
+                <div class="inline_block mr1em mb1em">
+                    <label class="mrHalfem">预警内容</label>
+                    <input class="ui-input w100" name="yjnr" /></div>
+                <div class="inline_block mr1em mb1em">
+                    <label class="mrHalfem">接单人</label>
+                    <select class="ui-select w200" name="jdrjc" id="jdrjc"></select>
+                </div>
+                <div class="inline_block mr1em mb1em">
+                    <label class="mrHalfem">是否勾选</label>
+                    <select class="ui-select w100" name="sfgx">
+                        <option value="">全部</option>
+                        <option value="Y">已勾选</option>
+                        <option value="N">未勾选</option>
+                    </select>
+                </div>
+                <div class="inline_block mr1em  mb1em">
+                    <a id="ycyyInput" class="ui-button  ui-button-primary" role="button">异常原因</a>
+                </div>
+                <div class="inline_block mr1em  mb1em">
+                    <a id="filterFunc" class="ui-button ui-button-primary">查询</a>
+                </div>
+            </form>
+        </div>
+
+        <!---主要内容 -->
+        <div id="mainContent">
+
+            <!---菜单-->
+            <div id="warningContainer"></div>
+            <!---表格 -->
+            <div id="wrapTable"><div id="posDiv"><table id="tableDataGrid" ></table></div></div>
+
+        </div>
+
+    </div>
+    <!--end region--->
+
+
+    <!--region  图标 --->
+    <div class="dn">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <symbol id="icon-menu" style="width: 12px; height: 12px;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                viewBox="0 0 1024 1024">
+                <path d="M933.647059 632.470588v301.176471H632.470588V632.470588h301.176471m90.352941-90.352941H542.117647v481.882353h481.882353V542.117647zM391.529412 632.470588v301.176471H90.352941V632.470588h301.176471m90.352941-90.352941H0v481.882353h481.882353V542.117647z"
+                    fill="#5490D6" p-id="1290"></path>
+                <path d="M933.647059 90.352941v301.176471H632.470588V90.352941h301.176471m90.352941-90.352941H542.117647v481.882353h481.882353V0z"
+                    fill="#A3CCFA" p-id="1291"></path>
+                <path d="M391.529412 90.352941v301.176471H90.352941V90.352941h301.176471m90.352941-90.352941H0v481.882353h481.882353V0z"
+                    fill="#5490D6" p-id="1292"></path>
+            </symbol>
+            <symbol id="icon-item" style="width: 1em; height: 1em;vertical-align: middle;fill: #666;overflow: hidden;"
+                viewBox="0 0 1024 1024">
+                <path d="M640 531.594375 640 507.957508C640 500.566777 637.388765 493.488982 632.758149 488.328358L488.758149 327.846474C473.554922 310.903123 448 323.21039 448 347.475624L448 401.280597C448 408.783818 450.69108 415.959288 455.446031 421.134624L544 517.433276 456.554212 602.044271C451.131007 607.254361 448 614.936177 448 623.031728L448 676.52569C448 700.127718 472.363314 712.702835 487.864276 697.101619L631.864276 552.170308C637.036445 546.964689 640 539.469607 640 531.594375Z"
+                    p-id="5210"></path>
+            </symbol>
+            <symbol id="icon-circle" style="width: 1em; height: 1em;vertical-align: middle;fill: #666;overflow: hidden;"
+                viewBox="0 0 1024 1024">
+                <path d="M512.5 622.5c-60.8 0-110-49.2-110-110s49.2-110 110-110 110 49.2 110 110-49.2 110-110 110z"
+                    p-id="6515"></path>
+            </symbol>
+        </svg>
+    </div>
+    <!--end region  图标 --->
+
+    <!--region  确认关闭弹窗 --->
+    <div class="hide" id="confirmDialog"></div>
+    <!--end region  确认关闭弹窗 --->
+
+    <!--region  工具按钮 --->
+    <div id="ycyyToolbar" class="hide toolbar-cls">
+        
+        <a class="ui-button toolbar-btn disabled"  id="saveYcyy"> <span class="icon-save"></span><span >存盘</span></a>    
+        <span class="seperator">|</span>
+        <a class="ui-button toolbar-btn"  id="addYcyy"> <span  class="icon-add"></span><span >新增行</span></a>
+        <span class="seperator">|</span>
+        <a class="ui-button toolbar-btn"  id="closeYcyy"> <span class="icon-remove"></span ><span >关闭</span></a>
+
+    </div>
+    <!--region  工具按钮--->
+
+
+    <!--region  输入异常原因对话框 弹窗--->
+    <div id="ycyyInputTable" class="easyui-dialog" title="输入异常原因" data-options="closed:true">
+        <div class="datagridAbs">
+            <table id="yjlxTableDataGrid"></table> 
+        </div>
+    </div>
+    <!--region  输入异常原因对话框 弹窗--->
+    <div id="ycyySelectList" title="异常类型下拉选择" class="easyui-dialog" data-options="closed:true,border:false,cls:'Cls',height:200,width:400">
+            <table id="yjlxListDataGrid" ></table>
+    </div>
+    <!--end  region  输入异常原因对话框 弹窗--->
+
+<script type="text/javascript" src="../lib/js/jqueryAndeasyuiAndjson.js"></script>
+
+
+
+
+
+
+<script type="text/javascript" src="../lib/js/jquery.insdep-extend.min.js"></script>
+    <script type="text/javascript" src="../lib/theme/modern/js/plugin/sea.js"></script>
+    <script type="text/javascript" src="../js/W_Xtdm/W_Xtdm_Yjxx.js"></script>
+</body>
+
+</html>           

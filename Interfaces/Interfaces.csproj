@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4DAE9CC6-72A1-4AAD-8659-5545C9433270}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Interfaces</RootNamespace>
+    <AssemblyName>Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.38.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\QsWebSoft\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\BaseAttribute.cs" />
+    <Compile Include="Attributes\ColumnAttribute.cs" />
+    <Compile Include="Attributes\IdAttribute.cs" />
+    <Compile Include="Attributes\IgnoreAttribute.cs" />
+    <Compile Include="Attributes\TableAttribute.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="GeneralPortal.cs" />
+    <Compile Include="HddzIf.cs" />
+    <Compile Include="IFHandler.cs" />
+    <Compile Include="Model\EmailModel\EmailModel.cs" />
+    <Compile Include="Model\FreshModel\AbnormalEntity.cs" />
+    <Compile Include="Model\FreshModel\AirDeliveryEntity.cs" />
+    <Compile Include="Model\FreshModel\AirDistributionEntity.cs" />
+    <Compile Include="Model\FreshModel\businessmarginEntity.cs" />
+    <Compile Include="Model\FreshModel\contractcontainerEntity.cs" />
+    <Compile Include="Model\FreshModel\dometicEntity.cs" />
+    <Compile Include="Model\FreshModel\FreightCostsEntity.cs" />
+    <Compile Include="Model\FreshModel\FreightForwarderEntity.cs" />
+    <Compile Include="Model\FreshModel\GaveBackContainerEntity.cs" />
+    <Compile Include="Model\FreshModel\imcustomsdutyEntity.cs" />
+    <Compile Include="Model\FreshModel\internalEntity.cs" />
+    <Compile Include="Model\FreshModel\internationalfreightEntity.cs" />
+    <Compile Include="Model\FreshModel\SeaDeliveryEntity.cs" />
+    <Compile Include="Model\FreshModel\ServiceRes.cs" />
+    <Compile Include="Model\FreshModel\suppliersellEntity.cs" />
+    <Compile Include="Model\fruitease\BaseData\yw_wldwEntity.cs" />
+    <Compile Include="Model\fruitease\CarMapView.cs" />
+    <Compile Include="Model\fruitease\interfieldEntity.cs" />
+    <Compile Include="Model\fruitease\KyCarMapView.cs" />
+    <Compile Include="Model\fruitease\s_fence_log.cs" />
+    <Compile Include="Model\fruitease\s_log.cs" />
+    <Compile Include="Model\fruitease\s_log_errEntity.cs" />
+    <Compile Include="Model\fruitease\s_log_mapEntity.cs" />
+    <Compile Include="Model\fruitease\t_countryEntity.cs" />
+    <Compile Include="Model\fruitease\t_currencyEntity.cs" />
+    <Compile Include="Model\fruitease\t_port.cs" />
+    <Compile Include="Model\fruitease\yw_hddzEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_dzyqEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_dzyq_cmdEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_fksqdEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_jzxxxEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_kycdEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_ocrvalmapEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_sjzfEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_spxxEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_tpcdxxEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_wldzEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_wlgzEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_wlgz_cmdEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_ycyyEntity.cs" />
+    <Compile Include="Model\fruitease\yw_hddz_bdsbwhEntity.cs" />
+    <Compile Include="Model\fruitease\yw_wldw_gnkh_shdzEntity.cs" />
+    <Compile Include="Model\map\ElectronicFence.cs" />
+    <Compile Include="Model\map\ElectronicFenceTask.cs" />
+    <Compile Include="Model\map\FenceResponse.cs" />
+    <Compile Include="Model\map\QueryFenceTask.cs" />
+    <Compile Include="Model\map\s_log_fence.cs" />
+    <Compile Include="Model\map\TaskRequest.cs" />
+    <Compile Include="Model\ModelTools.cs" />
+    <Compile Include="OcrIF.cs" />
+    <Compile Include="Model\OCRModel\ServerRes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\AbstractService.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Service\ConnectionFactory.cs" />
+    <Compile Include="Service\FenceService.cs" />
+    <Compile Include="Service\HddzService.cs" />
+    <Compile Include="Service\KyMapService.cs" />
+    <Compile Include="Service\LocalService.cs" />
+    <Compile Include="Service\MapService.cs" />
+    <Compile Include="Service\MasterData.cs" />
+    <Compile Include="Service\SqlFactory.cs" />
+    <Compile Include="Web References\FreshPortSupplierSell\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OCRWebServ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Debug\Interfaces.dll.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Interfaces.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FreshPortSupplierSell\CommonInvokeServiceImpl.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\FreshPortSupplierSell\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OCRWebServ\OcrInvokeServiceImpl.wsdl">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OCRWebServ\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://121.199.1.213:8080/ocr/services/ocr%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OCRWebServ\</RelPath>
+      <UpdateFromURL>http://121.199.1.213:8080/ocr/services/ocr%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Interfaces_OCRWebServ_OcrInvokeServiceImpl</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://www.freshport.com:8088/foreignprocurement/services/sync%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FreshPortSupplierSell\</RelPath>
+      <UpdateFromURL>http://www.freshport.com:8088/foreignprocurement/services/sync%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Interfaces_FreshPortSupplierSell_CommonInvokeServiceImpl</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Dapper.dll" />
+    <Content Include="bin\Debug\Interfaces.pdb" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="lib\Dapper.dll" />
+    <Content Include="obj\Debug\Interfaces.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Interfaces.dll" />
+    <Content Include="obj\Debug\Interfaces.pdb" />
+    <Content Include="obj\Debug\TempPE\Web References.FreshPortSupplierSell.Reference.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Web References.OCRWebServ.Reference.cs.dll" />
+    <Content Include="obj\x86\Debug\TempPE\Web References.FreshPortSupplierSell.Reference.cs.dll" />
+    <Content Include="obj\x86\Debug\TempPE\Web References.OCRWebServ.Reference.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="bin\x86\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Head>
+    <billNo>OOLU2539800510A</billNo>
+  </Head>
+  <body>
+    <flow>
+      <entryTime/>
+      <stepName>空箱出门</stepName>
+      <remark>该提单下共有0个箱子空箱出门</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-10-28 19:46:00</entryTime>
+      <stepName>重箱进港</stepName>
+      <remark>该提单下共有1个箱子重箱进港</remark>
+      <ctnNo>OOLU8778691</ctnNo>
+    </flow>
+    <flow>
+      <entryTime>2013-10-29 09:10:02</entryTime>
+      <stepName>预配发送</stepName>
+      <remark>船名:OOCLYOKOHAMA，航次:067S</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-05 14:54:44</entryTime>
+      <stepName>报关状态</stepName>
+      <remark>报关单号:310420130549145513，最新流转状态:</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>海关查验</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-03 08:58:00</entryTime>
+      <stepName>重箱装船</stepName>
+      <remark>该提单下共有1个箱子重箱装船</remark>
+      <ctnNo>OOLU8778691</ctnNo>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>离泊</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-04 11:17:53</entryTime>
+      <stepName>舱单发送</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+  </body>
+</Message>
+
+
+

@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://webservice.novaone.com/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="CommonInvokeServiceImpl" targetNamespace="http://webservice.novaone.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://webservice.novaone.com/">
+      <xsd:element name="suppliersellcheck" type="tns:suppliersellcheck" />
+      <xsd:complexType name="suppliersellcheck">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="sd" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="suppliersellcheckResponse" type="tns:suppliersellcheckResponse" />
+      <xsd:complexType name="suppliersellcheckResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="takeitem" type="tns:takeitem" />
+      <xsd:complexType name="takeitem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="takeitemResponse" type="tns:takeitemResponse" />
+      <xsd:complexType name="takeitemResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="airdelivery" type="tns:airdelivery" />
+      <xsd:complexType name="airdelivery">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="airdeliveryResponse" type="tns:airdeliveryResponse" />
+      <xsd:complexType name="airdeliveryResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="business" type="tns:business" />
+      <xsd:complexType name="business">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="businessResponse" type="tns:businessResponse" />
+      <xsd:complexType name="businessResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="dometic" type="tns:dometic" />
+      <xsd:complexType name="dometic">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="sd" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="dometicResponse" type="tns:dometicResponse" />
+      <xsd:complexType name="dometicResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="cargoitem" type="tns:cargoitem" />
+      <xsd:complexType name="cargoitem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="cargoitemResponse" type="tns:cargoitemResponse" />
+      <xsd:complexType name="cargoitemResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="suppliersell" type="tns:suppliersell" />
+      <xsd:complexType name="suppliersell">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="suppliersellResponse" type="tns:suppliersellResponse" />
+      <xsd:complexType name="suppliersellResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="huodai" type="tns:huodai" />
+      <xsd:complexType name="huodai">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="huodaiResponse" type="tns:huodaiResponse" />
+      <xsd:complexType name="huodaiResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="err" type="tns:err" />
+      <xsd:complexType name="err">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="errResponse" type="tns:errResponse" />
+      <xsd:complexType name="errResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="domestictakegoods" type="tns:domestictakegoods" />
+      <xsd:complexType name="domestictakegoods">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="domestictakegoodsResponse" type="tns:domestictakegoodsResponse" />
+      <xsd:complexType name="domestictakegoodsResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="returnbox" type="tns:returnbox" />
+      <xsd:complexType name="returnbox">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="returnboxResponse" type="tns:returnboxResponse" />
+      <xsd:complexType name="returnboxResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importfee" type="tns:importfee" />
+      <xsd:complexType name="importfee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="importfeeResponse" type="tns:importfeeResponse" />
+      <xsd:complexType name="importfeeResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="sync" type="tns:sync" />
+      <xsd:complexType name="sync">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="duserText" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="syncResponse" type="tns:syncResponse" />
+      <xsd:complexType name="syncResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="internal" type="tns:internal" />
+      <xsd:complexType name="internal">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="sd" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="internalResponse" type="tns:internalResponse" />
+      <xsd:complexType name="internalResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="deletesuppliersell" type="tns:deletesuppliersell" />
+      <xsd:complexType name="deletesuppliersell">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="deletesuppliersellResponse" type="tns:deletesuppliersellResponse" />
+      <xsd:complexType name="deletesuppliersellResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="airdeliveryitem" type="tns:airdeliveryitem" />
+      <xsd:complexType name="airdeliveryitem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="airdeliveryitemResponse" type="tns:airdeliveryitemResponse" />
+      <xsd:complexType name="airdeliveryitemResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="guoneifee" type="tns:guoneifee" />
+      <xsd:complexType name="guoneifee">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="guoneifeeResponse" type="tns:guoneifeeResponse" />
+      <xsd:complexType name="guoneifeeResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="cargo" type="tns:cargo" />
+      <xsd:complexType name="cargo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="cargoResponse" type="tns:cargoResponse" />
+      <xsd:complexType name="cargoResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="logicitem" type="tns:logicitem" />
+      <xsd:complexType name="logicitem">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="logicitemResponse" type="tns:logicitemResponse" />
+      <xsd:complexType name="logicitemResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="intermoney" type="tns:intermoney" />
+      <xsd:complexType name="intermoney">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="intermoneyResponse" type="tns:intermoneyResponse" />
+      <xsd:complexType name="intermoneyResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="container" type="tns:container" />
+      <xsd:complexType name="container">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="xml" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="containerResponse" type="tns:containerResponse" />
+      <xsd:complexType name="containerResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="return" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="guoneifee">
+    <wsdl:part name="parameters" element="tns:guoneifee" />
+  </wsdl:message>
+  <wsdl:message name="cargoResponse">
+    <wsdl:part name="parameters" element="tns:cargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="takeitemResponse">
+    <wsdl:part name="parameters" element="tns:takeitemResponse" />
+  </wsdl:message>
+  <wsdl:message name="containerResponse">
+    <wsdl:part name="parameters" element="tns:containerResponse" />
+  </wsdl:message>
+  <wsdl:message name="domestictakegoodsResponse">
+    <wsdl:part name="parameters" element="tns:domestictakegoodsResponse" />
+  </wsdl:message>
+  <wsdl:message name="returnbox">
+    <wsdl:part name="parameters" element="tns:returnbox" />
+  </wsdl:message>
+  <wsdl:message name="importfeeResponse">
+    <wsdl:part name="parameters" element="tns:importfeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="huodai">
+    <wsdl:part name="parameters" element="tns:huodai" />
+  </wsdl:message>
+  <wsdl:message name="deletesuppliersell">
+    <wsdl:part name="parameters" element="tns:deletesuppliersell" />
+  </wsdl:message>
+  <wsdl:message name="container">
+    <wsdl:part name="parameters" element="tns:container" />
+  </wsdl:message>
+  <wsdl:message name="logicitem">
+    <wsdl:part name="parameters" element="tns:logicitem" />
+  </wsdl:message>
+  <wsdl:message name="intermoneyResponse">
+    <wsdl:part name="parameters" element="tns:intermoneyResponse" />
+  </wsdl:message>
+  <wsdl:message name="suppliersell">
+    <wsdl:part name="parameters" element="tns:suppliersell" />
+  </wsdl:message>
+  <wsdl:message name="huodaiResponse">
+    <wsdl:part name="parameters" element="tns:huodaiResponse" />
+  </wsdl:message>
+  <wsdl:message name="dometicResponse">
+    <wsdl:part name="parameters" element="tns:dometicResponse" />
+  </wsdl:message>
+  <wsdl:message name="airdeliveryResponse">
+    <wsdl:part name="parameters" element="tns:airdeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="domestictakegoods">
+    <wsdl:part name="parameters" element="tns:domestictakegoods" />
+  </wsdl:message>
+  <wsdl:message name="err">
+    <wsdl:part name="parameters" element="tns:err" />
+  </wsdl:message>
+  <wsdl:message name="importfee">
+    <wsdl:part name="parameters" element="tns:importfee" />
+  </wsdl:message>
+  <wsdl:message name="takeitem">
+    <wsdl:part name="parameters" element="tns:takeitem" />
+  </wsdl:message>
+  <wsdl:message name="returnboxResponse">
+    <wsdl:part name="parameters" element="tns:returnboxResponse" />
+  </wsdl:message>
+  <wsdl:message name="airdeliveryitem">
+    <wsdl:part name="parameters" element="tns:airdeliveryitem" />
+  </wsdl:message>
+  <wsdl:message name="syncResponse">
+    <wsdl:part name="parameters" element="tns:syncResponse" />
+  </wsdl:message>
+  <wsdl:message name="internalResponse">
+    <wsdl:part name="parameters" element="tns:internalResponse" />
+  </wsdl:message>
+  <wsdl:message name="business">
+    <wsdl:part name="parameters" element="tns:business" />
+  </wsdl:message>
+  <wsdl:message name="intermoney">
+    <wsdl:part name="parameters" element="tns:intermoney" />
+  </wsdl:message>
+  <wsdl:message name="cargo">
+    <wsdl:part name="parameters" element="tns:cargo" />
+  </wsdl:message>
+  <wsdl:message name="deletesuppliersellResponse">
+    <wsdl:part name="parameters" element="tns:deletesuppliersellResponse" />
+  </wsdl:message>
+  <wsdl:message name="suppliersellResponse">
+    <wsdl:part name="parameters" element="tns:suppliersellResponse" />
+  </wsdl:message>
+  <wsdl:message name="suppliersellcheck">
+    <wsdl:part name="parameters" element="tns:suppliersellcheck" />
+  </wsdl:message>
+  <wsdl:message name="sync">
+    <wsdl:part name="parameters" element="tns:sync" />
+  </wsdl:message>
+  <wsdl:message name="airdelivery">
+    <wsdl:part name="parameters" element="tns:airdelivery" />
+  </wsdl:message>
+  <wsdl:message name="errResponse">
+    <wsdl:part name="parameters" element="tns:errResponse" />
+  </wsdl:message>
+  <wsdl:message name="cargoitemResponse">
+    <wsdl:part name="parameters" element="tns:cargoitemResponse" />
+  </wsdl:message>
+  <wsdl:message name="airdeliveryitemResponse">
+    <wsdl:part name="parameters" element="tns:airdeliveryitemResponse" />
+  </wsdl:message>
+  <wsdl:message name="suppliersellcheckResponse">
+    <wsdl:part name="parameters" element="tns:suppliersellcheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="internal">
+    <wsdl:part name="parameters" element="tns:internal" />
+  </wsdl:message>
+  <wsdl:message name="cargoitem">
+    <wsdl:part name="parameters" element="tns:cargoitem" />
+  </wsdl:message>
+  <wsdl:message name="logicitemResponse">
+    <wsdl:part name="parameters" element="tns:logicitemResponse" />
+  </wsdl:message>
+  <wsdl:message name="businessResponse">
+    <wsdl:part name="parameters" element="tns:businessResponse" />
+  </wsdl:message>
+  <wsdl:message name="guoneifeeResponse">
+    <wsdl:part name="parameters" element="tns:guoneifeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="dometic">
+    <wsdl:part name="parameters" element="tns:dometic" />
+  </wsdl:message>
+  <wsdl:portType name="CommonInvokeServiceImplPortType">
+    <wsdl:operation name="suppliersellcheck">
+      <wsdl:input name="suppliersellcheck" message="tns:suppliersellcheck" />
+      <wsdl:output name="suppliersellcheckResponse" message="tns:suppliersellcheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="takeitem">
+      <wsdl:input name="takeitem" message="tns:takeitem" />
+      <wsdl:output name="takeitemResponse" message="tns:takeitemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="airdelivery">
+      <wsdl:input name="airdelivery" message="tns:airdelivery" />
+      <wsdl:output name="airdeliveryResponse" message="tns:airdeliveryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="business">
+      <wsdl:input name="business" message="tns:business" />
+      <wsdl:output name="businessResponse" message="tns:businessResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="dometic">
+      <wsdl:input name="dometic" message="tns:dometic" />
+      <wsdl:output name="dometicResponse" message="tns:dometicResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoitem">
+      <wsdl:input name="cargoitem" message="tns:cargoitem" />
+      <wsdl:output name="cargoitemResponse" message="tns:cargoitemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="suppliersell">
+      <wsdl:input name="suppliersell" message="tns:suppliersell" />
+      <wsdl:output name="suppliersellResponse" message="tns:suppliersellResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="huodai">
+      <wsdl:input name="huodai" message="tns:huodai" />
+      <wsdl:output name="huodaiResponse" message="tns:huodaiResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="err">
+      <wsdl:input name="err" message="tns:err" />
+      <wsdl:output name="errResponse" message="tns:errResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="domestictakegoods">
+      <wsdl:input name="domestictakegoods" message="tns:domestictakegoods" />
+      <wsdl:output name="domestictakegoodsResponse" message="tns:domestictakegoodsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="returnbox">
+      <wsdl:input name="returnbox" message="tns:returnbox" />
+      <wsdl:output name="returnboxResponse" message="tns:returnboxResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="importfee">
+      <wsdl:input name="importfee" message="tns:importfee" />
+      <wsdl:output name="importfeeResponse" message="tns:importfeeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="sync">
+      <wsdl:input name="sync" message="tns:sync" />
+      <wsdl:output name="syncResponse" message="tns:syncResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="internal">
+      <wsdl:input name="internal" message="tns:internal" />
+      <wsdl:output name="internalResponse" message="tns:internalResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="deletesuppliersell">
+      <wsdl:input name="deletesuppliersell" message="tns:deletesuppliersell" />
+      <wsdl:output name="deletesuppliersellResponse" message="tns:deletesuppliersellResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="airdeliveryitem">
+      <wsdl:input name="airdeliveryitem" message="tns:airdeliveryitem" />
+      <wsdl:output name="airdeliveryitemResponse" message="tns:airdeliveryitemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="guoneifee">
+      <wsdl:input name="guoneifee" message="tns:guoneifee" />
+      <wsdl:output name="guoneifeeResponse" message="tns:guoneifeeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cargo">
+      <wsdl:input name="cargo" message="tns:cargo" />
+      <wsdl:output name="cargoResponse" message="tns:cargoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="logicitem">
+      <wsdl:input name="logicitem" message="tns:logicitem" />
+      <wsdl:output name="logicitemResponse" message="tns:logicitemResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="intermoney">
+      <wsdl:input name="intermoney" message="tns:intermoney" />
+      <wsdl:output name="intermoneyResponse" message="tns:intermoneyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="container">
+      <wsdl:input name="container" message="tns:container" />
+      <wsdl:output name="containerResponse" message="tns:containerResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CommonInvokeServiceImplSoapBinding" type="tns:CommonInvokeServiceImplPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="suppliersellcheck">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="suppliersellcheck">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="suppliersellcheckResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="airdelivery">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="airdelivery">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="airdeliveryResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="takeitem">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="takeitem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="takeitemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="business">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="business">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="businessResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoitem">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cargoitem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cargoitemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dometic">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="dometic">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="dometicResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="err">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="err">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="errResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="huodai">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="huodai">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="huodaiResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="suppliersell">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="suppliersell">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="suppliersellResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="domestictakegoods">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="domestictakegoods">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="domestictakegoodsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="returnbox">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="returnbox">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="returnboxResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="importfee">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="importfee">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="importfeeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sync">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="sync">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="syncResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="internal">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="internal">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="internalResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="airdeliveryitem">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="airdeliveryitem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="airdeliveryitemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletesuppliersell">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="deletesuppliersell">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deletesuppliersellResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guoneifee">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="guoneifee">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="guoneifeeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="cargo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cargoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logicitem">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="logicitem">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="logicitemResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="container">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="container">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="containerResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="intermoney">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="intermoney">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="intermoneyResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CommonInvokeServiceImpl">
+    <wsdl:port name="CommonInvokeServiceImplPort" binding="tns:CommonInvokeServiceImplSoapBinding">
+      <soap:address location="http://www.freshport.com:8088/foreignprocurement/services/sync" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

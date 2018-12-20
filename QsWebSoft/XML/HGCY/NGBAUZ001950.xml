@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<error_response>
+  <errCode>02</errCode>
+  <errMsg>时间不在服务器范围内，请检查时间是否有误</errMsg>
+</error_response>
+
+

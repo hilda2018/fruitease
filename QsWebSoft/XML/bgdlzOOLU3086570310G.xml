@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <ResCode>1</ResCode>
+    <ResMsg>成功</ResMsg>
+  </Header>
+  <Body>
+    <CustomsFlow>
+      <BillNo>OOLU3086570310G</BillNo>
+      <EntryId>310120130517536852</EntryId>
+      <StepId>00000000</StepId>
+      <ProcResult>电子申报</ProcResult>
+      <OperTime>2013-12-07 09:57:00</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>OOLU3086570310G</BillNo>
+      <EntryId>310120130517536852</EntryId>
+      <StepId>10000000</StepId>
+      <ProcResult>电子审单</ProcResult>
+      <OperTime>2013-12-07 09:57:15</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>OOLU3086570310G</BillNo>
+      <EntryId>310120130517536852</EntryId>
+      <StepId>40000000</StepId>
+      <ProcResult>计税处理</ProcResult>
+      <OperTime>2013-12-07 09:57:15</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>OOLU3086570310G</BillNo>
+      <EntryId>310120130517536852</EntryId>
+      <StepId>30000000</StepId>
+      <ProcResult>现场接单</ProcResult>
+      <OperTime>2013-12-07 09:57:18</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>OOLU3086570310G</BillNo>
+      <EntryId>310120130517536852</EntryId>
+      <StepId>70000000</StepId>
+      <ProcResult>单证放行</ProcResult>
+      <OperTime>2013-12-07 09:57:24</OperTime>
+    </CustomsFlow>
+  </Body>
+</Message>
+
+
+

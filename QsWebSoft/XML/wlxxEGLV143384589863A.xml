@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Head>
+    <billNo>EGLV143384589863A</billNo>
+  </Head>
+  <body>
+    <flow>
+      <entryTime/>
+      <stepName>空箱出门</stepName>
+      <remark>该提单下共有0个箱子空箱出门</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-10-30 12:22:00</entryTime>
+      <stepName>重箱进港</stepName>
+      <remark>该提单下共有1个箱子重箱进港</remark>
+      <ctnNo>TEMU6375653</ctnNo>
+    </flow>
+    <flow>
+      <entryTime>2013-10-29 16:02:05</entryTime>
+      <stepName>预配发送</stepName>
+      <remark>船名:EVERLASTING，航次:0315W</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-05 16:16:34</entryTime>
+      <stepName>报关状态</stepName>
+      <remark>报关单号:310120130517814077，最新流转状态:</remark>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>海关查验</stepName>
+      <remark>船名:EVERLASTING，航次:0315W，码头:BLCT3</remark>
+      <ctnNo>TEMU6375653</ctnNo>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>重箱装船</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime/>
+      <stepName>离泊</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+    <flow>
+      <entryTime>2013-11-04 09:48:03</entryTime>
+      <stepName>舱单发送</stepName>
+      <remark/>
+      <ctnNo/>
+    </flow>
+  </body>
+</Message>
+
+
+

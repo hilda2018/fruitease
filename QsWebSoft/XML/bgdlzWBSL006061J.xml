@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <ResCode>1</ResCode>
+    <ResMsg>成功</ResMsg>
+  </Header>
+  <Body>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>00000000</StepId>
+      <ProcResult>电子申报</ProcResult>
+      <OperTime>2013-10-30 13:00:00</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>10000000</StepId>
+      <ProcResult>电子审单</ProcResult>
+      <OperTime>2013-10-30 13:00:22</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>40000000</StepId>
+      <ProcResult>计税处理</ProcResult>
+      <OperTime>2013-10-30 13:00:22</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>30000000</StepId>
+      <ProcResult>现场接单</ProcResult>
+      <OperTime>2013-10-30 13:23:56</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>70000000</StepId>
+      <ProcResult>单证放行</ProcResult>
+      <OperTime>2013-10-30 13:23:56</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>80000000</StepId>
+      <ProcResult>货物放行（结关）</ProcResult>
+      <OperTime>2013-11-06 09:26:20</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>WBSL006061J</BillNo>
+      <EntryId>310420130549145162</EntryId>
+      <StepId>A0000000</StepId>
+      <ProcResult>理单处理</ProcResult>
+      <OperTime>2013-11-06 09:26:20</OperTime>
+    </CustomsFlow>
+  </Body>
+</Message>
+
+
+

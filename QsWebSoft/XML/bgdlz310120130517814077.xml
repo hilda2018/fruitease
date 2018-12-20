@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <ResCode>1</ResCode>
+    <ResMsg>成功</ResMsg>
+  </Header>
+  <Body>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>00000000</StepId>
+      <ProcResult>电子申报</ProcResult>
+      <OperTime>2013-10-30 14:33:18</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>10000000</StepId>
+      <ProcResult>电子审单</ProcResult>
+      <OperTime>2013-10-30 14:33:28</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>40000000</StepId>
+      <ProcResult>计税处理</ProcResult>
+      <OperTime>2013-10-30 14:33:28</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>30000000</StepId>
+      <ProcResult>现场接单</ProcResult>
+      <OperTime>2013-10-30 14:35:35</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>53000000</StepId>
+      <ProcResult>其他环节</ProcResult>
+      <OperTime>2013-10-30 14:39:56</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>53000000</StepId>
+      <ProcResult>其他环节</ProcResult>
+      <OperTime>2013-10-31 10:15:22</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>52000000</StepId>
+      <ProcResult>查验作业单打印</ProcResult>
+      <OperTime>2013-10-31 10:15:24</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>50000000</StepId>
+      <ProcResult>查验管理</ProcResult>
+      <OperTime>2013-10-31 14:59:00</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>53000000</StepId>
+      <ProcResult>其他环节</ProcResult>
+      <OperTime>2013-10-31 14:59:00</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>70000000</StepId>
+      <ProcResult>单证放行</ProcResult>
+      <OperTime>2013-10-31 14:59:05</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>80000000</StepId>
+      <ProcResult>货物放行（结关）</ProcResult>
+      <OperTime>2013-11-05 16:16:34</OperTime>
+    </CustomsFlow>
+    <CustomsFlow>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <StepId>A0000000</StepId>
+      <ProcResult>理单处理</ProcResult>
+      <OperTime>2013-11-05 16:16:34</OperTime>
+    </CustomsFlow>
+  </Body>
+</Message>
+
+
+

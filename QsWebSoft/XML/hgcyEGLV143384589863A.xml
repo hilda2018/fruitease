@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Header>
+    <ResCode>1</ResCode>
+    <ResMsg>成功</ResMsg>
+  </Header>
+  <Body>
+    <Data>
+      <BillNo>EGLV143384589863A</BillNo>
+      <EntryId>310120130517814077</EntryId>
+      <ApprNo/>
+      <CtnNo>TEMU6375653</CtnNo>
+      <CtnType>45</CtnType>
+      <VesselName>EVERLASTING</VesselName>
+      <Voyage>0315W</Voyage>
+      <DockName>BLCT3</DockName>
+      <MoveTYpe>查验</MoveTYpe>
+      <H986/>
+      <OperTime>2013-10-30 14:39:32</OperTime>
+    </Data>
+  </Body>
+</Message>
+
+
+

@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="window.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="window.OnClient_PostOpen" xml:space="preserve">
+    <value>this.PostOpen</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_fxsc_Clicked</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_fxsc_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_fxsc_GetFocus</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_fxsc.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_thsc_Clicked</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_thsc_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_thsc_GetFocus</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_thsc.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_wxqk_Clicked</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_wxqk_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_wxqk_GetFocus</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_wxqk.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_bqqk_Clicked</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_bqqk_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_bqqk_GetFocus</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_bqqk.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_wdqk_Clicked</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_wdqk_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_wdqk_GetFocus</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_wdqk.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_gqdjyd_Clicked</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_gqdjyd_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_gqdjyd_GetFocus</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_gqdjyd.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_fyqk_Clicked</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_fyqk_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_fyqk_GetFocus</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_fyqk.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_Clicked" xml:space="preserve">
+    <value>this.dw_qtwt_Clicked</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_DoubleClicked" xml:space="preserve">
+    <value>this.dw_qtwt_DoubleClicked</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_DwnMouseMove" xml:space="preserve">
+    <value>this.dw_DwnMouseMove</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_GetFocus" xml:space="preserve">
+    <value>this.dw_qtwt_GetFocus</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_LButtonDown" xml:space="preserve">
+    <value>this.dw_LButtonDown</value>
+  </metadata>
+  <metadata name="dw_list_qtwt.OnClient_RButtonDown" xml:space="preserve">
+    <value>this.RbuttonDown</value>
+  </metadata>
+  <metadata name="btn_close.OnClient_Clicked" xml:space="preserve">
+    <value>this.Exit</value>
+  </metadata>
+  <metadata name="btn_read.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="sle_ywbh.OnClient_EditChanged" xml:space="preserve">
+    <value>this.sle_EditChanged</value>
+  </metadata>
+  <metadata name="ddlb_jdr.OnClient_SelectionChanged" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="btn_BeiZhu.OnClient_Clicked" xml:space="preserve">
+    <value>this.BeiZhu</value>
+  </metadata>
+  <metadata name="单列过滤ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_fxsr</value>
+  </metadata>
+  <metadata name="取消过滤ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_fxsr</value>
+  </metadata>
+  <metadata name="刷新ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_fxsr</value>
+  </metadata>
+  <metadata name="选择复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_fxsr</value>
+  </metadata>
+  <metadata name="整列复制ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_fxsr</value>
+  </metadata>
+  <metadata name="恢复默认列ToolStripMenuItem.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_fxsr</value>
+  </metadata>
+  <metadata name="m_2.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_fxsc</value>
+  </metadata>
+  <metadata name="m_4.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_fxsc</value>
+  </metadata>
+  <metadata name="m_8.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_10.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_fxsc</value>
+  </metadata>
+  <metadata name="m_11.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_fxsc</value>
+  </metadata>
+  <metadata name="m_12.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_fxsc</value>
+  </metadata>
+  <metadata name="m_7.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_fxsc</value>
+  </metadata>
+  <metadata name="m_13.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_thsc</value>
+  </metadata>
+  <metadata name="m_15.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_thsc</value>
+  </metadata>
+  <metadata name="m_19.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_21.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_thsc</value>
+  </metadata>
+  <metadata name="m_22.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_thsc</value>
+  </metadata>
+  <metadata name="m_23.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_thsc</value>
+  </metadata>
+  <metadata name="m_18.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_thsc</value>
+  </metadata>
+  <metadata name="m_24.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_wxqk</value>
+  </metadata>
+  <metadata name="m_26.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_wxqk</value>
+  </metadata>
+  <metadata name="m_30.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_32.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_wxqk</value>
+  </metadata>
+  <metadata name="m_33.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_wxqk</value>
+  </metadata>
+  <metadata name="m_34.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_wxqk</value>
+  </metadata>
+  <metadata name="m_29.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_wxqk</value>
+  </metadata>
+  <metadata name="m_35.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_bqqk</value>
+  </metadata>
+  <metadata name="m_37.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_bqqk</value>
+  </metadata>
+  <metadata name="m_41.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_43.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_bqqk</value>
+  </metadata>
+  <metadata name="m_44.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_bqqk</value>
+  </metadata>
+  <metadata name="m_45.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_bqqk</value>
+  </metadata>
+  <metadata name="m_40.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_bqqk</value>
+  </metadata>
+  <metadata name="m_46.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_wdqk</value>
+  </metadata>
+  <metadata name="m_48.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_wdqk</value>
+  </metadata>
+  <metadata name="m_52.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_54.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_wdqk</value>
+  </metadata>
+  <metadata name="m_55.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_wdqk</value>
+  </metadata>
+  <metadata name="m_56.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_wdqk</value>
+  </metadata>
+  <metadata name="m_51.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_wdqk</value>
+  </metadata>
+  <metadata name="m_57.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_gqdjyd</value>
+  </metadata>
+  <metadata name="m_59.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_gqdjyd</value>
+  </metadata>
+  <metadata name="m_63.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_65.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_gqdjyd</value>
+  </metadata>
+  <metadata name="m_66.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_gqdjyd</value>
+  </metadata>
+  <metadata name="m_67.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_gqdjyd</value>
+  </metadata>
+  <metadata name="m_62.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_gqdjyd</value>
+  </metadata>
+  <metadata name="m_68.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_kgsr</value>
+  </metadata>
+  <metadata name="m_70.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_kgsr</value>
+  </metadata>
+  <metadata name="m_74.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_76.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_kgsr</value>
+  </metadata>
+  <metadata name="m_77.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_kgsr</value>
+  </metadata>
+  <metadata name="m_78.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_kgsr</value>
+  </metadata>
+  <metadata name="m_73.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_kgsr</value>
+  </metadata>
+  <metadata name="m_79.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_cgqsj</value>
+  </metadata>
+  <metadata name="m_81.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_cgqsj</value>
+  </metadata>
+  <metadata name="m_84.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_86.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_cgqsj</value>
+  </metadata>
+  <metadata name="m_87.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_cgqsj</value>
+  </metadata>
+  <metadata name="m_88.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_cgqsj</value>
+  </metadata>
+  <metadata name="m_89.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_cgqsj</value>
+  </metadata>
+  <metadata name="m_90.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_djydsr</value>
+  </metadata>
+  <metadata name="m_92.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_djydsr</value>
+  </metadata>
+  <metadata name="m_95.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_97.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_djydsr</value>
+  </metadata>
+  <metadata name="m_98.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_djydsr</value>
+  </metadata>
+  <metadata name="m_99.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_djydsr</value>
+  </metadata>
+  <metadata name="m_100.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_djydsr</value>
+  </metadata>
+  <metadata name="m_101.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_tgjysr</value>
+  </metadata>
+  <metadata name="m_103.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_tgjysr</value>
+  </metadata>
+  <metadata name="m_106.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_108.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_tgjysr</value>
+  </metadata>
+  <metadata name="m_109.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_tgjysr</value>
+  </metadata>
+  <metadata name="m_110.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_tgjysr</value>
+  </metadata>
+  <metadata name="m_111.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_tgjysr</value>
+  </metadata>
+  <metadata name="m_112.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_qdlr</value>
+  </metadata>
+  <metadata name="m_114.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_qdlr</value>
+  </metadata>
+  <metadata name="m_117.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_119.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_qdlr</value>
+  </metadata>
+  <metadata name="m_120.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_qdlr</value>
+  </metadata>
+  <metadata name="m_121.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_qdlr</value>
+  </metadata>
+  <metadata name="m_122.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_qdlr</value>
+  </metadata>
+  <metadata name="m_123.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_kgsjsl</value>
+  </metadata>
+  <metadata name="m_125.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_kgsjsl</value>
+  </metadata>
+  <metadata name="m_128.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_130.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_kgsjsl</value>
+  </metadata>
+  <metadata name="m_131.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_kgsjsl</value>
+  </metadata>
+  <metadata name="m_132.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_kgsjsl</value>
+  </metadata>
+  <metadata name="m_133.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_kgsjsl</value>
+  </metadata>
+  <metadata name="m_134.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_kghlr</value>
+  </metadata>
+  <metadata name="m_136.OnClient_Clicked" xml:space="preserve">
+    <value>this.Filter_Cancle_kghlr</value>
+  </metadata>
+  <metadata name="m_139.OnClient_Clicked" xml:space="preserve">
+    <value>this.Retrieve</value>
+  </metadata>
+  <metadata name="m_141.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyCol_kghlr</value>
+  </metadata>
+  <metadata name="m_142.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopySelect_kghlr</value>
+  </metadata>
+  <metadata name="m_143.OnClient_Clicked" xml:space="preserve">
+    <value>this.CopyL_kghlr</value>
+  </metadata>
+  <metadata name="m_144.OnClient_Clicked" xml:space="preserve">
+    <value>this.Recover_kghlr</value>
+  </metadata>
+</root>

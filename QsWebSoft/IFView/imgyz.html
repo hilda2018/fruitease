@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script>
+    	//获取文件路径
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+            	return unescape(r[2]); 
+            }
+            return null;
+        }
+        
+    	//初始化
+        function init() {
+            var url = "mergeImage.aspx?imgpath=" + getQueryString("imgpath")
+            $("#img1").attr("src",url);
+            img1.onload =function() {
+                var w=  $("#img1").width();
+                var h = $("#img1").height();
+                if(w>h){
+                	$("#img1").css("width", "1050px");
+                	addCSS("@media print {\n\
+                            @page {\n\
+                                size: landscape;\n\
+                                margin: 0;\n\
+                                padding: 0;\n\
+                            }\n\
+                            .noprint {\n\
+                                display: none;\n\
+                            }\n\
+                        }")
+                }else{
+                	$("#img1").css("height", "1100px");
+                	addCSS("@media print {\n\
+                            @page {\n\
+                                size: A4;\n\
+                                margin: 0;\n\
+                                padding: 0;\n\
+                            }\n\
+                            .noprint {\n\
+                                display: none;\n\
+                            }\n\
+                        }")
+                }
+            }
+        }
+        
+        function addCSS(cssText){
+            var style = document.createElement('style'),  //创建一个style元素
+                head = document.head || document.getElementsByTagName('head')[0]; //获取head元素
+            style.type = 'text/css'; //这里必须显示设置style元素的type属性为text/css，否则在ie中不起作用
+            if(style.styleSheet){ //IE
+                var func = function(){
+                    try{ //防止IE中stylesheet数量超过限制而发生错误
+                        style.styleSheet.cssText = cssText;
+                    }catch(e){
+
+                    }
+                }
+                //如果当前styleSheet还不能用，则放到异步中则行
+                if(style.styleSheet.disabled){
+                    setTimeout(func,10);
+                }else{
+                    func();
+                }
+            }else{ //w3c
+                //w3c浏览器中只要创建文本节点插入到style元素中就行了
+                var textNode = document.createTextNode(cssText);
+                style.appendChild(textNode);
+            }
+            head.appendChild(style); //把创建的style元素插入到head中    
+        }
+        
+        $(function () {
+        	init();
+        })
+
+        function printimg() {
+            window.print();
+            //wb.execwb(6, 1)
+        }
+
+    </script>
+</head>
+<body >
+    <div class="noprint">
+        <input type="button" id="btn1" value="打印"  onclick="printimg()" />
+    </div>
+    <img id="img1" />
+</body>
+</html>

@@ -1,0 +1,39 @@
+.nav-tabs {
+    background: #d0d8de;
+    border-color: transparent;
+    border-radius: 3px 3px 0 0;
+    background-clip: padding-box;
+}
+
+    .nav-tabs > li > a {
+        border-radius: 0;
+        background-clip: padding-box;
+        padding-left: 23px;
+        padding-right: 23px;
+        font-size: 1.125em;
+        font-weight: 700;
+        outline: none;
+        color: #555;
+        margin-right: 3px;
+    }
+
+        .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+            border-color: transparent;
+            border-radius: 3px 3px 0 0;
+            background-clip: padding-box;
+            background: #b8c1c7;
+            color: #555;
+        }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        border-color: transparent;
+    }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+            border-radius: 3px 3px 0 0;
+            background-clip: padding-box;
+        }
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    border-color: #e7ebee;
+}

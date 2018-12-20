@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html runat="server">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>水果通服务平台</title>
+    
+    <!-- 加载框架运行库 -->
+    <link rel="shortcut icon" href="FHome/images/favicon.ico">
+    <link href="FHome/lib/css/easyui.css" rel="stylesheet" type="text/css">
+    <link href="FHome/lib/css/icon.css" rel="stylesheet" type="text/css" rel="stylesheet" >
+    <link href="FHome/plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"  >
+    <link href="FHome/lib/css/insdep_theme_default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+
+<!--<textarea id="msg"  style="height: 100px; width: 100%;overflow: auto"  style="display: none"></textarea>-->
+		<div id="frame-all"  class="body">
+
+		    <div id="north"  >
+		        <div class="theme-navigate">
+               
+		            <div class="left">
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">工号:<span> <span id="workerCode"></span> </span></a>
+              
+		            </div>
+		            <div class="right">
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank"></a>
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">公司网站</a>
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">修改密码</a>
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">帮助文档</a>
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">联系我们</a>
+		                <a href="https://www.fruitease.com" class="easyui-linkbutton" target="_blank">退出登录</a>
+		            </div>
+		        </div>
+		    </div>
+
+			<!--开始左侧菜单-->
+			<div  id="west"  style="overflow: hidden;zoom:1; text-align: left;border-right: 1px solid #c3c3c3; " >
+	
+				<!--正常菜单-->
+				<div class="theme-left-normal"  id="leftNormal">
+
+					<!--theme-left-switch 如果不需要缩进按钮，删除该对象即可-->
+					<div class="left-control-switch theme-left-switch" style="text-align: left; text-indent: 16px; font-weight: bold;">菜单  </div>
+
+					<div class="easyui-layout" data-options="border:false,fit:true" id="westSon" >
+
+						<div data-options="region:'north',border:false"  class="north"  style="height:32px;border-bottom: 1px solid #bbb;overflow: hidden;zoom:1"  ></div>
+
+						<div data-options="region:'center',border:false"  id="westCenter" >
+
+							<div id="menuContainerId" class="easyui-accordion ncpMenuContainer"  data-options="border:false,fit:true">
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!--结束左侧菜单-->
+
+			<!-- 主题  链接不同页面 打开不同菜单 -->
+			<div      id="center"   >
+
+		
+			        <div class="easyui-tabs theme-tab-blue-block"   id="fruitEaseTabs" style="height: 600px;width: 100%;" data-options="tabPosition:'top',fit:true,tools:'#tab-tools'">
+			            
+			 
+			            <div title="首页" class="home-" data-options="iconCls:'icon-home',closable:false" style="padding:10px"> 首页 </div>
+
+			        </div>
+			        <div id="tab-tools">
+			            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" onclick="addPanel()"></a>
+			            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-remove'" onclick="removePanel()"></a>
+			        </div>
+			      
+                    
+
+
+			    </div>
+
+			
+
+			<!-- 页脚 版权信息   -->
+			<div id="footer" style="height:18px;">
+				<span >CopyRight&nbsp;2017&nbsp;&nbsp;freshport.com&nbsp;版权所有</span>
+			</div>
+
+		</div>
+        
+		<script type="text/javascript" src="FHome/lib/js/jqueryAndeasyuiAndjsonAndcommon.js"></script>
+		<script type="text/javascript" src="FHome/main.js"></script>	
+	</body>
+
+
+</html>

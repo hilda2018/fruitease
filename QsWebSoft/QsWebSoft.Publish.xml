@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://192.168.64.103:8088/qssoft" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="/QsWebSoft" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FTP" replaceMatchingFiles="False" userName="administrator" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAysIfvT8cLU6xd+Jhjknr2wAAAAACAAAAAAADZgAAqAAAABAAAAAnreqyKnykjqzxdQq13uLeAAAAAASAAACgAAAAEAAAAJq81hJG7lpvIHwxjpWVa8EQAAAAdLqnbPPgCHgm8f91lNiG3xQAAAAiaz2af0c+2dR0kvurAMVx4aA/3w==" SelectedForPublish="True">
+    <file relUrl="StripImages/Taxi.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="StripImages/Warning.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="ExtPB.Net/extpb.zip" publishTime="09/12/2013 08:46:04" />
+    <file relUrl="StripImages/Clock.png" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="Images/HeaderBackground.gif" publishTime="09/12/2013 08:45:45" />
+    <file relUrl="StripImages/Application.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/No-entry.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/Filter.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Home.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Last.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="StripImages/Update.png" publishTime="09/12/2013 08:45:41" />
+    <file relUrl="StripImages/Help.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Exit.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Dial.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Red tag.png" publishTime="09/12/2013 08:45:36" />
+    <file relUrl="Index.aspx" publishTime="09/24/2013 10:56:53" />
+    <file relUrl="StripImages/Folder.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/Pinion.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/How-to.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="Scripts/MyExtPB.js" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="StripImages/Sync.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="Service/Sys_Role.ashx" publishTime="09/25/2013 18:04:39" />
+    <file relUrl="bin/QsWebSoft.pdb" publishTime="09/27/2013 14:23:37" />
+    <file relUrl="StripImages/Close.png" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/First.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="Images/datagrid_title_bg.png" publishTime="09/12/2013 08:45:44" />
+    <file relUrl="Account/Web.config" publishTime="09/27/2013 13:54:13" />
+    <file relUrl="StripImages/Retort.png" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="StripImages/Wrench.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="Service/FileUpload.ashx" publishTime="09/25/2013 18:00:06" />
+    <file relUrl="Admin/W_Sys_Role_SetPermission.win.js" publishTime="09/12/2013 08:46:06" />
+    <file relUrl="FusionCharts/FCF_MSBar2D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Top.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="StripImages/Danger.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Beta3/ModalDialog.aspx" publishTime="09/24/2013 15:10:28" />
+    <file relUrl="Site.Master" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/CD.png" publishTime="09/12/2013 08:45:52" />
+    <file relUrl="StripImages/Remove.png" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="FusionCharts/MSColumn3D.swf" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Images/Top_bk.png" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="StripImages/Dollar.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Login.aspx" publishTime="09/24/2013 10:54:21" />
+    <file relUrl="StripImages/Info.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="Beta3/W_DwServiceTest.win.js" publishTime="09/12/2013 08:46:05" />
+    <file relUrl="StripImages/Go.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/Sound.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="StripImages/DataNavigator.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Service/Item.ashx" publishTime="09/25/2013 18:00:15" />
+    <file relUrl="StripImages/DataTable.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Beta3/W_ContextMenu.win.js" publishTime="09/12/2013 08:46:04" />
+    <file relUrl="StripImages/DataSource.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="ExtPB.config" publishTime="09/27/2013 13:32:58" />
+    <file relUrl="bin/BarcodeLib.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="FusionCharts/FCF_Candlestick.swf" publishTime="09/12/2013 08:45:52" />
+    <file relUrl="StripImages/Forward.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="FusionCharts/FusionChartsExportComponent.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Images/login11.gif" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="StripImages/Play-music.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/Flag.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/sproc_unchecked.bmp" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="StripImages/Delete2.png" publishTime="09/25/2013 16:49:22" />
+    <file relUrl="FusionCharts/Pie3D.swf" publishTime="09/12/2013 08:45:56" />
+    <file relUrl="StripImages/Question.png" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="StripImages/Linux.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="Admin/W_Sys_Role_List.win.js" publishTime="09/12/2013 08:46:06" />
+    <file relUrl="StripImages/Play.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="FusionCharts/FCF_Pie3D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/Refresh.png" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="StripImages/Turn off.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="Scripts/ExtPB_Net.js" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="FusionCharts/FCF_Pie2D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/Female.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Clipboard.png" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/First record.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Message.png" publishTime="09/12/2013 08:45:31" />
+    <file relUrl="StripImages/Component.png" publishTime="09/12/2013 08:45:24" />
+    <file relUrl="StripImages/Find.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Help book.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Eject.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Sad.png" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="StripImages/Last recor.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="StripImages/Terminate.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="Service/BarCode.ashx" publishTime="09/25/2013 17:59:37" />
+    <file relUrl="StripImages/Relation.bmp" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="FusionCharts/FCF_MSColumn2DLineDY.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Bad mark.png" publishTime="09/12/2013 08:45:50" />
+    <file relUrl="Service/DefFormula.ashx" publishTime="09/25/2013 17:59:58" />
+    <file relUrl="Images/mind06.gif" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="StripImages/Music.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="Styles/Site.css" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Target.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="bin/Newtonsoft.Json.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="FusionCharts/FCF_StackedColumn2D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/Next.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/Smile.png" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="Images/top_bg0aa5d8.jpg" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="FusionCharts/FusionCharts.HC.Charts.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="StripImages/Go forward.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/Medium rating.png" publishTime="09/12/2013 08:45:31" />
+    <file relUrl="FusionCharts/MSColumn3DLineDY.swf" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Scripts/jquery-1.6.min.js" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="Global.asax" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/DataGridView.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Compass.png" publishTime="09/12/2013 08:45:24" />
+    <file relUrl="StripImages/Database.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Account/Login.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Pie chart.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/Delete.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Service/Mxd.ashx" publishTime="09/25/2013 18:04:39" />
+    <file relUrl="StripImages/Calendar.png" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="StripImages/Paste.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/Disaster.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Problem.png" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="FusionCharts/FCF_MSColumn3DLineDY.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="FusionCharts/FCF_Funnel.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="Web.config" publishTime="09/27/2013 13:54:13" />
+    <file relUrl="StripImages/Hungup.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Stop sign.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="Beta3/TV_Category.js" publishTime="09/12/2013 08:46:04" />
+    <file relUrl="LoadWindow.ashx" publishTime="09/24/2013 10:57:08" />
+    <file relUrl="StripImages/Upload.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="Admin/W_Sys_Role_Edit.win.js" publishTime="09/12/2013 08:46:05" />
+    <file relUrl="ExtPB.Net/msxml6.zip" publishTime="09/12/2013 08:45:58" />
+    <file relUrl="ExtPB.Net/Demo.zip" publishTime="09/12/2013 08:45:56" />
+    <file relUrl="StripImages/Raise.png" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="StripImages/Up-down.png" publishTime="09/12/2013 08:45:41" />
+    <file relUrl="FusionCharts/FCF_StackedColumn3D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/Favourites.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Calculator.png" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="StripImages/Search.png" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="StripImages/3d bar chart.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/Copy.png" publishTime="09/12/2013 08:45:24" />
+    <file relUrl="FusionCharts/FCF_StackedArea2D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/View.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="Beta3/W_TreeView.win.js" publishTime="09/12/2013 08:46:07" />
+    <file relUrl="Library/TXSoft.ExtPB.dll" publishTime="07/30/2013 16:51:52" />
+    <file relUrl="Admin/W_Sys_Role_SetUsers.win.js" publishTime="09/12/2013 08:46:07" />
+    <file relUrl="StripImages/Save.png" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="StripImages/Mail.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="W_Index.win.js" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="FusionCharts/FCF_Doughnut2D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Text.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="StripImages/List.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="FusionCharts/firebug-lite.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="FusionCharts/FusionCharts.HC.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="StripImages/Back.png" publishTime="09/12/2013 08:45:50" />
+    <file relUrl="StripImages/Shopping cart.png" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="Images/login06.gif" publishTime="09/12/2013 08:45:45" />
+    <file relUrl="StripImages/Free bsd.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/Anchor.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/Unlock.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="Images/login07.gif" publishTime="09/12/2013 08:45:45" />
+    <file relUrl="ExtPB.Net/PBVM.zip" publishTime="09/12/2013 08:46:24" />
+    <file relUrl="Beta3/GetData.ashx" publishTime="09/24/2013 15:10:19" />
+    <file relUrl="FusionCharts/FCF_Column3D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="css/mind_20121128.css" publishTime="09/12/2013 08:45:58" />
+    <file relUrl="Admin/W_Sys_User_SetPassword.win.js" publishTime="09/12/2013 08:46:08" />
+    <file relUrl="StripImages/Help book 3d.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Green tag.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/AddNew.bmp" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/Abort.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/Apply.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="Scripts/Common.js" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="Images/user.gif" publishTime="09/12/2013 08:45:48" />
+    <file relUrl="FusionCharts/FusionCharts.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Images/login_button.png" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="Default.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/CSFile.ico" publishTime="09/12/2013 08:45:24" />
+    <file relUrl="StripImages/sproc_checked.bmp" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="StripImages/Lock.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="Scripts/ExtPB_Net.min.js" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="StripImages/No.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/About.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="StripImages/Forbidden.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="Service/SalesOrder.ashx" publishTime="09/25/2013 18:04:39" />
+    <file relUrl="FusionCharts/FCF_Area2D.swf" publishTime="09/12/2013 08:45:52" />
+    <file relUrl="Library/BarcodeLib.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="StripImages/Go back.png" publishTime="09/12/2013 08:45:27" />
+    <file relUrl="StripImages/Lightning.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="Images/login08.gif" publishTime="09/12/2013 08:45:45" />
+    <file relUrl="Beta3/ExtPB_Demo.js" publishTime="09/12/2013 08:46:02" />
+    <file relUrl="StripImages/Record.png" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="FusionCharts/FCF_Gantt.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Next track.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="ExtPB.Net/extpb_updater.cab" publishTime="07/18/2013 14:56:45" />
+    <file relUrl="StripImages/Cut.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/New document.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="FusionCharts/Doughnut3D.swf" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="StripImages/Red star.png" publishTime="09/12/2013 08:45:36" />
+    <file relUrl="StripImages/Playback.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/Euro.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Repair.png" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="Admin/W_Sys_User_List.win.js" publishTime="09/12/2013 08:46:08" />
+    <file relUrl="StripImages/Good-mark.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="ExtPB.Net/ExtPB_Net.zip" publishTime="07/30/2013 17:21:07" />
+    <file relUrl="StripImages/Delete.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="FusionCharts/FCF_MSLine.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="Images/login10.gif" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="FusionCharts/FusionCharts.HC.PowerCharts.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Scripts/ie_toolbar.js" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="StripImages/Car key.png" publishTime="09/12/2013 08:45:52" />
+    <file relUrl="Help.aspx" publishTime="09/24/2013 10:56:15" />
+    <file relUrl="Images/login_bk.gif" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="StripImages/Boss.png" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="StripImages/New.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="FusionCharts/FCF_MSColumn3D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Add.png" publishTime="09/12/2013 08:45:49" />
+    <file relUrl="Admin/W_Sys_User_Edit.win.js" publishTime="09/12/2013 08:46:07" />
+    <file relUrl="StripImages/Red mark.png" publishTime="09/12/2013 08:45:35" />
+    <file relUrl="Images/mind05.gif" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="HomePage.aspx" publishTime="09/24/2013 10:56:38" />
+    <file relUrl="StripImages/Text preview.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="Beta3/W_DllTest.win.js" publishTime="09/12/2013 08:46:04" />
+    <file relUrl="FusionCharts/FCF_MSColumn2D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="Service/Sys_Users.ashx" publishTime="09/25/2013 18:04:39" />
+    <file relUrl="Images/login09.gif" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="Images/Top.gif" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="StripImages/Bottom.png" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="Account/Register.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Blue tag.png" publishTime="09/12/2013 08:45:50" />
+    <file relUrl="StripImages/Key.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="FusionCharts/FCF_Line.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Users.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="Library/Wilco.SyntaxHighlighter.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Stop.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="Images/Top.png" publishTime="09/12/2013 08:45:47" />
+    <file relUrl="StripImages/dw2xls_Report.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Down.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Zoom.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Download.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Blue key.png" publishTime="09/12/2013 08:45:50" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Movie.png" publishTime="09/12/2013 08:45:31" />
+    <file relUrl="StripImages/Hint.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Up.png" publishTime="09/12/2013 08:45:41" />
+    <file relUrl="Images/mind04.gif" publishTime="09/12/2013 08:45:46" />
+    <file relUrl="StripImages/Redo.png" publishTime="09/12/2013 08:45:36" />
+    <file relUrl="StripImages/Fast-forward.png" publishTime="09/12/2013 08:45:26" />
+    <file relUrl="StripImages/Thumbs down.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="FusionCharts/FusionCharts.jqueryplugin.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="StripImages/People.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/Yes.png" publishTime="09/12/2013 08:45:42" />
+    <file relUrl="StripImages/Load.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="Scripts/MyExtPB.min.js" publishTime="09/12/2013 08:45:38" />
+    <file relUrl="FusionCharts/FCF_MSArea2D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="Admin/W_ChangePassword.win.js" publishTime="09/12/2013 08:46:04" />
+    <file relUrl="Beta3/W_NvoTest.win.js" publishTime="09/12/2013 08:46:06" />
+    <file relUrl="FusionCharts/Column3D.swf" publishTime="09/12/2013 08:45:51" />
+    <file relUrl="StripImages/Phone number.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="Xt_Popwin/W_Eport_Select.win.js" publishTime="09/26/2013 09:21:11" />
+    <file relUrl="StripImages/Mobile-phone.png" publishTime="09/12/2013 08:45:31" />
+    <file relUrl="FusionCharts/jquery.min.js" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="Service/Customer.ashx" publishTime="09/25/2013 17:59:48" />
+    <file relUrl="StripImages/Table.png" publishTime="09/12/2013 08:45:39" />
+    <file relUrl="FusionCharts/FCF_StackedBar2D.swf" publishTime="09/12/2013 08:45:54" />
+    <file relUrl="StripImages/E-mail.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Admin/W_Sys_User_SetRoles.win.js" publishTime="09/12/2013 08:46:09" />
+    <file relUrl="StripImages/Fall.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Captcha/captcha.ashx" publishTime="09/12/2013 08:46:00" />
+    <file relUrl="bin/QsWebSoft.dll" publishTime="09/27/2013 14:23:37" />
+    <file relUrl="StripImages/Previous record.png" publishTime="09/12/2013 08:45:34" />
+    <file relUrl="Mxd/W_MxdList.win.js" publishTime="09/27/2013 13:12:09" />
+    <file relUrl="FusionCharts/MSCombi3D.swf" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="StripImages/Left-right.png" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="StripImages/Create.png" publishTime="09/12/2013 08:45:24" />
+    <file relUrl="StripImages/Delivery.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Commodity/W_Commodity_Select.win.js" publishTime="09/27/2013 09:11:15" />
+    <file relUrl="FusionCharts/FCF_Bar2D.swf" publishTime="09/12/2013 08:45:52" />
+    <file relUrl="StripImages/Heart.png" publishTime="09/12/2013 08:45:28" />
+    <file relUrl="StripImages/Person.png" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/jsFile.ico" publishTime="09/12/2013 08:45:29" />
+    <file relUrl="StripImages/Notes.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="Library/Newtonsoft.Json.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="OpenWindow.aspx" publishTime="09/24/2013 09:55:44" />
+    <file relUrl="FusionCharts/FCF_Column2D.swf" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/OK.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="StripImages/Modify.png" publishTime="09/12/2013 08:45:31" />
+    <file relUrl="Beta3/PostData.ashx" publishTime="09/24/2013 15:10:37" />
+    <file relUrl="StripImages/Low rating.png" publishTime="09/12/2013 08:45:30" />
+    <file relUrl="FusionCharts/MSCombiDY2D.swf" publishTime="09/12/2013 08:45:55" />
+    <file relUrl="StripImages/Undo.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="StripImages/Erase.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Logout.aspx" publishTime="09/24/2013 10:57:12" />
+    <file relUrl="StripImages/DataConnector.bmp" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="Service/PubBasicInfo.ashx" publishTime="09/25/2013 18:04:39" />
+    <file relUrl="StripImages/Thumbs up.png" publishTime="09/12/2013 08:45:40" />
+    <file relUrl="StripImages/ColorDialog.bmp" publishTime="09/12/2013 08:45:53" />
+    <file relUrl="StripImages/Error.png" publishTime="09/12/2013 08:45:25" />
+    <file relUrl="StripImages/Previous.png" publishTime="09/12/2013 08:45:34" />
+    <file relUrl="StripImages/Rewind.png" publishTime="09/12/2013 08:45:37" />
+    <file relUrl="Index_Top.aspx" publishTime="09/24/2013 14:22:05" />
+    <file relUrl="source_file.aspx" publishTime="09/12/2013 08:45:33" />
+    <file relUrl="StripImages/Pause.png" publishTime="09/12/2013 08:45:32" />
+    <file relUrl="bin/Wilco.SyntaxHighlighter.dll" publishTime="09/12/2013 08:46:01" />
+    <file relUrl="Mxd/W_MxdEdit.win.js" publishTime="09/27/2013 10:37:15" />
+    <file relUrl="About.aspx" publishTime="09/24/2013 09:17:23" />
+    <file relUrl="StripImages/Male.png" publishTime="09/12/2013 08:45:31" />
+  </publishProfile>
+</publishData>

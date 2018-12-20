@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="IFHandler.cs" Class="Interfaces.IFHandler" %>
