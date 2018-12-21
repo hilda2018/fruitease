@@ -76,6 +76,9 @@ namespace IFView
         #endregion
 
 
+
+
+
      /****预警信息***/
         #region 菜单渲染
         public void GetWarningMenuList(HttpContext context)
@@ -244,6 +247,144 @@ namespace IFView
         }
 
         #endregion
+
+
+
+        //应收对账账号设置  页面 获取表格数据
+        public void GetYszdZhszTableData(HttpContext context)
+        {
+            try
+            {
+
+
+                List<Get_Yszd_Zhsz_Table_Data> list =
+                    new Interfaces.Service.GetYszdZhszService().GetYszdZhszTableDataServiceImpl();
+                res.result = true;
+                res.rows = list;
+                res.total = list.ToArray().Length;
+                res.msg = "获取应收对账账号设置相关的主表格数据成功";
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
+        //应收对账账号设置  页面 获取接单人数据
+        public void GetComboboxJdrjcListData(HttpContext context)
+        {
+            try
+            {
+
+                Array jdrArr = new Interfaces.Service.GetYszdZhszService().GetComboboxJdrjcListDataServiceImpl();
+                res.rows = jdrArr;
+                res.total = jdrArr.Length;
+                res.result = true;
+                res.msg = "获取应收对账账号设置相关的接单人下拉数据成功";
+
+
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
+        //应收对账账号设置  页面 获取公司抬头数据
+        public void GetComboboxGsttListData(HttpContext context)
+        {
+            try
+            {
+
+                Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
+                res.rows = gsttArr;
+                res.total = gsttArr.Length;
+                res.result = true;
+                res.msg = "获取应收对账账号设置相关的公司抬头数据成功";
+
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
+        //更新应收对账的数据
+
+        public void UpdateYsdzZhsz (HttpContext context)
+        {
+            try
+            {
+
+                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
+                //res.rows = gsttArr;
+                //res.total = gsttArr.Length;
+                res.result = true;
+                res.msg = "更新应收对账账号设置数据成功";
+
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
+        //新增应收对账的数据
+
+        public void AddYsdzZhsz(HttpContext context)
+        {
+            try
+            {
+
+                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
+                //res.rows = gsttArr;
+                //res.total = gsttArr.Length;
+                res.result = true;
+                res.msg = "新增应收对账账号设置数据成功";
+
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
+        //删除应收对账的数据
+
+        public void DeleteYsdzZhsz(HttpContext context)
+        {
+            try
+            {
+
+                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
+                //res.rows = gsttArr;
+                //res.total = gsttArr.Length;
+                res.result = true;
+                res.msg = "删除应收对账账号设置数据成功";
+
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
 
 
 

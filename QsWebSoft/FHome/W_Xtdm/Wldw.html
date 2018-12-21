@@ -1,0 +1,224 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="edge" charset="utf-8" />
+    <title>水果通服务平台</title>
+    <link href="../lib/css/easyui.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/easyui_animation.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/easyui_plus.css" rel="stylesheet" type="text/css" />
+    <link href="../lib/css/icon.css" rel="stylesheet" type="text/css" />
+    <!---oheng css -->
+    <link href="../css/oheng.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <table id="dg" title="My Users" class="easyui-datagrid" toolbar="#toolbar" rownumbers="true"
+        fitcolumns="true" singleselect="true">
+    </table>
+    <div id="toolbar">
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-add" plain="true"
+            id="addRow">新增</a> <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-edit"
+                plain="true" id="editRow">编辑</a> <a href="javascript:void(0)" class="easyui-linkbutton"
+                    iconcls="icon-remove" plain="true" id="deleteRow">删除</a> <a href="javascript:void(0)"
+                        class="easyui-linkbutton" iconcls="icon-save" plain="true" id="saveData">存盘</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconcls="icon-cancel" plain="true"
+            id="closePage">关闭</a>
+    </div>
+    <script type="text/javascript" src="../lib/js/jqueryAndeasyuiAndjson.js"></script>
+    <script type="text/javascript" src="../lib/js/jquery.insdep-extend.min.js"></script>
+    <script type="text/javascript" src="../lib/theme/modern/js/plugin/sea.js"></script>
+    <script type="text/javascript">
+
+        var zdlxData = [{
+            label: '国际运费',
+            value: '国际运费'
+        }, {
+            label: '货代服务费用',
+            value: '货代服务费用'
+        }, {
+            label: '海关税金',
+            value: '海关税金'
+        }];
+
+
+        var jdrData = [];
+        var gsttData = [];
+
+
+
+        $.ajax({ url: window.location.origin + "/IFView/IndexHandler.ashx?action=GetComboboxGsttListData", async: false, dataType: "json", "success": function (data) { 
+          
+
+            $.each(data.rows, function (i, item) {
+
+                var newTemp = {};
+                newTemp.key = item.khmc;
+                newTemp.text = item.khmc;
+                gsttData.push(newTemp);
+            });
+
+            if (jdrData.length != 0 && gsttData.length != 0) {
+
+                   console.log(jdrData);
+              
+              console.log(gsttData);
+
+              initDatagrid(gsttData,jdrData);
+            }
+
+        }
+
+        
+        });
+
+
+
+
+
+
+
+
+
+        $.ajax({ url: window.location.origin + "/IFView/IndexHandler.ashx?action=GetComboboxJdrjcListData", async: false, dataType: "json", "success": function (data, status) {
+
+
+            $.each(data.rows, function (i, item) {
+
+                var newTemp = {};
+                newTemp.key = item.khjc;
+                newTemp.text = item.khjc;
+                jdrData.push(newTemp);
+            });
+
+
+            if (jdrData.length != 0 && gsttData.length != 0) {
+              
+
+              console.log(jdrData);
+              
+              console.log(gsttData);
+
+              initDatagrid(gsttData,jdrData);
+
+            }
+            }
+
+
+
+        });
+
+
+
+      
+
+        
+
+
+
+// 
+        //, editor: { type: 'combobox', options: { required: true, valueField: 'key', textField: 'text', data: jdrData}} 
+
+
+
+
+
+        
+        var baseSetting = {
+          "nowrap": true,
+          "fit": true,
+          "fitColumns": "true",
+          "border": false,
+          "resizable": true,
+          "rownumbers": true,
+          "singleSelect": true,
+          "striped": true,
+          "width": "100%",
+          "halign": "center",
+        };
+
+
+
+
+
+
+
+  
+       
+
+
+
+
+
+
+
+
+
+$("#addRow").on('click', function () {
+   
+            $('#dg').edatagrid('addRow');
+           
+        });
+
+
+
+
+
+
+
+
+
+                function initDatagrid(gsttData,jdrData){
+                        var columns = [[
+                           { field: 'key_id', title: 'key', hidden:true },
+                            { field: 'jdrbm', title: '编码', width: 40, checkbox: true },
+                    { field: 'gstt', title: '公司抬头', width: 100, editor: { type: 'combobox', options: { required: true, valueField: 'key', textField: 'text', data: gsttData}} },
+                                        { field: 'khyh', title: '客户银行', width: 100, editor: { type: 'validatebox', options: { required: true}} },                    { field: 'zh', title: '账号', hidden:true,width: 100, editor: { type: 'validatebox', options: { required: true}} },
+                    { field: 'zdlx', title: '账单类型', width: 100, editor: { type: 'combobox', options: { required: true, valueField: 'label', textField: 'value', data: zdlxData}} },
+                
+                    { field: 'jdrmc', title: '接单人名称', width: 100, editor: { type: 'combobox', options: { required: true, valueField: 'key', textField: 'text', data: jdrData}} },
+                    { field: 'khyh', title: '客户银行', width: 100, editor: { type: 'validatebox', options: { required: true}} },
+                    { field: 'lxfs', title: '联系方式', width: 100, editor: { type: 'validatebox', options: { required: true}} },
+                ]];
+
+
+                var optionsDataGrid = {
+                    "url": window.location.origin + "/IFView/IndexHandler.ashx?action=GetYszdZhszTableData",
+                    "columns": columns,checkOnSelect:true,
+                    "title": "应收账单账号设置",
+                    "toolbar": "#toolbar",
+                     "saveUrl": 'save_user.php',
+                    "updateUrl": 'update_user.php',
+                    "destroyUrl": 'destroy_user.php'
+                };
+
+
+                $("#dg").edatagrid($.extend({}, baseSetting, optionsDataGrid));
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

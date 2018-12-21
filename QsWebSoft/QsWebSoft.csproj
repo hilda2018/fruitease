@@ -1217,6 +1217,7 @@
     <Content Include="FHome\lib\theme\peak\js\plugin\jquery.js" />
     <Content Include="FHome\lib\theme\peak\js\plugin\sea.js" />
     <Content Include="FHome\main.js" />
+    <Content Include="FHome\W_Xtdm\Wldw.html" />
     <Content Include="FHome\W_Xtdm\W_Xtdm_Yjxx.html" />
     <Content Include="fwbym\FHome\css\oheng.css" />
     <Content Include="fwbym\FHome\images\favicon.ico" />
@@ -2356,8 +2357,10 @@
     <Content Include="IFView\DataService.asmx" />
     <Content Include="IFView\fence.html" />
     <Content Include="IFView\fenceException.html" />
+    <Content Include="IFView\GetYszdZhsz.ashx" />
     <Content Include="IFView\imgyz.html" />
     <Content Include="IFView\img\yz.png" />
+    <Content Include="IFView\IndexHandler.ashx" />
     <Content Include="IFView\json2.js" />
     <Content Include="IFView\KyCarMapView.html" />
     <Content Include="IFView\lib\highstock.js" />
@@ -5252,8 +5255,13 @@
     <Compile Include="IFView\FenceHandler.ashx.cs">
       <DependentUpon>FenceHandler.ashx</DependentUpon>
     </Compile>
+    <Compile Include="IFView\GetYszdZhsz.ashx.cs">
+      <DependentUpon>GetYszdZhsz.ashx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="IFView\IndexHandler.ashx.cs">
       <DependentUpon>IndexHandler.ashx</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="IFView\KyMapHandler.ashx.cs">
       <DependentUpon>KyMapHandler.ashx</DependentUpon>
@@ -8316,7 +8324,6 @@
     </None>
     <Compile Include="Hddz\W_Hddz_lxr.win" />
     <Content Include="IFView\FenceHandler.ashx" />
-    <Content Include="IFView\IndexHandler.ashx" />
     <None Include="IFView\lib\laydate\theme\default\font\iconfont.eot" />
     <None Include="IFView\lib\laydate\theme\default\font\iconfont.ttf" />
     <None Include="IFView\lib\laydate\theme\default\font\iconfont.woff" />
@@ -11051,7 +11058,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>26046</DevelopmentServerPort>
+          <DevelopmentServerPort>39814</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

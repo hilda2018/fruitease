@@ -34,7 +34,9 @@ AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QsWebSoft.Index" %>
         $('#fruitEaseTabs').tabs('add',
             {
                 title: "首页",
-                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/W_Xtdm_Yjxx.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
+//                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/W_Xtdm_Yjxx.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
+
+                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/Wldw.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
                 closable: false,
                 fit: true,
                 select: true,

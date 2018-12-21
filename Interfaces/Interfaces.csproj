@@ -81,6 +81,13 @@
     <Compile Include="Model\FreshModel\suppliersellEntity.cs" />
     <Compile Include="Model\fruitease\BaseData\yw_wldwEntity.cs" />
     <Compile Include="Model\fruitease\CarMapView.cs" />
+    <Compile Include="Model\fruitease\d_menu_Entity.cs" />
+    <Compile Include="Model\fruitease\Get_Jdr.cs" />
+    <Compile Include="Model\fruitease\Get_Warning_Menu_List_Service.cs" />
+    <Compile Include="Model\fruitease\Get_Warning_Table_Service.cs" />
+    <Compile Include="Model\fruitease\Get_Yszd_Zhsz_Table_Data.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Model\fruitease\interfieldEntity.cs" />
     <Compile Include="Model\fruitease\KyCarMapView.cs" />
     <Compile Include="Model\fruitease\s_fence_log.cs" />
@@ -90,6 +97,8 @@
     <Compile Include="Model\fruitease\t_countryEntity.cs" />
     <Compile Include="Model\fruitease\t_currencyEntity.cs" />
     <Compile Include="Model\fruitease\t_port.cs" />
+    <Compile Include="Model\fruitease\ycyy_Select_List_Service.cs" />
+    <Compile Include="Model\fruitease\ycyy_Service.cs" />
     <Compile Include="Model\fruitease\yw_hddzEntity.cs" />
     <Compile Include="Model\fruitease\yw_hddz_dzyqEntity.cs" />
     <Compile Include="Model\fruitease\yw_hddz_dzyq_cmdEntity.cs" />
@@ -125,7 +134,12 @@
     <Compile Include="Service\BaseService.cs" />
     <Compile Include="Service\ConnectionFactory.cs" />
     <Compile Include="Service\FenceService.cs" />
+    <Compile Include="Service\GetWarningMenuListService.cs" />
+    <Compile Include="Service\GetYszdZhszService.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Service\HddzService.cs" />
+    <Compile Include="Service\IndexService.cs" />
     <Compile Include="Service\KyMapService.cs" />
     <Compile Include="Service\LocalService.cs" />
     <Compile Include="Service\MapService.cs" />
@@ -147,9 +161,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="bin\Debug\Interfaces.dll.config" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Debug\Interfaces.csprojResolveAssemblyReference.cache" />
     <None Include="obj\Debug\ResolveAssemblyReference.cache" />
     <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="Properties\Settings.settings">
@@ -209,6 +220,10 @@
     <Content Include="obj\Debug\Interfaces.pdb" />
     <Content Include="obj\Debug\TempPE\Web References.FreshPortSupplierSell.Reference.cs.dll" />
     <Content Include="obj\Debug\TempPE\Web References.OCRWebServ.Reference.cs.dll" />
+    <Content Include="obj\Release\Interfaces.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Interfaces.dll" />
+    <Content Include="obj\Release\Interfaces.pdb" />
+    <Content Include="obj\Release\Interfaces.XmlSerializers.dll" />
     <Content Include="obj\x86\Debug\TempPE\Web References.FreshPortSupplierSell.Reference.cs.dll" />
     <Content Include="obj\x86\Debug\TempPE\Web References.OCRWebServ.Reference.cs.dll" />
   </ItemGroup>

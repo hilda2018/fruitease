@@ -1,0 +1,9 @@
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Interfaces.dll.config
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Interfaces.dll
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Interfaces.XmlSerializers.dll
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Dapper.dll
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Release\Newtonsoft.Json.dll
+F:\水果tong\qserp2\fruitease\Interfaces\obj\Release\Interfaces.dll
+F:\水果tong\qserp2\fruitease\Interfaces\obj\Release\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\Interfaces\obj\Release\Interfaces.XmlSerializers.dll
