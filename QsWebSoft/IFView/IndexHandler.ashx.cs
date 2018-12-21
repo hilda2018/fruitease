@@ -273,6 +273,27 @@ namespace IFView
 
 
 
+        //应收账单 基础数据
+        public void GetBaseYszdZhszData(HttpContext context)
+        {
+            try
+            {
+
+
+                Array baseDataArr = new Interfaces.Service.GetYszdZhszService().GetBaseYszdZhszDataImpl();
+                res.rows = baseDataArr;
+                res.total = baseDataArr.Length;
+                res.msg = "应收账单 基础数据数据成功";
+            }
+            catch (Exception ex)
+            {
+                res.result = false;
+                res.msg = ex.Message;
+            }
+        }
+
+
+
         //应收对账账号设置  页面 获取接单人数据
         public void GetComboboxJdrjcListData(HttpContext context)
         {
@@ -320,14 +341,15 @@ namespace IFView
 
         //更新应收对账的数据
 
-        public void UpdateYsdzZhsz (HttpContext context)
+        public void UpdateYszdZhsz (HttpContext context)
         {
             try
             {
+                Interfaces.Service.GetYszdZhszService GetYszdZhszService = new Interfaces.Service.GetYszdZhszService();
 
-                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
-                //res.rows = gsttArr;
-                //res.total = gsttArr.Length;
+                string json = context.Request.Params["json"];
+                Get_Yszd_Zhsz_Table_Data model = JsonConvert.DeserializeObject<Get_Yszd_Zhsz_Table_Data>(json);
+                GetYszdZhszService.UpdateYszdZhszImpl(model);
                 res.result = true;
                 res.msg = "更新应收对账账号设置数据成功";
 
@@ -343,16 +365,91 @@ namespace IFView
 
         //新增应收对账的数据
 
-        public void AddYsdzZhsz(HttpContext context)
+        //public void AddYszdZhsz(HttpContext context)
+        //{
+        //    try
+        //    {
+
+        //        string isNewRecord = context.Request.Params["isNewRecord"];
+        //        string jdrbm = context.Request.Params["jdrbm"];
+        //        string gstt = context.Request.Params["gstt"];
+        //        string khyh = context.Request.Params["khyh"];
+        //        string zdlx = context.Request.Params["zdlx"];
+        //        string jdrmc = context.Request.Params["jdrmc"];
+        //        string lxfs = context.Request.Params["lxfs"];
+
+
+            
+
+        //        if (isNewRecord == "true")
+        //        {
+
+        //            new Interfaces.Service.GetYszdZhszService().AddYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs);
+        //            res.msg = "新增数据成功";
+        //            res.result = true;
+
+        //        }
+        //        else {
+
+        //            res.msg = "参数error";
+        //            res.result = true;
+                
+        //        }
+        //        //else {
+        //        //    int keyId = Int32.Parse(context.Request.Params["id"]);// 查询条件
+        //        //    new Interfaces.Service.GetYszdZhszService().UpdateYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs,keyId);
+        //        //    res.msg = "新增应收对账账号设置数据成功";
+        //        //}
+
+
+        
+            
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        res.result = false;
+        //        res.msg = ex.Message;
+        //    }
+        //}
+
+
+        //新增应收对账的数据
+
+        public void SaveYszdZhsz(HttpContext context)
         {
             try
             {
 
-                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
-                //res.rows = gsttArr;
-                //res.total = gsttArr.Length;
-                res.result = true;
-                res.msg = "新增应收对账账号设置数据成功";
+                string isNewRecord = context.Request.Params["isNewRecord"];
+                string jdrbm = context.Request.Params["jdrbm"];
+                string gstt = context.Request.Params["gstt"];
+                string zh = context.Request.Params["zh"];
+                string khyh = context.Request.Params["khyh"];
+                string zdlx = context.Request.Params["zdlx"];
+                string jdrmc = context.Request.Params["jdrmc"];
+                string lxfs = context.Request.Params["lxfs"];
+
+
+
+
+                if (isNewRecord == "true")
+                {
+
+                    new Interfaces.Service.GetYszdZhszService().AddYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs,zh);
+                    res.msg = "新增数据成功";
+                    res.result = true;
+
+                }
+                else
+                {
+
+                  //  new Interfaces.Service.GetYszdZhszService().UpdateYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs);
+                    res.msg = "更新数据成功";
+                    res.result = true;
+
+                }
+
 
             }
             catch (Exception ex)
@@ -362,20 +459,17 @@ namespace IFView
             }
         }
 
-
-
         //删除应收对账的数据
 
-        public void DeleteYsdzZhsz(HttpContext context)
+        public void DeleteYszdZhsz(HttpContext context)
         {
             try
             {
 
-                //Array gsttArr = new Interfaces.Service.GetYszdZhszService().GetComboboxGsttListDataServiceImpl();
-                //res.rows = gsttArr;
-                //res.total = gsttArr.Length;
+                int keyId = Int32.Parse(context.Request.Params["id"]);// 查询条件
+                new Interfaces.Service.GetYszdZhszService().DeleteYszdZhszImpl(keyId);
                 res.result = true;
-                res.msg = "删除应收对账账号设置数据成功";
+                res.msg = "删除数据成功";//应收对账账号设置
 
             }
             catch (Exception ex)

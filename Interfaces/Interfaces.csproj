@@ -135,9 +135,7 @@
     <Compile Include="Service\ConnectionFactory.cs" />
     <Compile Include="Service\FenceService.cs" />
     <Compile Include="Service\GetWarningMenuListService.cs" />
-    <Compile Include="Service\GetYszdZhszService.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Service\GetYszdZhszService.cs" />
     <Compile Include="Service\HddzService.cs" />
     <Compile Include="Service\IndexService.cs" />
     <Compile Include="Service\KyMapService.cs" />

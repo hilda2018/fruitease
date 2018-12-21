@@ -50,29 +50,70 @@ namespace Interfaces.Service
             }
         }
 
+        public Array GetComboboxGsttListDataServiceImpl()
+        {
+            using (conn = ConnectionFactory.CreateConnection())
+            {
+                if (conn.State == System.Data.ConnectionState.Closed)
+                    conn.Open();
+
+                string sql = "select khmc from yw_wldw where gsttbz = 'Y' ";//是否公司抬头
+
+                return conn.Query(sql).ToArray();
+
+            }
+        }
+
+
+        public Array GetBaseYszdZhszDataImpl()
+        {
+            using (conn = ConnectionFactory.CreateConnection())
+            {
+                if (conn.State == System.Data.ConnectionState.Closed)
+                    conn.Open();
+
+                string sql = "select yw_khbm,yhmc,zh  from yw_wldw_yh where mryh ='Y' and yw_khbm is not null and zh is not null and yhmc is not null ";//是否公司抬头
+
+                return conn.Query(sql).ToArray();
+
+            }
+        }
+
 
         // #region 新增应收对账账号设置维护记录
-        public void AddYsdzZhszImpl(Get_Yszd_Zhsz_Table_Data model)
+        public void AddYszdZhszImpl(string jdrbm, string gstt, string khyh, string zdlx, string jdrmc, string lxfs,string zh)
         {
             using (conn = ConnectionFactory.CreateConnection())
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                string sql = "insert into yw_hddz_yszd_zhsz  ([jdrbm] ,[jdrmc] ,[zdlx] ,[bm] ,[gstt] ,[zh] ,[khyh]  ,[lxfs]) values (@zbr,@ycyybm,@ycyymc,@beizhu,@ycyyqc,@ywbh) ";
-                conn.Execute(sql, model);
+
+
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@jdrbm", jdrbm);
+                parameters.Add("@gstt", gstt);
+                parameters.Add("@khyh", khyh);
+                parameters.Add("@zdlx", zdlx);
+                parameters.Add("@zh", zh);
+                parameters.Add("@jdrmc", jdrmc);
+                parameters.Add("@lxfs", lxfs);
+                string sql = "insert into yw_hddz_yszd_zhsz  ([jdrbm] ,[jdrmc] ,[zdlx] ,[gstt]  ,[khyh]  ,[lxfs],[zh] ) values (@jdrbm,@jdrmc,@zdlx,@gstt,@khyh,@lxfs,@zh) ";
+
+                conn.Execute(sql, parameters);
             }
         }
 
 
 
         // #region 更新应收对账账号设置维护记录
-        public void UpdateYsdzZhszImpl(Get_Yszd_Zhsz_Table_Data model)
+        public void UpdateYszdZhszImpl(Get_Yszd_Zhsz_Table_Data model)
         {
             using (conn = ConnectionFactory.CreateConnection())
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                string sql = " update yw_hddz_ycyy  set zbr=@zbr,ycyybm=@ycyybm,ycyymc=@ycyymc,beizhu=@beizhu, ycyyqc=@ycyyqc,ywbh=@ywbh where id=@id";
+                string sql = " UPDATE yw_hddz_yszd_zhsz SET jdrbm = @jdrbm,jdrmc = @jdrmc ,zdlx = @zdlx  ,gstt = @gstt,zh= @zh,khyh = @khyh,lxfs = @lxfs WHERE key_id = @key_id ";
                 conn.Execute(sql, model);
             }
         }
@@ -81,17 +122,18 @@ namespace Interfaces.Service
 
 
 
-
-
         // #region 删除应收对账账号设置维护记录
-        public void DeleteYsdzZhszImpl(Get_Yszd_Zhsz_Table_Data model)
+        public void DeleteYszdZhszImpl(int keyId)
         {
             using (conn = ConnectionFactory.CreateConnection())
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                string sql = " update yw_hddz_ycyy  set zbr=@zbr,ycyybm=@ycyybm,ycyymc=@ycyymc,beizhu=@beizhu, ycyyqc=@ycyyqc,ywbh=@ywbh where id=@id";
-                conn.Execute(sql, model);
+                DynamicParameters parameters = new DynamicParameters();
+                
+                parameters.Add("@keyId", keyId);
+                string sql = "DELETE FROM yw_hddz_yszd_zhsz  where key_id=@keyId";
+                conn.Execute(sql,parameters);
             }
         }
 

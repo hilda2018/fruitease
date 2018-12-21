@@ -2357,7 +2357,6 @@
     <Content Include="IFView\DataService.asmx" />
     <Content Include="IFView\fence.html" />
     <Content Include="IFView\fenceException.html" />
-    <Content Include="IFView\GetYszdZhsz.ashx" />
     <Content Include="IFView\imgyz.html" />
     <Content Include="IFView\img\yz.png" />
     <Content Include="IFView\IndexHandler.ashx" />
@@ -5254,10 +5253,6 @@
     </Compile>
     <Compile Include="IFView\FenceHandler.ashx.cs">
       <DependentUpon>FenceHandler.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="IFView\GetYszdZhsz.ashx.cs">
-      <DependentUpon>GetYszdZhsz.ashx</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="IFView\IndexHandler.ashx.cs">
       <DependentUpon>IndexHandler.ashx</DependentUpon>
