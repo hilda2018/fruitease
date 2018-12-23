@@ -31,19 +31,19 @@ AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QsWebSoft.Index" %>
             }
         });
 
-        $('#fruitEaseTabs').tabs('add',
-            {
-                title: "首页",
-//                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/W_Xtdm_Yjxx.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
+//        $('#fruitEaseTabs').tabs('add',
+//            {
+//                title: "首页",
+////                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/W_Xtdm_Yjxx.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
 
-                content: '<iframe id="mainIframe"  name="mainIframe" src="./FHome/W_Xtdm/Wldw.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>',
-                closable: false,
-                fit: true,
-                select: true,
-                onSelect: function(title) {
-                    console.log(title + ' is selected');
-                }
-            });
+//                content: '',
+//                closable: false,
+//                fit: true,
+//                select: true,
+//                onSelect: function(title) {
+//                    console.log(title + ' is selected');
+//                }
+//            });
 
 
     </script>
@@ -51,5 +51,4 @@ AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QsWebSoft.Index" %>
     <PB:WindowHost runat="server" ID="win" WindowType=" QsWebSoft.W_Index" Lisetener="W_Index" ClientIDMode="Static"/>
  
     <script type="text/javascript" src="/Admin/W_ChangePassword.win.js" ></script>
-    <!--  <script type="text/javascript" src="/Scripts/Common.js" ></script>  -->
 </asp:Content>

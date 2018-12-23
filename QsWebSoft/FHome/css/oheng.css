@@ -253,3 +253,195 @@ i.icon.icon-circle{margin-right:0;margin-top:0px;}
 .datagrid input[type="checkbox"] {
     position: static;
 }
+/**********动画css**********/
+@-webkit-keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px); }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(-10px); }
+  to {
+    -webkit-transform: translateY(0); } }
+
+@keyframes tinydown {
+  0%,
+  5% {
+    opacity: 0;
+    transform: translateY(-10px); }
+  10% {
+    opacity: 1;
+    transform: translateY(-10px); }
+  to {
+    transform: translateY(0); } }
+
+@-webkit-keyframes falldown {
+  form {
+    -webkit-transform: translateY(-5px); }
+  to {
+    -webkit-transform: translateY(0); } }
+
+@keyframes falldown {
+  form {
+    transform: translateY(-5px); }
+  to {
+    transform: translateY(0); } }
+
+@-webkit-keyframes raiseup {
+  from {
+    -webkit-transform: translateY(5px); }
+  to {
+    -webkit-transform: translateY(0); } }
+
+@keyframes raiseup {
+  from {
+    transform: translateY(5px); }
+  to {
+    transform: translateY(0); } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(-360deg); }
+  100% {
+    -webkit-transform: rotate(0); } }
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(-360deg); }
+  100% {
+    transform: rotate(0); } }
+
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0); }
+  75% {
+    -webkit-transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1); } }
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+/**
+ * 
+ * @Loading.css
+ *
+**/
+/*
+ * 结构如下：
+ * <div class='ui-loading'>
+     <i class='ui-loading-icon'>  <!-- 使用s标签表示小尺寸的loading图标 -->
+ *  
+*/
+.ui-loading {
+  position: relative; }
+
+.ui-loading.ui-loading-animation {
+  -webkit-animation: fadeIn .5s both;
+  animation: fadeIn .5s both; }
+
+.ui-loading-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/loading/loading-blue.gif);
+  /* IE10+ */
+  background: url(../images/loading/loading-blue.png), linear-gradient(transparent, transparent);
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 800ms linear infinite; }
+
+.ui-loading > .ui-loading-icon {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px; }
+
+s.ui-loading-icon {
+  width: 20px;
+  height: 20px;
+  background: url(../images/loading/loading-blue-s.gif);
+  background: url(../images/loading/loading-blue-s.png), linear-gradient(transparent, transparent); }
+
+.ui-loading > s.ui-loading-icon {
+  margin: -10px 0 0 -10px; }
+
+.ui-loading-primary {
+  background-color: #00a5e0; }
+
+.ui-loading-primary > .ui-loading-icon {
+  background: url(../images/loading/loading-white.gif);
+  background: url(../images/loading/loading-white.png), linear-gradient(transparent, transparent); }
+
+.ui-loading-primary > s.ui-loading-icon {
+  background: url(../images/loading/loading-white-s.gif);
+  background: url(../images/loading/loading-white-s.png), linear-gradient(transparent, transparent); }
+
+.fix-loading
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    right: 0;
+    left: 0;
+    height: 100%!important;
+    width: 100%!important;
+    background: rgba(255,255,255,0.8);
+}
+.fix-loading span{margin-top:-30px;}
+
+
+/**账单设置*/
+ span.btn-cell{display:inline-block;line-height:28px;height:28px;color:#e1e1e1;}
+.gridBodyClsWithTitle {
+    position: absolute!Important;
+    left: 16px;
+    right:16px;
+    top:52px;
+    bottom: 16px;
+    overflow:  auto;
+    width:  auto!important;
+    height: auto!important;
+    overflow:  hidden;
+    border: 1px solid #ddd;
+    box-sizing:border-box;
+}
+.datagrid .panel-body{border-bottom: 1px solid #ddd;}
+.gridTitleCls
+{   
+    border: 1px solid #ddd;   width:  auto!important;
+    position: absolute!Important;
+    left: 16px;
+    right:16px;top:16px;
+}

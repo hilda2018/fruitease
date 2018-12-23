@@ -44,6 +44,15 @@
                 <div id="center">
                     <div id="new">
                         <div id="fruitEaseTabs" class="easyui-tabs" data-options="fit:true">
+                    <div title="预警信息查询" data-options="closable:true" >   
+                <iframe id="Iframe1"  name="mainIframe" src="./FHome/html/W_Xtdm_Yjxx.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>  
+                    </div>   
+                        <div title="应收账单账号设置" data-options="closable:true" style="overflow:auto;padding:20px;display:none;">   
+                <iframe id="mainIframe"  name="mainIframe" src="./FHome/html/yszdZhsz.html" frameborder="0" style="width:100%;height:100%;" scrolling="hidden" ></iframe>
+                    </div>   
+
+
+
                         </div>
                     </div>
                     <div id="old">

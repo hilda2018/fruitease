@@ -339,82 +339,8 @@ namespace IFView
 
 
 
-        //更新应收对账的数据
 
-        public void UpdateYszdZhsz (HttpContext context)
-        {
-            try
-            {
-                Interfaces.Service.GetYszdZhszService GetYszdZhszService = new Interfaces.Service.GetYszdZhszService();
-
-                string json = context.Request.Params["json"];
-                Get_Yszd_Zhsz_Table_Data model = JsonConvert.DeserializeObject<Get_Yszd_Zhsz_Table_Data>(json);
-                GetYszdZhszService.UpdateYszdZhszImpl(model);
-                res.result = true;
-                res.msg = "更新应收对账账号设置数据成功";
-
-            }
-            catch (Exception ex)
-            {
-                res.result = false;
-                res.msg = ex.Message;
-            }
-        }
-
-
-
-        //新增应收对账的数据
-
-        //public void AddYszdZhsz(HttpContext context)
-        //{
-        //    try
-        //    {
-
-        //        string isNewRecord = context.Request.Params["isNewRecord"];
-        //        string jdrbm = context.Request.Params["jdrbm"];
-        //        string gstt = context.Request.Params["gstt"];
-        //        string khyh = context.Request.Params["khyh"];
-        //        string zdlx = context.Request.Params["zdlx"];
-        //        string jdrmc = context.Request.Params["jdrmc"];
-        //        string lxfs = context.Request.Params["lxfs"];
-
-
-            
-
-        //        if (isNewRecord == "true")
-        //        {
-
-        //            new Interfaces.Service.GetYszdZhszService().AddYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs);
-        //            res.msg = "新增数据成功";
-        //            res.result = true;
-
-        //        }
-        //        else {
-
-        //            res.msg = "参数error";
-        //            res.result = true;
-                
-        //        }
-        //        //else {
-        //        //    int keyId = Int32.Parse(context.Request.Params["id"]);// 查询条件
-        //        //    new Interfaces.Service.GetYszdZhszService().UpdateYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs,keyId);
-        //        //    res.msg = "新增应收对账账号设置数据成功";
-        //        //}
-
-
-        
-            
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        res.result = false;
-        //        res.msg = ex.Message;
-        //    }
-        //}
-
-
-        //新增应收对账的数据
+        //保存 编辑或 新增应收对账的数据
 
         public void SaveYszdZhsz(HttpContext context)
         {
@@ -443,8 +369,8 @@ namespace IFView
                 }
                 else
                 {
-
-                  //  new Interfaces.Service.GetYszdZhszService().UpdateYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs);
+                    int keyId = Int32.Parse(context.Request.Params["key_id"]);// 查询条件
+                    new Interfaces.Service.GetYszdZhszService().UpdateYszdZhszImpl(jdrbm, gstt, khyh, zdlx, jdrmc, lxfs, zh, keyId);
                     res.msg = "更新数据成功";
                     res.result = true;
 

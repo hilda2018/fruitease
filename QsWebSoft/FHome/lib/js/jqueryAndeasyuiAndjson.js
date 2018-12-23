@@ -18427,6 +18427,7 @@ if (typeof JSON !== "object") {
 							break;
 						}
 					}
+
 					if (changed){
 						opts.poster.call(target, url, row, function(data){
 							if (data.isError){
@@ -18438,11 +18439,13 @@ if (typeof JSON !== "object") {
 								opts.onError.call(target, index, data);
 								return;
 							}
-							data.isNewRecord = null;
-							$(target).datagrid('updateRow', {
-								index: index,
-								row: data
-							});
+					
+                                		data.isNewRecord = null;
+							            $(target).datagrid('updateRow', {
+								            index: index,
+								            row: data
+							            });
+
 							if (opts.tree){
 								var idValue = row[opts.idField||'id'];
 								var t = $(opts.tree);
@@ -18788,15 +18791,26 @@ if (typeof JSON !== "object") {
 			}
 		},
 		poster: function(url, data, success, error){
+
+            if(window.console){
+             console.log(url);  console.log(data);  console.log(success);console.log(error);
+            }
 			$.ajax({
 				type: 'post',
 				url: url,
 				data: data,
 				dataType: 'json',
 				success: function(data){
+                    if(data.msg){
+                        $.messager.alert('提醒',data.msg,'alert');
+                    }
 					success(data);
 				},
 				error: function(jqXHR, textStatus, errorThrown){
+                    if(textStatus){
+                        $.messager.alert('提醒',textStatus,'alert');
+                    }
+
 					error({
 						jqXHR: jqXHR,
 						textStatus: textStatus,
@@ -18817,7 +18831,6 @@ if (typeof JSON !== "object") {
 		treeDndUrl: null,	// to process the drag and drop operation, return {success:true}
 		treeTextField: 'name',
 		treeParentField: 'parentId',
-		
 		onAdd: function(index, row){},
 		onEdit: function(index, row){},
 		onBeforeSave: function(index){},
@@ -18845,3 +18858,538 @@ if (typeof JSON !== "object") {
 
 
 
+
+$.extend($.fn.datagrid.defaults.editors, {
+    text: {
+        init: function (container, options) {
+            var input = $('<input type="text" class="datagrid-editable-input editCell">').appendTo(container);
+            return input;
+        },
+        destroy: function (target) {
+            $(target).remove();
+        },
+        getValue: function (target) {
+            return $(target).val();
+        },
+        setValue: function (target, value) {
+            $(target).val(value);
+        },
+        resize: function (target, width) {
+            $(target)._outerWidth(width);
+        }
+    }
+});
+
+/*
+JQuery EasyUI 1.5.x of Insdep Theme 1.0.0
+演示地址：https://www.insdep.com/example/
+下载地址：https://www.insdep.com
+问答地址：https://bbs.insdep.com
+
+项目地址：http://git.oschina.net/weavors/JQuery-EasyUI-1.5.x-Of-Insdep-Theme
+
+QQ交流群：184075694 （优先发布更新主题及内测包）
+*/
+
+jQuery(function ($) { jQuery.ajaxSetup({ cache: false }); }); /*重置ajax并取消缓存*/
+
+/*初始化语言*/
+if ($.fn.pagination) {
+    $.fn.pagination.defaults.beforePageText = '第';
+    $.fn.pagination.defaults.afterPageText = '共 {pages} 页';
+    $.fn.pagination.defaults.displayMsg = '显示 {from} 到 {to},共 {total} 记录';
+}
+if ($.fn.datagrid) {
+    $.fn.datagrid.defaults.loadMsg = '正在处理，请稍待。。。';
+}
+if ($.fn.treegrid && $.fn.datagrid) {
+    $.fn.treegrid.defaults.loadMsg = $.fn.datagrid.defaults.loadMsg;
+}
+if ($.messager) {
+    $.messager.defaults.ok = '确定';
+    $.messager.defaults.cancel = '取消';
+}
+$.map(['validatebox', 'textbox', 'passwordbox', 'filebox', 'searchbox',
+		'combo', 'combobox', 'combogrid', 'combotree',
+		'datebox', 'datetimebox', 'numberbox',
+		'spinner', 'numberspinner', 'timespinner', 'datetimespinner'], function (plugin) {
+		    if ($.fn[plugin]) {
+		        $.fn[plugin].defaults.missingMessage = '该输入项为必输项';
+		    }
+		});
+if ($.fn.validatebox) {
+    $.fn.validatebox.defaults.rules.email.message = '请输入有效的电子邮件地址';
+    $.fn.validatebox.defaults.rules.url.message = '请输入有效的URL地址';
+    $.fn.validatebox.defaults.rules.length.message = '输入内容长度必须介于{0}和{1}之间';
+    $.fn.validatebox.defaults.rules.remote.message = '请修正该字段';
+}
+if ($.fn.calendar) {
+    $.fn.calendar.defaults.weeks = ['日', '一', '二', '三', '四', '五', '六'];
+    $.fn.calendar.defaults.months = ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'];
+}
+if ($.fn.datebox) {
+    $.fn.datebox.defaults.currentText = '今天';
+    $.fn.datebox.defaults.closeText = '关闭';
+    $.fn.datebox.defaults.okText = '确定';
+    $.fn.datebox.defaults.formatter = function (date) {
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        var d = date.getDate();
+        return y + '-' + (m < 10 ? ('0' + m) : m) + '-' + (d < 10 ? ('0' + d) : d);
+    };
+    $.fn.datebox.defaults.parser = function (s) {
+        if (!s) return new Date();
+        var ss = s.split('-');
+        var y = parseInt(ss[0], 10);
+        var m = parseInt(ss[1], 10);
+        var d = parseInt(ss[2], 10);
+        if (!isNaN(y) && !isNaN(m) && !isNaN(d)) {
+            return new Date(y, m - 1, d);
+        } else {
+            return new Date();
+        }
+    };
+}
+if ($.fn.datetimebox && $.fn.datebox) {
+    $.extend($.fn.datetimebox.defaults, {
+        currentText: $.fn.datebox.defaults.currentText,
+        closeText: $.fn.datebox.defaults.closeText,
+        okText: $.fn.datebox.defaults.okText
+    });
+}
+if ($.fn.datetimespinner) {
+    $.fn.datetimespinner.defaults.selections = [[0, 4], [5, 7], [8, 10], [11, 13], [14, 16], [17, 19]]
+}
+
+
+/*初始化*/
+//待修复 组件设置label后，高度失效问题
+$.extend($.fn.tabs.defaults, { tabHeight: 36 });
+$.extend($.fn.textbox.defaults, { height: 32 });
+$.extend($.fn.passwordbox.defaults, { height: 32 });
+$.extend($.fn.combo.defaults, { height: 32 });
+$.extend($.fn.combobox.defaults, { height: 32 });
+$.extend($.fn.combogrid.defaults, { height: 32 });
+$.extend($.fn.combotree.defaults, { height: 32 });
+$.extend($.fn.combotreegrid.defaults, { height: 32 });
+
+$.extend($.messager.defaults, { width: 320 });
+
+
+$.extend($.fn.datebox.defaults, {
+    height: 32,
+    panelWidth: 220
+    /*
+    此处待修复，无法选择日期错误
+    ,
+    formatter:function(date){
+    var y = date.getFullYear();
+    var m = date.getMonth()+1;
+    var d = date.getDate();
+    return y+"年"+m+"月"+d+"日";
+    }*/
+});
+$.extend($.fn.datetimebox.defaults, {
+    height: 32,
+    panelWidth: 220
+    /*
+    此处待修复，无法选择日期错误
+    ,
+    formatter:function(date){
+    var y = date.getFullYear();
+    var m = date.getMonth()+1;
+    var d = date.getDate();
+    var H = date.getHours();       //获取当前小时数(0-23)
+    var i = date.getMinutes();     //获取当前分钟数(0-59)
+    var s = date.getSeconds();     //获取当前秒数(0-59)
+    return y+"年"+m+"月"+d+"日 "+H+":"+i+":"+s;
+    }*/
+});
+$.extend($.fn.datetimespinner.defaults, { height: 32 });
+$.extend($.fn.numberbox.defaults, { height: 32 });
+$.extend($.fn.spinner.defaults, { height: 32 });
+
+
+$.extend($.fn.numberspinner.defaults, { height: 32 }); //上线数字不能使用
+$.extend($.fn.searchbox.defaults, { height: 32 });
+$.extend($.fn.filebox.defaults, { height: 32 });
+
+$.extend($.fn.validatebox.defaults, { height: 32 });
+$.extend($.fn.validatebox.defaults.tipOptions, {
+    onShow: function () {
+        $(this).tooltip("tip").css({
+            color: "#fff",
+            border: "none",
+            backgroundColor: "#ff7e00"
+        });
+    }
+}); //重置tipOptions的样式
+
+
+
+; (function ($) {
+    $.insdep = {
+        ajax: function (c) {
+            var d = {
+                url: "",
+                async: false, //true异步请求,false同步请求,注：同步请求将锁住浏览器，用户其它操作必须等待请求完成才可以执行
+                cache: false,
+                type: "POST",
+                dataType: "html",
+                beforeSend: function () {
+                    $.messager.progress();
+                },
+                complete: function () {
+                    $.messager.progress('close');
+                }
+            };
+            var n = $.extend(true, d, c);
+            $.ajax(n);
+        },
+        error: function (result) {
+            $('<div/>').window({
+                id: "insdep-error-debug-window",
+                cache: false,
+                width: 720,
+                height: 480,
+                modal: true,
+                title: "错误",
+                content: "<div style='padding:15px;overflow:hidden;height:auto;clear:both;'><b>Return Error</b><br/>" + result + "<br/></div>",
+                border: false,
+                collapsible: false,
+                minimizable: false,
+                maximizable: false,
+                queryParams: "",
+                onClose: function () {
+                    $(this).window('destroy');
+                },
+                buttons: []
+            });
+        },
+        window: function (c) {
+            var d = {
+                id: "temp-window",
+                href: "",
+                cache: false,
+                method: "post",
+                width: 680,
+                height: 550,
+                modal: true,
+                title: "",
+                border: false,
+                collapsible: false,
+                minimizable: false,
+                maximizable: false,
+                queryParams: "",
+                onClose: function () {
+                    $(this).window('destroy');
+                },
+                buttons: []
+            };
+            var n = $.extend(true, d, c);
+            $('<div/>').window(n);
+        },
+        control: function (url, queryParams) {
+            $('#control').panel({
+                href: url,
+                cache: false,
+                method: "post",
+                queryParams: queryParams ? queryParams : {},
+                onLoad: function () {
+                    //alert('loaded successfully');    
+                },
+                onBeforeLoad: function () {
+                    $(this).panel('clear');
+                }
+            });
+        }
+    };
+})(jQuery);
+
+
+
+
+/**
+* @Loading.js
+* @version
+*/
+
+(function (global, factory) {
+    if (typeof define === 'function' && (define.amd || define.cmd)) {
+        define(factory);
+    } else {
+        global.Loading = factory();
+    }
+} (this, function () {
+    var CL = 'ui-loading', CL_ICON = 'ui-loading-icon',
+		CL_BUTTON = 'ui-button', CL_BUTTON_LOADING = 'ui-button-loading',
+		joiner = '-';
+
+
+    /**
+    * 是否正在loading
+    * 避免在业务代码中暴露类名
+    * 1. 容器loading
+    * 2. 按钮loading
+    */
+
+    $.fn.isLoading = function () {
+        var container = $(this).eq(0);
+        if (container.hasClass(CL_BUTTON) == false) {
+            // 作为容器处理
+            // 通过尺寸判断loading是否显示
+            var icon = container.find('.' + CL_ICON);
+            if (icon.length && icon.is(':visible')) {
+                return true;
+            }
+            return false;
+        } else {
+            return container.hasClass(CL_BUTTON_LOADING);
+        }
+    };
+
+    /**
+    * 显示loading效果
+    * 配合CSS实现尺寸和透明度变化的动效
+    * 可用在任何Ajax异步操作呈现上，如：
+    * 1. 表格的分页请求；
+    * 2. ajax弹框呈现
+    * 支持jQuery 包装器调用和模块化调用
+    */
+
+    $.fn.loading = function (options) {
+        return $(this).each(function () {
+            var container = $(this);
+            if (container.hasClass(CL_BUTTON) == false) {
+                container.data('loading', new Loading(container, options));
+            } else {
+                container.addClass(CL_BUTTON_LOADING);
+            }
+        });
+    };
+
+
+    /**
+    * unloading实际上是一个动画展示方法
+    * 会隐藏append进入的loading元素
+    */
+    $.fn.unloading = function (param) {
+        var time = param || 0;
+        if (typeof param != 'number') {
+            time = 200;
+        }
+        if (typeof param == 'undefined') {
+            param = time;
+        }
+
+        return $(this).each(function (index, element) {
+            var container = $(this);
+
+            if (container.hasClass(CL_BUTTON)) {
+                container.removeClass(CL_BUTTON_LOADING);
+                return;
+            }
+
+            // IE10+的游戏
+            if (typeof history.pushState == "function") {
+                if (time > 0) {
+                    // 获得并存储当前的高度值
+                    var height = container.height(), minHeight = container.css('min-height');
+                    // 以下行为瞬间执行，用户无感知						
+                    container.css({
+                        height: 'auto',                // 高度设为auto, 用来获得此时的真实高度
+                        webkitTransition: 'none',
+                        transition: 'none',            // iOS safari下，'auto'也会触发transition过渡，因此，还原成'none'
+                        overflow: 'hidden'             // 动画自然
+                    });
+                    // 此时高度
+                    var targetHeight = container.height();
+                    // 高度还原
+                    container.height(height);
+                    // 移除动画
+                    container.removeClass(CL + joiner + 'animation');
+                    // 触发重绘
+                    element.offsetWidth = element.offsetWidth;
+
+                    // 动画效果
+                    // 触发动画效果
+                    if (param !== false) {
+                        container.addClass(CL + joiner + 'animation');
+                    }
+
+                    // 添加过渡效果
+                    // 过渡效果
+                    container.css({
+                        webkitTransition: 'height ' + time + 'ms',
+                        transition: 'height ' + time + 'ms'
+                    });
+
+                    setTimeout(function () {
+                        container.css('overflow', '');
+                    }, time);
+
+                    // 终极尺寸
+                    container.height(targetHeight);
+                } else {
+                    // 过渡效果
+                    container.css({
+                        webkitTransition: 'none',
+                        transition: 'none'
+                    });
+
+                    container.height('auto').removeClass(CL);
+                }
+            } else {
+                container.height('auto');
+            }
+        });
+    };
+
+    var Loading = function (el, options) {
+        var defaults = {
+            primary: false,       // 是否是蓝色背景
+            small: false,         // 是否是小菊花
+            create: false         // loading是当前容器，还是append在当前容器中	
+        };
+
+        var params = $.extend({}, defaults, options || {});
+
+        // container是容器
+        // loading是里面旋转的loading元素
+        // 示意结构如下
+        /* <div class='ui-loading'>        <!-- 默认状态与结构 -->
+        <i class='ui-loading-icon'>
+			  
+        <div class='ui-loading'>
+        <s class='ui-loading-icon'>  <!-- 小尺寸图标 -->
+			  
+        <div class='ui-loading ui-loading-primary'> <!-- 容器背景色是项目蓝 -->
+        <i class='ui-loading-icon'>
+        */
+        var container = el, loading = null, icon = null;
+
+        // 一般情况下，我们会直接在原始HTML就显示loading相关的HTML代码
+        // 此时，我们其实什么都可以不用做
+        // 我们只需要关心容器内没有loading的情况
+
+        // 当然，也存在需要append创建的情况，如table中的loading等
+        this._create = function () {
+            var container = this.el.container;
+            loading = container.find('.' + CL), icon = container.find('.' + CL_ICON);
+
+            if (params.create == true && loading.size() == 0) {
+                container.append(loading = $('<div></div>').addClass(CL));
+            } else if (params.create == false) {
+                loading = container;
+            }
+
+            if (icon.size() == 0) {
+                // 生成loading元素
+                icon = (params.small ? $('<s></s>') : $('<i></i>')).addClass(CL_ICON);
+
+                // 容器状态
+                loading.empty().addClass(CL).append(icon);
+
+
+                // 是否是蓝色背景
+                if (params.primary) {
+                    loading.addClass(CL + joiner + 'primary');
+                }
+                // ↑ 至此 loading效果已经出现			
+            }
+
+            this.el.loading = loading;
+            this.el.icon = icon;
+        }
+
+        // 元素存储
+        this.el = {
+            container: container,
+            loading: loading,
+            icon: icon
+        };
+
+        this.show();
+
+        return this;
+    };
+
+    Loading.prototype.show = function () {
+        var el = this.el;
+
+        if (!el.loading || !el.icon) {
+            this._create();
+        }
+
+        el.loading.show();
+
+        this.display = true;
+
+        return this;
+    };
+
+    Loading.prototype.hide = function () {
+        // 需要判别loading和container是不是一个元素
+        // 如果是，则隐藏图标
+        var el = this.el, container = el.container, loading = el.loading;
+        if (loading) {
+            if (container.get(0) != loading.get(0)) {
+                loading.hide();
+            } else if (container.find('.' + CL_ICON).length) {
+                loading.empty();
+                this.el.icon = null;
+            }
+        }
+        this.display = false;
+
+        return this;
+    };
+
+    Loading.prototype.remove = function () {
+        // remove方法移除元素以及类名，是比较彻底的清除
+        // 如果是，则移除图标
+        var el = this.el, container = el.container, loading = el.loading, icon = el.icon;
+
+        if (loading && icon) {
+            if (container.get(0) == loading.get(0)) {
+                loading.removeClass(CL);
+                icon.remove();
+            } else {
+                loading.remove();
+            }
+
+            this.el.loading = null;
+            this.el.icon = null;
+        }
+
+        this.display = false;
+
+        return this;
+    };
+
+    Loading.prototype.end = function (time) {
+        var el = this.el, container = el.container;
+        if (container) {
+            container.unloading(time);
+            // 标记当前的菊花态
+            if (container.find('.' + CL_ICON).length == 0) {
+                this.el.icon = null;
+            }
+        }
+
+        this.display = false;
+
+        return this;
+    };
+
+    return Loading;
+}));
+
+
+
+if (typeof window.getComputedStyle(document.body).scrollBehavior == 'undefined') {
+    // 传统的JS平滑滚动处理代码...
+    $(document).animate({
+        scrollTop: 0
+    });
+ }

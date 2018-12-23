@@ -105,16 +105,28 @@ namespace Interfaces.Service
         }
 
 
-
         // #region 更新应收对账账号设置维护记录
-        public void UpdateYszdZhszImpl(Get_Yszd_Zhsz_Table_Data model)
+        public void UpdateYszdZhszImpl(string jdrbm, string gstt, string khyh, string zdlx, string jdrmc, string lxfs, string zh,int id)
         {
             using (conn = ConnectionFactory.CreateConnection())
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                string sql = " UPDATE yw_hddz_yszd_zhsz SET jdrbm = @jdrbm,jdrmc = @jdrmc ,zdlx = @zdlx  ,gstt = @gstt,zh= @zh,khyh = @khyh,lxfs = @lxfs WHERE key_id = @key_id ";
-                conn.Execute(sql, model);
+
+
+                DynamicParameters parameters = new DynamicParameters();
+
+                parameters.Add("@jdrbm", jdrbm);
+                parameters.Add("@gstt", gstt);
+                parameters.Add("@khyh", khyh);
+                parameters.Add("@zdlx", zdlx);
+                parameters.Add("@zh", zh);
+                parameters.Add("@jdrmc", jdrmc);
+                parameters.Add("@lxfs", lxfs);
+                parameters.Add("@id", id);
+
+                string sql = " UPDATE yw_hddz_yszd_zhsz SET jdrbm = @jdrbm,jdrmc = @jdrmc ,zdlx = @zdlx  ,gstt = @gstt,zh= @zh,khyh = @khyh,lxfs = @lxfs WHERE key_id = @id ";
+                conn.Execute(sql, parameters);
             }
         }
 

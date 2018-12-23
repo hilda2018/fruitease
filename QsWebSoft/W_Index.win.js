@@ -37,7 +37,7 @@ function W_Index() {
      
     this.PostOpen = function () {
        
-        ts_1.Open("009058", "系统首页", "", "/OpenWindow.aspx?FunID=009058" , true);
+      //  ts_1.Open("009058", "系统首页", "", "/OpenWindow.aspx?FunID=009058" , true);
 
     }
 
