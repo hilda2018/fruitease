@@ -377,7 +377,7 @@ namespace Interfaces.Service
                 string sql = @" select top " + rows + @" * from  (select  row_number() over(order by cjsj desc) as rownumber,* 
                     from s_task_exception "
 + strWhere + ") a where rownumber > @pageIndex  ";
-                string countSql = "select count(1) from s_task_exception  " + strWhere;
+                string countSql = "select c.yjlxbm from s_task_exception  " + strWhere;
                 count = con.Query<int>(countSql, Parameters).FirstOrDefault();
                 return con.Query<s_task_exception>(sql, Parameters).ToList();
             }
@@ -442,16 +442,16 @@ where b.rwkssj < getdate()-3  and a.status=0 order by b.rwkssj desc";
         ///  修改任务状态
         /// </summary>
         /// <param name="log"></param>
-        public void updatewlgzstatus(string rwbh,int status)
+        public void updatewlgzstatus(string rwbh, int status)
         {
             using (conn = ConnectionFactory.CreateConnection())
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
 
-               
+
                 string sql = " update yw_hddz_wlgz set status=@status where rwbh=@rwbh";
-                conn.Execute(sql, new { rwbh = rwbh,status=status});
+                conn.Execute(sql, new { rwbh = rwbh, status = status });
             }
         }
         #endregion

@@ -1225,7 +1225,7 @@
     <Content Include="FHome\lib\theme\peak\js\plugin\jquery.js" />
     <Content Include="FHome\lib\theme\peak\js\plugin\sea.js" />
     <Content Include="FHome\main.js" />
-    <Content Include="FHome\W_Xtdm\W_Xtdm_Yjxx.html" />
+    <Content Include="FHome\html\W_Xtdm_Yjxx.html" />
     <Content Include="FHome\html\yszdZhsz.html" />
     <Content Include="fwbym\FHome\css\oheng.css" />
     <Content Include="fwbym\FHome\images\favicon.ico" />
@@ -7779,6 +7779,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="FHome\W_Xtdm\" />
     <Folder Include="fwbwj\kindeditor\attached\file\" />
     <Folder Include="JS\jquery.uploadify-v2.1.0\example\css\_notes\" />
     <Folder Include="JS\jquery.uploadify-v2.1.0\example\scripts\_notes\" />

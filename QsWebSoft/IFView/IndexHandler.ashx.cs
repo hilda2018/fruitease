@@ -125,10 +125,10 @@ namespace IFView
                 res.result = true;
                 res.msg = "预警表格加载完成";
                 int count;
-                List<Get_Warning_Table_Service> list = new Interfaces.Service.GetWarningMenuListService().GetWarningTableDataServiceImpl(yjlxbm, userid ,rows ,page, sfgx,jdrjc,ry,yjnr,ywbh ,out count);
-      
-                res.rows = list;
+                List<Get_Warning_Table_Service> list = new Interfaces.Service.GetWarningMenuListService().GetWarningTableDataServiceImpl(yjlxbm, userid, rows, page, sfgx, jdrjc, ry, yjnr, ywbh, out count);
                 res.total = count;
+                res.rows = list;
+        
             }
             catch (Exception ex)
             {
@@ -144,8 +144,11 @@ namespace IFView
             try
             {
                 userid = QsWebSoft.AppService.GetUserID();
-                res.rows = new Interfaces.Service.GetWarningMenuListService().GetJdrListImpl(userid);
+                Array jdrArr = new Interfaces.Service.GetWarningMenuListService().GetJdrListImpl(userid);
+                res.rows = jdrArr;
+                res.total = jdrArr.Length;
                 res.result = true;
+                res.msg = "获取应收对账账号设置相关的接单人下拉数据成功";
             }
             catch (Exception ex)
             {

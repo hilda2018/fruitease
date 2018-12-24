@@ -1,12 +1,186 @@
-﻿
+﻿ var baseUrl = window.location.origin + "/IFView/IndexHandler.ashx";
+
+
+ var ajaxPost = function(url, data, success, error){
+
+        $.ajax({
+            type: 'post',
+            url: url,
+            data: data,
+            dataType: 'json',
+            success: function (data) {
+                if(success){ success(data); }
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                if(!error){return false;}
+                error({
+                    jqXHR: jqXHR,
+                    textStatus: textStatus,
+                    errorThrown: errorThrown
+                });
+            }
+        });
+    };
+
+
+var main={
+    "yjxxMenuData":""
+};
+
+/**************************menu**************************/
+var $menuContainer = $('#warningContainer');
+var $gridDiv = $('#tableDataGrid');
+
+var formatData = function(dataArr, index) { //对后台传过来的数据进行修造
+            var origin = dataArr && dataArr.rows;
+            if (!(origin && origin.length)) {
+                return false;
+            }
+            var menuItems = [];
+            $.each(origin,
+                function(i) {
+
+                    menuItems.push({
+                        "yjlxmc": origin[i].yjlxmc ? $.trim(origin[i].yjlxmc) : "",
+                        "yjlxbh": origin[i].yjlxbh ? origin[i].yjlxbh : "",
+                        "IsLast": origin[i].IsLast ? origin[i].IsLast : "",
+                        "syjbh": origin[i].syjbh ? origin[i].syjbh : "",
+                        "xh": origin[i].xh ? origin[i].xh : "",
+                        "parentIndex": index ? index : "",
+                        "selfIndex": i
+                    });
+
+                });
+            return menuItems;
+};
+
+// 第一次 初始化菜单       参数设置
+  
+var menuParams ={"action":"GetWarningMenuList","parentId":"00"};   // 请求参数
+var menuHandler = function(initData){    // 处理函数
+
+    $menuContainer.data("data", initData);
+    var menuItems = main.yjxxMenuData = formatData(initData);
+
+    if (!menuItems && menuItems[0]) { return false; }
+
+    var strhtml = "";
+    var tophtml = "";
+    for (var iItem = 0; iItem < menuItems.length; iItem++) {
+
+        var item = menuItems[iItem];
+        if (item && item.yjlxbh && item.yjlxbh === "00") {
+            tophtml = '<div data-syjbh="'+ item.syjbh + '"   class="menuTopTitle menuListTitle" data-id="' + item.yjlxbh + '"    id="' + item.yjlxbh + '"  ><i class="icon icon-menu"><svg><use xlink:href="#icon-menu"></use></svg></i><i>' +
+                item.yjlxmc + '</i>' + '</div><a id="btnEffect" href="javascript:;" class=""> <span class="left">&lt;&lt;</span><span class="right">&gt;&gt;</span> </a> ';
+        } else {
+            strhtml += '<div class="menuSection"> <div class="menuListTitle"  data-syjbh="' + item.syjbh + '"  data-id="' +  item.yjlxbh +'"  ><i class="icon icon-item"><svg><use xlink:href="#icon-item"></use></svg></i><i>  ' +
+                item.yjlxmc +'</i> </div> <ul data-syjbh="' + item.syjbh + '"   class="hide  subMenu"    data-id="' + item.yjlxbh + '"  id="' +
+                item.yjlxbh +'"  ></ul>  </div>';
+        }
+    }
+
+    $menuContainer.html(tophtml + strhtml);
+    //  初次加载全部数据
+     $('.menuTopTitle').addClass('activeMenuListTitle');
+
+};
 
 
 
+// 接单人请求  
+$('#jdrjc').combobox({    
+    url:baseUrl+"?action=GetJdrData",   
+    valueField:'khjc',    
+    textField:'khjc', 
+    loadFilter:function(data){
+        data.rows.unshift({"khjc":"全部"});
+        return data;
+    }  
+});  
+
+
+// 给一级菜单绑定 点击事件
+  $(document).delegate('.menuListTitle','click',function(e){
+
+
+        var $this = $(this);
+        $('.menuListTitle').removeClass("activeMenuListTitle");
+        $this.addClass("activeMenuListTitle");
+
+        if (e.currentTarget.id === "00") {
+            //全部 菜单触发
+            $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+            return false;
+        } 
 
 
 
+        if ($this.data("data")) { // 判断是否请求过数据  //已经初始化  
+            console.log($menuTitle.data("data"));
+            console.log("已经初始化");
+            return false;
+        }
+
+        //未初始化发起，ajax 请求，渲染二级菜单
+        var $thisParent = $this.parent();
+        var index = $thisParent.index();
+
+        $thisParent.find('ul').toggleClass("hide");
+        var id = $this.attr("data-id");
+        if (!id) {
+            $.messager.alert("提示", "系统出错：" + errorMsg);
+        }
+
+        var subMenuParms = {
+            "action":"GetWarningMenuList",
+            "parentId":id
+        };
+
+        var subMenuHandler = function(menuData){
+            $this.data("data", menuData);
+            //防止多次请求     初始化数据 次级菜单
+            main.yjxxMenuData[index].menuData = formatData(menuData, index);
+            console.log(main.yjxxMenuData[index].menuData);
+            main.yjxxMenuData[index].hasInit = true; // 初始化
+            // 将求得的二级菜单数据变为html 
+            var subData = main.yjxxMenuData[index].menuData;
+            /***** 生成子菜单 ********/
+            if (!subData && !subData.length) {  return false; }
+            var submenuHtml = "";
+
+            $.each(subData, function(i, item) {
+                submenuHtml += '<li  data-syjbh="' + item.syjbh + '"   data-id="' + item.yjlxbh + '" id="' + item.yjlxbh + '"   class="' + item.syjbh + ' theLastItem"   ><i class="icon icon-circle"><svg><use xlink:href="#icon-circle"></use></svg></i><i> ' + item.yjlxmc + '<i></li>';
+            });
+            var $subObj = $('#' + subData[0]["syjbh"]);
+            $subObj.html(submenuHtml);
+            $subObj.delegate('.theLastItem', 'click',  function(e) {
+           
+                var $taerget = $(e.currentTarget);
+                $(".activeTheLastItem").removeClass("activeTheLastItem");
+                $taerget.addClass("activeTheLastItem");
+                var yjlxbm = $taerget.attr("id");
+                if (yjlxbm === "00") {
+                    $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+                    return false;
+                }
+
+                $gridDiv.datagrid('reload', { "yjlxbm": yjlxbm, "page": "1", "rows": "200", "action": "GetTableData" });
+                //yjlxSetting.listGridDiv = $('#yjlxListDataGrid').datagrid(yjlxSetting.listOptions(yjlxbm))
+                return false;
+                });
+
+        };
+        //  点击一级菜单  发起请求
+        ajaxPost(baseUrl,subMenuParms,subMenuHandler);  
+  
+  });
 
 
+  /***********************end***menu**************************/
+
+
+
+var     gridDivOptions = 
 
 
 
@@ -407,199 +581,7 @@ var YjGlobal = (function () {
             // 初次加载全部数据
             $('.menuTopTitle').addClass('activeMenuListTitle');
             $gridDiv.datagrid({
-                "toolbar": "#topList",
-                "url": window.location.origin + "/IFView/IndexHandler.ashx",
-                dataType: "json",
-                queryParams: {
-                    "yjlxbm": "00",
-                    "action": "GetTableData",
-                    "page": 1,
-                    "rows": 200
-                },
-                "columns": [
-                    [
-                        {
-                            sortable: false,
-                            field: "rownumber",
-                            title: "序号",
-                            align:"center",
-                            width: 40
-                        },
-                        {
-                            sortable: false,
-                            field: "ry",
-                            width: 0,
-                            title: "用户名",
-                            hidden: true
-                        },
-                        {
-                            sortable: false,
-                            field: "xh",
-                            width: 0,
-                            title: "序号",
-                            hidden: true
-                        },
-                        {
-                            sortable: false,
-                            field: "sfhys",
-                            width: 0,
-                            title: "是否是红颜色",
-                            hidden: true
-                        },
-                        {
-                            sortable: false,
-                            field: "yjlxbm",
-                            width: 80,
-                            title: "预警类型编码"
-                        },
-                        {
-                            sortable: false,
-                            field: "ywbh",
-                            width: 80,
-                            title: "编号"
-                        },
-                        {
-                            sortable: false,
-                            field: "hth",
-                            title: "合同号"
-                        },
-                        {
-                            sortable: false,
-                            field: "yjsj",
-                            title: "预警时间"
-                        },
-                        {
-                            sortable: false,
-                            field: "jsq",
-                            width: 80,
-                            title: "计时器"
-                        },
-                        {
-                            sortable: false,
-                            field: "rymc",
-                            width: 50,
-                            title: "人员"
-                        },
-                        {
-                            sortable: false,
-                            field: "yjnr",
-                            title: "预警内容"
-                        },
-                        {
-                            sortable: false,
-                            field: "ycd",
-                            width: 80,
-                            title: "原产地",
-                            align: 'center'
-                        },
-                        {
-                            sortable: false,
-                            field: "sp",
-                            width: 80,
-                            title: "商品",
-                            align: 'center'
-                        },
-                        {
-                            sortable: false,
-                            field: "xq",
-                            width: 80,
-                            title: "详情",
-                            align: 'center'
-                        },
-                        {
-                            sortable: false,
-                            field: "qzyj",
-                            width: 80,
-                            title: "前置预警"
-                        },
-                        {
-                            sortable: false,
-                            field: "jdrjc",
-                            width: 100,
-                            title: "接单人"
-                        },
-                        {
-                            sortable: false,
-                            field: "sfyycyy",
-                            width: 100,
-                            title: "是否有异常原因",
-                            align: 'center',
-                            formatter: function(value, row, index) {
-
-                                var temAttr = (value === "N" ? '' : 'checked ');
-                                return '<input disabled type="checkbox"  ' +
-                                    temAttr +
-                                    ' id="checkbox' +
-                                    index +
-                                    '"  name= "checkbox"> <label for="checkbox' +
-                                    index +
-                                    '"  class="ui-checkbox"></label><label for="checkbox' +
-                                    index +
-                                    '" ></label>';
-                            }
-                        },
-                        {
-                            field: "sfgx",
-                            width: 80,
-                            title: "是否勾选",
-                            align: 'center',
-                            formatter: function(value, row, index) {
-
-                                var temAttr = (value === "N" ? '' : 'checked ');
-                                return '<input disabled type="checkbox"  ' +
-                                    temAttr +
-                                    ' id="sfgx_checkbox' +
-                                    index +
-                                    '"  name="checkbox"> <label for="sfgx_checkbox' +
-                                    index +
-                                    '"  class="ui-checkbox"></label><label for="sfgx_checkbox' +
-                                    index +
-                                    '" ></label>';
-
-                            }
-                        }
-                    ]
-                ],
-                "nowrap": true,
-                fit: true,
-                rowStyler: function(index, row) {
-                    if (row.hide && row.hide === "true") {
-                        return 'display:none;height:0;font-size:0;line-height:0;tansition:0.5s all;-webkit-transition:0.5s all;';
-                    }
-                },
-                rownumbers: false,
-                singleSelect: true,
-                idField: "ry",
-                halign: "center",
-                border: false,
-                onBeforeLoad: function() {
-                    console.log('beforeload');
-                },
-                loadFilter: function(data) {
-                    if (data.rows && data.result) {
-               
-                    } else {
-                        alam(data.msg);
-                    }
-
-                    return data;
-                },
-                onLoadSuccess: function(data) {
-
-                    console.log('onLoadSuccess');
-                },
-                onLoadError: function(data) {
-
-                    alam(data.msg);
-                },
-                resizable: true,
-                striped: true,
-                width: "100%",
-                height: "600",
-                pagination: true,
-                pageNumber: 1,
-                pageSize: 200,
-                pageList: [200, 400, 600, 800, 1000]
+                
             });
         }(),
         "YJDataFormatter": function(dataArr, index) { //对后台传过来的数据进行修造
@@ -626,232 +608,25 @@ var YjGlobal = (function () {
         },
         "initMenuItems": function(menuItems) { //一级菜单
 
-            if (!menuItems && menuItems[0]) {
-                return false;
-            }
-
-            var strhtml = "";
-            var tophtml = "";
-            for (var indexItem = 0; indexItem < menuItems.length; indexItem++) {
-
-                var item = menuItems[indexItem];
-
-                if (item && item.yjlxbh && item.yjlxbh === "00") {
-                    tophtml = '<div data-syjbh="' +
-                        item.syjbh +
-                        '"   class="menuTopTitle menuListTitle" data-id="' + item.yjlxbh + '"    id="' + item.yjlxbh + '"  ><i class="icon icon-menu"><svg><use xlink:href="#icon-menu"></use></svg></i><i>' +
-                        item.yjlxmc +
-                        '</i>' +
-                        '</div><a id="btnEffect" href="javascript:;" class=""> <span class="left">&lt;&lt;</span><span class="right">&gt;&gt;</span> </a> ';
-                } else {
-                    strhtml += '<div class="menuSection"> <div class="menuListTitle"  data-syjbh="' +
-                        item.syjbh +
-                        '"  data-id="' +
-                        item.yjlxbh +
-                        '"  ><i class="icon icon-item"><svg><use xlink:href="#icon-item"></use></svg></i><i>  ' +
-                        item.yjlxmc +
-                        '</i> </div> <ul data-syjbh="' +
-                        item.syjbh +
-                        '"   class="hide  subMenu"    data-id="' + item.yjlxbh + '"  id="' +
-                        item.yjlxbh +
-                        '"  ></ul>  </div>';
-                }
-
-
-            }
-
-            $menuContainer.html(tophtml + strhtml);
+          
 
 
         },
         "getMenuDetailFunc": function(submenuItemsData) {
 
-            console.log(yjlxSetting.YJMenuData);
-
-            /***** 生成子菜单 ********/
-            if (!submenuItemsData && !submenuItemsData.length) {
-                return false;
-            }
-
-            var submenuHtml = "";
-
-            $.each(submenuItemsData,
-                function(iItem, indexItem) {
-
-                    if (indexItem.IsLast === "1") { //最后一个
-
-                        submenuHtml += '<li  data-syjbh="' +
-                            indexItem.syjbh +
-                            '"   data-id="' + indexItem.yjlxbh + '"   id="' +
-                            indexItem.yjlxbh +
-                            '"   class="' +
-                            indexItem.syjbh +
-                            ' theLastItem"   ><i class="icon icon-circle"><svg><use xlink:href="#icon-circle"></use></svg></i><i> ' +
-                            indexItem.yjlxmc +
-                            '  <i></li>';
-                    } else {
-                        submenuHtml += '<li  data-syjbh="' +
-                            indexItem.syjbh +
-                            '"     class="' +
-                            indexItem.syjbh +
-                            '"   ><div class="menuListTitle"  data-parentIndex="' +
-                            indexItem.parentIndex +
-                            '"  data-selfIndex="' +
-                            indexItem.selfIndex +
-                            '"    data-syjbh="' +
-                            indexItem.syjbh +
-                            '"   id="' +
-                            indexItem.yjlxbh +
-                            '">' +
-                            indexItem.yjlxmc +
-                            '</div> <ul data-syjbh="' +
-                            indexItem.syjbh +
-                            '"   class="hide subMenu"   ></ul></li>';
-
-                    }
-
-                });
-
-            $('#' + submenuItemsData[0]["syjbh"]).html(submenuHtml);
-
-
-            $('#' + submenuItemsData[0]["syjbh"]).delegate('.theLastItem',
-                'click',
-                function(e) {
-                    console.log(2);
-                    yjlxSetting.lastItemClick($(e.currentTarget));
-                    return false;
-                });
-
+          
 
         },
         "lastItemClick": function($taerget) {
 
-            $(".activeTheLastItem").removeClass("activeTheLastItem");
-            $taerget.addClass("activeTheLastItem");
-            var yjlxbm = $taerget.attr("id");
-
-
-            if (yjlxbm === "00") {
-                yjlxbm = "00";
-                $gridDiv.datagrid('reload',
-                    { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
-                return false;
-            }
-
-            $gridDiv.datagrid('reload', { "yjlxbm": yjlxbm, "page": "1", "rows": "200", "action": "GetTableData" });
-            yjlxSetting.listGridDiv = $('#yjlxListDataGrid').datagrid(yjlxSetting.listOptions(yjlxbm));
+ 
 
         },
         "menuTitleClick": function($menuTitle) {
-            // 给一级菜单绑定 点击事件
-
-            $('.menuListTitle').removeClass("activeMenuListTitle");
-            $menuTitle.addClass("activeMenuListTitle");
-            if ($menuTitle.data("data")) {
-                console.log($menuTitle.data("data"));
-                console.log("已经初始化");
-                return false;
-            }
-
-
-            var index = $menuTitle.parent().index();
-            var $thisParent = $menuTitle.parent();
-            $thisParent.find('ul').toggleClass("hide");
-
-
-            //已经初始化  
-
-            //  console.log($menuTitle);
-
-
-            //未初始化发起，ajax 请求，渲染二级菜单
-
-            var id = $menuTitle.attr("data-id");
-            if (!id) {
-                $.messager.alert("提示", "系统出错：" + errorMsg);
-            }
-            $.ajax({
-                type: "Get",
-                url: window.location.origin +
-                    "/IFView/IndexHandler.ashx?action=GetWarningMenuList&parentId=" +
-                    id,
-                dataType: "json",
-                async: true,
-                success: function(menuData) {
-
-                    $menuTitle.data("data", menuData);
-                    console.log($menuTitle);
-                    //防止多次请求     初始化数据 次级菜单
-                    yjlxSetting.YJMenuData[index].menuData = yjlxSetting.YJDataFormatter(menuData, index);
-                    console.log(yjlxSetting.YJMenuData[index].menuData);
-                    yjlxSetting.YJMenuData[index].hasInit = true; // 初始化
-                    yjlxSetting.getMenuDetailFunc(yjlxSetting.YJMenuData[index].menuData);
-                },
-                error: function(errorMsg) {
-                    $.messager.alert("提示", "系统出错：" + errorMsg);
-                }
-            });
+           
 
         },
-        "getInitMenuData": function(this_) {
-      
-            $.ajax({
-                type: "get",
-                url: window.location.origin + "/IFView/IndexHandler.ashx?action=GetWarningMenuList&parentId=00",
-                dataType: "json",
-                async: true,
-                success: function(initData) {
 
-                    $menuContainer.data("data", initData);
-                    this_.YJMenuData = this_.YJDataFormatter(initData);
-                    this_.initMenuItems(this_.YJMenuData);
-                    // 初次加载全部数据
-                    $('.menuTopTitle').addClass('activeMenuListTitle');
-                }
-            });
-
-        },
-        "initJdr": function() {
-
-            $.ajax({
-                type: "get",
-                url: window.location.origin + "/IFView/IndexHandler.ashx?action=GetJdrData",
-                dataType: "json",
-                async: true,
-                success: function(initData) {
-
-                    if (!initData && !initData.length) {
-                        return false;
-                    }
-
-
-                    var tempHtml = '<option value = "">全部</option>';
-                    $.each(initData.rows,
-                        function(i, item) {
-                            tempHtml += '<option value = "' + item.khjc + '">' + item.khjc + '</option>';
-                        });
-                    $('#jdrjc').html(tempHtml);
-
-                    setTimeout(function() {
-
-                            var config = {
-                                'base': '../lib/theme/modern/js'
-                            };
-                            seajs.config(config).use(['common/ui/Select'],
-                                function(Select) {
-
-                                    $('select').selectMatch();
-                                });
-
-
-                        },
-                        500);
-
-                }
-
-            });
-        }(),
         "dialogInit": function() {
             ycyySelectList
 
@@ -921,25 +696,10 @@ var YjGlobal = (function () {
             
 };
   
+          
 
 
 
-    this.yjlxSetting.getInitMenuData(this.yjlxSetting);//菜单初始化
-
-    $menuContainer.delegate('.menuListTitle','click',function(e) {
-
-        console.log(e)
-
-        if (e.currentTarget.id === "00") {
-            //全部 菜单触发
-            yjlxSetting.lastItemClick($(e.currentTarget));
-        } else {
-
-            // console.log('menuListTitle Click');
-            yjlxSetting.menuTitleClick($(e.currentTarget));
-        }
-        return false;
-    });
 
     $(document).delegate("#addYcyy",
         'click',
@@ -1049,6 +809,9 @@ function autoResize() {
 
 $(document).ready(function () {
 
-
     $(window).resize(function(){ setTimeout(autoResize,500)});
 });
+
+
+//  第一次 初始化菜单  发起请求
+ajaxPost(baseUrl,menuParams,menuHandler);

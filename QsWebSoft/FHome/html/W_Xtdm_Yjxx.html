@@ -6,12 +6,42 @@
     <link href="../lib/css/easyui.css" rel="stylesheet" type="text/css" />
     <!---oheng css -->
     <link href="../css/oheng.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        html,body{margin:0;height:100%}#main{height:100%;margin:0 10px 0 160px}#left,#right{width:160px;height:100%;position:relative}#right{width:6px}       
+        
+           #left{float:left}#right{float:right}#warningContainer{position:absolute;left:10px;right:0;font-size:12px;top:16px;bottom:0;width:140px}
+        .datagrid-cell input[type=checkbox]{position:absolute!important;clip:rect(0,0,0,0)!important;/* IE8+ */ *left:-999px!important;}
+        .expandCls{left:20px!important;transition:0.5s all;}
+   .gridBodyClsWithTitle,.gridTitleCls{transition:0.5s all;}
+   
+   .easyui-dialog .gridBodyClsWithTitle{
+   overflow: hidden!important;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    }
+    
+  
+  
+.datagrid-body .datagrid-editable{margin:0 8px;}
+   .zbDateInput,  .ycyycancle,  .zbrInput{border:0!important;cursor:pointer;background:transparent;width:80px!important;margin-left: -6px!important;}
+     .yccancle,.wxsend{    cursor: pointer;
+    height: 16px;
+    width: 16px!important;
+    padding: 0!important;}
+    
+    .ycyyBtnSelect{color:red;position:relative;}
+    </style>
 </head>
 <body>
+     <div id="left">
+          <!---菜单-->
+    <div id="warningContainer"></div>
+   </div>
+        <div id="main">
+ 
+   <div id="center">
    
-    <!--region-主体内容-->
-    <div class="fixedFull" id="WarningInformation">
-        <!---搜索项 -->
+           <!---搜索项 -->
         <div class="fix" id="topList">
             <form id="ohForm" class="mt2em">
                 <div class="inline_block mr1em mb1em">
@@ -35,18 +65,18 @@
                     <input class="ui-input w100" name="yjnr" /></div>
                 <div class="inline_block mr1em mb1em">
                     <label class="mrHalfem">接单人</label>
-                    <select class="ui-select w120" name="jdrjc" id="jdrjc"></select>
+                    <select class="ui-input w200" name="jdrjc" id="jdrjc"></select>
                 </div>
                 <div class="inline_block mr1em mb1em">
                     <label class="mrHalfem">是否勾选</label>
-                    <select class="ui-select w120" name="sfgx">
+                    <select class="easyui-combobox ui-input"   name="sfgx" style="width:100px;" data-options="panelWidth:100,panelHeight:190">   
                         <option value="">全部</option>
                         <option value="Y">已勾选</option>
                         <option value="N">未勾选</option>
                     </select>
                 </div>
                 <div class="inline_block mr1em  mb1em">
-                    <a id="ycyyInput" class="ui-button  ui-button-primary" role="button">异常原因</a>
+                    <a id="ycyy" class="ui-button  ui-button-primary" role="button">异常原因</a>
                 </div>
                 <div class="inline_block mr1em  mb1em">
                     <a id="filterFunc" class="ui-button ui-button-primary">查询</a>
@@ -54,19 +84,16 @@
             </form>
         </div>
 
-        <!---主要内容 -->
-        <div id="mainContent">
-
-            <!---菜单-->
-            <div id="warningContainer"></div>
+    
             <!---表格 -->
-            <div id="wrapTable"><div id="posDiv"><table id="tableDataGrid" ></table></div></div>
+        <table id="tableDataGrid" ></table>
 
-        </div>
 
-    </div>
-    <!--end region--->
+   
+   </div>
 
+   <div id="right"></div>
+  </div>
 
     <!--region  图标 --->
     <div class="dn">
@@ -101,11 +128,19 @@
     <!--region  工具按钮 --->
     <div id="ycyyToolbar" class="hide toolbar-cls">
         
-        <a class="ui-button toolbar-btn disabled"  id="saveYcyy"> <span class="icon-save"></span><span >存盘</span></a>    
-        <span class="seperator">|</span>
-        <a class="ui-button toolbar-btn"  id="addYcyy"> <span  class="icon-add"></span><span >新增行</span></a>
-        <span class="seperator">|</span>
-        <a class="ui-button toolbar-btn"  id="closeYcyy"> <span class="icon-remove"></span ><span >关闭</span></a>
+
+      
+
+      <a href="javascript:void(0)" class="easyui-linkbutton btn-cell" iconcls="icon-save" plain="true" id="saveData">存盘</a>
+      <span class="btn-cell">|</span>
+
+      <a href="javascript:void(0)" class="easyui-linkbutton  btn-cell" iconcls="icon-add" plain="true" id="addRow">新增</a>
+      <span class="btn-cell">|</span>
+
+      <a href="javascript:void(0)" class="easyui-linkbutton btn-cell" iconcls="icon-undo" plain="true" id="cancle">撤销</a>
+      <span class="seperator">|</span>
+
+      <a href="javascript:void(0)" class="easyui-linkbutton btn-cell" iconcls="icon-remove" plain="true" id="closeDialog">关闭</a>
 
     </div>
     <!--region  工具按钮--->
@@ -113,9 +148,9 @@
 
     <!--region  输入异常原因对话框 弹窗--->
     <div id="ycyyInputTable" class="easyui-dialog" title="输入异常原因" data-options="closed:true">
-        <div class="datagridAbs">
+  
             <table id="yjlxTableDataGrid"></table> 
-        </div>
+
     </div>
     <!--region  输入异常原因对话框 弹窗--->
     <div id="ycyySelectList" title="异常类型下拉选择" class="easyui-dialog" data-options="closed:true,border:false,cls:'Cls',height:200,width:400">
@@ -123,9 +158,851 @@
     </div>
     <!--end  region  输入异常原因对话框 弹窗--->
 
-<script type="text/javascript" src="../lib/js/jqueryAndeasyuiAndjson.js"></script>
+    <script type="text/javascript" src="../lib/js/jqueryAndeasyuiAndjson.js"></script>
 
-    <script type="text/javascript" src="../lib/theme/modern/js/plugin/sea.js"></script>
+
+    <script type="text/javascript" >
+
+
+
+        var baseUrl = window.location.origin + "/IFView/IndexHandler.ashx";
+
+
+        var ajaxPost = function (url, data, success, error) {
+
+            $.ajax({
+                type: 'post',
+                url: url,
+                data: data,
+                dataType: 'json',
+                success: function (data) {
+                    if (success) { success(data); }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    if (!error) { return false; }
+                    error({
+                        jqXHR: jqXHR,
+                        textStatus: textStatus,
+                        errorThrown: errorThrown
+                    });
+                }
+            });
+        };
+
+
+        var main = {
+            "yjxxMenuData": "",
+            "ycyyAddData":{}
+        };
+
+        /**************************menu**************************/
+        var $menuContainer = $('#warningContainer');
+        var $gridDiv = $('#tableDataGrid');
+        var $listGridDiv = $("#yjlxListDataGrid");
+        var $tableGridDiv = $("#yjlxTableDataGrid");
+        var formatData = function (dataArr, index) { //对后台传过来的数据进行修造
+            var origin = dataArr && dataArr.rows;
+            if (!(origin && origin.length)) {
+                return false;
+            }
+            var menuItems = [];
+            $.each(origin,
+                function (i) {
+
+                    menuItems.push({
+                        "yjlxmc": origin[i].yjlxmc ? $.trim(origin[i].yjlxmc) : "",
+                        "yjlxbh": origin[i].yjlxbh ? origin[i].yjlxbh : "",
+                        "IsLast": origin[i].IsLast ? origin[i].IsLast : "",
+                        "syjbh": origin[i].syjbh ? origin[i].syjbh : "",
+                        "xh": origin[i].xh ? origin[i].xh : "",
+                        "parentIndex": index ? index : "",
+                        "selfIndex": i
+                    });
+
+                });
+            return menuItems;
+        };
+
+        // 第一次 初始化菜单       参数设置
+
+        var menuParams = { "action": "GetWarningMenuList", "parentId": "00" };   // 请求参数
+        var menuHandler = function (initData) {    // 处理函数
+
+            $menuContainer.data("data", initData);
+            var menuItems = main.yjxxMenuData = formatData(initData);
+
+            if (!menuItems && menuItems[0]) { return false; }
+
+            var strhtml = "";
+            var tophtml = "";
+            for (var iItem = 0; iItem < menuItems.length; iItem++) {
+
+                var item = menuItems[iItem];
+                if (item && item.yjlxbh && item.yjlxbh === "00") {
+                    tophtml = '<div data-syjbh="' + item.syjbh + '"   class="menuTopTitle menuListTitle" data-id="' + item.yjlxbh + '"    id="' + item.yjlxbh + '"  ><i class="icon icon-menu"><svg><use xlink:href="#icon-menu"></use></svg></i><i>' +
+                item.yjlxmc + '</i>' + '</div><a id="btnEffect" href="javascript:;" class=""> <span class="left">&lt;&lt;</span><span class="right">&gt;&gt;</span> </a> ';
+                } else {
+                    strhtml += '<div class="menuSection"> <div class="menuListTitle"  data-syjbh="' + item.syjbh + '"  data-id="' + item.yjlxbh + '"  ><i class="icon icon-item"><svg><use xlink:href="#icon-item"></use></svg></i><i>  ' +
+                item.yjlxmc + '</i> </div> <ul data-syjbh="' + item.syjbh + '"   class="hide  subMenu"    data-id="' + item.yjlxbh + '"  id="' +
+                item.yjlxbh + '"  ></ul>  </div>';
+                }
+            }
+
+            $menuContainer.html(tophtml + strhtml);
+            //  初次加载全部数据
+            $('.menuTopTitle').addClass('activeMenuListTitle');
+
+        };
+
+
+
+        // 接单人请求
+        $('#jdrjc').combobox({
+            url: baseUrl + "?action=GetJdrData",
+            valueField: 'khjc',
+            panelWidth:160,
+            panelHeight:200,
+            textField: 'khjc',
+            loadFilter: function (data) {
+                data.rows.unshift({ "khjc": "全部" });
+                return data.rows;
+            }
+        });
+        $('#jdrjc').combobox('setValue', '全部');
+
+
+
+        // 给一级菜单绑定 点击事件
+        $(document).delegate('.menuListTitle', 'click', function (e) {
+
+
+            var $this = $(this);
+            $('.menuListTitle').removeClass("activeMenuListTitle");
+            $this.addClass("activeMenuListTitle");
+
+            if (e.currentTarget.id === "00") {
+                //全部 菜单触发
+                $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+                return false;
+            }
+
+
+
+            if ($this.data("data")) { // 判断是否请求过数据  //已经初始化  
+                console.log($menuTitle.data("data"));
+                console.log("已经初始化");
+                return false;
+            }
+
+            //未初始化发起，ajax 请求，渲染二级菜单
+            var $thisParent = $this.parent();
+            var index = $thisParent.index();
+
+            $thisParent.find('ul').toggleClass("hide");
+            var id = $this.attr("data-id");
+            if (!id) {
+                $.messager.alert("提示", "系统出错：" + errorMsg);
+            }
+
+            var subMenuParms = {
+                "action": "GetWarningMenuList",
+                "parentId": id
+            };
+
+            var subMenuHandler = function (menuData) {
+                $this.data("data", menuData);
+                //防止多次请求     初始化数据 次级菜单
+                main.yjxxMenuData[index].menuData = formatData(menuData, index);
+                console.log(main.yjxxMenuData[index].menuData);
+                main.yjxxMenuData[index].hasInit = true; // 初始化
+                // 将求得的二级菜单数据变为html 
+                var subData = main.yjxxMenuData[index].menuData;
+                /***** 生成子菜单 ********/
+                if (!subData && !subData.length) { return false; }
+                var submenuHtml = "";
+
+                $.each(subData, function (i, item) {
+                    submenuHtml += '<li  data-syjbh="' + item.syjbh + '"   data-id="' + item.yjlxbh + '" id="' + item.yjlxbh + '"   class="' + item.syjbh + ' theLastItem"   ><i class="icon icon-circle"><svg><use xlink:href="#icon-circle"></use></svg></i><i> ' + item.yjlxmc + '<i></li>';
+                });
+                var $subObj = $('#' + subData[0]["syjbh"]);
+                $subObj.html(submenuHtml);
+                $subObj.delegate('.theLastItem', 'click', function (e) {
+
+                    var $taerget = $(e.currentTarget);
+                    $(".activeTheLastItem").removeClass("activeTheLastItem");
+                    $taerget.addClass("activeTheLastItem");
+                    var yjlxbm = $taerget.attr("id");
+                    if (yjlxbm === "00") {
+                        $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+                        return false;
+                    }
+
+                    $gridDiv.datagrid('reload', { "yjlxbm": yjlxbm, "page": "1", "rows": "200", "action": "GetTableData" });
+                    listGridDiv = $('#yjlxListDataGrid').datagrid(listOptions(yjlxbm));
+                    return false;
+                });
+
+            };
+            //  点击一级菜单  发起请求
+            ajaxPost(baseUrl, subMenuParms, subMenuHandler);
+
+        });
+
+
+        /***********************end***menu**************************/
+
+
+        // 初始化datagrid    参数设置
+        var gridDivOptions = {
+            "toolbar": "#topList",
+            "url": baseUrl,
+            "title":"预警信息查询",
+            "headerCls": 'gridTitleCls  left160',
+            "bodyCls": 'gridBodyClsWithTitle left160',
+            dataType: "json",
+            queryParams: {
+                "yjlxbm": "00",
+                "action": "GetTableData",
+                "page": 1,
+                "rows": 200
+            },
+            "columns": [
+            [{
+                sortable: false,
+                checkbox: true,
+                field: "yjlxbm",
+                width: 120,
+                title: "预警类型编码"
+            },
+                {
+                    sortable: false,
+                    field: "rownumber",
+                    title: "序号",
+                    align: "center",
+                    width: 40
+                },
+                {
+                    sortable: false,
+                    field: "ry",
+                    width: 0,
+                    title: "用户名",
+                    hidden: true
+                },
+                {
+                    sortable: false,
+                    field: "xh",
+                    width: 0,
+                    title: "序号",
+                    hidden: true
+                },
+                {
+                    sortable: false,
+                    field: "sfhys",
+                    width: 0,
+                    title: "是否是红颜色",
+                    hidden: true
+                },
+         
+                {
+                    sortable: false,
+                    field: "yjlxmc",
+                    width: 80,
+                    title: "预警类型"
+                },
+                {
+                    sortable: false,
+                    field: "ywbh",
+                    width: 80,
+                    title: "编号"
+                },
+                {
+                    sortable: false,
+                    field: "hth",
+                    title: "合同号"
+                },
+                {
+                    sortable: false,
+                    field: "yjsj",
+                    title: "预警时间"
+                },
+                {
+                    sortable: false,
+                    field: "jsq",
+                    width: 80,
+                    title: "计时器"
+                },
+                {
+                    sortable: false,
+                    field: "rymc",
+                    width: 50,
+                    title: "人员"
+                },
+                {
+                    sortable: false,
+                    field: "yjnr",
+                    title: "预警内容"
+                },
+                {
+                    sortable: false,
+                    field: "ycd",
+                    width: 80,
+                    title: "原产地",
+                    align: 'center'
+                },
+                {
+                    sortable: false,
+                    field: "sp",
+                    width: 80,
+                    title: "商品",
+                    align: 'center'
+                },
+                {
+                    sortable: false,
+                    field: "xq",
+                    width: 80,
+                    title: "详情",
+                    align: 'center'
+                },
+                {
+                    sortable: false,
+                    field: "qzyj",
+                    width: 80,
+                    title: "前置预警"
+                },
+                {
+                    sortable: false,
+                    field: "jdrjc",
+                    width: 100,
+                    title: "接单人"
+                },
+                {
+                    sortable: false,
+                    field: "sfyycyy",
+                    width: 100,
+                    title: "是否有异常原因",
+                    align: 'center',
+                    formatter: function (value, row, index) {
+
+                        var temAttr = (value === "N" ? '' : 'checked ');
+                        return '<input disabled type="checkbox"  ' +
+                            temAttr +
+                            ' id="checkbox' +
+                            index +
+                            '"  name= "checkbox"> <label for="checkbox' +
+                            index +
+                            '"  class="ui-checkbox"></label><label for="checkbox' +
+                            index +
+                            '" ></label>';
+                    }
+                },
+                {
+                    field: "sfgx",
+                    width: 80,
+                    title: "是否勾选",
+                    align: 'center',
+                    formatter: function (value, row, index) {
+
+                        var temAttr = (value === "N" ? '' : 'checked ');
+                        return '<input disabled type="checkbox"  ' +
+                            temAttr +
+                            ' id="sfgx_checkbox' +
+                            index +
+                            '"  name="checkbox"> <label for="sfgx_checkbox' +
+                            index +
+                            '"  class="ui-checkbox"></label><label for="sfgx_checkbox' +
+                            index +
+                            '" ></label>';
+
+                    }
+                }
+            ]
+        ],
+            "nowrap": true,
+            fit: true,
+            rownumbers: false,
+            singleSelect: true,
+            idField: "ry",
+            halign: "center",
+            border: false,
+            onBeforeLoad: function () {
+                console.log('beforeload');
+            },
+            loadFilter: function (data) {
+                if (data.rows && data.result) {
+
+                } else {
+                    alam(data.msg);
+                }
+
+                return data;
+            },
+            onLoadSuccess: function (data) {
+
+             
+            },
+            onLoadError: function (data) {
+
+              
+            },
+            resizable: true,
+            striped: true,
+            width: "100%",
+            height: "600",
+            pagination: true,
+            pageNumber: 1,
+            pageSize: 200,
+            pageList: [200, 400, 600, 800, 1000]
+        };
+
+
+
+
+    var  $ycListDialog = $('#ycyySelectList');
+    var  $ycTableDialog = $('#ycyyInputTable');
+
+   
+            var baseOptions = {
+                nowrap: true,
+                rownumbers: true,
+                resizable: true,
+                striped: true,
+                "headerCls": 'gridTitleCls',
+                "bodyCls": 'gridBodyClsWithTitle',
+                url: baseUrl,
+                singleSelect: true,
+                halign: "center",
+                border: false
+            };
+
+            var listGridOptions = function(yjlxbh) {
+                var op = {
+                    height: 200,
+                    title: "",
+                    width: 400,
+                    columns: [
+                        [
+                            {
+                                sortable: false,
+                                field: "ycyybm",
+                                title: "编码",
+                                width: 50
+                            },
+                            {
+                                sortable: false,
+                                field: "ycyymc",
+                                title: "异常原因名称",
+                                width: 160,
+                                formatter: function(value, row, index) {
+                                    return '<span title="' + value + '">' + value + '</span>';
+                                }
+                            },
+                            {
+                                sortable: false,
+                                field: "ycyylb",
+                                title: "异常原因类别",
+                                width: 80
+                            },
+                        ]
+                    ],
+                    queryParams: {
+                        "yjlxbh": yjlxbh ? yjlxbh : '',
+                        "action": "GetYcyyListData"
+                    },
+                    onSelect: function(rowIndex, rowData) {
+
+                        //回写数据到 异常原因 表格
+                        var $selectRow = $tableGridDiv.edatagrid('getSelected');
+                        var getSelectedIndex = $tableGridDiv.edatagrid('getRowIndex', $selectRow);
+                        var data = $tableGridDiv.edatagrid('getData');
+               
+                        data.rows[getSelectedIndex].ycyybm = rowData.ycyybm;
+                        data.rows[getSelectedIndex].yy = rowData.yy;
+                        data.rows[getSelectedIndex].wxsffs = rowData.sfmx;
+                        data.rows[getSelectedIndex].ycyylb = rowData.ycyylb;
+                        data.rows[getSelectedIndex].ycyymc = rowData.ycyymc;;
+                        $('#yjlxTableDataGrid').edatagrid('loadData', data);
+
+                        yjlxSetting.ycyyAddData =
+                            $.extend({}, yjlxSetting.ycyyAddData, data.rows[getSelectedIndex]);
+
+
+                        $('#ycyySelectList').dialog('close');
+
+                    }
+                };
+                return $.extend({}, op, baseOptions);
+        };
+
+
+
+
+        var tableGridOptions = function(ywbh,yjlxbh ) {
+            var op = {
+               height:500,
+                showFooter: false,    
+                border: true,
+                onBeforeClose: function() {
+           
+                  $('#addYcyy').removeClass('disabled');
+              
+                },
+                width: '100%',
+                toolbar: "#ycyyToolbar",
+                columns: [
+                    [
+                        {
+                            sortable: false,
+                            field: "id",
+                            title: "id",
+                            width: 0,
+                            hidden: true,
+                        },
+                        {
+                            sortable: false,
+                            field: "zbr",
+                            title: "制表人",
+                            width: 50,
+                             editor: {
+                                type: 'text',
+                                options: { required: true,readonly:true}
+                            },
+                             formatter: function(value, row, index) {
+                                
+                                return "<div class='gridCell'>"+value+"</div>";
+                             
+                             }
+                        },
+                        {
+                            sortable: false,
+                            field: "ycyymc",
+                            title: "异常原因",
+                            width: 120,
+                            formatter: function(value, row, index) {
+                                console.log(value);
+                                if (value) {
+                                    return value;
+
+                                } else {
+                                    return "<div class='relative ycyyBtnSelect cursor important'><span >请选择异常原因</span><i class='ui-select-icon'></i></div>";
+                                }
+                            }
+                        },
+                        {
+                            sortable: false,
+                            field: "zbrq",
+                            title: "制表日期",
+                            width: 80 ,
+                             editor: {
+                                type: 'text',
+                                options: { required: true,readonly:true}
+                            }
+                        },
+                        {
+                            sortable: false,
+                            field: "beizhu",
+                            title: "备注",
+                            width: 180,     editor: {
+                                type: 'text',
+                                options: { required: true}
+                            },
+                            formatter: function(value, row, index) {
+
+
+                                if (!row.id && value === '') { // 没id,新增
+                                    return '<input class="ui-input beizhu" name="beizhu"  focus />'
+                                }
+                                return value;
+                            }
+
+
+                        },
+                        {
+                            sortable: false,
+                            field: "ycyyqc",
+                            title: "异常原因取消",
+                            width: 80,
+                           formatter: function(value, row, index) {
+
+                                var temAttr = (value === "N" ? '' : 'checked ');
+                                return '<input disabled type="checkbox"  ' +
+                                    temAttr +
+                                    ' id="sfgx_checkbox' +
+                                    index +
+                                    '"  name="checkbox"> <label for="sfgx_checkbox' +
+                                    index +
+                                    '"  class="ui-checkbox"></label><label for="sfgx_checkbox' +
+                                    index +
+                                    '" ></label>';
+
+                            }
+
+                        },
+                        {
+                            sortable: false,
+                            field: "ycyyqcsj",
+                            title: "异常原因取消时间",
+                            width: 80,
+                            formatter: function(value, row, index) {
+                                
+                                if(!value){value=''}
+                                return '<span class="ycyyqcsjSpan">' + value + '</span>';
+                            }
+                        },
+                        {
+                            field: "wxsffs",
+                            title: "微信是否发送",
+                            width: 80,
+                   
+                                    formatter: function(value, row, index) {
+
+                                var temAttr = (value === "N" ? '' : 'checked ');
+                                return '<input disabled type="checkbox"  ' +
+                                    temAttr +
+                                    ' id="sfgx_checkbox' +
+                                    index +
+                                    '"  name="checkbox"> <label for="sfgx_checkbox' +
+                                    index +
+                                    '"  class="ui-checkbox"></label><label for="sfgx_checkbox' +
+                                    index +
+                                    '" ></label>';
+
+                            }
+
+
+
+
+
+                        }
+                    ]
+                ],
+                onClickCell:function(rowIndex,field,value){
+                    
+
+                    if(field == 'ycyyqc' ){
+                        value = value=="N"?"Y":"N";
+                        $tableGridDiv.edatagrid('updateRow',{
+	                        index: rowIndex,
+	                        row: {
+		                        ycyyqc: value
+	                        }
+                        });
+
+
+                    }
+          
+
+
+                },
+                queryParams: {
+                    "ywbh": ywbh ? ywbh : '',
+                    "yjlxbh": yjlxbh ? yjlxbh : '',
+                    "action": "GetYcyyTableData"
+                }
+            };
+            return $.extend({}, op, baseOptions);
+        };
+
+
+
+var getTime = function() {
+    var time = new Date().getFullYear() +
+        "/" +
+        (new Date().getMonth() + 1) +
+        "/" +
+        new Date().getDate() +
+        " " +
+        new Date().getHours() +
+        ":" +
+        new Date().getMinutes() +
+        ":" +
+        new Date().getSeconds();
+    return time;
+},
+
+
+   // 初始化 dialog
+
+        $ycListDialog = $ycListDialog.dialog({
+                height:246,
+                width:400,top:30,
+                closed: true,
+                resizable: true,
+                draggable: true
+        });
+
+
+           $ycTableDialog = $ycTableDialog.dialog({
+                height: 300,top:30,
+                cls: 'dialogCls',
+                width: 600,
+                resizable: true,
+                modal: true,
+                closed: true,
+                minimizable: true,
+                collapsible: true,
+                minimizable: true,
+                maxmizable: true,
+                draggable: true,
+                onBeforeOpen: function() {
+
+
+                    var selectedRow = $gridDiv.datagrid('getSelected');
+
+                    if (!selectedRow) { // 没有选择行
+
+                        $.messager.alert('警告', '必须选择一行数据后，才能进行操作！', 'info');
+                        return false;
+                    }
+
+                    var params = {
+                        "yjlxbh": selectedRow["yjlxbm"] ? selectedRow["yjlxbm"] : '',
+                        "ywbh": selectedRow["ywbh"] ? selectedRow["ywbh"] : ''
+                    };
+
+
+                    console.log(params);
+
+                    if (params["ywbh"] && params["yjlxbh"]) {
+
+                        $tableGridDiv =$tableGridDiv.edatagrid(tableGridOptions(params["ywbh"], params["yjlxbh"]));
+                        $listGridDiv = $listGridDiv.edatagrid(listGridOptions(params["yjlxbh"]));
+                        $tableGridDiv.edatagrid('disableEditing');
+
+                        main.ycyyAddData = {
+                            beizhu: "",
+                            cxh: 0,
+                            id: "",
+                            wxsffs: "N",
+                            ycyybm: params["yjlxbh"] ? params["yjlxbh"] : '',
+                            ycyymc: "",
+                            ycyyqc: "N",
+                            ycyyqcsj: "",
+                            ywbh: params["ywbh"] ? params["ywbh"] : '',
+                            yy: ""
+                        };
+
+
+                    } else {
+                 
+                    }
+
+
+
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+        //  第一次 初始化菜单  发起请求
+        ajaxPost(baseUrl,menuParams,menuHandler);
+    
+            // 初始化datagrid 
+        $gridDiv = $gridDiv.datagrid(gridDivOptions);
+    
+    
+    // 事件的绑定
+
+
+    
+$('#ycyy').click(function() {
+    $ycTableDialog.dialog('open');
+
+});
+
+        // 事件的绑定  新增
+    $(document).delegate("#addRow",
+        'click',
+        function(e) {
+
+        
+            $('#saveYcyy').removeClass('disabled');//保存 按钮可点击
+            
+            $(this).addClass('disabled');//新增 按钮可点击
+             $tableGridDiv.edatagrid('enableEditing');
+	        $tableGridDiv.edatagrid('addRow');
+
+           setTimeout(function(){
+           
+           var zbrInput =  $(".editCell").eq(0);
+
+            zbrInput.val($.cookie("UserID")); 
+            zbrInput.attr({"readonly":true}).addClass("zbrInput");
+           $(".editCell").eq(1).val(  getTime() ).addClass("zbDateInput").attr({"readonly":true});
+           $(".editCell").eq(3).addClass("yccancle").attr({"readonly":true});
+             $(".editCell").eq(4).addClass("yccancleDate")
+               $(".editCell").eq(5).addClass("wxsend")
+           },500);
+
+
+    });
+
+         // 事件的绑定  关闭
+    $(document).delegate("#closeYcyy", 'click',
+    function() {
+        $('#ycyyInputTable').dialog('close');//面板 关闭
+        $('#addYcyy').removeClass('disabled');//新增 按钮可点击
+        yjlxSetting.ycyyAddData = {};//清空 新增的数据
+    });
+  
+    $(document).delegate("#saveYcyy", 'click',
+    function(e) {
+    
+        $('#saveYcyy').addClass('disabled');//保存 按钮 不可点击
+        yjlxSetting.saveDataFunc(e);
+        $('#ycyySelectList').dialog('close');//面板 关闭
+        $('#addYcyy').removeClass('disabled');//新增 按钮可点击
+        yjlxSetting.ycyyAddData = {};//清空 新增的数据
+    });
+  $('#ycyyInputTable').delegate(".fieldDiv", 'click',
+        function(e) {
+    
+            var checkbox = $(this).find('input[type=checkbox]').get(0);
+            var checked = checkbox.checked
+            checkbox.checked = !checked;
+            var field = $(e.target).closest('td').attr("field");
+            var index = $(e.target).closest('tr').attr("index");
+
+            if (field === "wxsffs") {
+                yjlxSetting.ycyyAddData.wxsffs = checkbox.checked ? 'Y' : 'N';
+
+
+
+            } else if( field === "ycyyqc"){
+                yjlxSetting.ycyyAddData.ycyyqc = checkbox.checked ? 'Y' : 'N';
+
+              
+                if (checkbox.checked) {
+
+                    var time =yjlxSetting.tools.getTime();
+                    $(".ycyyqcsjSpan").eq(index).html(time);
+                    console.log(  $('.ycyyqcsjSpan').eq(index) );
+                    yjlxSetting.ycyyAddData.ycyyqcsj = time;
+                    console.log(time);
+
+                } else {
+                    $('.ycyyqcsjSpan').eq(index).html('');
+                    yjlxSetting.ycyyAddData.ycyyqcsj = '';
+                }
+            }
+            console.log(field);
+        });
+
+
+
+
+
+
+
+    
+    </script>
     <script type="text/javascript" src="../js/W_Xtdm/W_Xtdm_Yjxx.js"></script>
 </body>
 

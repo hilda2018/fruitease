@@ -18,6 +18,7 @@ namespace Interfaces.Model
     public partial class Get_Warning_Table_Service
     {
         public string yjlxbm{ get; set; }
+        public string yjlxmc{ get; set; }
         public string ywbh { get; set; }
         public string rownumber { get; set; }
         public string yjsj { get; set; }
