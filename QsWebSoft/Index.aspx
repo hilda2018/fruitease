@@ -7,6 +7,8 @@ AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="QsWebSoft.Index" %>
     <script type="text/javascript" src="./FHome/main.js"></script>
     <script type="text/javascript" >
 
+       $.cookie("userIDName",$("#userName").text());
+              
         globalInfo.globalTabObj = 
     
         $('#fruitEaseTabs').tabs({

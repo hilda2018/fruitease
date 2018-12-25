@@ -449,7 +449,7 @@ body, html, #frame-all {
     position: absolute;
     left: 0;
     top: 0;
-    width: 150px;
+    width: 180px;
     bottom: 0;
     zoom: 1;
     text-align: left;
@@ -522,7 +522,7 @@ body, html, #frame-all {
 .treeMenu li div, .treeMenu li span {
     line-height: 26px;
     height: 26px;
-    text-indent: 1em
+    text-indent: 11px;
 }
 
 .treeMenu .tree-node-selected {
@@ -536,7 +536,7 @@ body, html, #frame-all {
     left: 0;
     top: 31px;
     bottom: 0;
-    width: 150px
+    width: 180px
 }
 
 #west .tree-collapsed {
@@ -621,14 +621,8 @@ body, html, #frame-all {
     color: #044894
 }
 
-.accordion-body ul li::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    width: 7px;
-    left: 16px;
-    top: 10px;
-    border-top: 1px dotted #044894
+#menuBtn span {
+    padding-left: 7px;
 }
 
 ul>li:first-child {
@@ -642,7 +636,7 @@ ul>li:first-child {
 
 #new, #center {
     position: absolute;
-    left: 150px;
+    left: 180px;
     top: 0;
     bottom: 0;
     right: 0;
@@ -737,8 +731,11 @@ ul>li:first-child {
 }
 
 .tabs li a.tabs-inner .tabs-title {
+
     color: #044894!important;
+    font-weight: bold;
 }
+i{font-style:normal;}
 
 #center .tabs-selected .tabs-close:hover {
     background-color: #fff;
@@ -764,7 +761,7 @@ ul>li:first-child {
 }
 
 #menuContainerId .panel-title {
-    margin-top: -1px;
+    margin-top: -1px;    text-indent: 8px;
 }
 #center .tabs-panels {
     width: 100%!important;

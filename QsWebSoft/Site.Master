@@ -18,7 +18,8 @@
 		    <!-- 头部   -->
 		    <div    class="fix" id="north">
 		            <div class="l ml240">
-		                <div class="inline_block"> <span>登录用户: </span><span ><%=Session["UserName"]%></span> <span><%=Session["Zlcqts"]%></span></div>
+		                <div class="inline_block"> <span>登录用户: </span><span id="userName" ><%=Session["UserName"]%><%=Session["Zlcqts"]%></span></div>
+                
 		            </div>
 		            <div class="r">
 		                <a href="http://www.fruitease.com" target="_blank" >公司网站</a>
@@ -33,7 +34,7 @@
                 
                 <!--开始左侧菜单-->
                 <div id="west">
-                    <div id="menuBtn">  菜单 <a id="menuShift" href="javascript:;" > </a>  </div>
+                    <div id="menuBtn"> <span> 菜单</span> <a id="menuShift" href="javascript:;" > </a>  </div>
                     <div id="wrapMenuContainer">
                         <div id="menuContainerId" class="easyui-accordion" data-options="border:false,fit:true">
                         </div>

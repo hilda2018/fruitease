@@ -112,6 +112,15 @@ namespace Interfaces.Service
                     strWhere += " and c.yjlxbm like @yjlxbm ";
                     Parameters.Add("@yjlxbm", yjlxbm + "%");
                 }
+
+                //预警内容
+                if (!string.IsNullOrEmpty(ywbh))
+                {
+                    strWhere += " and c.ywbh = @ywbh";
+                    Parameters.Add("@ywbh", ywbh);
+                }
+
+
                 //预警内容
                 if (!string.IsNullOrEmpty(yjnr))
                 {
@@ -266,7 +275,7 @@ on ( c.ywbh=b.ywbh and isnull(c.hth,'')= isnull(b.jzxh,'') and  c.yjlxbm=b.yjlxb
             {
                 if (conn.State == ConnectionState.Closed)
                     conn.Open();
-                string sql = " insert into yw_hddz_ycyy  (zbr,ycyybm,ycyymc,beizhu, ycyyqc,ywbh)values(@zbr,@ycyybm,@ycyymc,@beizhu,@ycyyqc,@ywbh) ";
+                string sql = " insert into yw_hddz_ycyy  (zbr, zbrq ,ycyybm,ycyymc,beizhu, ycyyqc, ycyyqcsj,ywbh,wxsffs)values(@zbr,CONVERT(VARCHAR(40),@zbrq,20) ,@ycyybm,@ycyymc,@beizhu,@ycyyqc,CONVERT(VARCHAR(40),@ycyyqcsj,20),@ywbh,@wxsffs) ";
                 conn.Execute(sql, model);
             }
         }

@@ -227,16 +227,9 @@ namespace IFView
            
 
 
-                if (string.IsNullOrEmpty(id))
-                {
                     GetWarningService.AddYcyyItem(model);
                     res.msg = "新增异常原因记录成功";
-                }
-                else
-                {
-                    GetWarningService.UpdateYcyyItem(model);
-                    res.msg = "更新异常原因记录成功";
-                }
+        
                 res.result = true;
 
 

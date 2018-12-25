@@ -8,8 +8,9 @@
     <link href="../css/oheng.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
         html,body{margin:0;height:100%}#main{height:100%;margin:0 10px 0 160px}#left,#right{width:160px;height:100%;position:relative}#right{width:6px}       
+  
         
-           #left{float:left}#right{float:right}#warningContainer{position:absolute;left:10px;right:0;font-size:12px;top:16px;bottom:0;width:140px}
+           #left{float:left}#right{float:right}#warningContainer{position:absolute;left:10px;right:0;font-size:12px;top:16px;bottom:0;width: 150px;overflow: auto;}
         .datagrid-cell input[type=checkbox]{position:absolute!important;clip:rect(0,0,0,0)!important;/* IE8+ */ *left:-999px!important;}
         .expandCls{left:20px!important;transition:0.5s all;}
    .gridBodyClsWithTitle,.gridTitleCls{transition:0.5s all;}
@@ -19,8 +20,14 @@
     border: 1px solid #eee;
     box-sizing: border-box;
     }
-    
-  
+    .left60{left:56px;}
+   #left.showExpand
+   {
+       
+       width:60px!important;}
+        #left.showExpand  #warningContainer{display:none;}
+.gridBodyClsWithTitle .datagrid-view2 .datagrid-header,.gridBodyClsWithTitle .datagrid-view2  .datagrid-body{width:100%!important;}
+ 
   
 .datagrid-body .datagrid-editable{margin:0 8px;}
    .zbDateInput,  .ycyycancle,  .zbrInput{border:0!important;cursor:pointer;background:transparent;width:80px!important;margin-left: -6px!important;}
@@ -28,17 +35,30 @@
     height: 16px;
     width: 16px!important;
     padding: 0!important;}
-    
+    .datagrid-view {
+    width: 100%!important;
+}
+.menuSection ul {
+    display: none;
+}
+.showOr ul {
+    display: block!important;
+}
+.datagrid-view2
+{
+    width:100%!important
+    }
     .ycyyBtnSelect{color:red;position:relative;}
     </style>
 </head>
 <body>
      <div id="left">
           <!---菜单-->
+   
+   <a id="btnEffect" href="javascript:;" class=""> <span class="left">&lt;&lt;</span><span class="right">&gt;&gt;</span> </a>
     <div id="warningContainer"></div>
    </div>
         <div id="main">
- 
    <div id="center">
    
            <!---搜索项 -->
@@ -50,9 +70,9 @@
                         <span class="mrHalfem">帮助文档</span></a>
                 </div>
                 <div class="inline_block mr1em mb1em">
-                    <a id="closeWindow" href="javascript:;" class="form_a">
-                        <i class="icon-remove icon_"></i>
-                        <span class="mrHalfem">关闭</span></a>
+                    <a id="reloadWindow" href="javascript:;" class="form_a">
+                        <i class="icon-reload icon_"></i>
+                        <span class="mrHalfem">刷新</span></a>
                 </div>
                 <div class="inline_block mr1em mb1em">
                     <label class="mrHalfem">业务编号</label>
@@ -138,8 +158,7 @@
       <span class="btn-cell">|</span>
 
       <a href="javascript:void(0)" class="easyui-linkbutton btn-cell" iconcls="icon-undo" plain="true" id="cancle">撤销</a>
-      <span class="seperator">|</span>
-
+  <span class="btn-cell">|</span>
       <a href="javascript:void(0)" class="easyui-linkbutton btn-cell" iconcls="icon-remove" plain="true" id="closeDialog">关闭</a>
 
     </div>
@@ -163,8 +182,8 @@
 
     <script type="text/javascript" >
 
-
-
+    
+        var userName = $(window.top.document.getElementById("userName")).text();
         var baseUrl = window.location.origin + "/IFView/IndexHandler.ashx";
 
 
@@ -191,7 +210,7 @@
 
 
         var main = {
-            "yjxxMenuData": "",
+            "yjxxMenuData": [],
             "ycyyAddData":{}
         };
 
@@ -216,6 +235,7 @@
                         "syjbh": origin[i].syjbh ? origin[i].syjbh : "",
                         "xh": origin[i].xh ? origin[i].xh : "",
                         "parentIndex": index ? index : "",
+                        "menuData":[],
                         "selfIndex": i
                     });
 
@@ -240,7 +260,7 @@
                 var item = menuItems[iItem];
                 if (item && item.yjlxbh && item.yjlxbh === "00") {
                     tophtml = '<div data-syjbh="' + item.syjbh + '"   class="menuTopTitle menuListTitle" data-id="' + item.yjlxbh + '"    id="' + item.yjlxbh + '"  ><i class="icon icon-menu"><svg><use xlink:href="#icon-menu"></use></svg></i><i>' +
-                item.yjlxmc + '</i>' + '</div><a id="btnEffect" href="javascript:;" class=""> <span class="left">&lt;&lt;</span><span class="right">&gt;&gt;</span> </a> ';
+                item.yjlxmc + '</i>' + '</div> ';
                 } else {
                     strhtml += '<div class="menuSection"> <div class="menuListTitle"  data-syjbh="' + item.syjbh + '"  data-id="' + item.yjlxbh + '"  ><i class="icon icon-item"><svg><use xlink:href="#icon-item"></use></svg></i><i>  ' +
                 item.yjlxmc + '</i> </div> <ul data-syjbh="' + item.syjbh + '"   class="hide  subMenu"    data-id="' + item.yjlxbh + '"  id="' +
@@ -277,26 +297,26 @@
 
 
             var $this = $(this);
-            $('.menuListTitle').removeClass("activeMenuListTitle");
-            $this.addClass("activeMenuListTitle");
-
+            $(".menuListTitle").removeClass("activeMenuListTitle");
+            $this.toggleClass("activeMenuListTitle");
+           $this.parent().toggleClass("showOr");
             if (e.currentTarget.id === "00") {
                 //全部 菜单触发
-                $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+              $gridDiv=  $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
                 return false;
             }
 
 
 
             if ($this.data("data")) { // 判断是否请求过数据  //已经初始化  
-                console.log($menuTitle.data("data"));
+                console.log($this.data("data"));
                 console.log("已经初始化");
                 return false;
             }
 
             //未初始化发起，ajax 请求，渲染二级菜单
             var $thisParent = $this.parent();
-            var index = $thisParent.index();
+            var index = $thisParent.index()-1;
 
             $thisParent.find('ul').toggleClass("hide");
             var id = $this.attr("data-id");
@@ -333,12 +353,13 @@
                     $taerget.addClass("activeTheLastItem");
                     var yjlxbm = $taerget.attr("id");
                     if (yjlxbm === "00") {
-                        $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
+                      $gridDiv=  $gridDiv.datagrid('reload', { "yjlxbm": "00" + '', "page": "1", "rows": "200", "action": "GetTableData" });
                         return false;
                     }
 
                     $gridDiv.datagrid('reload', { "yjlxbm": yjlxbm, "page": "1", "rows": "200", "action": "GetTableData" });
-                    listGridDiv = $('#yjlxListDataGrid').datagrid(listOptions(yjlxbm));
+                  
+   
                     return false;
                 });
 
@@ -369,9 +390,9 @@
             "columns": [
             [{
                 sortable: false,
-                checkbox: true,
-                field: "yjlxbm",
-                width: 120,
+              checkbox: true,
+                field: "yj1xbm", 
+                width: 20,
                 title: "预警类型编码"
             },
                 {
@@ -383,7 +404,7 @@
                 },
                 {
                     sortable: false,
-                    field: "ry",
+                    field: "ry",  
                     width: 0,
                     title: "用户名",
                     hidden: true
@@ -544,6 +565,34 @@
 
               
             },
+            onSelect:function(rowIndex, row){
+                main.ycyyAddData.yjlxbm = row.yjlxbm;
+               main.ycyyAddData.ywbh = row.ywbh;
+     
+                if(!$listGridDiv.intGrid){
+                   $listGridDiv =  $listGridDiv.edatagrid( listGridOptions(row.yjlxbm));
+                   $listGridDiv.initCrid =true;
+                }else{
+                          $listGridDiv.edatagrid('load',{
+                       "yjlxbh": row.yjlxbm, 
+                        "action": "GetYcyyListData"
+                   
+                   });   $listGridDiv.edatagrid('disableEditing');
+                }
+                
+           
+                   if(!$tableGridDiv.intGrid){
+                 $tableGridDiv =  $tableGridDiv.edatagrid( tableGridOptions(row.ywbh,row.yjlxbm));
+                 $tableGridDiv.intGrid=true;
+                }else{
+                   $tableGridDiv.edatagrid('load',{
+                      "yjlxbh": row.yjlxbm,    "ywbh": row.ywbh,
+                        "action": "GetYcyyTableData"
+                   
+                   });
+                         $tableGridDiv.edatagrid('disableEditing');
+               }
+            },
             resizable: true,
             striped: true,
             width: "100%",
@@ -611,26 +660,29 @@
                     onSelect: function(rowIndex, rowData) {
 
                         //回写数据到 异常原因 表格
-                        var $selectRow = $tableGridDiv.edatagrid('getSelected');
-                        var getSelectedIndex = $tableGridDiv.edatagrid('getRowIndex', $selectRow);
-                        var data = $tableGridDiv.edatagrid('getData');
+           console.log(rowData);
                
-                        data.rows[getSelectedIndex].ycyybm = rowData.ycyybm;
-                        data.rows[getSelectedIndex].yy = rowData.yy;
-                        data.rows[getSelectedIndex].wxsffs = rowData.sfmx;
-                        data.rows[getSelectedIndex].ycyylb = rowData.ycyylb;
-                        data.rows[getSelectedIndex].ycyymc = rowData.ycyymc;;
-                        $('#yjlxTableDataGrid').edatagrid('loadData', data);
+                        main.ycyyAddData.sfwx = rowData.sfwx || rowData.sfwx =='N'?'N':'Y';
+                        main.ycyyAddData.ycyymc =rowData.ycyymc;    
+                        main.ycyyAddData.yjlxbm =yjlxbh;
+                        main.ycyyAddData.ycyybm = rowData.ycyybm;
+         
+                       $tableGridDiv =  $tableGridDiv.edatagrid('updateRow',{
+	                        index:$tableGridDiv.edatagrid('options').editIndex,
+	                        row: {
+                                "ycyymc":rowData.ycyymc
+                            }}
+                        );
 
-                        yjlxSetting.ycyyAddData =
-                            $.extend({}, yjlxSetting.ycyyAddData, data.rows[getSelectedIndex]);
 
 
                         $('#ycyySelectList').dialog('close');
 
                     }
                 };
-                return $.extend({}, op, baseOptions);
+
+               return $.extend({}, op, baseOptions) ;
+             
         };
 
 
@@ -639,6 +691,8 @@
         var tableGridOptions = function(ywbh,yjlxbh ) {
             var op = {
                height:500,
+               editing:false,
+               ediIndex:-1,
                 showFooter: false,    
                 border: true,
                 onBeforeClose: function() {
@@ -649,7 +703,19 @@
                 width: '100%',
                 toolbar: "#ycyyToolbar",
                 columns: [
-                    [
+                    [{
+                            sortable: false,
+                            field: "isNew",
+                            title: "isNew",
+                            width: 0,
+                            hidden: true,
+                        },{
+                            sortable: false,
+                            field: "yjlxbm",
+                            title: "预警类型编码",
+                            width: 0,
+                            hidden: true,
+                        },
                         {
                             sortable: false,
                             field: "id",
@@ -664,13 +730,8 @@
                             width: 50,
                              editor: {
                                 type: 'text',
-                                options: { required: true,readonly:true}
-                            },
-                             formatter: function(value, row, index) {
-                                
-                                return "<div class='gridCell'>"+value+"</div>";
-                             
-                             }
+                                options: { required: true}
+                            }
                         },
                         {
                             sortable: false,
@@ -678,14 +739,28 @@
                             title: "异常原因",
                             width: 120,
                             formatter: function(value, row, index) {
-                                console.log(value);
-                                if (value) {
-                                    return value;
-
-                                } else {
-                                    return "<div class='relative ycyyBtnSelect cursor important'><span >请选择异常原因</span><i class='ui-select-icon'></i></div>";
+                        
+	                        
+                                if($tableGridDiv.edatagrid('options').editIndex == index ){
+                                
+                  var str="";
+                                        if(!value){
+                                            str="请选择异常类型"
+                                        }else{
+                                            str = value;
+                                        }
+                                       return "<div class='relative ycyyBtnSelect cursor important'><span >"+str+"</span><i class='ui-select-icon'></i></div>";   
+                                
+                                
+                                }else{
+                                
+                                return "<span class='ycCls' title="+value+" >"+value+"</span>";
+                             
                                 }
-                            }
+                            
+	                 
+                             }
+                       
                         },
                         {
                             sortable: false,
@@ -723,6 +798,8 @@
                             width: 80,
                            formatter: function(value, row, index) {
 
+                                if(!value){value="N"}
+
                                 var temAttr = (value === "N" ? '' : 'checked ');
                                 return '<input disabled type="checkbox"  ' +
                                     temAttr +
@@ -744,7 +821,7 @@
                             width: 80,
                             formatter: function(value, row, index) {
                                 
-                                if(!value){value=''}
+                                if(!value || value=="1900/1/1 0:00:00"){value=''}
                                 return '<span class="ycyyqcsjSpan">' + value + '</span>';
                             }
                         },
@@ -754,7 +831,7 @@
                             width: 80,
                    
                                     formatter: function(value, row, index) {
-
+                                         if(!value){value="N"}
                                 var temAttr = (value === "N" ? '' : 'checked ');
                                 return '<input disabled type="checkbox"  ' +
                                     temAttr +
@@ -776,20 +853,51 @@
                     ]
                 ],
                 onClickCell:function(rowIndex,field,value){
+                  
+                   if($tableGridDiv.edatagrid('options').editIndex != rowIndex ){
+                   $tableGridDiv.edatagrid('disableEditing');
+                    return false;
+                   }
+                    $tableGridDiv.edatagrid('enableEditing');
+
+                     if(field == 'ycyymc' ){
+                     $('td[field="ycyymc"]').find('.ycyyBtnSelect').click(function(){
+                        
+                     });
+                     }
+                    if(field == 'ycyyqc' ){
+
+                        if(!value){
+                            value="N";
+                        }
+                        value = value=="N"?"Y":"N";
+                        if(value=="Y"){
+                   
+                          main.ycyyAddData.ycyyqcsj = getTime();
+                        }else{
+                          main.ycyyAddData.ycyyqcsj = '';
+                        }
+                             main.ycyyAddData.ycyyqc =value;
+                        $(".ycyyqcsjSpan").eq(rowIndex).html( main.ycyyAddData.ycyyqcsj  );
+                      
+                    }
+          
+                    if(field == 'wxsffs' ){
+                      if(!value){
+                            value="N";
+                        }
+
+                        value = value=="N"?"Y":"N";
+                         main.ycyyAddData.wxsffs = value;
+                    }
                     
 
-                    if(field == 'ycyyqc' ){
-                        value = value=="N"?"Y":"N";
-                        $tableGridDiv.edatagrid('updateRow',{
+                     $tableGridDiv.edatagrid('updateRow',{
 	                        index: rowIndex,
-	                        row: {
-		                        ycyyqc: value
-	                        }
+	                        row:main.ycyyAddData
                         });
 
 
-                    }
-          
 
 
                 },
@@ -798,11 +906,10 @@
                     "yjlxbh": yjlxbh ? yjlxbh : '',
                     "action": "GetYcyyTableData"
                 }
-            };
-            return $.extend({}, op, baseOptions);
+                   
+            }; 
+            return  $.extend({}, op, baseOptions)
         };
-
-
 
 var getTime = function() {
     var time = new Date().getFullYear() +
@@ -827,7 +934,12 @@ var getTime = function() {
                 width:400,top:30,
                 closed: true,
                 resizable: true,
-                draggable: true
+                draggable: true,   onOpen: function() {
+
+                $listGridDiv.edatagrid('resize');
+
+
+                }
         });
 
 
@@ -843,49 +955,11 @@ var getTime = function() {
                 minimizable: true,
                 maxmizable: true,
                 draggable: true,
-                onBeforeOpen: function() {
-
-
-                    var selectedRow = $gridDiv.datagrid('getSelected');
-
-                    if (!selectedRow) { // 没有选择行
-
-                        $.messager.alert('警告', '必须选择一行数据后，才能进行操作！', 'info');
-                        return false;
-                    }
-
-                    var params = {
-                        "yjlxbh": selectedRow["yjlxbm"] ? selectedRow["yjlxbm"] : '',
-                        "ywbh": selectedRow["ywbh"] ? selectedRow["ywbh"] : ''
-                    };
-
-
-                    console.log(params);
-
-                    if (params["ywbh"] && params["yjlxbh"]) {
-
-                        $tableGridDiv =$tableGridDiv.edatagrid(tableGridOptions(params["ywbh"], params["yjlxbh"]));
-                        $listGridDiv = $listGridDiv.edatagrid(listGridOptions(params["yjlxbh"]));
-                        $tableGridDiv.edatagrid('disableEditing');
-
-                        main.ycyyAddData = {
-                            beizhu: "",
-                            cxh: 0,
-                            id: "",
-                            wxsffs: "N",
-                            ycyybm: params["yjlxbh"] ? params["yjlxbh"] : '',
-                            ycyymc: "",
-                            ycyyqc: "N",
-                            ycyyqcsj: "",
-                            ywbh: params["ywbh"] ? params["ywbh"] : '',
-                            yy: ""
-                        };
-
-
-                    } else {
-                 
-                    }
-
+                onClose:function(){
+                  dialogClose();
+                },
+                onOpen: function() {
+                $tableGridDiv.edatagrid('resize');
 
 
                 }
@@ -907,10 +981,15 @@ var getTime = function() {
             // 初始化datagrid 
         $gridDiv = $gridDiv.datagrid(gridDivOptions);
     
-    
+  
+
     // 事件的绑定
 
-
+    $(document).delegate("#btnEffect",'click',function(){
+       $('.gridBodyClsWithTitle').add($('.gridTitleCls')).toggleClass('left60 left160');
+       $("#left").toggleClass('showExpand');
+   
+    });
     
 $('#ycyy').click(function() {
     $ycTableDialog.dialog('open');
@@ -922,88 +1001,156 @@ $('#ycyy').click(function() {
         'click',
         function(e) {
 
-        
-            $('#saveYcyy').removeClass('disabled');//保存 按钮可点击
-            
-            $(this).addClass('disabled');//新增 按钮可点击
+         var selectRow = $gridDiv.edatagrid('getSelected')
+            $('#saveData').attr('disabled',false )//保存 按钮可点击
+              $(".editCell").eq(0).text(userName);
+            var zbrTime = getTime() ;
+            $(".editCell").eq(1).val(  zbrTime  ).addClass("zbDateInput").attr({"readonly":true});
+           main.ycyyAddData.zbr = userName;
+           main.ycyyAddData.zbrq = zbrTime;    main.ycyyAddData.isNew= true;
+           main.ycyyAddData.ycyyqcsj = ""; main.ycyyAddData.ycyymc='';
+           main.ycyyAddData.ycyyqc = "N";   main.ycyyAddData.ywbh = selectRow.ywbh;
+           main.ycyyAddData.yjlxbm = selectRow.yjlxbm;
+           main.ycyyAddData.wxsffs = "N";
+           main.ycyyAddData.beizhu = "";
+            $(this).attr('disabled',true );//新增 按钮可点击
              $tableGridDiv.edatagrid('enableEditing');
-	        $tableGridDiv.edatagrid('addRow');
-
-           setTimeout(function(){
-           
-           var zbrInput =  $(".editCell").eq(0);
-
-            zbrInput.val($.cookie("UserID")); 
-            zbrInput.attr({"readonly":true}).addClass("zbrInput");
-           $(".editCell").eq(1).val(  getTime() ).addClass("zbDateInput").attr({"readonly":true});
-           $(".editCell").eq(3).addClass("yccancle").attr({"readonly":true});
-             $(".editCell").eq(4).addClass("yccancleDate")
-               $(".editCell").eq(5).addClass("wxsend")
-           },500);
+	       $tableGridDiv.edatagrid('addRow').edatagrid('updateRow',{
+	                        index: $tableGridDiv.edatagrid('options').editIndex,
+	                        row:main.ycyyAddData
+                        });
 
 
     });
 
+
+    var dialogClose =function(){
+     
+        $('#addRow').removeClass('disabled');//新增 按钮可点击
+        main.ycyyAddData = {};//清空 新增的数据
+       $tableGridDiv =  $tableGridDiv.edatagrid('reload');
+    }
          // 事件的绑定  关闭
-    $(document).delegate("#closeYcyy", 'click',
+    $(document).delegate("#closeDialog", 'click',
     function() {
-        $('#ycyyInputTable').dialog('close');//面板 关闭
-        $('#addYcyy').removeClass('disabled');//新增 按钮可点击
-        yjlxSetting.ycyyAddData = {};//清空 新增的数据
+       $('#ycyyInputTable').dialog('close');//面板 关闭
+    dialogClose();
     });
   
-    $(document).delegate("#saveYcyy", 'click',
+
+
+    $(document).delegate("#saveData", 'click',
     function(e) {
-    
-        $('#saveYcyy').addClass('disabled');//保存 按钮 不可点击
-        yjlxSetting.saveDataFunc(e);
-        $('#ycyySelectList').dialog('close');//面板 关闭
-        $('#addYcyy').removeClass('disabled');//新增 按钮可点击
-        yjlxSetting.ycyyAddData = {};//清空 新增的数据
-    });
-  $('#ycyyInputTable').delegate(".fieldDiv", 'click',
-        function(e) {
-    
-            var checkbox = $(this).find('input[type=checkbox]').get(0);
-            var checked = checkbox.checked
-            checkbox.checked = !checked;
-            var field = $(e.target).closest('td').attr("field");
-            var index = $(e.target).closest('tr').attr("index");
-
-            if (field === "wxsffs") {
-                yjlxSetting.ycyyAddData.wxsffs = checkbox.checked ? 'Y' : 'N';
-
-
-
-            } else if( field === "ycyyqc"){
-                yjlxSetting.ycyyAddData.ycyyqc = checkbox.checked ? 'Y' : 'N';
-
-              
-                if (checkbox.checked) {
-
-                    var time =yjlxSetting.tools.getTime();
-                    $(".ycyyqcsjSpan").eq(index).html(time);
-                    console.log(  $('.ycyyqcsjSpan').eq(index) );
-                    yjlxSetting.ycyyAddData.ycyyqcsj = time;
-                    console.log(time);
-
-                } else {
-                    $('.ycyyqcsjSpan').eq(index).html('');
-                    yjlxSetting.ycyyAddData.ycyyqcsj = '';
-                }
+ 
+        $('#saveData').attr('disabled',false);//保存 按钮 不可点击
+     
+            if (!main.ycyyAddData || !main.ycyyAddData.ycyymc) {
+                $.messager.alert('提醒', '必须选择异常原因后，才能进行保存操作', 'alert');
+                return false;
             }
-            console.log(field);
-        });
+
+            console.log(main.ycyyAddData);
+
+            if (!main.ycyyAddData) {
+                $.messager.alert("警告", "必须传相应的数据参数才能进行保存操作", "alert");
+                return false;
+            }
 
 
+            var json = main.ycyyAddData;
+            var oneItem = {};
+            if (json.id) { //如果id 存在
+                oneItem = {
+                    "action": "SaveYcyy",
+                    "json": JSON.stringify(json),
+                    "id": json.id
+                };
+            } else {
+                oneItem = {
+                    "action": "SaveYcyy",
+                    "json": JSON.stringify(json)
+                };
+            }
+          
+            //loading 
 
+            
+        var Params = oneItem ;   // 请求参数
+        var Handler = function (data) {    // 处理函数
+                 if (data.result) {
+                      $.messager.alert('提示信息', data.msg, 'info');
+                      $('#addRow').attr('disabled',false);//新增 可点击
+                    } else {
+                        $.messager.alert('提示信息', '保存失败，查找后台相关原因', 'info');
+                    }
+              
+                $('#ycyySelectList').dialog('close');//面板 关闭
+                $tableGridDiv.edatagrid('disableEditing');  $tableGridDiv.edatagrid('options').editIndex = -1;
+                $tableGridDiv.edatagrid('options').editing = false;
 
-
-
-
+                $('#addRow').attr('disabled',false);//新增 可点击
+                            $tableGridDiv=       $tableGridDiv.edatagrid('reload',{
+                      "yjlxbh": main.ycyyAddData.yjlxbm,    "ywbh": main.ycyyAddData.ywbh,
+                        "action": "GetYcyyTableData"
+                   
+                   });
+        }
     
+          ajaxPost(baseUrl,Params,Handler);
+      
+
+    });
+  
+        $(document).delegate(".ycyyBtnSelect", 'click',
+        function(e) {
+        if(!$listGridDiv){
+         $listGridDiv= $listGridDiv.edatagrid(listGridOptions( main.ycyyAddData.ycyybm ));
+
+        }
+            
+            $('#ycyySelectList').dialog('open');
+    });
+
+
+     $('#ycyyInputTable').delegate(".datagrid-row-selected input[name='beizhu']", 'change',function(e) {
+        main.ycyyAddData.beizhu = $(this).val();
+    });
+  
+
+      $(document).delegate("#filterFunc", 'click',
+        function() {
+        
+             var paras = {};
+            $.each($('#ohForm').serializeArray(),
+                function(i, item) {
+                    paras[item.name] = item.value;
+                });
+
+            var ywbh = paras["ywbh"]?paras["ywbh"]:'';
+            var yjnr = paras["yjnr"]?paras["yjnr"]:'';
+            var ry = paras["ry"]? paras["ry"]:'';
+            if(paras["jdrjc"]=="全部"){
+                var jdrjc = "";
+            }else{
+                var jdrjc = paras["jdrjc"]?paras["jdrjc"]:'';
+            }
+            var sfgx = paras["sfgx"]?paras["sfgx"]:'';
+
+            var yjlxbm = $('.activeMenuListTitle').attr('data-id');
+
+            if ($('.activeTheLastItem').attr('data-id')) {
+                yjlxbm = $('.activeTheLastItem').attr('data-id');
+            }
+           $gridDiv=  $gridDiv.datagrid('reload', { "yjlxbm": yjlxbm, "page": 1, "rows":200, "action": "GetTableData","ywbh":ywbh,"yjnr":yjnr,"ry":ry,"jdrjc":jdrjc,"sfgx":sfgx });
+     });
+    
+
+    $("#reloadWindow").click(function(){
+        window.self.location.href = window.self.location.origin+window.self.location.pathname+"?time="+new Date().getTime();
+    });
+
+
     </script>
-    <script type="text/javascript" src="../js/W_Xtdm/W_Xtdm_Yjxx.js"></script>
 </body>
 
 </html>           

@@ -273,7 +273,6 @@
     <Content Include="FHome\images\wxewm.png" />
     <Content Include="FHome\Index.html" />
     <Content Include="FHome\js\W_Xtdm\W_Xtdm_Yjxx.js" />
-    <Content Include="FHome\js\W_Xtdm\副本 W_Xtdm_Yjxx.js" />
     <Content Include="FHome\lib\css\easyui.css" />
     <Content Include="FHome\lib\css\easyui_animation.css" />
     <Content Include="FHome\lib\css\easyui_plus.css" />

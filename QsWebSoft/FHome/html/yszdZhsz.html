@@ -5,7 +5,11 @@
     <title>水果通服务平台</title>
     <link href="../lib/css/easyui.css" rel="stylesheet" type="text/css" />
     <!---oheng css -->
+
     <link href="../css/oheng.css" rel="stylesheet" type="text/css" />
+    <style>
+    .datagrid-body .datagrid-editable{margin:0!important;}
+    </style>
 </head>
 <body>
     <table id="dg"  > </table>
@@ -132,7 +136,7 @@
             },
             {
                 field: 'khyh',
-                title: '客户银行',
+                title: '客户银行',       width: 200,
                 formatter: function(value, row, index) {
                 return '<span title="' + value + '"> ' + value + '</span>';
                 },
@@ -343,7 +347,6 @@
         $("#cancle").on('click',function() {
 	        $grid.edatagrid('cancelRow'); //cancelEdit
         });
-
 
     </script>
 </body>

@@ -2,37 +2,37 @@
 var globalInfo = {};
 globalInfo.menu = {};
 globalInfo = {
-    "tabsCount":0,
-    "containMenuId":"menuContainerId",
-    "items":[],
-	"myBrowser": function() {
-		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+    "tabsCount": 0,
+    "containMenuId": "menuContainerId",
+    "items": [],
+    "myBrowser": function () {
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
 
-		if (userAgent.indexOf("OPR") > -1 || userAgent.indexOf("Opera") > -1) {
-			return "Opera"
-		} //判断是否Opera浏览器
-		else if (userAgent.indexOf("Firefox") > -1) {
-			return "FF";
-		} //判断是否Firefox浏览器
-		else if (userAgent.indexOf("Chrome") > -1) {
-			return "Chrome";
-		} else if (userAgent.indexOf("Safari") > -1) {
-			return "Safari";
-		} //判断是否Safari浏览器
-		else {
-			return false;
-		}
-	},
-    "formatterData": function(dataArr,index) {
+        if (userAgent.indexOf("OPR") > -1 || userAgent.indexOf("Opera") > -1) {
+            return "Opera"
+        } //判断是否Opera浏览器
+        else if (userAgent.indexOf("Firefox") > -1) {
+            return "FF";
+        } //判断是否Firefox浏览器
+        else if (userAgent.indexOf("Chrome") > -1) {
+            return "Chrome";
+        } else if (userAgent.indexOf("Safari") > -1) {
+            return "Safari";
+        } //判断是否Safari浏览器
+        else {
+            return false;
+        }
+    },
+    "formatterData": function (dataArr, index) {
         //第一次加载菜单，主菜单项是没有windowname
         var origin = dataArr && dataArr.rows;
         if (!(origin && origin.length)) {
             return false;
         }
         var menuItems = [];
-  
 
-        $.each(origin, function(i) {
+
+        $.each(origin, function (i) {
             var temMenuItem = {
                 "text": origin[i].Title ? $.trim(origin[i].Title) : "",
                 "id": origin[i].ID ? origin[i].ID : "",
@@ -49,14 +49,14 @@ globalInfo = {
             menuItems.push(temMenuItem);
 
         });
-        
+
         return menuItems;
     },
-    "initMenuItems": function(menuItems) {
+    "initMenuItems": function (menuItems) {
 
-		if (!menuItems && menuItems[0]) {
-			return false;
-		}
+        if (!menuItems && menuItems[0]) {
+            return false;
+        }
         // console.log(menuItems );
 
 
@@ -67,11 +67,11 @@ globalInfo = {
             selected: 0
         });
 
-       if (menuItems[0].parentId === "00") {
+        if (menuItems[0].parentId === "00") {
 
             for (var indexItem = 0; indexItem < menuItems.length; indexItem++) {
                 var item = menuItems[indexItem];
-                 $("#" + globalInfo.containMenuId).accordion("add",
+                $("#" + globalInfo.containMenuId).accordion("add",
                     {
                         title: item.text,
                         content: "<ul id=\"" + item.id + "\" class=\"treeMenu treeMenu" + item.parentId + "\"></ul>"
@@ -83,20 +83,20 @@ globalInfo = {
         }
 
         $("#" + globalInfo.containMenuId).accordion({
-            onSelect: function(title, index) {
+            onSelect: function (title, index) {
 
                 var $panel = $(this).accordion("getSelected");
                 $(this).find(".panel").removeClass("activePanel");
-                
+
                 $panel.closest(".panel").addClass("activePanel");
-                
-                if ( globalInfo.items[index].hasInit) {
-                   // console.log("已经初始化");
+
+                if (globalInfo.items[index].hasInit) {
+                    // console.log("已经初始化");
                     return false;
                 } //已经初始化  
 
 
-                
+
                 //未初始化发起，ajax 请求，渲染二级菜单
                 var getMenuUrl = "IFView/IndexHandler.ashx?action=getMenuList&parentid=" + menuItems[index].id;
                 $.ajax({
@@ -104,16 +104,16 @@ globalInfo = {
                     url: getMenuUrl,
                     dataType: "json",
                     async: true,
-                    success: function(menuData) {
+                    success: function (menuData) {
                         //防止多次请求     初始化数据 次级菜单
 
-                        globalInfo.items[index].menuData =  globalInfo.formatterData(menuData,index);
-                        globalInfo.items[index].hasInit = true;// 初始化
+                        globalInfo.items[index].menuData = globalInfo.formatterData(menuData, index);
+                        globalInfo.items[index].hasInit = true; // 初始化
                         //  console.log(globalInfo.items[index].menuData );
-                        globalInfo.submenuItems(globalInfo.items[index].menuData );
-					  
+                        globalInfo.submenuItems(globalInfo.items[index].menuData);
+
                     },
-                    error: function(errorMsg) {
+                    error: function (errorMsg) {
                         $.messager.alert("提示", "系统出错：" + errorMsg);
                     }
                 });
@@ -121,64 +121,68 @@ globalInfo = {
             }
         });
 
-	},
-	"submenuItems": function(submenuItemsData) {
+    },
+    "submenuItems": function (submenuItemsData) {
 
-	
-            /***** 生成子菜单 ********/
-	    if ( !submenuItemsData && !submenuItemsData.length ) {
+
+        /***** 生成子菜单 ********/
+        if (!submenuItemsData && !submenuItemsData.length) {
             return false;
-	    }
-	    $("#" + submenuItemsData[0].parentId).tree({
-			data: submenuItemsData,
-			onClick: function(node) {
-			    // 当PB页面在谷歌或火狐打开时
-				// console.log(node);
-				var state = "";
-				var parentIndex = parseInt(node.parentIndex);
-				var selfIndex = parseInt(node.selfIndex);
-				//console && console.log(node);
-				if (node && node.openStyle && parseInt(node.openStyle) === 0 && globalInfo.myBrowser()) {
+        }
+        $("#" + submenuItemsData[0].parentId).tree({
+            data: submenuItemsData, lines:false,
+            formatter: function (node) {
+                console.log(node);
+                return "<i title=" + node.text + "  >" + node.text + "</i>";
+            },
+            onClick: function (node) {
+                // 当PB页面在谷歌或火狐打开时
+                // console.log(node);
+                var state = "";
+                var parentIndex = parseInt(node.parentIndex);
+                var selfIndex = parseInt(node.selfIndex);
+                //console && console.log(node);
+                if (node && node.openStyle && parseInt(node.openStyle) === 0 && globalInfo.myBrowser()) {
 
-					$.messager.alert("警告", "这是旧版水果通页面，请用IE浏览器或者360兼容模式下打开");
-					return;
-				}
-
-
-				if (!parentIndex && node.parentId !== "0001") {
-					return false;
-				} else if (node.parentId === "0001") {
-					state = globalInfo.items[0]["menuData"][node.selfIndex]["state"];
-
-				} else {
-
-					state = globalInfo.items[parentIndex]["menuData"][node.selfIndex]["state"];
-				}
+                    $.messager.alert("警告", "这是旧版水果通页面，请用IE浏览器或者360兼容模式下打开");
+                    return;
+                }
 
 
-				// 不是最后一个，且有链接,且 有效,增加选项卡
-				if (node.windowName !== "" && node.isLast === "1" && node.isValid === "1" && node.id && node.id !== "00" && state === "closed") {
+                if (!parentIndex && node.parentId !== "0001") {
+                    return false;
+                } else if (node.parentId === "0001") {
+                    state = globalInfo.items[0]["menuData"][node.selfIndex]["state"];
 
-					globalInfo.addPanel(node);
-				} else {
-					return false;
-				}
-			}
-		});
-	},
-    "initMenu": function() {
+                } else {
+
+                    state = globalInfo.items[parentIndex]["menuData"][node.selfIndex]["state"];
+                }
+
+
+                // 不是最后一个，且有链接,且 有效,增加选项卡
+                if (node.windowName !== "" && node.isLast === "1" && node.isValid === "1" && node.id && node.id !== "00" && state === "closed") {
+
+                    globalInfo.addPanel(node);
+                } else {
+                    return false;
+                }
+            }
+        });
+    },
+    "initMenu": function () {
         $.ajax({
             type: "get",
             url: "IFView/IndexHandler.ashx?action=getMenuList&parentId=00",
             dataType: "json",
             async: true,
-            success: function(initData) {
+            success: function (initData) {
                 globalInfo.items = globalInfo.formatterData(initData);
-                globalInfo.initMenuItems( globalInfo.items );
+                globalInfo.initMenuItems(globalInfo.items);
             }
         });
     }
-  
+
 }
 
 
@@ -361,6 +365,8 @@ globalInfo.bindEvent = function() {
 $(document).ready(function() {
 
     globalInfo.bindEvent();
+
+
 });
 
 

@@ -739,7 +739,7 @@ var YjGlobal = (function () {
             $(this).toggleClass('active');
         });
 
-
+    
 
     $('#ycyyInputTable').delegate(".fieldDiv", 'click',
         function(e) {
