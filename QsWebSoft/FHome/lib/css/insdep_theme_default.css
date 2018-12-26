@@ -681,7 +681,7 @@ ul>li:first-child {
 
 .menuHide #menuShift {
     background-position: 0 -22px;
-    right: 0
+    right: 30px;
 }
 
 .tabs li a.tabs-inner, .tabs-header, .tabs-tool {

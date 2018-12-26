@@ -183,7 +183,7 @@
     <script type="text/javascript" >
 
     
-        var userName = $(window.top.document.getElementById("userName")).text();
+        var userName = $(window.top.document.getElementById("userName")).text()||$.cookie('userIDName');
         var baseUrl = window.location.origin + "/IFView/IndexHandler.ashx";
 
 
@@ -585,12 +585,12 @@
                  $tableGridDiv =  $tableGridDiv.edatagrid( tableGridOptions(row.ywbh,row.yjlxbm));
                  $tableGridDiv.intGrid=true;
                 }else{
-                   $tableGridDiv.edatagrid('load',{
+                  $tableGridDiv=  $tableGridDiv.edatagrid('load',{
                       "yjlxbh": row.yjlxbm,    "ywbh": row.ywbh,
                         "action": "GetYcyyTableData"
                    
                    });
-                         $tableGridDiv.edatagrid('disableEditing');
+                 $tableGridDiv=  $tableGridDiv.edatagrid('disableEditing');
                }
             },
             resizable: true,
@@ -612,7 +612,7 @@
    
             var baseOptions = {
                 nowrap: true,
-                rownumbers: true,
+                rownumbers: false,
                 resizable: true,
                 striped: true,
                 "headerCls": 'gridTitleCls',
@@ -749,7 +749,7 @@
                                         }else{
                                             str = value;
                                         }
-                                       return "<div class='relative ycyyBtnSelect cursor important'><span >"+str+"</span><i class='ui-select-icon'></i></div>";   
+                                       return "<div class='relative ycyyBtnSelect cursor important'><span  class='ell' title="+value+" >"+str+"</span><i class='ui-select-icon'></i></div>";   
                                 
                                 
                                 }else{
@@ -759,7 +759,7 @@
                                 }
                             
 	                 
-                             }
+                             },
                        
                         },
                         {
@@ -855,10 +855,10 @@
                 onClickCell:function(rowIndex,field,value){
                   
                    if($tableGridDiv.edatagrid('options').editIndex != rowIndex ){
-                   $tableGridDiv.edatagrid('disableEditing');
+                  $tableGridDiv= $tableGridDiv.edatagrid('disableEditing');
                     return false;
                    }
-                    $tableGridDiv.edatagrid('enableEditing');
+                    $tableGridDiv=  $tableGridDiv.edatagrid('enableEditing');
 
                      if(field == 'ycyymc' ){
                      $('td[field="ycyymc"]').find('.ycyyBtnSelect').click(function(){
@@ -892,7 +892,7 @@
                     }
                     
 
-                     $tableGridDiv.edatagrid('updateRow',{
+                     $tableGridDiv=  $tableGridDiv.edatagrid('updateRow',{
 	                        index: rowIndex,
 	                        row:main.ycyyAddData
                         });
@@ -1000,7 +1000,9 @@ $('#ycyy').click(function() {
     $(document).delegate("#addRow",
         'click',
         function(e) {
-
+        if($tableGridDiv.edatagrid('options').editing){
+            $.messager.alert('提醒','保存后再操作','alert');
+        }
          var selectRow = $gridDiv.edatagrid('getSelected')
             $('#saveData').attr('disabled',false )//保存 按钮可点击
               $(".editCell").eq(0).text(userName);
@@ -1014,8 +1016,7 @@ $('#ycyy').click(function() {
            main.ycyyAddData.wxsffs = "N";
            main.ycyyAddData.beizhu = "";
             $(this).attr('disabled',true );//新增 按钮可点击
-             $tableGridDiv.edatagrid('enableEditing');
-	       $tableGridDiv.edatagrid('addRow').edatagrid('updateRow',{
+	     $tableGridDiv=  $tableGridDiv.edatagrid('addRow').edatagrid('updateRow',{
 	                        index: $tableGridDiv.edatagrid('options').editIndex,
 	                        row:main.ycyyAddData
                         });
