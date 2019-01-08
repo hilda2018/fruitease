@@ -671,7 +671,7 @@ function W_HdfybgbjfyList() {
     //#region 获得字段焦点
     this.RbuttonDown = function (dwo, xPos, yPos, Row, dwoName) {
         cloname = dwoName;
-        fzjs_row = Row;
+        if (Row > 0) {  fzjs_row   = Row;   }
     }
     //#endregion
 

@@ -4,186 +4,178 @@
 
 function W_WldwList() {
 
-    var self = this;
-    var requestor = new PBWindow();
-    var dw_print_zzsxx = new DataWindow(requestor);
-    var dw_print = new DataWindow(requestor);
-    var dw_list = new DataWindow(requestor);
-    var tb_2 = new ToolStrip(requestor);
-    var sle_1 = new SingleLineEdit(requestor);
-    var tb_1 = new ToolStrip(requestor);
-    var ContextMenuStrip1 = new ContextMenu(requestor);
-    var ds_1 = new DataStore(requestor);
-    var ds_role = new DataStore(requestor);
+	 var self=this;
+	 var requestor= new PBWindow();
+	 var dw_list= new DataWindow( requestor );
+	 var tb_2= new ToolStrip( requestor );
+	 var sle_1= new SingleLineEdit( requestor );
+	 var tb_1= new ToolStrip( requestor );
+	 var ContextMenuStrip1= new ContextMenu( requestor );
+	 var ds_1= new DataStore( requestor );
+	 var ds_role= new DataStore( requestor );
 
-    if (typeof (this.bind) == "function") var baseBind = this.bind;
-    this.bind = function (win) {
-        if (typeof (baseBind) == "function") baseBind(win);
+	 if(typeof(this.bind)=="function") var baseBind=this.bind;
+	 this.bind=function(win){
+	 if(typeof( baseBind )=="function") baseBind(win);
 
-        if (requestor == null) requestor = new PBWindow();
-        requestor.Attach(win);
-        if (dw_print_zzsxx == null) dw_print_zzsxx = new DataWindow(requestor);
-        dw_print_zzsxx.Attach(win.Control("dw_print_zzsxx"));
-        if (dw_print == null) dw_print = new DataWindow(requestor);
-        dw_print.Attach(win.Control("dw_print"));
-        if (dw_list == null) dw_list = new DataWindow(requestor);
-        dw_list.Attach(win.Control("dw_list"));
-        if (tb_2 == null) tb_2 = new ToolStrip(requestor);
-        tb_2.Attach(win.Control("tb_2"));
-        if (sle_1 == null) sle_1 = new SingleLineEdit(requestor);
-        sle_1.Attach(win.Control("sle_1"));
-        if (tb_1 == null) tb_1 = new ToolStrip(requestor);
-        tb_1.Attach(win.Control("tb_1"));
-        if (ContextMenuStrip1 == null) ContextMenuStrip1 = new ContextMenu(requestor);
-        ContextMenuStrip1.Attach(win.Control("ContextMenuStrip1"));
-        if (ds_1 == null) ds_1 = new DataStore(requestor);
-        ds_1.Attach(win.Control("ds_1"));
-        if (ds_role == null) ds_role = new DataStore(requestor);
-        ds_role.Attach(win.Control("ds_role"));
+		 if(requestor == null ) requestor= new PBWindow();
+		 requestor.Attach(win);
+		 if(dw_list == null ) dw_list= new DataWindow( requestor );
+		 dw_list.Attach( win.Control( "dw_list") ); 
+		 if(tb_2 == null ) tb_2= new ToolStrip( requestor );
+		 tb_2.Attach( win.Control( "tb_2") ); 
+		 if(sle_1 == null ) sle_1= new SingleLineEdit( requestor );
+		 sle_1.Attach( win.Control( "sle_1") ); 
+		 if(tb_1 == null ) tb_1= new ToolStrip( requestor );
+		 tb_1.Attach( win.Control( "tb_1") ); 
+		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
+		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
+		 if(ds_1 == null ) ds_1= new DataStore( requestor );
+		 ds_1.Attach( win.Control( "ds_1") ); 
+		 if(ds_role == null ) ds_role= new DataStore( requestor );
+		 ds_role.Attach( win.Control( "ds_role") ); 
 
-        if (typeof (self.dw_List_DoubleClicked) == "function")
-            win.AttachEvent("dw_list", "DoubleClicked", self.dw_List_DoubleClicked);
+		 if(typeof(self.dw_List_DoubleClicked)=="function") 
+			 win.AttachEvent("dw_list","DoubleClicked",self.dw_List_DoubleClicked); 
 
-        if (typeof (self.RbuttonDown) == "function")
-            win.AttachEvent("dw_list", "RButtonDown", self.RbuttonDown);
+		 if(typeof(self.RbuttonDown)=="function") 
+			 win.AttachEvent("dw_list","RButtonDown",self.RbuttonDown); 
 
-        if (typeof (self.sle_EditChanged) == "function")
-            win.AttachEvent("sle_1", "EditChanged", self.sle_EditChanged);
+		 if(typeof(self.sle_EditChanged)=="function") 
+			 win.AttachEvent("sle_1","EditChanged",self.sle_EditChanged); 
 
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("btn_read", "Clicked", self.Retrieve);
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("btn_read","Clicked",self.Retrieve); 
 
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("全部ToolStripMenuItem", "Clicked", self.Retrieve);
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("全部ToolStripMenuItem","Clicked",self.Retrieve); 
 
-        if (typeof (self.RetrieveGwgys) == "function")
-            win.AttachEvent("国外发货人ToolStripMenuItem", "Clicked", self.RetrieveGwgys);
+		 if(typeof(self.RetrieveGwgys)=="function") 
+			 win.AttachEvent("国外发货人ToolStripMenuItem","Clicked",self.RetrieveGwgys); 
 
-        if (typeof (self.RetrieveGncgs) == "function")
-            win.AttachEvent("国内收货人ToolStripMenuItem", "Clicked", self.RetrieveGncgs);
+		 if(typeof(self.RetrieveGncgs)=="function") 
+			 win.AttachEvent("国内收货人ToolStripMenuItem","Clicked",self.RetrieveGncgs); 
 
-        if (typeof (self.RetrieveWmgs) == "function")
-            win.AttachEvent("外贸公司ToolStripMenuItem", "Clicked", self.RetrieveWmgs);
+		 if(typeof(self.RetrieveWmgs)=="function") 
+			 win.AttachEvent("外贸公司ToolStripMenuItem","Clicked",self.RetrieveWmgs); 
 
-        if (typeof (self.RetrieveHdgs) == "function")
-            win.AttachEvent("货代公司ToolStripMenuItem", "Clicked", self.RetrieveHdgs);
+		 if(typeof(self.RetrieveHdgs)=="function") 
+			 win.AttachEvent("货代公司ToolStripMenuItem","Clicked",self.RetrieveHdgs); 
 
-        if (typeof (self.RetrieveBggs) == "function")
-            win.AttachEvent("报关公司ToolStripMenuItem", "Clicked", self.RetrieveBggs);
+		 if(typeof(self.RetrieveBggs)=="function") 
+			 win.AttachEvent("报关公司ToolStripMenuItem","Clicked",self.RetrieveBggs); 
 
-        if (typeof (self.RetrieveBjgs) == "function")
-            win.AttachEvent("报检公司ToolStripMenuItem", "Clicked", self.RetrieveBjgs);
+		 if(typeof(self.RetrieveBjgs)=="function") 
+			 win.AttachEvent("报检公司ToolStripMenuItem","Clicked",self.RetrieveBjgs); 
 
-        if (typeof (self.RetrieveJyj) == "function")
-            win.AttachEvent("检疫局ToolStripMenuItem", "Clicked", self.RetrieveJyj);
+		 if(typeof(self.RetrieveJyj)=="function") 
+			 win.AttachEvent("检疫局ToolStripMenuItem","Clicked",self.RetrieveJyj); 
 
-        if (typeof (self.RetrieveJyd) == "function")
-            win.AttachEvent("检验点ToolStripMenuItem", "Clicked", self.RetrieveJyd);
+		 if(typeof(self.RetrieveJyd)=="function") 
+			 win.AttachEvent("检验点ToolStripMenuItem","Clicked",self.RetrieveJyd); 
 
-        if (typeof (self.RetrieveJyfwgs) == "function")
-            win.AttachEvent("检疫服务公司ToolStripMenuItem", "Clicked", self.RetrieveJyfwgs);
+		 if(typeof(self.RetrieveJyfwgs)=="function") 
+			 win.AttachEvent("检疫服务公司ToolStripMenuItem","Clicked",self.RetrieveJyfwgs); 
 
-        if (typeof (self.RetrieveCgsorhkgs) == "function")
-            win.AttachEvent("船公司或航空公司ToolStripMenuItem", "Clicked", self.RetrieveCgsorhkgs);
+		 if(typeof(self.RetrieveCgsorhkgs)=="function") 
+			 win.AttachEvent("船公司或航空公司ToolStripMenuItem","Clicked",self.RetrieveCgsorhkgs); 
 
-        if (typeof (self.RetrieveCdorhd) == "function")
-            win.AttachEvent("船代或航代ToolStripMenuItem", "Clicked", self.RetrieveCdorhd);
+		 if(typeof(self.RetrieveCdorhd)=="function") 
+			 win.AttachEvent("船代或航代ToolStripMenuItem","Clicked",self.RetrieveCdorhd); 
 
-        if (typeof (self.RetrieveCd) == "function")
-            win.AttachEvent("车队ToolStripMenuItem", "Clicked", self.RetrieveCd);
+		 if(typeof(self.RetrieveCd)=="function") 
+			 win.AttachEvent("车队ToolStripMenuItem","Clicked",self.RetrieveCd); 
 
-        if (typeof (self.RetrieveCgsfxd) == "function")
-            win.AttachEvent("船公司放箱点ToolStripMenuItem", "Clicked", self.RetrieveCgsfxd);
+		 if(typeof(self.RetrieveCgsfxd)=="function") 
+			 win.AttachEvent("船公司放箱点ToolStripMenuItem","Clicked",self.RetrieveCgsfxd); 
 
-        if (typeof (self.RetrieveHymt) == "function")
-            win.AttachEvent("海运码头ToolStripMenuItem", "Clicked", self.RetrieveHymt);
+		 if(typeof(self.RetrieveHymt)=="function") 
+			 win.AttachEvent("海运码头ToolStripMenuItem","Clicked",self.RetrieveHymt); 
 
-        if (typeof (self.RetrieveMt) == "function")
-            win.AttachEvent("码头ToolStripMenuItem", "Clicked", self.RetrieveMt);
+		 if(typeof(self.RetrieveMt)=="function") 
+			 win.AttachEvent("码头ToolStripMenuItem","Clicked",self.RetrieveMt); 
 
-        if (typeof (self.RetrieveDc) == "function")
-            win.AttachEvent("堆场ToolStripMenuItem", "Clicked", self.RetrieveDc);
+		 if(typeof(self.RetrieveDc)=="function") 
+			 win.AttachEvent("堆场ToolStripMenuItem","Clicked",self.RetrieveDc); 
 
-        if (typeof (self.RetrieveFxgs) == "function")
-            win.AttachEvent("放箱公司ToolStripMenuItem", "Clicked", self.RetrieveFxgs);
+		 if(typeof(self.RetrieveFxgs)=="function") 
+			 win.AttachEvent("放箱公司ToolStripMenuItem","Clicked",self.RetrieveFxgs); 
 
-        if (typeof (self.RetrieveYh) == "function")
-            win.AttachEvent("银行ToolStripMenuItem", "Clicked", self.RetrieveYh);
+		 if(typeof(self.RetrieveYh)=="function") 
+			 win.AttachEvent("银行ToolStripMenuItem","Clicked",self.RetrieveYh); 
 
-        if (typeof (self.RetrieveHg) == "function")
-            win.AttachEvent("海关ToolStripMenuItem", "Clicked", self.RetrieveHg);
+		 if(typeof(self.RetrieveHg)=="function") 
+			 win.AttachEvent("海关ToolStripMenuItem","Clicked",self.RetrieveHg); 
 
-        if (typeof (self.RetrieveHgcyd) == "function")
-            win.AttachEvent("海关查验点ToolStripMenuItem", "Clicked", self.RetrieveHgcyd);
+		 if(typeof(self.RetrieveHgcyd)=="function") 
+			 win.AttachEvent("海关查验点ToolStripMenuItem","Clicked",self.RetrieveHgcyd); 
 
-        if (typeof (self.RetrieveSc) == "function")
-            win.AttachEvent("市场ToolStripMenuItem", "Clicked", self.RetrieveSc);
+		 if(typeof(self.RetrieveSc)=="function") 
+			 win.AttachEvent("市场ToolStripMenuItem","Clicked",self.RetrieveSc); 
 
-        if (typeof (self.RetrieveZjs) == "function")
-            win.AttachEvent("其它ToolStripMenuItem", "Clicked", self.RetrieveZjs);
+		 if(typeof(self.RetrieveZjs)=="function") 
+			 win.AttachEvent("其它ToolStripMenuItem","Clicked",self.RetrieveZjs); 
 
-        if (typeof (self.RetrieveGwhd) == "function")
-            win.AttachEvent("国外货代ToolStripMenuItem", "Clicked", self.RetrieveGwhd);
+		 if(typeof(self.RetrieveGwhd)=="function") 
+			 win.AttachEvent("国外货代ToolStripMenuItem","Clicked",self.RetrieveGwhd); 
 
-        if (typeof (self.RetrieveQt) == "function")
-            win.AttachEvent("其他ToolStripMenuItem", "Clicked", self.RetrieveQt);
+		 if(typeof(self.RetrieveQt)=="function") 
+			 win.AttachEvent("其他ToolStripMenuItem","Clicked",self.RetrieveQt); 
 
-        if (typeof (self.RetrieveCxd) == "function")
-            win.AttachEvent("拆箱点ToolStripMenuItem", "Clicked", self.RetrieveCxd);
+		 if(typeof(self.RetrieveCxd)=="function") 
+			 win.AttachEvent("拆箱点ToolStripMenuItem","Clicked",self.RetrieveCxd); 
 
-        if (typeof (self.New) == "function")
-            win.AttachEvent("btn_new", "Clicked", self.New);
+		 if(typeof(self.New)=="function") 
+			 win.AttachEvent("btn_new","Clicked",self.New); 
 
-        if (typeof (self.Copy) == "function")
-            win.AttachEvent("btn_duplicate", "Clicked", self.Copy);
+		 if(typeof(self.Copy)=="function") 
+			 win.AttachEvent("btn_duplicate","Clicked",self.Copy); 
 
-        if (typeof (self.Delete) == "function")
-            win.AttachEvent("btn_delete", "Clicked", self.Delete);
+		 if(typeof(self.Delete)=="function") 
+			 win.AttachEvent("btn_delete","Clicked",self.Delete); 
 
-        if (typeof (self.OpenWindow) == "function")
-            win.AttachEvent("btn_open", "Clicked", self.OpenWindow);
+		 if(typeof(self.OpenWindow)=="function") 
+			 win.AttachEvent("btn_open","Clicked",self.OpenWindow); 
 
-        if (typeof (self.Print_Zzsxx) == "function")
-            win.AttachEvent("btn_Print_Zzsxx", "Clicked", self.Print_Zzsxx);
+		 if(typeof(self.Print_Zzsxx)=="function") 
+			 win.AttachEvent("btn_Print_Zzsxx","Clicked",self.Print_Zzsxx); 
 
-        if (typeof (self.Print) == "function")
-            win.AttachEvent("btn_prn", "Clicked", self.Print);
+		 if(typeof(self.Print)=="function") 
+			 win.AttachEvent("btn_prn","Clicked",self.Print); 
 
-        if (typeof (self.dw_list_DataSend) == "function")
-            win.AttachEvent("btn_tjsp", "Clicked", self.dw_list_DataSend);
+		 if(typeof(self.dw_list_DataSend)=="function") 
+			 win.AttachEvent("btn_tjsp","Clicked",self.dw_list_DataSend); 
 
-        if (typeof (self.Exit) == "function")
-            win.AttachEvent("btn_close", "Clicked", self.Exit);
+		 if(typeof(self.Exit)=="function") 
+			 win.AttachEvent("btn_close","Clicked",self.Exit); 
 
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("刷新ToolStripMenuItem", "Clicked", self.Retrieve);
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("刷新ToolStripMenuItem","Clicked",self.Retrieve); 
 
-        if (typeof (self.CopyCol) == "function")
-            win.AttachEvent("复制ToolStripMenuItem", "Clicked", self.CopyCol);
+		 if(typeof(self.CopyCol)=="function") 
+			 win.AttachEvent("复制ToolStripMenuItem","Clicked",self.CopyCol); 
 
-    }
+	 }
 
-    if (typeof (this.unbind) == "function") var baseUnBind = this.unbind;
-    this.unbind = function () {
-        if (typeof (this.Release) == "function") this.Release();
-        if (typeof (baseUnBind) == "function") baseUnBind();
+	 if(typeof(this.unbind)=="function") var baseUnBind=this.unbind; 
+	 this.unbind=function() {
+	 if(typeof(this.Release)=="function") this.Release(); 
+	 if(typeof(baseUnBind)=="function") baseUnBind(); 
 
-        dw_print_zzsxx.Detach(); dw_print_zzsxx = null;
-        dw_print.Detach(); dw_print = null;
-        dw_list.Detach(); dw_list = null;
-        tb_2.Detach(); tb_2 = null;
-        sle_1.Detach(); sle_1 = null;
-        tb_1.Detach(); tb_1 = null;
-        ContextMenuStrip1.Detach(); ContextMenuStrip1 = null;
-        ds_1.Detach(); ds_1 = null;
-        ds_role.Detach(); ds_role = null;
-        requestor.Detach(); requestor = null;
+		 dw_list.Detach(); dw_list=null; 
+		 tb_2.Detach(); tb_2=null; 
+		 sle_1.Detach(); sle_1=null; 
+		 tb_1.Detach(); tb_1=null; 
+		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
+		 ds_1.Detach(); ds_1=null; 
+		 ds_role.Detach(); ds_role=null; 
+		 requestor.Detach(); requestor=null; 
 
-        setTimeout(CollectGarbage, 100);
-    }
+		 setTimeout(CollectGarbage, 100); 
+	 }
 
-    //以上代码由设计器自动生成,请不要手工修改
-    //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
+	 //以上代码由设计器自动生成,请不要手工修改
+	 //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
 
 
 

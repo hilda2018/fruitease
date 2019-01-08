@@ -44,8 +44,9 @@ F:\水果tong\qserp2\Interfaces\bin\Debug\Interfaces.pdb
 F:\水果tong\qserp2\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 F:\水果tong\qserp2\Interfaces\obj\Debug\Interfaces.dll
 F:\水果tong\qserp2\Interfaces\obj\Debug\Interfaces.pdb
-F:\水果tong\qserp2\fruitease\Interfaces\bin\Debug\Interfaces.dll.config
 F:\水果tong\qserp2\fruitease\Interfaces\bin\Debug\Interfaces.dll
-F:\水果tong\qserp2\fruitease\Interfaces\bin\Debug\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Debug\Interfaces.dll.config
 F:\水果tong\qserp2\fruitease\Interfaces\obj\Debug\Interfaces.dll
 F:\水果tong\qserp2\fruitease\Interfaces\obj\Debug\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\Interfaces\bin\Debug\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache

@@ -17,7 +17,7 @@ function W_Hddz_List_GB_ywbh() {
 	 var dw_print_packinglist= new DataWindow( requestor );
 	 var dw_print_invoice= new DataWindow( requestor );
 	 var dw_print_contract= new DataWindow( requestor );
-	 var mle_jzxh= new MultiLineEdit( requestor ); 
+	 var mle_jzxh= new MultiLineEdit( requestor );
 	 var tb_2= new ToolStrip( requestor );
 	 var ddlb_rqlx= new DropDownListBox( requestor );
 	 var dp_begin= new DatePicker( requestor );
@@ -39,16 +39,16 @@ function W_Hddz_List_GB_ywbh() {
 	 var dw_print_sjmf_invoice= new DataWindow( requestor );
 	 var dw_ygkthsj= new DataWindow( requestor );
 	 var dw_1= new DataWindow( requestor );
-	 var ContextMenuStrip1= new ContextMenu( requestor );
-	 var ds_1= new DataStore( requestor );
-	 var ds_role= new DataStore( requestor );
-	 var ds_2= new DataStore( requestor );
-	 var ds_role_kybmjl= new DataStore( requestor );
-	 var ds_role_hybmjl= new DataStore( requestor );
-	 var ds_sd= new DataStore( requestor );
-	 var ds_jyj= new DataStore( requestor );
-	 var ds_3= new DataStore( requestor );
 	 var ds_4= new DataStore( requestor );
+	 var ds_1= new DataStore( requestor );
+	 var ds_jyj= new DataStore( requestor );
+	 var ds_role= new DataStore( requestor );
+	 var ds_sd= new DataStore( requestor );
+	 var ds_3= new DataStore( requestor );
+	 var ds_2= new DataStore( requestor );
+	 var ds_role_hybmjl= new DataStore( requestor );
+	 var ds_role_kybmjl= new DataStore( requestor );
+	 var ContextMenuStrip1= new ContextMenu( requestor );
 
 	 if(typeof(this.bind)=="function") var baseBind=this.bind;
 	 this.bind=function(win){
@@ -122,26 +122,26 @@ function W_Hddz_List_GB_ywbh() {
 		 dw_ygkthsj.Attach( win.Control( "dw_ygkthsj") ); 
 		 if(dw_1 == null ) dw_1= new DataWindow( requestor );
 		 dw_1.Attach( win.Control( "dw_1") ); 
-		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
-		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
-		 if(ds_1 == null ) ds_1= new DataStore( requestor );
-		 ds_1.Attach( win.Control( "ds_1") ); 
-		 if(ds_role == null ) ds_role= new DataStore( requestor );
-		 ds_role.Attach( win.Control( "ds_role") ); 
-		 if(ds_2 == null ) ds_2= new DataStore( requestor );
-		 ds_2.Attach( win.Control( "ds_2") ); 
-		 if(ds_role_kybmjl == null ) ds_role_kybmjl= new DataStore( requestor );
-		 ds_role_kybmjl.Attach( win.Control( "ds_role_kybmjl") ); 
-		 if(ds_role_hybmjl == null ) ds_role_hybmjl= new DataStore( requestor );
-		 ds_role_hybmjl.Attach( win.Control( "ds_role_hybmjl") ); 
-		 if(ds_sd == null ) ds_sd= new DataStore( requestor );
-		 ds_sd.Attach( win.Control( "ds_sd") ); 
-		 if(ds_jyj == null ) ds_jyj= new DataStore( requestor );
-		 ds_jyj.Attach( win.Control( "ds_jyj") ); 
-		 if(ds_3 == null ) ds_3= new DataStore( requestor );
-		 ds_3.Attach( win.Control( "ds_3") ); 
 		 if(ds_4 == null ) ds_4= new DataStore( requestor );
 		 ds_4.Attach( win.Control( "ds_4") ); 
+		 if(ds_1 == null ) ds_1= new DataStore( requestor );
+		 ds_1.Attach( win.Control( "ds_1") ); 
+		 if(ds_jyj == null ) ds_jyj= new DataStore( requestor );
+		 ds_jyj.Attach( win.Control( "ds_jyj") ); 
+		 if(ds_role == null ) ds_role= new DataStore( requestor );
+		 ds_role.Attach( win.Control( "ds_role") ); 
+		 if(ds_sd == null ) ds_sd= new DataStore( requestor );
+		 ds_sd.Attach( win.Control( "ds_sd") ); 
+		 if(ds_3 == null ) ds_3= new DataStore( requestor );
+		 ds_3.Attach( win.Control( "ds_3") ); 
+		 if(ds_2 == null ) ds_2= new DataStore( requestor );
+		 ds_2.Attach( win.Control( "ds_2") ); 
+		 if(ds_role_hybmjl == null ) ds_role_hybmjl= new DataStore( requestor );
+		 ds_role_hybmjl.Attach( win.Control( "ds_role_hybmjl") ); 
+		 if(ds_role_kybmjl == null ) ds_role_kybmjl= new DataStore( requestor );
+		 ds_role_kybmjl.Attach( win.Control( "ds_role_kybmjl") ); 
+		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
+		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
 
 		 if(typeof(self.PostOpen)=="function") 
 			 win.AttachEvent("window","PostOpen",self.PostOpen); 
@@ -264,16 +264,16 @@ function W_Hddz_List_GB_ywbh() {
 		 dw_print_sjmf_invoice.Detach(); dw_print_sjmf_invoice=null; 
 		 dw_ygkthsj.Detach(); dw_ygkthsj=null; 
 		 dw_1.Detach(); dw_1=null; 
-		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
-		 ds_1.Detach(); ds_1=null; 
-		 ds_role.Detach(); ds_role=null; 
-		 ds_2.Detach(); ds_2=null; 
-		 ds_role_kybmjl.Detach(); ds_role_kybmjl=null; 
-		 ds_role_hybmjl.Detach(); ds_role_hybmjl=null; 
-		 ds_sd.Detach(); ds_sd=null; 
-		 ds_jyj.Detach(); ds_jyj=null; 
-		 ds_3.Detach(); ds_3=null; 
 		 ds_4.Detach(); ds_4=null; 
+		 ds_1.Detach(); ds_1=null; 
+		 ds_jyj.Detach(); ds_jyj=null; 
+		 ds_role.Detach(); ds_role=null; 
+		 ds_sd.Detach(); ds_sd=null; 
+		 ds_3.Detach(); ds_3=null; 
+		 ds_2.Detach(); ds_2=null; 
+		 ds_role_hybmjl.Detach(); ds_role_hybmjl=null; 
+		 ds_role_kybmjl.Detach(); ds_role_kybmjl=null; 
+		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
 		 requestor.Detach(); requestor=null; 
 
 		 setTimeout(CollectGarbage, 100); 
@@ -888,7 +888,7 @@ function W_Hddz_List_GB_ywbh() {
     //#region 获得字段焦点
     this.RbuttonDown = function (dwo, xPos, yPos, Row, dwoName) {
         cloname = dwoName;
-        fzjs_row = Row;
+        if (Row > 0) {  fzjs_row   = Row;   }
     }
     //#endregion
     //#region 选择复制

@@ -31,34 +31,6 @@ namespace QsWebSoft.Wldw
             this.Width = 800;
 
             // 
-            //  dw_print_zzsxx
-            // 
-            this.dw_print_zzsxx = new TXSoft.ExtPB.DataWindow();
-            this.Controls.Add(this.dw_print_zzsxx);
-            this.dw_print_zzsxx.DataWindowObject = "dw_ywy_wldw_print_zzsxx";
-            this.dw_print_zzsxx.Height = 100;
-            this.dw_print_zzsxx.Name = "dw_print_zzsxx";
-            this.dw_print_zzsxx.TabIndex = 7;
-            this.dw_print_zzsxx.Visible = false;
-            this.dw_print_zzsxx.Width = 200;
-            this.dw_print_zzsxx.X = 362;
-            this.dw_print_zzsxx.Y = 259;
-
-            // 
-            //  dw_print
-            // 
-            this.dw_print = new TXSoft.ExtPB.DataWindow();
-            this.Controls.Add(this.dw_print);
-            this.dw_print.DataWindowObject = "dw_ywy_wldw_print";
-            this.dw_print.Height = 100;
-            this.dw_print.Name = "dw_print";
-            this.dw_print.TabIndex = 5;
-            this.dw_print.Visible = false;
-            this.dw_print.Width = 200;
-            this.dw_print.X = 300;
-            this.dw_print.Y = 250;
-
-            // 
             //  dw_list
             // 
             this.dw_list = new TXSoft.ExtPB.DataWindow();
@@ -431,9 +403,9 @@ namespace QsWebSoft.Wldw
             // 
             this.ContextMenuStrip1 = new TXSoft.ExtPB.ContextMenuStrip();
             this.Controls.Add(this.ContextMenuStrip1);
-            this.ContextMenuStrip1.Height = 70;
+            this.ContextMenuStrip1.Height = 64;
             this.ContextMenuStrip1.Name = "ContextMenuStrip1";
-            this.ContextMenuStrip1.Width = 109;
+            this.ContextMenuStrip1.Width = 101;
 
             // 
             //  m_1
@@ -489,8 +461,6 @@ namespace QsWebSoft.Wldw
             this.ds_role.DataWindowObject = "ds_role_list";
             this.ds_role.Name = "ds_role";
         }
-        protected TXSoft.ExtPB.DataWindow dw_print_zzsxx;
-        protected TXSoft.ExtPB.DataWindow dw_print;
         protected TXSoft.ExtPB.DataWindow dw_list;
         protected TXSoft.ExtPB.ToolStrip tb_2;
         protected TXSoft.ExtPB.ToolStripSeparator sp_2;

@@ -1,0 +1,5838 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QsWebSoft</name>
+    </assembly>
+    <members>
+        <member name="M:QsWebSoft.Xt_Popwin.W_RqTime_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Cm_Dj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Cj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_DrDbysList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Szylgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Cd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfyyshdfygj_Gbh_Ywbh_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Khywqktj_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Wlgz_DzwltjMx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Wlcjgl_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_Zdgl_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_HdfyskhxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzDbysEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_HS_ZlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Jydfyyfk_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyxdfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_KytjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz_Fyqr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_MtsjrwList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyshdfygjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtyskEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_CgscqfsfbzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_ScList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_ScList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykyccfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfycqfytjetzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_KhwqrzdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhhzzdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyswlfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjsdwqrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykykgthfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhycqfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Set_Rq.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Clh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Lhxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CpxxkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_SxgjkszList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CommodityEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.W_TreeView.InitializeControls">
+             <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjskglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhgcyfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_SdglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_YfkdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Jsbm_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Kycdfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Sdzpxx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Dlxy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Tdh_Dj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyscqfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhfygjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GJ_ZlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Kyyctj_Mon_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Tggz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Qtysk_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Bgdsy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Clqy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Ysgj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Hgjldw_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Ycyy.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_CjgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_SdzpglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_CgqsjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_CdphxxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.ServiceBase.CheckPermission">
+            <summary>
+            验证权限
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QsWebSoft.Service.Products">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfysjskd">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyscfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhdf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_OrderMxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzQsdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Jzxcx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hd_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Bg_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbck.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbck.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbck.ltView">
+            <summary>
+            ltView 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Dz_bgdj.W_BgdjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Dlxy.W_DlxyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.SzhdfyYffy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Fybz">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfykyccf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_lxr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzBgdsyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_ThzcfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Tggz_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Sd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Beta3.PostData">
+            <summary>
+            PostData 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Beta3.ModalDialog.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Warning_SetPermission.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Role_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Yh_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Sjmc_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Jldw.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhycdfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_bdsbwh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Shylwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ohxjwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Sys_User_List_Tongbu.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ohwlthzlfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Shylhgfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhfygjList_gbhYwbh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_QdcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_AAAList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhlrtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_SpgjlrtjList_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Scfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_HgcydList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfycqftkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhycqfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfymtthfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_XtXq_TaskList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzRjjkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzEdit_Wl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_GqscbzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_HdfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CommodityOldList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Dz_jhdj.W_JhdjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CommodityAdd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Set_Fun_SetJsjry.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_KddglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CommodityList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyKyCcfYskEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzhyypcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtyskList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_FysqdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WldwzjqkList_DY.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhxdcfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.DownLoadPic.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.DownLoad.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Zfdx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Bzdw_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_YfjjfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhtjList_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Qsd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Ry_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Wl_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Schdfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Yjxx_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Area2.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Myfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtgl_Module.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Xl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Dzlx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Wlcjgl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_MddList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_cd_Wlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_DcList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_GnkhEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfycqftk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyysfyqr">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfybgbjfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Kptzs">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Logout.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Logout.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.BasePage.RegisterClientScriptInclude(System.String,System.String)">
+            <summary>
+            向输出的页面登记Javascript文件
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Index.fruitease">
+            <summary>
+            fruitease control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Index.Form2">
+            <summary>
+            Form2 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Index.win">
+            <summary>
+            win control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Filter.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Tsgl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Spcx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywFkglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.xztp">
+            <summary>
+            xztp 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_XtXq_TaskEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzSjcejs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzKyzjzgz_zzjc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzHybgjdgl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_MtzlfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Fsdz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Gq.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Country.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Zjmsfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Dzlx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Dz_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ohwlgzfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyLrcxList_Gbhywbh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_GmDr_Zdcx_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Cdxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Pz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_Zdgl_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_HdfyskhxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzDbysList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Mtsjrw_cd_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_dzfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Road.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz_Hcj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_GnkhsyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Gjyfzf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyxdfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyshdfygjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyscfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykykgthfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Dydwry.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzKycdzgz_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzKycdzgz_zzjc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Scsxg.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Khhygz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzKyzjzgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzJzxlrcxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjskglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfycffymxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhyfxgsfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_YfkdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_KptzsList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Country_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Tpxx_Cdph_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyschdfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfycxfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyLrcxList_Gbhywbh_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_HD_ZlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_YdtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Lrfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Wlgz_Dzwltj_Ycyy.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Shdz_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hy_Wlgz_Rwdz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Rjmdd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Jhdd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_bdsbwh_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_FscwldList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WljdgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Gnkh">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Cpxxk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyqtysk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyyscqf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyqt">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhycqf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.DefFormula">
+            <summary>
+            DefFormula 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.OpenWindow.Head1">
+            <summary>
+            Head1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.OpenWindow.form1">
+            <summary>
+            form1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.OpenWindow.win">
+            <summary>
+            win control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzYtjkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Bzj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Dlxy.W_DlxyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Yw_Zjgl_Dbys">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfy_yfjjf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyjydfyyfzsf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzEdit_Kggl_Cyr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_User_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_KptzsEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Sj_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hssh_Tsl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hssh_Tsl.WriteTextLog(System.String)">
+            <summary>   
+            写入日志到文本文件   
+            </summary>   
+            <param name="action">动作</param>   
+            <param name="strMessage">日志内容</param>   
+            <param name="time">时间</param>   
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Gngk.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_TdqrzhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Shylgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_dzlxrwhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_yfzsf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_PhtjList_schx_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_KythscShdz_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_KycxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Set_Sj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_APPCdwh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzfywfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykycdfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Qt_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Bhxjhxxxfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybhxjhxxxfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhdfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_WlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhxxzdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhycdfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfymtthfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Jjfcx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_sxgsjjl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Khkygz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Dz_jhdj.W_JhdjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_KddglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.W_ContextMenu.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhgcyfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Spdl_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfyyshdfygj_Gbh_Ywbh_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Kyyctj_Week_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_YcxxcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_SpgjlrtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_OpLog.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Khywqkcx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Kyccf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Lxr_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Jdr_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Cj_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Sfdqlm_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Zmxz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Cllxwh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_MtywclList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyskhx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyqtmx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wldw">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Help.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Fx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Bzj_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Bg.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_Zdcx_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywYfglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_Hgxx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.Szyw_Hgxx.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Sgxxwh">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyschdfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Xtdm_Drjhzxb.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Cdgl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Tqhdbhdy_lxr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzBgdsyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_ChangePassword_Login.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_SetPower.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_SetPassword.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hssh_Tsl_Import.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Yt.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_YsjjfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Szylwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_GmDr_Zdcx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywYsglEdit_pop.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Lbgs_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Hgxx_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjskglList_dr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WljdgzEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Yjxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Zskfl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_GnkhsyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtmxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Hxdcf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjxzfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyscfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Ygkthsj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Wl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_KythscList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Dz_bgdj.W_BgdjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykyccfyskList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykyccfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzfymxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhxdcfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Bgdj_Slwts.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_ZlcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Log_Err.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Hgfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Map.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Kyccfysk_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Szyw_Dbys_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjyt.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjbzzl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Export.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Ycdjsje.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Clfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ohwl_SczpList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_GnkhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_WldwOldEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wlgzfymx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfymtthf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:WebApplication1.FreshTestDemo.Button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            查看调用webservice地址
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebApplication1.FreshTestDemo.Button3_Click(System.Object,System.EventArgs)">
+            <summary>
+            完整调用测试
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebApplication1.FreshTestDemo.Button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            代卖同步测试
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebApplication1.FreshTestDemo.Button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            国际物流测试
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WebApplication1.FreshTestDemo.Button6_Click(System.Object,System.EventArgs)">
+            <summary>
+            国内物流
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button2">
+            <summary>
+            Button2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button3">
+            <summary>
+            Button3 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button5">
+            <summary>
+            Button5 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.txtywbh">
+            <summary>
+            txtywbh 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button4">
+            <summary>
+            Button4 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button1">
+            <summary>
+            Button1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Button6">
+            <summary>
+            Button6 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.Label1">
+            <summary>
+            Label1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:WebApplication1.FreshTestDemo.TextBox1">
+            <summary>
+            TextBox1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Dzsd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_OrderList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Fj_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywYfglEdit_pop.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywFkglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szfywfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.HdfyKyCcfYsk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hd_Kycf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Qrdf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetDaysOfYear(System.Int32)">
+            <summary>返回本年有多少天</summary>
+            <param name="iYear">年份</param>
+            <returns>本年的天数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetDaysOfYear(System.DateTime)">
+            <summary>本年有多少天</summary>
+            <param name="dt">日期</param>
+            <returns>本天在当年的天数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetDaysOfMonth(System.Int32,System.Int32)">
+            <summary>本月有多少天</summary>
+            <param name="iYear">年</param>
+            <param name="Month">月</param>
+            <returns>天数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetDaysOfMonth(System.DateTime)">
+            <summary>本月有多少天</summary>
+            <param name="dt">日期</param>
+            <returns>天数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetWeekNameOfDay(System.DateTime)">
+            <summary>返回当前日期的星期名称</summary>
+            <param name="dt">日期</param>
+            <returns>星期名称</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetWeekNumberOfDay(System.DateTime)">
+            <summary>返回当前日期的星期编号</summary>
+            <param name="dt">日期</param>
+            <returns>星期数字编号</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetWeekAmount(System.Int32)">
+            <summary>
+            获取某一年有多少周
+            </summary>
+            <param name="year">年份</param>
+            <returns>该年周数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.GetWeekOfYear(System.DateTime)">
+            <summary>
+            获取某一日期是该年中的第几周
+            </summary>
+            <param name="dt">日期</param>
+            <returns>该日期在该年中的周数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.WeekRange(System.Int32,System.Int32,System.DateTime@,System.DateTime@)">
+            <summary>
+            根据某年的第几周获取这周的起止日期
+            </summary>
+            <param name="year"></param>
+            <param name="weekOrder"></param>
+            <param name="firstDate"></param>
+            <param name="lastDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.DiffDays(System.DateTime,System.DateTime)">
+            <summary>
+            返回两个日期之间相差的天数
+            </summary>
+            <param name="dtfrm">两个日期参数</param>
+            <param name="dtto">两个日期参数</param>
+            <returns>天数</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.IsRuYear(System.Int32)">
+            <summary>判断当前年份是否是闰年，私有函数</summary>
+            <param name="iYear">年份</param>
+            <returns>是闰年：True ，不是闰年：False</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.ToDate(System.String)">
+            <summary>
+            将输入的字符串转化为日期。如果字符串的格式非法，则返回当前日期。
+            </summary>
+            <param name="strInput">输入字符串</param>
+            <returns>日期对象</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.ToString(System.DateTime,System.String)">
+            <summary>
+            将日期对象转化为格式字符串
+            </summary>
+            <param name="oDateTime">日期对象</param>
+            <param name="strFormat">
+            格式：
+            	"SHORTDATE"===短日期
+            	"LONGDATE"==长日期
+            	其它====自定义格式
+            </param>
+            <returns>日期字符串</returns>
+        </member>
+        <member name="M:QsWebSoft.DateUtil.IsDateTime(System.String)">
+            <summary>
+            判断是否为合法日期，必须大于1800年1月1日
+            </summary>
+            <param name="dateTime">输入日期字符串</param>
+            <returns>True/False</returns>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_SxgjkszEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Module_CheckPassword.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyskhxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_WldwAdd_Lxr_New.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sfdj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjzsbh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_GmDr_Zdgl_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Select_Sz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Tggz_yltggz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Cdgzlx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Pdy.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_SgxxwhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_PhtjList_thmx_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_BgtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Kyyctj_Day_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfygjyfzfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_CqfglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_SbjjdglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzfywfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykycdfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybhxjhxxxfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhdfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_JhzxgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Ytsjjk_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Role_SetUsers.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzJzxlrcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjyfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Jldw_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_hshgm_ysfyqrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyyfzsfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Gmdr_HdfyskhxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Hgfx_Szyl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Xdf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Tszx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfycffymx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyjyfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhyfxgsfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Dlxy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.PubMethod.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.PubMethod.GetPYChar(System.String)">
+            <summary>       
+            /// 取单个字符的拼音声母       
+            </summary>        
+            <param name="c">要转换的单个汉字</param>       
+            /// <returns>拼音声母</returns> 
+        </member>
+        <member name="M:QsWebSoft.PubMethod.WriteTextLog(System.String)">
+            <summary>   
+            写入日志到文本文件   
+            </summary>   
+            <param name="action">动作</param>   
+            <param name="strMessage">日志内容</param>   
+            <param name="time">时间</param>   
+        </member>
+        <member name="M:QsWebSoft.PubMethod.UpLoadFile(System.String,System.String)">
+            <summary>  
+            上传文件  
+            </summary>  
+            <param name="localFile">要上传到FTP服务器的本地文件</param>  
+            <param name="ftpPath">FTP地址</param>  
+        </member>
+        <member name="M:QsWebSoft.PubMethod.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="T:QsWebSoft.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Import.W_Import_Xml.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Zqhc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Beizhu.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Tpcx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Fx_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Szyw_Zdcx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.GmDr_Dbys">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfy_Czdgl">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_skhx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Kggl_Cyr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_MtfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_List_GB_ywbh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Helper.HttpHelper.GetResponse(System.String,System.String,System.String)">
+            <returns></returns> 
+        </member>
+        <member name="T:CaptchaImage.CaptchaImage">
+            <summary>
+            这个生成验证码图片的代码来自：http://www.codeproject.com/KB/aspnet/CaptchaImage.aspx
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_LwBjxxxxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_User_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_SetBType.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Set_Fun.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhShdzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Dq.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Ysfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Ysjjf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_YsjjfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Kycd_ThwljhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Szylgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywYfglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Hgxx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_PhtjList_fgqth_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WlgzEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz_Yfbz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_SetRoles.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Hycqf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_JydEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_ThwljhEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_JydList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_ThwljhEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtmxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjxzfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_YtjkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_ChangePassword.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjzfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyfywfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WldwzjqkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_SdglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Kykgthfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Mxd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Jnhyd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Cd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_PhtjList_kchx_cmd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Set_Bjys.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hdfy_Akhfygj_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Yjlx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Bzzlwh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Hssh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Xx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sj_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Jdrys.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_JyztList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wlgzsjfk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wlgzfywfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Ytjk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfysjxzf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyjydfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Notify.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_YtjkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Xkzgl_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Sj.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.pdfwj.W_FtpEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfy_Akhfygj">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.HddzYtjk2018">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IFView.KyMapHandler">
+            <summary>
+            KyMapHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:IFView.KyMapHandler.VerifyLicensePlate(System.Web.HttpContext)">
+            <summary>
+            验证车牌
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.KyMapHandler.getLicensePlateList(System.Web.HttpContext)">
+            <summary>
+            获取车牌列表
+            </summary>
+        </member>
+        <member name="M:IFView.KyMapHandler.GetMapViewHistory(System.Web.HttpContext)">
+            <summary>
+            查询历史记录
+            </summary>
+        </member>
+        <member name="P:IFView.KyMapResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.KyMapResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.KyMapResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.KyCphhBdsbbdResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.KyCphhBdsbbdResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.KyCphhBdsbbdResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_fxfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.FHome.wldw_20190108.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Tszx_Hth_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GstjzbList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Bjlb.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Currency.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_GmDr_Zdgl_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。 
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WldwzjqkList_Dycs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_htjhthsj_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_cxf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Shylhgfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_GmDr_Skhx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Szhdfy_Sffy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Tjxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_dzlxrwhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhlrtjList_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyfzsfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_LclglList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_CdphxxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyskhxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfygjyfzfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzYtjkEdit2018.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Edit_Yflr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Ocrwjsb.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Sjzf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Kylryc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.W_DwServiceTest.InitializeControls">
+             <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjyfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Dzka_Cx.WriteTextLog(System.String)">
+            <summary>   
+            写入日志到文本文件   
+            </summary>   
+            <param name="action">动作</param>   
+            <param name="strMessage">日志内容</param>   
+            <param name="time">时间</param>   
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Dzka_Cx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_hdfy_Ccfqr_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_GmDr_HdfyskhxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Szylwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_HwbqList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_WldwOldList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_Role_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:ExtAspNet.Examples.source_file.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:ExtAspNet.Examples.source_file.SyntaxHighlighter1">
+            <summary>
+            SyntaxHighlighter1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:QsWebSoft.Service.HddzYtjk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfysjzf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfykhfygj">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyyswlfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhxdcf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Ky_Thwljh">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Thwljh">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Sys_Role">
+            <summary>
+            Sys_Role 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.PubBasicInfo">
+            <summary>
+            PubBasicInfo 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyfymx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Import.W_Import.InitializeControls">
+             <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Edit_Kggl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CommodityOldEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.WebForm2.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Ywxx_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzfywfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:IFView.PortHandler">
+            <summary>
+            FenceHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:IFView.PortHandler.authorityCheck(System.Web.HttpContext)">
+            <summary>
+            地图回调接口 验证token
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.PortHandler.updatePortTime(System.Web.HttpContext)">
+            <summary>
+            更新靠港时间
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.PortHandler.updateContainerTime(System.Web.HttpContext)">
+            <summary>
+            更新靠港时间
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.PortHandler.pushShip(System.String,System.String,System.String,System.String@)">
+            <summary>
+            调用中间体 推送船名 抓取靠港时间
+            </summary>
+            <param name="cm">船名</param>
+            <param name="hcorhbh">航次</param>
+            <param name="yjkgsj">预计靠港时间</param>
+            <param name="strerr">异常日志返回</param>
+            <returns></returns>
+        </member>
+        <member name="M:IFView.PortHandler.containerShip(System.String,System.String,System.String,System.String@)">
+            <summary>
+            调用中间体 集装箱抓取
+            </summary>
+            <param name="jzxh">集装箱号</param>
+            <param name="ztdh">提单号</param>
+            <param name="yjkgsj">预计靠港时间</param>
+            <param name="strerr">异常信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApplication1.IFView.mergeImage.DrawImage(System.String,System.String,System.Single)">
+            <summary>
+            添加图片水印
+            </summary>
+            <param name="sourcePicture">源图片文件名</param>
+            <param name="waterImage">水印图片文件名</param>
+            <param name="alpha">透明度(0.1-1.0数值越小透明度越高)</param>
+            <param name="position">位置</param>
+            <param name="PicturePath" >图片的路径</param>
+            <returns>返回生成于指定文件夹下的水印文件名</returns>
+        </member>
+        <member name="T:WebApplication1.IFView.ImagePosition">
+            <summary>
+            图片位置
+            </summary>
+        </member>
+        <member name="T:IFView.MapHandler">
+            <summary>
+            MapHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:IFView.MapHandler.VerifyLicensePlate(System.Web.HttpContext)">
+            <summary>
+            验证车牌
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.MapHandler.singleVerifyLicensePlate(System.Web.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.MapHandler.getLicensePlateList(System.Web.HttpContext)">
+            <summary>
+            获取车牌列表
+            </summary>
+        </member>
+        <member name="M:IFView.MapHandler.getLicensePlateControlList(System.Web.HttpContext)">
+            <summary>
+            获取车牌列表
+            </summary>
+        </member>
+        <member name="M:IFView.MapHandler.GetMapViewHistory(System.Web.HttpContext)">
+            <summary>
+            查询历史记录
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.CphhBdsbbdResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.CphhBdsbbdResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.CphhBdsbbdResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.SzcljkksResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.SzcljkksResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.SzcljkksResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.TzcljkjsResponseData.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.TzcljkjsResponseData.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.TzcljkjsResponseData.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx.code">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx.des">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx.result">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.vno">
+            <summary>
+            执行结果编码 1:系统错误;0:全部查到;2:全部未查到; 
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.lat">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.lon">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.adr">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.utc">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.spd">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.drc">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.bdLat">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.bdLon">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.status">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.odometer">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.deviceID">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.onlineStatus">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="P:IFView.MapResponseData_Sbztcx_mxx.deviceNum">
+            <summary>
+            返回的可查询车牌号
+            </summary>
+        </member>
+        <member name="T:IFView.IndexHandler">
+            <summary>
+            IndexHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_JydfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_cxffyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Helper.WS.DownLoadAndCreateXML(System.String,System.String)">
+            <summary>  
+            请求连接，响应得到数据流，生成XML  
+            </summary>  
+            <param name="url">请求url</param>  
+            <param name="path">存放生成XML的路径</param>  
+            <returns></returns>  
+        </member>
+        <member name="M:QsWebSoft.Helper.WS.WriteCardToStream(System.String)">
+            <summary>  
+            根据访问URL来返回XML文档流  
+            </summary>  
+            <param name="Url">访问URL</param>  
+            <returns>XML文档流</returns>  
+        </member>
+        <member name="M:QsWebSoft.Helper.WS.MD5(System.String)">
+            <summary>  
+            MD5加密方式加密  
+            ggh  
+            </summary>  
+            <param name="s">需要加密的字符串</param>  
+            <returns>经过md5加密过的字符串</returns>  
+        </member>
+        <member name="M:QsWebSoft.ValidateUtil.CheckPasswordStrength(System.String)">
+            <summary>
+            密码强度检查
+            </summary>
+            <param name="password">密码</param>
+            <returns>检查通过</returns>
+        </member>
+        <member name="M:QsWebSoft.ValidateUtil.IsBlank(System.String)">
+            <summary>是否空</summary>
+            <param name="strInput">输入字符串</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:QsWebSoft.ValidateUtil.IsNumeric(System.String)">
+            <summary>是否数字</summary>
+            <param name="strInput">输入字符串</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:QsWebSoft.ValidateUtil.IsDateTime(System.String)">
+            <summary>
+            是不是时间类型数据
+            </summary>
+            <param name="strDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.ValidateUtil.IsEmail(System.String)">
+            <summary>
+            检查邮件是否何法 add by wxg 20090531
+            </summary>
+            <param name="inputEmail"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.Beta3.W_NvoTest.InitializeControls">
+             <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Department_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjmc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfySpList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhfygjEdit_gbhYwbh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Wlgz_Dzwltj_Rw.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wlgz_Sjfk_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzsjfkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WlgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Sjxzf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Hyfxgsfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_ThwljhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_JydList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_ThwljhList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhzdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_FkcnqrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Tqhdbhdy_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Fxyg.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyyfzsfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hssh_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyyfkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_AkhfygjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_XxcxzhxxcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ohgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_SpgjtjList_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Yfjjf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Sjzf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sshl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Spndxs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_JdrCskz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Dlxycsh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz_KhdzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_WldwEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz_App.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz_App.Image1">
+            <summary>
+            Image1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:QsWebSoft.WebExplorer">
+            <summary>
+            WebExplorer 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.ResponseList(System.Web.HttpContext)">
+            <summary>
+            获取文件及文件夹路径列表
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.DownFile(System.Web.HttpContext)">
+            <summary>
+            下载文件操作
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.GetEditFileContent(System.Web.HttpContext)">
+            <summary>
+            从服务器读取文件内容
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.SaveFile(System.Web.HttpContext,System.Boolean)">
+            <summary>
+            保存已经编辑的文件 
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.CreateDirectory(System.Web.HttpContext)">
+            <summary>
+            新建目录
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.Delete(System.Web.HttpContext)">
+            <summary>
+            删除文件/目录操作
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.CutCopy(System.Web.HttpContext,System.String)">
+            <summary>
+            执行剪贴 复制 操作
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.Direactory(System.String,System.String)">
+            <summary>
+            复制目录操作
+            </summary>
+            <param name="source"></param>
+            <param name="target"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.Zip(System.Web.HttpContext)">
+            <summary>
+            压缩文件 
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.UnZip(System.Web.HttpContext)">
+            <summary>
+            解压缩
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.UpLoad(System.Web.HttpContext)">
+            <summary>
+            上传 
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.DownLoads(System.Web.HttpContext)">
+            <summary>
+            下载多个文件
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.WebExplorer.ReName(System.Web.HttpContext)">
+            <summary>
+            重命名操作
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:QsWebSoft.Service.Hddzqsd">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyjsdwqr">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Fkcnqr">
+            <summary>
+            Yfkd 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Ky_Cdphxx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Jhdj">
+            <summary>
+            结汇单据 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_ZskList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Mxqqr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Kggl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Jy_Wzh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.fwbwj.fwbbj.btnSubmit_OnClick(System.Object,System.EventArgs)">
+            <summary>
+            数据提交事件处理
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbbj.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbbj.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbbj.content">
+            <summary>
+            content 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.fwbwj.fwbbj.btnSubmit">
+            <summary>
+            btnSubmit 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpedit.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpedit.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpedit.content">
+            <summary>
+            content 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpedit.btnSubmit">
+            <summary>
+            btnSubmit 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpedit.ltView">
+            <summary>
+            ltView 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.pdfwj.ftpedit.btnSubmit_OnClick(System.Object,System.EventArgs)">
+            <summary>
+            数据提交事件处理
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfycxf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hddz_Bgdsy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Jydfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjjzxh.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Jgfs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WldwzjqkBeizhu.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_TpList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Hgfx_Szyl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Hgfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Hdzt.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.dw_fybz_zd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.dw_fybz_qd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz_Fyqr_old.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Zzh_Wxlxr_SetRoles.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybgbjfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_FscwlList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_CgqsjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyyfzsfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyhyfxgsfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Mxd.W_MxdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzEdit_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hylryc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_User_SetRoles.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.W_DllTest.InitializeControls">
+             <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Role_SetPermission.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfysjzfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhhzzdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyysfyqrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyfywfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyfymxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Hdf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyxdfgjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_sjdrEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_ZbfxtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Szyw_Skhx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Sfdqlm_Select_New.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.W_Main.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Ky_DtgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_ClckList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Wlgz_Hcj">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Wlgz">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyyfzsf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.FileUpload">
+            <summary>
+            FileUpload 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Bgdj">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz.Image1">
+            <summary>
+            Image1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Wlxx_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Ywxx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Tggz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Ky.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:ExtAspNet.Examples.basic.Captcha.captcha">
+            <summary>
+            生成验证码图片
+            </summary>
+        </member>
+        <member name="M:ExtAspNet.Examples.basic.Captcha.captcha.GenerateRandomCode">
+            <summary>
+            创建一个 4 位的随机数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Bgbjfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybzjzfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_GnkhLxrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyschdfyEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_YfjjfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Bdsbh_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Wlgz_DzwltjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Tggz_hddz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Kyyctj_Year_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_WlgzcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Jyfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_CzdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_WlgzsjfkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyLrcxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_TszxEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Gen_Bgsp.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_DzgzlgzList_Mx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Shylwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Cdgzjh_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Jyd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_WldwList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_Role_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.UploadHandler">
+            <summary>
+            UploadHandler 的摘要说明
+            </summary> 
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhycdfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.BarCode">
+            <summary>
+            Handler1 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IFView.AjaxHandler">
+            <summary>
+            AjaxHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:IFView.AjaxHandler.OCRToFruit(System.Web.HttpContext)">
+            <summary>
+            ocr同步到水果通
+            </summary>
+            <param name="modelXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IFView.AjaxHandler.JsonToFruit(System.Web.HttpContext)">
+            <summary>
+            错误处理后提交
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.AjaxHandler.GetOcrDataByOcrID(System.Web.HttpContext)">
+            <summary>
+            传入ocrid获取ocr系统对应的数据 (未实现)
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.AjaxHandler.OcrXmlToHddz(System.String,Interfaces.Model.yw_hddzEntity@,System.Collections.Generic.List{Interfaces.Model.yw_hddz_spxxEntity}@)">
+            <summary>
+            把ocr返回的xml数据 解析成对象
+            </summary>
+            <param name="xml"></param>
+        </member>
+        <member name="M:IFView.AjaxHandler.GetWldwList(System.Web.HttpContext)">
+            <summary>
+            分页获取往来单位
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:IFView.AjaxHandler.GetCountryList(System.Web.HttpContext)">
+            <summary>
+            分页获取国家
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:IFView.responseOut">
+            <summary>
+            返回前台的对象
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.result">
+            <summary>
+            执行结果
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.msg">
+            <summary>
+            执行日志
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.errortype">
+            <summary>
+            错误类型 1--值不匹配，2--其他错误
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.data">
+            <summary>
+            ocr获取的主表对象（处理过），当错位类型为1时使用
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.data1">
+            <summary>
+            ocr获取的分录表对象（处理过），当错位类型为1时使用
+            </summary>
+        </member>
+        <member name="P:IFView.responseOut.errordata">
+            <summary>
+            值匹配对象，ocr获取的数据 无对应值的处理
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Tgjcgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpxs.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpxs.Button1">
+            <summary>
+            Button1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpxs.Button2">
+            <summary>
+            Button2 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpxs.FileUpload1">
+            <summary>
+            FileUpload1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.pdfwj.ftpxs.Button3">
+            <summary>
+            Button3 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_Commodity_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzfywfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyjydfyyfk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Ywkh_BeiZhu.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzKycdzgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sjzs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfycxfEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Yjlx_Ycyys.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hdfy_Czd_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Cdgzlx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Ohgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Ssgdmkhxxtx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Zzh_Wxlxr_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybgbjfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Mxd.W_MxdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Kykhyc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_User_SetRoles.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyjydfyyfkList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Wldw_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Dlxy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_AkhfygjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Wxlxr_Role_SetUsers.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Khwqrzd">
+            <summary>
+            Yfkd 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Yfkd">
+            <summary>
+            Yfkd 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.SalesOrder">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Fysqd">
+            <summary>
+            Yfkd 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Nav.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_DzgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hd.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_Wlxx_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.GmDr_skhx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:WebApplication1.IFView.DataService">
+            <summary>
+            DataService 的摘要说明
+            </summary>
+        </member>
+        <member name="T:WebApplication1.IFView.Conditions">
+            <summary>
+            查询条件对象
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.Conditions.beginTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.Conditions.endTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.Conditions.serviceNo">
+            <summary>
+            业务编号
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.Conditions.areaName">
+            <summary>
+            地区名称
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.Conditions.areaNo">
+            <summary>
+            地区编号
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Sqxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_HydcfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Beta3.GetData">
+            <summary>
+            GetData 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfybzjzfList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Ohxjwlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_CzdList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyLrcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Nbgl.W_TszxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Bgdgl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_WldwAdd_New.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_DrDbysEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_Hdfy_sjdrList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Shylgjfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Qtmx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Area.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Kddgl">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.HddzRjjk">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.HddzLrcx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Commodity">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Mxd">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Login.Html1">
+            <summary>
+            Html1 control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.formLogin">
+            <summary>
+            formLogin control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.UserID">
+            <summary>
+            UserID control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.Password">
+            <summary>
+            Password control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.Code">
+            <summary>
+            Code control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.VeriryCode">
+            <summary>
+            VeriryCode control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Login.Updater">
+            <summary>
+            Updater control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:WebApplication1.IFView.ForAppWS">
+            <summary>
+            App服务专用接口
+            </summary>
+        </member>
+        <member name="M:WebApplication1.IFView.ForAppWS.QuarantineData(System.String,System.String)">
+            <summary>
+            检疫点更新同步接口
+            </summary>
+            <param name="ywbh">业务编号</param>
+            <param name="cxh">集装箱表 次序号</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="M:WebApplication1.IFView.ForAppWS.AirDistributionData(System.String)">
+            <summary>
+            空运检查数据同步
+            </summary>
+            <param name="cdphbm">编号</param>
+            <returns>执行结果</returns>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_Zdgl">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.DBHelp.Query(System.String)">
+            <summary>
+            执行查询语句，返回DataSet
+            </summary>
+            <param name="SQLString">查询语句</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:QsWebSoft.DBHelp.DataStoreFromSql(System.String)">
+            <summary>
+            根据Sql语句生成DataStore对象，并自动检索数据
+            </summary>
+            <param name="sqlSelect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.AppService.GetPassword(System.String,System.String)">
+            <summary>
+            对密码进行加密处理
+            </summary>
+            <param name="pwd"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.AppService.SetPwdIsSame(System.String)">
+            <summary>
+            判断密码是否为默认
+            </summary>
+            <param name="userPwd">密码</param>
+            <remarks>zdy add</remarks>
+        </member>
+        <member name="M:QsWebSoft.AppService.IsLogin">
+            <summary>
+            判断是否有用户已登录系统
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.AppService.Login(System.String,System.String,System.String@)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="userID"></param>
+            <param name="password"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.AppService.ChangePassword(System.String,System.String,System.String,System.String@)">
+            <summary>
+            更改用户密码
+            </summary>
+            <param name="userID"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <param name="error"></param>
+            <returns></returns>
+        </member>
+        <member name="M:QsWebSoft.AppService.Log(System.String)">
+            <summary>
+            记录操作日志
+            </summary>
+            <param name="reason"></param>
+        </member>
+        <!-- 对于成员“M:QsWebSoft.AppService.Logout”忽略有格式错误的 XML 注释 -->
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Skhx_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_Tjbb_Nbkh_Ycyy_Ohwlgzfx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wldw.W_Zzh_Wxlxr_List.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Hgcyfy_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_FysqdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Sjzf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzQsdEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Jy.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hykhyc.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfyqtEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Hddz_Mtthf_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_Eport_Select.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Zhsflb.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Fylx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz_Zbsd.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:QsWebSoft.Wjxz.W_Wjxz_Zbsd.Image1">
+            <summary>
+            Image1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyxdf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyyshdfygj">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfykycdfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfykykgthfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyhgcyfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Sdgl">
+            <summary>
+            Sdgl 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfybzjzf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.LoadWindow">
+            <summary>
+            LoadWindow 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Hyycgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Yf.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_HddzList_Kyycgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_Wlxx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.Szyw_Wlxx.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_Ywxx">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.Szyw_Ywxx.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="T:QsWebSoft.Service.Sxgjksz">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Fybz.W_Fybz_KythfyList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_BjxxxxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.TreeViewService.GetParm">
+            <summary>
+            把当前服务所需要的使用的参数，传到客户端
+            客户端在正常实例化PB对象后，会通过调用 of_LoadParm把参数传过去。
+            如果需要传递多个参数，则用字符串连接起来，然后在PB客户端对字符串进行分解解析
+            如 parm1=223|parm2=323|parm3=test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:QsWebSoft.Beta3.DWServiceTest">
+            <summary>
+            数据窗口服务测试
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Beta3.DWServiceTest.GetParm">
+            <summary>
+            把当前服务所需要的使用的参数，传到客户端
+            客户端在正常实例化PB对象后，会通过调用 of_LoadParm把参数传过去。
+            如果需要传递多个参数，则用字符串连接起来，然后在PB客户端对字符串进行分解解析
+            如 parm1=223|parm2=323|parm3=test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:QsWebSoft.Beta3.DWServiceTest.ContextControl">
+            <summary>
+            设置数据窗口服务所需要关联的控件名称,n_cst_dwsrv_test，需要关联一个tabStrip控件
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_DzgzlgzList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_SdzpglEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Ycyy.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_List_GBywbhs.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Yw_Zjgl.W_HdfykhfygjEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Wlgz_Fyqr">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfycqfytjetz">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfygjyfzf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfybhxjhxxxfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Customer">
+            <summary>
+            Customer 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Yw_Zjgl_Zdgl">
+            <summary> 
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Kycd_Thwljh">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfy_ysjjf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:IFView.FenceHandler">
+            <summary>
+            FenceHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="M:IFView.FenceHandler.authorityCheck(System.Web.HttpContext)">
+            <summary>
+            地图回调接口 验证token
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Xtdm_bjhlr.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.SheetPrint.Name">
+            <summary>
+            报表名称
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.SheetPrint.Parameter">
+            <summary>
+            报表参数
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.SheetPrint.SQLText">
+            <summary>
+            报表SQL
+            </summary>
+        </member>
+        <member name="P:QsWebSoft.SheetPrint.Path">
+            <summary>
+            报表路径
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Bjpt.W_BjgjpzcxList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xt_Popwin.W_WldwAdd_Shdz_New.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Szyw.W_SzywFkglEdit_pop.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_SpgjtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Commodity.W_CpxxkEdit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Xxcx.W_PhtjList.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Dljl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Gnkhsy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wxlxr_Role">
+            <summary>
+            Sys_Role 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hdfyfywfy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hy_Sdzpgl">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szhdfy_sffy">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hddz_Wl">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.Hddz_Wl.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="M:QsWebSoft.Hddz.W_Hddz_Ycyy_Yjxx.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Admin.W_Sys_Role_Edit.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.xt.W_Xtdm_Sj_Tyjl.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Wlxx.W_Hy_Wlgz.InitializeControls">
+             <summary>
+             设计器支持所需的方法。
+             不要使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.WldwOld">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Hddz">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="M:QsWebSoft.Service.Hddz.serialNumber(System.String,System.String,System.String,System.String)">
+            <summary>
+            往s_log_err插入流水号
+            </summary>
+            <param name="strName">模块名</param>
+            <param name="ywbh">业务编号</param>
+            <param name="tableName">插入的表名</param>
+            <param name="fieldName">插入字段名</param>
+            <returns>是否执行成功</returns>
+        </member>
+        <member name="T:WebApplication1.IFView.IFHandler">
+            <summary>
+            IFHandler 的摘要说明
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.RequestPara.tablename">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.RequestPara.changecols">
+            <summary>
+            更新字段集合
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.RequestPara.id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:WebApplication1.IFView.RequestPara.parameters">
+            <summary>
+            其他参数
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Wlgzsjyf">
+            <summary>
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+        <member name="T:QsWebSoft.Service.Szyw_Dbys">
+            <summary> 
+            SalesOrder 的摘要说明
+            </summary>
+        </member>
+    </members>
+</doc>

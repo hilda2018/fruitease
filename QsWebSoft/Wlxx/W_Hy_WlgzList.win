@@ -29,6 +29,7 @@ namespace QsWebSoft.Wlxx
             this.Name = "W_Hy_WlgzList";
             this.ScriptFileName = "/Wlxx/W_Hy_WlgzList.win.js";
             this.Width = 1162;
+            
 
             // 
             //  dw_filter

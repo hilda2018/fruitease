@@ -4,154 +4,154 @@
 
 function W_HddzBgdsyList() {
 
-    var self = this;
-    var requestor = new PBWindow();
-    var dw_filter = new DataWindow(requestor);
-    var dw_list = new DataWindow(requestor);
-    var tb_2 = new ToolStrip(requestor);
-    var dp_begin = new DatePicker(requestor);
-    var dp_end = new DatePicker(requestor);
-    var sle_1 = new SingleLineEdit(requestor);
-    var sle_kh = new SingleLineEdit(requestor);
-    var sle_hth = new SingleLineEdit(requestor);
-    var tb_1 = new ToolStrip(requestor);
-    var dw_print = new DataWindow(requestor);
-    var ContextMenuStrip1 = new ContextMenu(requestor);
-    var ds_1 = new DataStore(requestor);
-    var ds_role = new DataStore(requestor);
+	 var self=this;
+	 var requestor= new PBWindow();
+	 var dw_list= new DataWindow( requestor );
+	 var dw_filter= new DataWindow( requestor );
+	 var tb_2= new ToolStrip( requestor );
+	 var dp_begin= new DatePicker( requestor );
+	 var dp_end= new DatePicker( requestor );
+	 var sle_1= new SingleLineEdit( requestor );
+	 var sle_kh= new SingleLineEdit( requestor );
+	 var sle_hth= new SingleLineEdit( requestor );
+	 var tb_1= new ToolStrip( requestor );
+	 var dw_print= new DataWindow( requestor );
+	 var ContextMenuStrip1= new ContextMenu( requestor );
+	 var ds_1= new DataStore( requestor );
+	 var ds_role= new DataStore( requestor );
 
-    if (typeof (this.bind) == "function") var baseBind = this.bind;
-    this.bind = function (win) {
-        if (typeof (baseBind) == "function") baseBind(win);
+	 if(typeof(this.bind)=="function") var baseBind=this.bind;
+	 this.bind=function(win){
+	 if(typeof( baseBind )=="function") baseBind(win);
 
-        if (requestor == null) requestor = new PBWindow();
-        requestor.Attach(win);
-        if (dw_filter == null) dw_filter = new DataWindow(requestor);
-        dw_filter.Attach(win.Control("dw_filter"));
-        if (dw_list == null) dw_list = new DataWindow(requestor);
-        dw_list.Attach(win.Control("dw_list"));
-        if (tb_2 == null) tb_2 = new ToolStrip(requestor);
-        tb_2.Attach(win.Control("tb_2"));
-        if (dp_begin == null) dp_begin = new DatePicker(requestor);
-        dp_begin.Attach(win.Control("dp_begin"));
-        if (dp_end == null) dp_end = new DatePicker(requestor);
-        dp_end.Attach(win.Control("dp_end"));
-        if (sle_1 == null) sle_1 = new SingleLineEdit(requestor);
-        sle_1.Attach(win.Control("sle_1"));
-        if (sle_kh == null) sle_kh = new SingleLineEdit(requestor);
-        sle_kh.Attach(win.Control("sle_kh"));
-        if (sle_hth == null) sle_hth = new SingleLineEdit(requestor);
-        sle_hth.Attach(win.Control("sle_hth"));
-        if (tb_1 == null) tb_1 = new ToolStrip(requestor);
-        tb_1.Attach(win.Control("tb_1"));
-        if (dw_print == null) dw_print = new DataWindow(requestor);
-        dw_print.Attach(win.Control("dw_print"));
-        if (ContextMenuStrip1 == null) ContextMenuStrip1 = new ContextMenu(requestor);
-        ContextMenuStrip1.Attach(win.Control("ContextMenuStrip1"));
-        if (ds_1 == null) ds_1 = new DataStore(requestor);
-        ds_1.Attach(win.Control("ds_1"));
-        if (ds_role == null) ds_role = new DataStore(requestor);
-        ds_role.Attach(win.Control("ds_role"));
+		 if(requestor == null ) requestor= new PBWindow();
+		 requestor.Attach(win);
+		 if(dw_list == null ) dw_list= new DataWindow( requestor );
+		 dw_list.Attach( win.Control( "dw_list") ); 
+		 if(dw_filter == null ) dw_filter= new DataWindow( requestor );
+		 dw_filter.Attach( win.Control( "dw_filter") ); 
+		 if(tb_2 == null ) tb_2= new ToolStrip( requestor );
+		 tb_2.Attach( win.Control( "tb_2") ); 
+		 if(dp_begin == null ) dp_begin= new DatePicker( requestor );
+		 dp_begin.Attach( win.Control( "dp_begin") ); 
+		 if(dp_end == null ) dp_end= new DatePicker( requestor );
+		 dp_end.Attach( win.Control( "dp_end") ); 
+		 if(sle_1 == null ) sle_1= new SingleLineEdit( requestor );
+		 sle_1.Attach( win.Control( "sle_1") ); 
+		 if(sle_kh == null ) sle_kh= new SingleLineEdit( requestor );
+		 sle_kh.Attach( win.Control( "sle_kh") ); 
+		 if(sle_hth == null ) sle_hth= new SingleLineEdit( requestor );
+		 sle_hth.Attach( win.Control( "sle_hth") ); 
+		 if(tb_1 == null ) tb_1= new ToolStrip( requestor );
+		 tb_1.Attach( win.Control( "tb_1") ); 
+		 if(dw_print == null ) dw_print= new DataWindow( requestor );
+		 dw_print.Attach( win.Control( "dw_print") ); 
+		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
+		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
+		 if(ds_1 == null ) ds_1= new DataStore( requestor );
+		 ds_1.Attach( win.Control( "ds_1") ); 
+		 if(ds_role == null ) ds_role= new DataStore( requestor );
+		 ds_role.Attach( win.Control( "ds_role") ); 
 
-        if (typeof (self.CloseQuery) == "function")
-            win.AttachEvent("window", "CloseQuery", self.CloseQuery);
+		 if(typeof(self.CloseQuery)=="function") 
+			 win.AttachEvent("window","CloseQuery",self.CloseQuery); 
 
-        if (typeof (self.PostOpen) == "function")
-            win.AttachEvent("window", "PostOpen", self.PostOpen);
+		 if(typeof(self.PostOpen)=="function") 
+			 win.AttachEvent("window","PostOpen",self.PostOpen); 
 
-        if (typeof (self.dw_List_Clicked) == "function")
-            win.AttachEvent("dw_list", "Clicked", self.dw_List_Clicked);
+		 if(typeof(self.dw_List_Clicked)=="function") 
+			 win.AttachEvent("dw_list","Clicked",self.dw_List_Clicked); 
 
-        if (typeof (self.dw_List_DoubleClicked) == "function")
-            win.AttachEvent("dw_list", "DoubleClicked", self.dw_List_DoubleClicked);
+		 if(typeof(self.dw_List_DoubleClicked)=="function") 
+			 win.AttachEvent("dw_list","DoubleClicked",self.dw_List_DoubleClicked); 
 
-        if (typeof (self.RbuttonDown) == "function")
-            win.AttachEvent("dw_list", "RButtonDown", self.RbuttonDown);
+		 if(typeof(self.RbuttonDown)=="function") 
+			 win.AttachEvent("dw_list","RButtonDown",self.RbuttonDown); 
 
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("btn_read", "Clicked", self.Retrieve);
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("btn_read","Clicked",self.Retrieve); 
 
-        if (typeof (self.sle_EditChanged) == "function")
-            win.AttachEvent("sle_1", "EditChanged", self.sle_EditChanged);
+		 if(typeof(self.sle_EditChanged)=="function") 
+			 win.AttachEvent("sle_1","EditChanged",self.sle_EditChanged); 
 
-        if (typeof (self.slekh_EditChanged) == "function")
-            win.AttachEvent("sle_kh", "EditChanged", self.slekh_EditChanged);
+		 if(typeof(self.slekh_EditChanged)=="function") 
+			 win.AttachEvent("sle_kh","EditChanged",self.slekh_EditChanged); 
 
-        if (typeof (self.slehth_EditChanged) == "function")
-            win.AttachEvent("sle_hth", "EditChanged", self.slehth_EditChanged);
+		 if(typeof(self.slehth_EditChanged)=="function") 
+			 win.AttachEvent("sle_hth","EditChanged",self.slehth_EditChanged); 
 
-        if (typeof (self.New) == "function")
-            win.AttachEvent("btn_new", "Clicked", self.New);
+		 if(typeof(self.New)=="function") 
+			 win.AttachEvent("btn_new","Clicked",self.New); 
 
-        if (typeof (self.Copy) == "function")
-            win.AttachEvent("btn_duplicate", "Clicked", self.Copy);
+		 if(typeof(self.Copy)=="function") 
+			 win.AttachEvent("btn_duplicate","Clicked",self.Copy); 
 
-        if (typeof (self.Delete) == "function")
-            win.AttachEvent("btn_delete", "Clicked", self.Delete);
+		 if(typeof(self.Delete)=="function") 
+			 win.AttachEvent("btn_delete","Clicked",self.Delete); 
 
-        if (typeof (self.OpenWindow) == "function")
-            win.AttachEvent("btn_open", "Clicked", self.OpenWindow);
+		 if(typeof(self.OpenWindow)=="function") 
+			 win.AttachEvent("btn_open","Clicked",self.OpenWindow); 
 
-        if (typeof (self.Save) == "function")
-            win.AttachEvent("btn_save", "Clicked", self.Save);
+		 if(typeof(self.Save)=="function") 
+			 win.AttachEvent("btn_save","Clicked",self.Save); 
 
-        if (typeof (self.Print) == "function")
-            win.AttachEvent("btn_prn", "Clicked", self.Print);
+		 if(typeof(self.Print)=="function") 
+			 win.AttachEvent("btn_prn","Clicked",self.Print); 
 
-        if (typeof (self.Tj) == "function")
-            win.AttachEvent("btn_tj", "Clicked", self.Tj);
+		 if(typeof(self.Tj)=="function") 
+			 win.AttachEvent("btn_tj","Clicked",self.Tj); 
 
-        if (typeof (self.Exit) == "function")
-            win.AttachEvent("btn_close", "Clicked", self.Exit);
+		 if(typeof(self.Exit)=="function") 
+			 win.AttachEvent("btn_close","Clicked",self.Exit); 
 
-        if (typeof (self.Filter) == "function")
-            win.AttachEvent("单列过滤ToolStripMenuItem", "Clicked", self.Filter);
+		 if(typeof(self.Filter)=="function") 
+			 win.AttachEvent("单列过滤ToolStripMenuItem","Clicked",self.Filter); 
 
-        if (typeof (self.Filter_Cancle) == "function")
-            win.AttachEvent("取消过滤ToolStripMenuItem", "Clicked", self.Filter_Cancle);
+		 if(typeof(self.Filter_Cancle)=="function") 
+			 win.AttachEvent("取消过滤ToolStripMenuItem","Clicked",self.Filter_Cancle); 
 
-        if (typeof (self.Recover) == "function")
-            win.AttachEvent("恢复默认列ToolStripMenuItem", "Clicked", self.Recover);
+		 if(typeof(self.Recover)=="function") 
+			 win.AttachEvent("恢复默认列ToolStripMenuItem","Clicked",self.Recover); 
 
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("刷新ToolStripMenuItem", "Clicked", self.Retrieve);
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("刷新ToolStripMenuItem","Clicked",self.Retrieve); 
 
-        if (typeof (self.CopyCol) == "function")
-            win.AttachEvent("复制ToolStripMenuItem", "Clicked", self.CopyCol);
+		 if(typeof(self.CopyCol)=="function") 
+			 win.AttachEvent("复制ToolStripMenuItem","Clicked",self.CopyCol); 
 
-        if (typeof (self.CopySelect) == "function")
-            win.AttachEvent("选择复制ToolStripMenuItem", "Clicked", self.CopySelect);
+		 if(typeof(self.CopySelect)=="function") 
+			 win.AttachEvent("选择复制ToolStripMenuItem","Clicked",self.CopySelect); 
 
-        if (typeof (self.CopyL) == "function")
-            win.AttachEvent("整列复制ToolStripMenuItem", "Clicked", self.CopyL);
+		 if(typeof(self.CopyL)=="function") 
+			 win.AttachEvent("整列复制ToolStripMenuItem","Clicked",self.CopyL); 
 
-    }
+	 }
 
-    if (typeof (this.unbind) == "function") var baseUnBind = this.unbind;
-    this.unbind = function () {
-        if (typeof (this.Release) == "function") this.Release();
-        if (typeof (baseUnBind) == "function") baseUnBind();
+	 if(typeof(this.unbind)=="function") var baseUnBind=this.unbind; 
+	 this.unbind=function() {
+	 if(typeof(this.Release)=="function") this.Release(); 
+	 if(typeof(baseUnBind)=="function") baseUnBind(); 
 
-        dw_filter.Detach(); dw_filter = null;
-        dw_list.Detach(); dw_list = null;
-        tb_2.Detach(); tb_2 = null;
-        dp_begin.Detach(); dp_begin = null;
-        dp_end.Detach(); dp_end = null;
-        sle_1.Detach(); sle_1 = null;
-        sle_kh.Detach(); sle_kh = null;
-        sle_hth.Detach(); sle_hth = null;
-        tb_1.Detach(); tb_1 = null;
-        dw_print.Detach(); dw_print = null;
-        ContextMenuStrip1.Detach(); ContextMenuStrip1 = null;
-        ds_1.Detach(); ds_1 = null;
-        ds_role.Detach(); ds_role = null;
-        requestor.Detach(); requestor = null;
+		 dw_list.Detach(); dw_list=null; 
+		 dw_filter.Detach(); dw_filter=null; 
+		 tb_2.Detach(); tb_2=null; 
+		 dp_begin.Detach(); dp_begin=null; 
+		 dp_end.Detach(); dp_end=null; 
+		 sle_1.Detach(); sle_1=null; 
+		 sle_kh.Detach(); sle_kh=null; 
+		 sle_hth.Detach(); sle_hth=null; 
+		 tb_1.Detach(); tb_1=null; 
+		 dw_print.Detach(); dw_print=null; 
+		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
+		 ds_1.Detach(); ds_1=null; 
+		 ds_role.Detach(); ds_role=null; 
+		 requestor.Detach(); requestor=null; 
 
-        setTimeout(CollectGarbage, 100);
-    }
+		 setTimeout(CollectGarbage, 100); 
+	 }
 
-    //以上代码由设计器自动生成,请不要手工修改
-    //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
+	 //以上代码由设计器自动生成,请不要手工修改
+	 //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
 	
 
 
@@ -658,7 +658,7 @@ function W_HddzBgdsyList() {
     //#region 获得字段焦点
     this.RbuttonDown = function (dwo, xPos, yPos, Row, dwoName) {
         cloname = dwoName;
-        fzjs_row = Row;
+        if (Row > 0) {  fzjs_row   = Row;   }
     }
     //#endregion
 

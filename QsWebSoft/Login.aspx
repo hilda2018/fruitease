@@ -1,21 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="QsWebSoft.Login" %>
-
 <!DOCTYPE html>
-<html lang="zh-CN" id="fruitease" runat="server">
-<head >
-    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>水果通服务平台</title>
-    <!--样式表优先级主题样式必须在easyui组件样式后 -->
-    <link rel="shortcut icon" href="./FHome/images/favicon.ico">
-    <link href="./FHome/lib/css/easyui.css" rel="stylesheet" type="text/css">
-    <link href="./FHome/lib/css/icon.css" rel="stylesheet" type="text/css">
-    <link href="./FHome/lib/css/insdep_theme_default.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="./FHome/lib/js/jqueryAndeasyuiAndjson.js"></script>
+<html lang="en" id="Html1" runat="server">
+<head>
+    <link rel="shortcut icon" href="./FHome/images/favicon.ico"/>
+    <link href="./FHome/lib/css/insdep_theme_default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./Scripts/JQuery-1.6.min.js"></script>
     <script type="text/javascript" src="./Scripts/ExtPB_Net.js"></script>
-
-   
- 
+    <style type="text/css">
+    html,body{height:100%;}.theme-login-layout{background:#f2f3f4;}
+    </style>
 </head>
 
 <body class="theme-login-layout"  >
@@ -64,7 +57,9 @@
                 </dd>
 
                 <dd id="submitWrap">
-                    <button class="easyui-linkbutton button" type="submit"  id="submit">Sign in</button>
+                    <button class="easyui-linkbutton button" type="submit"  id="submit">登陆</button>
+                
+
                 </dd>
             </dl>
 
@@ -84,7 +79,7 @@
                 <a href="http://www.fruitease.com">联系我们</a>  | 
                 <a href="/中文说明.txt" target="_blank" >平台系统使用说明...</a>  
             </div>
-            <div>&copy; 2008 - <script>var year=new Date;document.write(year.getFullYear());</script>上海欧恒进出口有限公司 版权所有</div>
+            <div>&copy; 2008 - <script type="text/javascript">var year=new Date;document.write(year.getFullYear());</script>上海欧恒进出口有限公司 版权所有</div>
         </div>
 
     </div>
@@ -92,81 +87,70 @@
 
 <script type="text/javascript">
 
-
-    
-    $.extend($.fn.validatebox.defaults.tipOptions,
-        {
-            onShow: function() {
-                $(this).tooltip("tip").css({ backgroundColor: "#ff7e00", border: "none", color: "#fff" });
-
-            }
-    });
-        
-
-    $(".QRcode").click(function() {
+    $(".QRcode").click(function () {
         $(".QRcode-layout").removeClass("hide");
 
     });
 
-    $(".QRcode-layout-close").click(function() {
+    $(".QRcode-layout-close").click(function () {
         $(".QRcode-layout").addClass("hide");
-     });
-        
-        
+    });
 
-    var submintForm = function() {
-        
-        
+
+
+    var submintForm = function () {
+
+
         var $userId = $("#UserID");
 
-        var userid = $.trim( $userId.val() );   
+        var userid = $.trim($userId.val());
 
         if (userid.length === 0) {
-            $.messager.alert("警告","请输入登录用户帐号!");
+            $.messager.alert("警告", "请输入登录用户帐号!");
             $userId.focus();
             return;
         }
- 
-        var $Password= $("#Password");
 
-        var password= $.trim( $Password.val() );   
-        
+        var $Password = $("#Password");
+
+        var password = $.trim($Password.val());
+
 
         if (password.length === 0) {
-            $.messager.alert("警告","请输入帐号密码!");
+            $.messager.alert("警告", "请输入帐号密码!");
             $Password.focus();
             return;
         }
 
         if (password.length < 6) {
-            $.messager.alert("警告","输入的帐号密码长度少于6位,请重新输入!");
+            $.messager.alert("警告", "输入的帐号密码长度少于6位,请重新输入!");
             $Password.focus();
             return;
         }
-        
-        
-        var $Code= $("#Code");
 
-        var code= $.trim( $Code.val() );   
-        
+
+        var $Code = $("#Code");
+
+        var code = $.trim($Code.val());
+
 
         if (code.length == 0) {
-            $.messager.alert("警告","请输入验证号!");
+            $.messager.alert("警告", "请输入验证号!");
             $Code.focus();
             return;
         }
-        
+
 
         $("#formLogin").submit();
-        
+
     }
-    
-    
-    
+
+
+
 
     /*登录相关事件绑定 */
 
-    $("#UserID").click(function(ev) {
+    $("#UserID").click(function (ev) {
 
         if (ev.keyCode === 13) {
             $("#Password").focus();
@@ -174,35 +158,28 @@
     });
 
 
-    $("#Password").click(function(ev) {
+    $("#Password").click(function (ev) {
         if (ev.keyCode === 13) {
             $("#Code").focus();
         }
     });
 
 
-    $("#Code").click(function(ev) {
+    $("#Code").click(function (ev) {
         if (ev.keyCode === 13) {
             submintForm();
         }
     });
 
-    $('#VeriryCode').mouseup(function() {
+    $('#VeriryCode').mouseup(function () {
         $(this).attr({ "src": "/captcha/captcha.ashx?w=65&h=24&t=" + new Date() });
     });
-    
-    
-    
-    $('#submit').click(function() {
 
+
+    $('#submit').click(function () {
         submintForm();
-
     });
-    
 
 </script>
-
-
-
 </body>
 </html>

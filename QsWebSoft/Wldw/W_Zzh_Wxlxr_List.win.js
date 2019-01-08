@@ -243,7 +243,5 @@ function W_Zzh_Wxlxr_List() {
     }
 
 
-    
 
-var webReq = new WebRequestor();
-webReq.SetWebServiceUrl("/Service/Wxlxr.ashx");
+
