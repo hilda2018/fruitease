@@ -399,33 +399,29 @@ namespace QsWebSoft.Wldw
             this.btn_close.Text = "关闭";
 
             // 
+            //  ds_1
+            // 
+            this.ds_1 = new TXSoft.DataStore.SafeDS();
+            this.Components.Add(this.ds_1);
+            this.ds_1.DataWindowObject = "d_sys_modules_all";
+            this.ds_1.Name = "ds_1";
+
+            // 
+            //  ds_role
+            // 
+            this.ds_role = new TXSoft.DataStore.SafeDS();
+            this.Components.Add(this.ds_role);
+            this.ds_role.DataWindowObject = "ds_role_list";
+            this.ds_role.Name = "ds_role";
+
+            // 
             //  ContextMenuStrip1
             // 
             this.ContextMenuStrip1 = new TXSoft.ExtPB.ContextMenuStrip();
             this.Controls.Add(this.ContextMenuStrip1);
-            this.ContextMenuStrip1.Height = 64;
+            this.ContextMenuStrip1.Height = 84;
             this.ContextMenuStrip1.Name = "ContextMenuStrip1";
             this.ContextMenuStrip1.Width = 101;
-
-            // 
-            //  m_1
-            // 
-            this.m_1 = new TXSoft.ExtPB.ToolStripMenuItem();
-            this.ContextMenuStrip1.Items.Add(this.m_1);
-            this.m_1.DataWindowAction = TXSoft.ExtPB.DataWindowAction.Filter;
-            this.m_1.ImageName = "ExecuteSQL5!";
-            this.m_1.Name = "m_1";
-            this.m_1.Text = "过滤";
-
-            // 
-            //  导出ToolStripMenuItem
-            // 
-            this.导出ToolStripMenuItem = new TXSoft.ExtPB.ToolStripMenuItem();
-            this.ContextMenuStrip1.Items.Add(this.导出ToolStripMenuItem);
-            this.导出ToolStripMenuItem.DataWindowAction = TXSoft.ExtPB.DataWindowAction.Export;
-            this.导出ToolStripMenuItem.ImageName = "Export5!";
-            this.导出ToolStripMenuItem.Name = "导出ToolStripMenuItem";
-            this.导出ToolStripMenuItem.Text = "导出";
 
             // 
             //  刷新ToolStripMenuItem
@@ -446,20 +442,24 @@ namespace QsWebSoft.Wldw
             this.复制ToolStripMenuItem.Text = "复制";
 
             // 
-            //  ds_1
+            //  导出ToolStripMenuItem
             // 
-            this.ds_1 = new TXSoft.DataStore.SafeDS();
-            this.Components.Add(this.ds_1);
-            this.ds_1.DataWindowObject = "d_sys_modules_all";
-            this.ds_1.Name = "ds_1";
+            this.导出ToolStripMenuItem = new TXSoft.ExtPB.ToolStripMenuItem();
+            this.ContextMenuStrip1.Items.Add(this.导出ToolStripMenuItem);
+            this.导出ToolStripMenuItem.DataWindowAction = TXSoft.ExtPB.DataWindowAction.Export;
+            this.导出ToolStripMenuItem.ImageName = "Export5!";
+            this.导出ToolStripMenuItem.Name = "导出ToolStripMenuItem";
+            this.导出ToolStripMenuItem.Text = "导出";
 
             // 
-            //  ds_role
+            //  m_1
             // 
-            this.ds_role = new TXSoft.DataStore.SafeDS();
-            this.Components.Add(this.ds_role);
-            this.ds_role.DataWindowObject = "ds_role_list";
-            this.ds_role.Name = "ds_role";
+            this.m_1 = new TXSoft.ExtPB.ToolStripMenuItem();
+            this.ContextMenuStrip1.Items.Add(this.m_1);
+            this.m_1.DataWindowAction = TXSoft.ExtPB.DataWindowAction.Filter;
+            this.m_1.ImageName = "ExecuteSQL5!";
+            this.m_1.Name = "m_1";
+            this.m_1.Text = "过滤";
         }
         protected TXSoft.ExtPB.DataWindow dw_list;
         protected TXSoft.ExtPB.ToolStrip tb_2;
@@ -504,12 +504,12 @@ namespace QsWebSoft.Wldw
         protected TXSoft.ExtPB.ToolStripButton btn_prn;
         protected TXSoft.ExtPB.ToolStripButton btn_tjsp;
         protected TXSoft.ExtPB.ToolStripButton btn_close;
-        protected TXSoft.ExtPB.ContextMenuStrip ContextMenuStrip1;
-        protected TXSoft.ExtPB.ToolStripMenuItem m_1;
-        protected TXSoft.ExtPB.ToolStripMenuItem 导出ToolStripMenuItem;
-        protected TXSoft.ExtPB.ToolStripMenuItem 刷新ToolStripMenuItem;
-        protected TXSoft.ExtPB.ToolStripMenuItem 复制ToolStripMenuItem;
         protected TXSoft.DataStore.SafeDS ds_1;
         protected TXSoft.DataStore.SafeDS ds_role;
+        protected TXSoft.ExtPB.ContextMenuStrip ContextMenuStrip1;
+        protected TXSoft.ExtPB.ToolStripMenuItem 刷新ToolStripMenuItem;
+        protected TXSoft.ExtPB.ToolStripMenuItem 复制ToolStripMenuItem;
+        protected TXSoft.ExtPB.ToolStripMenuItem 导出ToolStripMenuItem;
+        protected TXSoft.ExtPB.ToolStripMenuItem m_1;
     }
 }

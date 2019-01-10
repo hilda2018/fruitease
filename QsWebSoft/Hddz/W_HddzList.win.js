@@ -4,589 +4,589 @@
 
 function W_HddzList() {
 
-    var self = this;
-    var requestor = new PBWindow();
-    var dw_list = new DataWindow(requestor);
-    var dw_print_cns = new DataWindow(requestor);
-    var tb_3 = new ToolStrip(requestor);
-    var ddlb_ctr_area2 = new DropDownListBox(requestor);
-    var ddlb_sd = new DropDownListBox(requestor);
-    var ddlb_zbsd = new DropDownListBox(requestor);
-    var sle_hth = new SingleLineEdit(requestor);
-    var sle_tdh = new SingleLineEdit(requestor);
-    var sle_bgdh = new SingleLineEdit(requestor);
-    var ddlb_mdg = new DropDownListBox(requestor);
-    var tb_4 = new ToolStrip(requestor);
-    var sle_ftdh = new SingleLineEdit(requestor);
-    var sle_gwgys = new SingleLineEdit(requestor);
-    var sle_jzxh = new SingleLineEdit(requestor);
-    var sle_3 = new SingleLineEdit(requestor);
-    var sle_tgdh = new SingleLineEdit(requestor);
-    var sle_sjshrmc = new SingleLineEdit(requestor);
-    var cbx_tycj = new CheckBox(requestor);
-    var ddlb_jyj = new DropDownListBox(requestor);
-    var dw_print_forma = new DataWindow(requestor);
-    var dw_print_ecczm = new DataWindow(requestor);
-    var dw_print_hczm = new DataWindow(requestor);
-    var dw_print_packinglist = new DataWindow(requestor);
-    var dw_print_invoice = new DataWindow(requestor);
-    var dw_print_contract = new DataWindow(requestor);
-    var mle_jzxh = new MultiLineEdit(requestor);
-    var tb_2 = new ToolStrip(requestor);
-    var ddlb_rqlx = new DropDownListBox(requestor);
-    var dp_begin = new DatePicker(requestor);
-    var dp_end = new DatePicker(requestor);
-    var sle_1 = new SingleLineEdit(requestor);
-    var sle_4 = new SingleLineEdit(requestor);
-    var sle_kh = new SingleLineEdit(requestor);
-    var sle_2 = new SingleLineEdit(requestor);
-    var ddlb_jdrjc = new DropDownListBox(requestor);
-    var tb_1 = new ToolStrip(requestor);
-    var rb_zj = new RadioButton(requestor);
-    var rb_qb = new RadioButton(requestor);
-    var rb_hy = new RadioButton(requestor);
-    var rb_ky = new RadioButton(requestor);
-    var ddlb_fxzt = new DropDownListBox(requestor);
-    var dw_print_bzjsqs = new DataWindow(requestor);
-    var dw_print_qksm = new DataWindow(requestor);
-    var dw_print_dlbgwts = new DataWindow(requestor);
-    var dw_print_dlxy = new DataWindow(requestor);
-    var dw_print_sjmf_contract = new DataWindow(requestor);
-    var dw_print_sjmf_packinglist = new DataWindow(requestor);
-    var dw_print_sjmf_invoice = new DataWindow(requestor);
-    var dw_1 = new DataWindow(requestor);
-    var dw_filter = new DataWindow(requestor);
-    var dw_ygkthsj = new DataWindow(requestor);
-    var dw_print_zthqksm = new DataWindow(requestor);
-    var dw_log = new DataWindow(requestor);
-    var ContextMenuStrip1 = new ContextMenu(requestor);
-    var ds_1 = new DataStore(requestor);
-    var ds_role = new DataStore(requestor);
-    var ds_2 = new DataStore(requestor);
-    var ds_role_kybmjl = new DataStore(requestor);
-    var ds_role_hybmjl = new DataStore(requestor);
-    var ds_sd = new DataStore(requestor);
-    var ds_jyj = new DataStore(requestor);
-    var ds_3 = new DataStore(requestor);
-    var ds_4 = new DataStore(requestor);
-    var ds_zbsd = new DataStore(requestor);
-
-    if (typeof (this.bind) == "function") var baseBind = this.bind;
-    this.bind = function (win) {
-        if (typeof (baseBind) == "function") baseBind(win);
-
-        if (requestor == null) requestor = new PBWindow();
-        requestor.Attach(win);
-        if (dw_list == null) dw_list = new DataWindow(requestor);
-        dw_list.Attach(win.Control("dw_list"));
-        if (dw_print_cns == null) dw_print_cns = new DataWindow(requestor);
-        dw_print_cns.Attach(win.Control("dw_print_cns"));
-        if (tb_3 == null) tb_3 = new ToolStrip(requestor);
-        tb_3.Attach(win.Control("tb_3"));
-        if (ddlb_ctr_area2 == null) ddlb_ctr_area2 = new DropDownListBox(requestor);
-        ddlb_ctr_area2.Attach(win.Control("ddlb_ctr_area2"));
-        if (ddlb_sd == null) ddlb_sd = new DropDownListBox(requestor);
-        ddlb_sd.Attach(win.Control("ddlb_sd"));
-        if (ddlb_zbsd == null) ddlb_zbsd = new DropDownListBox(requestor);
-        ddlb_zbsd.Attach(win.Control("ddlb_zbsd"));
-        if (sle_hth == null) sle_hth = new SingleLineEdit(requestor);
-        sle_hth.Attach(win.Control("sle_hth"));
-        if (sle_tdh == null) sle_tdh = new SingleLineEdit(requestor);
-        sle_tdh.Attach(win.Control("sle_tdh"));
-        if (sle_bgdh == null) sle_bgdh = new SingleLineEdit(requestor);
-        sle_bgdh.Attach(win.Control("sle_bgdh"));
-        if (ddlb_mdg == null) ddlb_mdg = new DropDownListBox(requestor);
-        ddlb_mdg.Attach(win.Control("ddlb_mdg"));
-        if (tb_4 == null) tb_4 = new ToolStrip(requestor);
-        tb_4.Attach(win.Control("tb_4"));
-        if (sle_ftdh == null) sle_ftdh = new SingleLineEdit(requestor);
-        sle_ftdh.Attach(win.Control("sle_ftdh"));
-        if (sle_gwgys == null) sle_gwgys = new SingleLineEdit(requestor);
-        sle_gwgys.Attach(win.Control("sle_gwgys"));
-        if (sle_jzxh == null) sle_jzxh = new SingleLineEdit(requestor);
-        sle_jzxh.Attach(win.Control("sle_jzxh"));
-        if (sle_3 == null) sle_3 = new SingleLineEdit(requestor);
-        sle_3.Attach(win.Control("sle_3"));
-        if (sle_tgdh == null) sle_tgdh = new SingleLineEdit(requestor);
-        sle_tgdh.Attach(win.Control("sle_tgdh"));
-        if (sle_sjshrmc == null) sle_sjshrmc = new SingleLineEdit(requestor);
-        sle_sjshrmc.Attach(win.Control("sle_sjshrmc"));
-        if (cbx_tycj == null) cbx_tycj = new CheckBox(requestor);
-        cbx_tycj.Attach(win.Control("cbx_tycj"));
-        if (ddlb_jyj == null) ddlb_jyj = new DropDownListBox(requestor);
-        ddlb_jyj.Attach(win.Control("ddlb_jyj"));
-        if (dw_print_forma == null) dw_print_forma = new DataWindow(requestor);
-        dw_print_forma.Attach(win.Control("dw_print_forma"));
-        if (dw_print_ecczm == null) dw_print_ecczm = new DataWindow(requestor);
-        dw_print_ecczm.Attach(win.Control("dw_print_ecczm"));
-        if (dw_print_hczm == null) dw_print_hczm = new DataWindow(requestor);
-        dw_print_hczm.Attach(win.Control("dw_print_hczm"));
-        if (dw_print_packinglist == null) dw_print_packinglist = new DataWindow(requestor);
-        dw_print_packinglist.Attach(win.Control("dw_print_packinglist"));
-        if (dw_print_invoice == null) dw_print_invoice = new DataWindow(requestor);
-        dw_print_invoice.Attach(win.Control("dw_print_invoice"));
-        if (dw_print_contract == null) dw_print_contract = new DataWindow(requestor);
-        dw_print_contract.Attach(win.Control("dw_print_contract"));
-        if (mle_jzxh == null) mle_jzxh = new MultiLineEdit(requestor);
-        mle_jzxh.Attach(win.Control("mle_jzxh"));
-        if (tb_2 == null) tb_2 = new ToolStrip(requestor);
-        tb_2.Attach(win.Control("tb_2"));
-        if (ddlb_rqlx == null) ddlb_rqlx = new DropDownListBox(requestor);
-        ddlb_rqlx.Attach(win.Control("ddlb_rqlx"));
-        if (dp_begin == null) dp_begin = new DatePicker(requestor);
-        dp_begin.Attach(win.Control("dp_begin"));
-        if (dp_end == null) dp_end = new DatePicker(requestor);
-        dp_end.Attach(win.Control("dp_end"));
-        if (sle_1 == null) sle_1 = new SingleLineEdit(requestor);
-        sle_1.Attach(win.Control("sle_1"));
-        if (sle_4 == null) sle_4 = new SingleLineEdit(requestor);
-        sle_4.Attach(win.Control("sle_4"));
-        if (sle_kh == null) sle_kh = new SingleLineEdit(requestor);
-        sle_kh.Attach(win.Control("sle_kh"));
-        if (sle_2 == null) sle_2 = new SingleLineEdit(requestor);
-        sle_2.Attach(win.Control("sle_2"));
-        if (ddlb_jdrjc == null) ddlb_jdrjc = new DropDownListBox(requestor);
-        ddlb_jdrjc.Attach(win.Control("ddlb_jdrjc"));
-        if (tb_1 == null) tb_1 = new ToolStrip(requestor);
-        tb_1.Attach(win.Control("tb_1"));
-        if (rb_zj == null) rb_zj = new RadioButton(requestor);
-        rb_zj.Attach(win.Control("rb_zj"));
-        if (rb_qb == null) rb_qb = new RadioButton(requestor);
-        rb_qb.Attach(win.Control("rb_qb"));
-        if (rb_hy == null) rb_hy = new RadioButton(requestor);
-        rb_hy.Attach(win.Control("rb_hy"));
-        if (rb_ky == null) rb_ky = new RadioButton(requestor);
-        rb_ky.Attach(win.Control("rb_ky"));
-        if (ddlb_fxzt == null) ddlb_fxzt = new DropDownListBox(requestor);
-        ddlb_fxzt.Attach(win.Control("ddlb_fxzt"));
-        if (dw_print_bzjsqs == null) dw_print_bzjsqs = new DataWindow(requestor);
-        dw_print_bzjsqs.Attach(win.Control("dw_print_bzjsqs"));
-        if (dw_print_qksm == null) dw_print_qksm = new DataWindow(requestor);
-        dw_print_qksm.Attach(win.Control("dw_print_qksm"));
-        if (dw_print_dlbgwts == null) dw_print_dlbgwts = new DataWindow(requestor);
-        dw_print_dlbgwts.Attach(win.Control("dw_print_dlbgwts"));
-        if (dw_print_dlxy == null) dw_print_dlxy = new DataWindow(requestor);
-        dw_print_dlxy.Attach(win.Control("dw_print_dlxy"));
-        if (dw_print_sjmf_contract == null) dw_print_sjmf_contract = new DataWindow(requestor);
-        dw_print_sjmf_contract.Attach(win.Control("dw_print_sjmf_contract"));
-        if (dw_print_sjmf_packinglist == null) dw_print_sjmf_packinglist = new DataWindow(requestor);
-        dw_print_sjmf_packinglist.Attach(win.Control("dw_print_sjmf_packinglist"));
-        if (dw_print_sjmf_invoice == null) dw_print_sjmf_invoice = new DataWindow(requestor);
-        dw_print_sjmf_invoice.Attach(win.Control("dw_print_sjmf_invoice"));
-        if (dw_1 == null) dw_1 = new DataWindow(requestor);
-        dw_1.Attach(win.Control("dw_1"));
-        if (dw_filter == null) dw_filter = new DataWindow(requestor);
-        dw_filter.Attach(win.Control("dw_filter"));
-        if (dw_ygkthsj == null) dw_ygkthsj = new DataWindow(requestor);
-        dw_ygkthsj.Attach(win.Control("dw_ygkthsj"));
-        if (dw_print_zthqksm == null) dw_print_zthqksm = new DataWindow(requestor);
-        dw_print_zthqksm.Attach(win.Control("dw_print_zthqksm"));
-        if (dw_log == null) dw_log = new DataWindow(requestor);
-        dw_log.Attach(win.Control("dw_log"));
-        if (ContextMenuStrip1 == null) ContextMenuStrip1 = new ContextMenu(requestor);
-        ContextMenuStrip1.Attach(win.Control("ContextMenuStrip1"));
-        if (ds_1 == null) ds_1 = new DataStore(requestor);
-        ds_1.Attach(win.Control("ds_1"));
-        if (ds_role == null) ds_role = new DataStore(requestor);
-        ds_role.Attach(win.Control("ds_role"));
-        if (ds_2 == null) ds_2 = new DataStore(requestor);
-        ds_2.Attach(win.Control("ds_2"));
-        if (ds_role_kybmjl == null) ds_role_kybmjl = new DataStore(requestor);
-        ds_role_kybmjl.Attach(win.Control("ds_role_kybmjl"));
-        if (ds_role_hybmjl == null) ds_role_hybmjl = new DataStore(requestor);
-        ds_role_hybmjl.Attach(win.Control("ds_role_hybmjl"));
-        if (ds_sd == null) ds_sd = new DataStore(requestor);
-        ds_sd.Attach(win.Control("ds_sd"));
-        if (ds_jyj == null) ds_jyj = new DataStore(requestor);
-        ds_jyj.Attach(win.Control("ds_jyj"));
-        if (ds_3 == null) ds_3 = new DataStore(requestor);
-        ds_3.Attach(win.Control("ds_3"));
-        if (ds_4 == null) ds_4 = new DataStore(requestor);
-        ds_4.Attach(win.Control("ds_4"));
-        if (ds_zbsd == null) ds_zbsd = new DataStore(requestor);
-        ds_zbsd.Attach(win.Control("ds_zbsd"));
-
-        if (typeof (self.PostOpen) == "function")
-            win.AttachEvent("window", "PostOpen", self.PostOpen);
-
-        if (typeof (self.dw_List_Clicked) == "function")
-            win.AttachEvent("dw_list", "Clicked", self.dw_List_Clicked);
-
-        if (typeof (self.dw_List_DoubleClicked) == "function")
-            win.AttachEvent("dw_list", "DoubleClicked", self.dw_List_DoubleClicked);
-
-        if (typeof (self.dw_List_DwnMouseMove) == "function")
-            win.AttachEvent("dw_list", "DwnMouseMove", self.dw_List_DwnMouseMove);
-
-        if (typeof (self.dw_List_ItemChanged) == "function")
-            win.AttachEvent("dw_list", "ItemChanged", self.dw_List_ItemChanged);
-
-        if (typeof (self.dw_List_EntertoTab) == "function")
-            win.AttachEvent("dw_list", "KeyDown", self.dw_List_EntertoTab);
-
-        if (typeof (self.dw_List_LButtonDown) == "function")
-            win.AttachEvent("dw_list", "LButtonDown", self.dw_List_LButtonDown);
-
-        if (typeof (self.RbuttonDown) == "function")
-            win.AttachEvent("dw_list", "RButtonDown", self.RbuttonDown);
-
-        if (typeof (self.Stop) == "function")
-            win.AttachEvent("btn_stop", "Clicked", self.Stop);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_ctr_area2", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.Jyjyzs) == "function")
-            win.AttachEvent("jyjyzs", "Clicked", self.Jyjyzs);
-
-        if (typeof (self.Ohdlxy) == "function")
-            win.AttachEvent("欧恒代理协议ToolStripMenuItem", "Clicked", self.Ohdlxy);
-
-        if (typeof (self.Bgd) == "function")
-            win.AttachEvent("报关单ToolStripMenuItem", "Clicked", self.Bgd);
-
-        if (typeof (self.Xswj) == "function")
-            win.AttachEvent("归档文件ToolStripMenuItem", "Clicked", self.Xswj);
-
-        if (typeof (self.Cypz) == "function")
-            win.AttachEvent("采样凭证ToolStripMenuItem", "Clicked", self.Cypz);
-
-        if (typeof (self.dlbgwts_Clicked) == "function")
-            win.AttachEvent("代理报关委托书ToolStripMenuItem", "Clicked", self.dlbgwts_Clicked);
-
-        if (typeof (self.ddlb_sdxz_getfocus) == "function")
-            win.AttachEvent("ddlb_sd", "GetFocus", self.ddlb_sdxz_getfocus);
-
-        if (typeof (self.Sd) == "function")
-            win.AttachEvent("ddlb_sd", "SelectionChanged", self.Sd);
-
-        if (typeof (self.ddlb_zbsdxz_getfocus) == "function")
-            win.AttachEvent("ddlb_zbsd", "GetFocus", self.ddlb_zbsdxz_getfocus);
-
-        if (typeof (self.Zbsd) == "function")
-            win.AttachEvent("ddlb_zbsd", "SelectionChanged", self.Zbsd);
-
-        if (typeof (self.slehth_EditChanged) == "function")
-            win.AttachEvent("sle_hth", "EditChanged", self.slehth_EditChanged);
-
-        if (typeof (self.sletdh_EditChanged) == "function")
-            win.AttachEvent("sle_tdh", "EditChanged", self.sletdh_EditChanged);
-
-        if (typeof (self.slebgdh_EditChanged) == "function")
-            win.AttachEvent("sle_bgdh", "EditChanged", self.slebgdh_EditChanged);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_mdg", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.Print_Hwqd) == "function")
-            win.AttachEvent("m_hwqd", "Clicked", self.Print_Hwqd);
-
-        if (typeof (self.Print_Bzqksm) == "function")
-            win.AttachEvent("m_bzqksm", "Clicked", self.Print_Bzqksm);
-
-        if (typeof (self.Print_Sybzsm) == "function")
-            win.AttachEvent("m_sybzsm", "Clicked", self.Print_Sybzsm);
-
-        if (typeof (self.Print_Spcns) == "function")
-            win.AttachEvent("m_spcns", "Clicked", self.Print_Spcns);
-
-        if (typeof (self.sleftdh_EditChanged) == "function")
-            win.AttachEvent("sle_ftdh", "EditChanged", self.sleftdh_EditChanged);
-
-        if (typeof (self.slectr_area2_EditChanged) == "function")
-            win.AttachEvent("sle_gwgys", "EditChanged", self.slectr_area2_EditChanged);
-
-        if (typeof (self.sleJzxh_EditChanged) == "function")
-            win.AttachEvent("sle_jzxh", "EditChanged", self.sleJzxh_EditChanged);
-
-        if (typeof (self.sleTgdh_EditChanged) == "function")
-            win.AttachEvent("sle_3", "EditChanged", self.sleTgdh_EditChanged);
-
-        if (typeof (self.sleBjh_EditChanged) == "function")
-            win.AttachEvent("sle_tgdh", "EditChanged", self.sleBjh_EditChanged);
-
-        if (typeof (self.sleSjshrmc_EditChanged) == "function")
-            win.AttachEvent("sle_sjshrmc", "EditChanged", self.sleSjshrmc_EditChanged);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("cbx_tycj", "Clicked", self.Retrieve);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_jyj", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.Print_Fksqs) == "function")
-            win.AttachEvent("m_18", "Clicked", self.Print_Fksqs);
-
-        if (typeof (self.Print_Fpsld) == "function")
-            win.AttachEvent("m_fpsld", "Clicked", self.Print_Fpsld);
-
-        if (typeof (self.Print_Whlj_Seaway) == "function")
-            win.AttachEvent("m_Whlj_Seaway", "Clicked", self.Print_Whlj_Seaway);
-
-        if (typeof (self.Print_Whljdf) == "function")
-            win.AttachEvent("m_whljdf", "Clicked", self.Print_Whljdf);
-
-        if (typeof (self.Print_Whzhcd) == "function")
-            win.AttachEvent("m_whzhcd", "Clicked", self.Print_Whzhcd);
-
-        if (typeof (self.Print_Yxzm) == "function")
-            win.AttachEvent("m_yxzm", "Clicked", self.Print_Yxzm);
-
-        if (typeof (self.print_Ymlhhdbh) == "function")
-            win.AttachEvent("m_mylhhdbh", "Clicked", self.print_Ymlhhdbh);
-
-        if (typeof (self.print_OOCL_Dfhw) == "function")
-            win.AttachEvent("m_OOCL_Dfhw", "Clicked", self.print_OOCL_Dfhw);
-
-        if (typeof (self.print_sjsc_MOL) == "function")
-            win.AttachEvent("m_sjsc_MOL", "Clicked", self.print_sjsc_MOL);
-
-        if (typeof (self.print_Xd_HMM_PH) == "function")
-            win.AttachEvent("m_xd_HMM_PH", "Clicked", self.print_Xd_HMM_PH);
-
-        if (typeof (self.print_Zycosco22) == "function")
-            win.AttachEvent("m_zycosco", "Clicked", self.print_Zycosco22);
-
-        if (typeof (self.print_Crhh11) == "function")
-            win.AttachEvent("m_crhh", "Clicked", self.print_Crhh11);
-
-        if (typeof (self.print_Whljyxbh) == "function")
-            win.AttachEvent("m_Whljyxbh", "Clicked", self.print_Whljyxbh);
-
-        if (typeof (self.print_Zlyt) == "function")
-            win.AttachEvent("m_Zlyt", "Clicked", self.print_Zlyt);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_rqlx", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("btn_read", "Clicked", self.Retrieve);
-
-        if (typeof (self.sle_EditChanged) == "function")
-            win.AttachEvent("sle_1", "EditChanged", self.sle_EditChanged);
-
-        if (typeof (self.slewtdw_EditChanged) == "function")
-            win.AttachEvent("sle_4", "EditChanged", self.slewtdw_EditChanged);
-
-        if (typeof (self.slesdtt_EditChanged) == "function")
-            win.AttachEvent("sle_kh", "EditChanged", self.slesdtt_EditChanged);
-
-        if (typeof (self.sleycd_EditChanged) == "function")
-            win.AttachEvent("sle_2", "EditChanged", self.sleycd_EditChanged);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_jdrjc", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.OpenTggz) == "function")
-            win.AttachEvent("btn_tggz", "Clicked", self.OpenTggz);
-
-        if (typeof (self.Help) == "function")
-            win.AttachEvent("btn_help", "Clicked", self.Help);
-
-        if (typeof (self.OcrDq) == "function")
-            win.AttachEvent("btn_ocrdq", "Clicked", self.OcrDq);
-
-        if (typeof (self.New) == "function")
-            win.AttachEvent("btn_new", "Clicked", self.New);
-
-        if (typeof (self.Copy) == "function")
-            win.AttachEvent("btn_duplicate", "Clicked", self.Copy);
-
-        if (typeof (self.Delete) == "function")
-            win.AttachEvent("btn_delete", "Clicked", self.Delete);
-
-        if (typeof (self.OpenWindow) == "function")
-            win.AttachEvent("btn_open", "Clicked", self.OpenWindow);
-
-        if (typeof (self.Save) == "function")
-            win.AttachEvent("btn_save", "Clicked", self.Save);
+	 var self=this;
+	 var requestor= new PBWindow();
+	 var dw_list= new DataWindow( requestor );
+	 var dw_print_cns= new DataWindow( requestor );
+	 var tb_3= new ToolStrip( requestor );
+	 var ddlb_ctr_area2= new DropDownListBox( requestor );
+	 var ddlb_sd= new DropDownListBox( requestor );
+	 var ddlb_zbsd= new DropDownListBox( requestor );
+	 var sle_hth= new SingleLineEdit( requestor );
+	 var sle_tdh= new SingleLineEdit( requestor );
+	 var sle_bgdh= new SingleLineEdit( requestor );
+	 var ddlb_mdg= new DropDownListBox( requestor );
+	 var tb_4= new ToolStrip( requestor );
+	 var sle_ftdh= new SingleLineEdit( requestor );
+	 var sle_gwgys= new SingleLineEdit( requestor );
+	 var sle_jzxh= new SingleLineEdit( requestor );
+	 var sle_3= new SingleLineEdit( requestor );
+	 var sle_tgdh= new SingleLineEdit( requestor );
+	 var sle_sjshrmc= new SingleLineEdit( requestor );
+	 var cbx_tycj= new CheckBox( requestor );
+	 var ddlb_jyj= new DropDownListBox( requestor );
+	 var dw_print_forma= new DataWindow( requestor );
+	 var dw_print_ecczm= new DataWindow( requestor );
+	 var dw_print_hczm= new DataWindow( requestor );
+	 var dw_print_packinglist= new DataWindow( requestor );
+	 var dw_print_invoice= new DataWindow( requestor );
+	 var dw_print_contract= new DataWindow( requestor );
+	 var mle_jzxh= new MultiLineEdit( requestor );
+	 var tb_2= new ToolStrip( requestor );
+	 var ddlb_rqlx= new DropDownListBox( requestor );
+	 var dp_begin= new DatePicker( requestor );
+	 var dp_end= new DatePicker( requestor );
+	 var sle_1= new SingleLineEdit( requestor );
+	 var sle_4= new SingleLineEdit( requestor );
+	 var sle_kh= new SingleLineEdit( requestor );
+	 var sle_2= new SingleLineEdit( requestor );
+	 var ddlb_jdrjc= new DropDownListBox( requestor );
+	 var tb_1= new ToolStrip( requestor );
+	 var rb_zj= new RadioButton( requestor );
+	 var rb_qb= new RadioButton( requestor );
+	 var rb_hy= new RadioButton( requestor );
+	 var rb_ky= new RadioButton( requestor );
+	 var ddlb_fxzt= new DropDownListBox( requestor );
+	 var dw_print_bzjsqs= new DataWindow( requestor );
+	 var dw_print_qksm= new DataWindow( requestor );
+	 var dw_print_dlbgwts= new DataWindow( requestor );
+	 var dw_print_dlxy= new DataWindow( requestor );
+	 var dw_print_sjmf_contract= new DataWindow( requestor );
+	 var dw_print_sjmf_packinglist= new DataWindow( requestor );
+	 var dw_print_sjmf_invoice= new DataWindow( requestor );
+	 var dw_1= new DataWindow( requestor );
+	 var dw_filter= new DataWindow( requestor );
+	 var dw_ygkthsj= new DataWindow( requestor );
+	 var dw_print_zthqksm= new DataWindow( requestor );
+	 var dw_log= new DataWindow( requestor );
+	 var ContextMenuStrip1= new ContextMenu( requestor );
+	 var ds_1= new DataStore( requestor );
+	 var ds_role= new DataStore( requestor );
+	 var ds_2= new DataStore( requestor );
+	 var ds_role_kybmjl= new DataStore( requestor );
+	 var ds_role_hybmjl= new DataStore( requestor );
+	 var ds_sd= new DataStore( requestor );
+	 var ds_jyj= new DataStore( requestor );
+	 var ds_3= new DataStore( requestor );
+	 var ds_4= new DataStore( requestor );
+	 var ds_zbsd= new DataStore( requestor );
+
+	 if(typeof(this.bind)=="function") var baseBind=this.bind;
+	 this.bind=function(win){
+	 if(typeof( baseBind )=="function") baseBind(win);
+
+		 if(requestor == null ) requestor= new PBWindow();
+		 requestor.Attach(win);
+		 if(dw_list == null ) dw_list= new DataWindow( requestor );
+		 dw_list.Attach( win.Control( "dw_list") ); 
+		 if(dw_print_cns == null ) dw_print_cns= new DataWindow( requestor );
+		 dw_print_cns.Attach( win.Control( "dw_print_cns") ); 
+		 if(tb_3 == null ) tb_3= new ToolStrip( requestor );
+		 tb_3.Attach( win.Control( "tb_3") ); 
+		 if(ddlb_ctr_area2 == null ) ddlb_ctr_area2= new DropDownListBox( requestor );
+		 ddlb_ctr_area2.Attach( win.Control( "ddlb_ctr_area2") ); 
+		 if(ddlb_sd == null ) ddlb_sd= new DropDownListBox( requestor );
+		 ddlb_sd.Attach( win.Control( "ddlb_sd") ); 
+		 if(ddlb_zbsd == null ) ddlb_zbsd= new DropDownListBox( requestor );
+		 ddlb_zbsd.Attach( win.Control( "ddlb_zbsd") ); 
+		 if(sle_hth == null ) sle_hth= new SingleLineEdit( requestor );
+		 sle_hth.Attach( win.Control( "sle_hth") ); 
+		 if(sle_tdh == null ) sle_tdh= new SingleLineEdit( requestor );
+		 sle_tdh.Attach( win.Control( "sle_tdh") ); 
+		 if(sle_bgdh == null ) sle_bgdh= new SingleLineEdit( requestor );
+		 sle_bgdh.Attach( win.Control( "sle_bgdh") ); 
+		 if(ddlb_mdg == null ) ddlb_mdg= new DropDownListBox( requestor );
+		 ddlb_mdg.Attach( win.Control( "ddlb_mdg") ); 
+		 if(tb_4 == null ) tb_4= new ToolStrip( requestor );
+		 tb_4.Attach( win.Control( "tb_4") ); 
+		 if(sle_ftdh == null ) sle_ftdh= new SingleLineEdit( requestor );
+		 sle_ftdh.Attach( win.Control( "sle_ftdh") ); 
+		 if(sle_gwgys == null ) sle_gwgys= new SingleLineEdit( requestor );
+		 sle_gwgys.Attach( win.Control( "sle_gwgys") ); 
+		 if(sle_jzxh == null ) sle_jzxh= new SingleLineEdit( requestor );
+		 sle_jzxh.Attach( win.Control( "sle_jzxh") ); 
+		 if(sle_3 == null ) sle_3= new SingleLineEdit( requestor );
+		 sle_3.Attach( win.Control( "sle_3") ); 
+		 if(sle_tgdh == null ) sle_tgdh= new SingleLineEdit( requestor );
+		 sle_tgdh.Attach( win.Control( "sle_tgdh") ); 
+		 if(sle_sjshrmc == null ) sle_sjshrmc= new SingleLineEdit( requestor );
+		 sle_sjshrmc.Attach( win.Control( "sle_sjshrmc") ); 
+		 if(cbx_tycj == null ) cbx_tycj= new CheckBox( requestor );
+		 cbx_tycj.Attach( win.Control( "cbx_tycj") ); 
+		 if(ddlb_jyj == null ) ddlb_jyj= new DropDownListBox( requestor );
+		 ddlb_jyj.Attach( win.Control( "ddlb_jyj") ); 
+		 if(dw_print_forma == null ) dw_print_forma= new DataWindow( requestor );
+		 dw_print_forma.Attach( win.Control( "dw_print_forma") ); 
+		 if(dw_print_ecczm == null ) dw_print_ecczm= new DataWindow( requestor );
+		 dw_print_ecczm.Attach( win.Control( "dw_print_ecczm") ); 
+		 if(dw_print_hczm == null ) dw_print_hczm= new DataWindow( requestor );
+		 dw_print_hczm.Attach( win.Control( "dw_print_hczm") ); 
+		 if(dw_print_packinglist == null ) dw_print_packinglist= new DataWindow( requestor );
+		 dw_print_packinglist.Attach( win.Control( "dw_print_packinglist") ); 
+		 if(dw_print_invoice == null ) dw_print_invoice= new DataWindow( requestor );
+		 dw_print_invoice.Attach( win.Control( "dw_print_invoice") ); 
+		 if(dw_print_contract == null ) dw_print_contract= new DataWindow( requestor );
+		 dw_print_contract.Attach( win.Control( "dw_print_contract") ); 
+		 if(mle_jzxh == null ) mle_jzxh= new MultiLineEdit( requestor );
+		 mle_jzxh.Attach( win.Control( "mle_jzxh") ); 
+		 if(tb_2 == null ) tb_2= new ToolStrip( requestor );
+		 tb_2.Attach( win.Control( "tb_2") ); 
+		 if(ddlb_rqlx == null ) ddlb_rqlx= new DropDownListBox( requestor );
+		 ddlb_rqlx.Attach( win.Control( "ddlb_rqlx") ); 
+		 if(dp_begin == null ) dp_begin= new DatePicker( requestor );
+		 dp_begin.Attach( win.Control( "dp_begin") ); 
+		 if(dp_end == null ) dp_end= new DatePicker( requestor );
+		 dp_end.Attach( win.Control( "dp_end") ); 
+		 if(sle_1 == null ) sle_1= new SingleLineEdit( requestor );
+		 sle_1.Attach( win.Control( "sle_1") ); 
+		 if(sle_4 == null ) sle_4= new SingleLineEdit( requestor );
+		 sle_4.Attach( win.Control( "sle_4") ); 
+		 if(sle_kh == null ) sle_kh= new SingleLineEdit( requestor );
+		 sle_kh.Attach( win.Control( "sle_kh") ); 
+		 if(sle_2 == null ) sle_2= new SingleLineEdit( requestor );
+		 sle_2.Attach( win.Control( "sle_2") ); 
+		 if(ddlb_jdrjc == null ) ddlb_jdrjc= new DropDownListBox( requestor );
+		 ddlb_jdrjc.Attach( win.Control( "ddlb_jdrjc") ); 
+		 if(tb_1 == null ) tb_1= new ToolStrip( requestor );
+		 tb_1.Attach( win.Control( "tb_1") ); 
+		 if(rb_zj == null ) rb_zj= new RadioButton( requestor );
+		 rb_zj.Attach( win.Control( "rb_zj") ); 
+		 if(rb_qb == null ) rb_qb= new RadioButton( requestor );
+		 rb_qb.Attach( win.Control( "rb_qb") ); 
+		 if(rb_hy == null ) rb_hy= new RadioButton( requestor );
+		 rb_hy.Attach( win.Control( "rb_hy") ); 
+		 if(rb_ky == null ) rb_ky= new RadioButton( requestor );
+		 rb_ky.Attach( win.Control( "rb_ky") ); 
+		 if(ddlb_fxzt == null ) ddlb_fxzt= new DropDownListBox( requestor );
+		 ddlb_fxzt.Attach( win.Control( "ddlb_fxzt") ); 
+		 if(dw_print_bzjsqs == null ) dw_print_bzjsqs= new DataWindow( requestor );
+		 dw_print_bzjsqs.Attach( win.Control( "dw_print_bzjsqs") ); 
+		 if(dw_print_qksm == null ) dw_print_qksm= new DataWindow( requestor );
+		 dw_print_qksm.Attach( win.Control( "dw_print_qksm") ); 
+		 if(dw_print_dlbgwts == null ) dw_print_dlbgwts= new DataWindow( requestor );
+		 dw_print_dlbgwts.Attach( win.Control( "dw_print_dlbgwts") ); 
+		 if(dw_print_dlxy == null ) dw_print_dlxy= new DataWindow( requestor );
+		 dw_print_dlxy.Attach( win.Control( "dw_print_dlxy") ); 
+		 if(dw_print_sjmf_contract == null ) dw_print_sjmf_contract= new DataWindow( requestor );
+		 dw_print_sjmf_contract.Attach( win.Control( "dw_print_sjmf_contract") ); 
+		 if(dw_print_sjmf_packinglist == null ) dw_print_sjmf_packinglist= new DataWindow( requestor );
+		 dw_print_sjmf_packinglist.Attach( win.Control( "dw_print_sjmf_packinglist") ); 
+		 if(dw_print_sjmf_invoice == null ) dw_print_sjmf_invoice= new DataWindow( requestor );
+		 dw_print_sjmf_invoice.Attach( win.Control( "dw_print_sjmf_invoice") ); 
+		 if(dw_1 == null ) dw_1= new DataWindow( requestor );
+		 dw_1.Attach( win.Control( "dw_1") ); 
+		 if(dw_filter == null ) dw_filter= new DataWindow( requestor );
+		 dw_filter.Attach( win.Control( "dw_filter") ); 
+		 if(dw_ygkthsj == null ) dw_ygkthsj= new DataWindow( requestor );
+		 dw_ygkthsj.Attach( win.Control( "dw_ygkthsj") ); 
+		 if(dw_print_zthqksm == null ) dw_print_zthqksm= new DataWindow( requestor );
+		 dw_print_zthqksm.Attach( win.Control( "dw_print_zthqksm") ); 
+		 if(dw_log == null ) dw_log= new DataWindow( requestor );
+		 dw_log.Attach( win.Control( "dw_log") ); 
+		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
+		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
+		 if(ds_1 == null ) ds_1= new DataStore( requestor );
+		 ds_1.Attach( win.Control( "ds_1") ); 
+		 if(ds_role == null ) ds_role= new DataStore( requestor );
+		 ds_role.Attach( win.Control( "ds_role") ); 
+		 if(ds_2 == null ) ds_2= new DataStore( requestor );
+		 ds_2.Attach( win.Control( "ds_2") ); 
+		 if(ds_role_kybmjl == null ) ds_role_kybmjl= new DataStore( requestor );
+		 ds_role_kybmjl.Attach( win.Control( "ds_role_kybmjl") ); 
+		 if(ds_role_hybmjl == null ) ds_role_hybmjl= new DataStore( requestor );
+		 ds_role_hybmjl.Attach( win.Control( "ds_role_hybmjl") ); 
+		 if(ds_sd == null ) ds_sd= new DataStore( requestor );
+		 ds_sd.Attach( win.Control( "ds_sd") ); 
+		 if(ds_jyj == null ) ds_jyj= new DataStore( requestor );
+		 ds_jyj.Attach( win.Control( "ds_jyj") ); 
+		 if(ds_3 == null ) ds_3= new DataStore( requestor );
+		 ds_3.Attach( win.Control( "ds_3") ); 
+		 if(ds_4 == null ) ds_4= new DataStore( requestor );
+		 ds_4.Attach( win.Control( "ds_4") ); 
+		 if(ds_zbsd == null ) ds_zbsd= new DataStore( requestor );
+		 ds_zbsd.Attach( win.Control( "ds_zbsd") ); 
+
+		 if(typeof(self.PostOpen)=="function") 
+			 win.AttachEvent("window","PostOpen",self.PostOpen); 
+
+		 if(typeof(self.dw_List_Clicked)=="function") 
+			 win.AttachEvent("dw_list","Clicked",self.dw_List_Clicked); 
+
+		 if(typeof(self.dw_List_DoubleClicked)=="function") 
+			 win.AttachEvent("dw_list","DoubleClicked",self.dw_List_DoubleClicked); 
+
+		 if(typeof(self.dw_List_DwnMouseMove)=="function") 
+			 win.AttachEvent("dw_list","DwnMouseMove",self.dw_List_DwnMouseMove); 
+
+		 if(typeof(self.dw_List_ItemChanged)=="function") 
+			 win.AttachEvent("dw_list","ItemChanged",self.dw_List_ItemChanged); 
+
+		 if(typeof(self.dw_List_EntertoTab)=="function") 
+			 win.AttachEvent("dw_list","KeyDown",self.dw_List_EntertoTab); 
+
+		 if(typeof(self.dw_List_LButtonDown)=="function") 
+			 win.AttachEvent("dw_list","LButtonDown",self.dw_List_LButtonDown); 
+
+		 if(typeof(self.RbuttonDown)=="function") 
+			 win.AttachEvent("dw_list","RButtonDown",self.RbuttonDown); 
+
+		 if(typeof(self.Stop)=="function") 
+			 win.AttachEvent("btn_stop","Clicked",self.Stop); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_ctr_area2","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.Jyjyzs)=="function") 
+			 win.AttachEvent("jyjyzs","Clicked",self.Jyjyzs); 
+
+		 if(typeof(self.Ohdlxy)=="function") 
+			 win.AttachEvent("欧恒代理协议ToolStripMenuItem","Clicked",self.Ohdlxy); 
+
+		 if(typeof(self.Bgd)=="function") 
+			 win.AttachEvent("报关单ToolStripMenuItem","Clicked",self.Bgd); 
+
+		 if(typeof(self.Xswj)=="function") 
+			 win.AttachEvent("归档文件ToolStripMenuItem","Clicked",self.Xswj); 
+
+		 if(typeof(self.Cypz)=="function") 
+			 win.AttachEvent("采样凭证ToolStripMenuItem","Clicked",self.Cypz); 
+
+		 if(typeof(self.dlbgwts_Clicked)=="function") 
+			 win.AttachEvent("代理报关委托书ToolStripMenuItem","Clicked",self.dlbgwts_Clicked); 
+
+		 if(typeof(self.ddlb_sdxz_getfocus)=="function") 
+			 win.AttachEvent("ddlb_sd","GetFocus",self.ddlb_sdxz_getfocus); 
+
+		 if(typeof(self.Sd)=="function") 
+			 win.AttachEvent("ddlb_sd","SelectionChanged",self.Sd); 
+
+		 if(typeof(self.ddlb_zbsdxz_getfocus)=="function") 
+			 win.AttachEvent("ddlb_zbsd","GetFocus",self.ddlb_zbsdxz_getfocus); 
+
+		 if(typeof(self.Zbsd)=="function") 
+			 win.AttachEvent("ddlb_zbsd","SelectionChanged",self.Zbsd); 
+
+		 if(typeof(self.slehth_EditChanged)=="function") 
+			 win.AttachEvent("sle_hth","EditChanged",self.slehth_EditChanged); 
+
+		 if(typeof(self.sletdh_EditChanged)=="function") 
+			 win.AttachEvent("sle_tdh","EditChanged",self.sletdh_EditChanged); 
+
+		 if(typeof(self.slebgdh_EditChanged)=="function") 
+			 win.AttachEvent("sle_bgdh","EditChanged",self.slebgdh_EditChanged); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_mdg","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.Print_Hwqd)=="function") 
+			 win.AttachEvent("m_hwqd","Clicked",self.Print_Hwqd); 
+
+		 if(typeof(self.Print_Bzqksm)=="function") 
+			 win.AttachEvent("m_bzqksm","Clicked",self.Print_Bzqksm); 
+
+		 if(typeof(self.Print_Sybzsm)=="function") 
+			 win.AttachEvent("m_sybzsm","Clicked",self.Print_Sybzsm); 
+
+		 if(typeof(self.Print_Spcns)=="function") 
+			 win.AttachEvent("m_spcns","Clicked",self.Print_Spcns); 
+
+		 if(typeof(self.sleftdh_EditChanged)=="function") 
+			 win.AttachEvent("sle_ftdh","EditChanged",self.sleftdh_EditChanged); 
+
+		 if(typeof(self.slectr_area2_EditChanged)=="function") 
+			 win.AttachEvent("sle_gwgys","EditChanged",self.slectr_area2_EditChanged); 
+
+		 if(typeof(self.sleJzxh_EditChanged)=="function") 
+			 win.AttachEvent("sle_jzxh","EditChanged",self.sleJzxh_EditChanged); 
+
+		 if(typeof(self.sleTgdh_EditChanged)=="function") 
+			 win.AttachEvent("sle_3","EditChanged",self.sleTgdh_EditChanged); 
+
+		 if(typeof(self.sleBjh_EditChanged)=="function") 
+			 win.AttachEvent("sle_tgdh","EditChanged",self.sleBjh_EditChanged); 
+
+		 if(typeof(self.sleSjshrmc_EditChanged)=="function") 
+			 win.AttachEvent("sle_sjshrmc","EditChanged",self.sleSjshrmc_EditChanged); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("cbx_tycj","Clicked",self.Retrieve); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_jyj","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.Print_Fksqs)=="function") 
+			 win.AttachEvent("m_18","Clicked",self.Print_Fksqs); 
+
+		 if(typeof(self.Print_Fpsld)=="function") 
+			 win.AttachEvent("m_fpsld","Clicked",self.Print_Fpsld); 
+
+		 if(typeof(self.Print_Whlj_Seaway)=="function") 
+			 win.AttachEvent("m_Whlj_Seaway","Clicked",self.Print_Whlj_Seaway); 
+
+		 if(typeof(self.Print_Whljdf)=="function") 
+			 win.AttachEvent("m_whljdf","Clicked",self.Print_Whljdf); 
+
+		 if(typeof(self.Print_Whzhcd)=="function") 
+			 win.AttachEvent("m_whzhcd","Clicked",self.Print_Whzhcd); 
+
+		 if(typeof(self.Print_Yxzm)=="function") 
+			 win.AttachEvent("m_yxzm","Clicked",self.Print_Yxzm); 
+
+		 if(typeof(self.print_Ymlhhdbh)=="function") 
+			 win.AttachEvent("m_mylhhdbh","Clicked",self.print_Ymlhhdbh); 
+
+		 if(typeof(self.print_OOCL_Dfhw)=="function") 
+			 win.AttachEvent("m_OOCL_Dfhw","Clicked",self.print_OOCL_Dfhw); 
+
+		 if(typeof(self.print_sjsc_MOL)=="function") 
+			 win.AttachEvent("m_sjsc_MOL","Clicked",self.print_sjsc_MOL); 
+
+		 if(typeof(self.print_Xd_HMM_PH)=="function") 
+			 win.AttachEvent("m_xd_HMM_PH","Clicked",self.print_Xd_HMM_PH); 
+
+		 if(typeof(self.print_Zycosco22)=="function") 
+			 win.AttachEvent("m_zycosco","Clicked",self.print_Zycosco22); 
+
+		 if(typeof(self.print_Crhh11)=="function") 
+			 win.AttachEvent("m_crhh","Clicked",self.print_Crhh11); 
+
+		 if(typeof(self.print_Whljyxbh)=="function") 
+			 win.AttachEvent("m_Whljyxbh","Clicked",self.print_Whljyxbh); 
+
+		 if(typeof(self.print_Zlyt)=="function") 
+			 win.AttachEvent("m_Zlyt","Clicked",self.print_Zlyt); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_rqlx","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("btn_read","Clicked",self.Retrieve); 
+
+		 if(typeof(self.sle_EditChanged)=="function") 
+			 win.AttachEvent("sle_1","EditChanged",self.sle_EditChanged); 
+
+		 if(typeof(self.slewtdw_EditChanged)=="function") 
+			 win.AttachEvent("sle_4","EditChanged",self.slewtdw_EditChanged); 
+
+		 if(typeof(self.slesdtt_EditChanged)=="function") 
+			 win.AttachEvent("sle_kh","EditChanged",self.slesdtt_EditChanged); 
+
+		 if(typeof(self.sleycd_EditChanged)=="function") 
+			 win.AttachEvent("sle_2","EditChanged",self.sleycd_EditChanged); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_jdrjc","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.OpenTggz)=="function") 
+			 win.AttachEvent("btn_tggz","Clicked",self.OpenTggz); 
+
+		 if(typeof(self.Help)=="function") 
+			 win.AttachEvent("btn_help","Clicked",self.Help); 
+
+		 if(typeof(self.OcrDq)=="function") 
+			 win.AttachEvent("btn_ocrdq","Clicked",self.OcrDq); 
+
+		 if(typeof(self.New)=="function") 
+			 win.AttachEvent("btn_new","Clicked",self.New); 
+
+		 if(typeof(self.Copy)=="function") 
+			 win.AttachEvent("btn_duplicate","Clicked",self.Copy); 
+
+		 if(typeof(self.Delete)=="function") 
+			 win.AttachEvent("btn_delete","Clicked",self.Delete); 
+
+		 if(typeof(self.OpenWindow)=="function") 
+			 win.AttachEvent("btn_open","Clicked",self.OpenWindow); 
+
+		 if(typeof(self.Save)=="function") 
+			 win.AttachEvent("btn_save","Clicked",self.Save); 
 
-        if (typeof (self.Yflr) == "function")
-            win.AttachEvent("btn_yflr", "Clicked", self.Yflr);
+		 if(typeof(self.Yflr)=="function") 
+			 win.AttachEvent("btn_yflr","Clicked",self.Yflr); 
 
-        if (typeof (self.PrintContract) == "function")
-            win.AttachEvent("合同打印ToolStripMenuItem", "Clicked", self.PrintContract);
+		 if(typeof(self.PrintContract)=="function") 
+			 win.AttachEvent("合同打印ToolStripMenuItem","Clicked",self.PrintContract); 
 
-        if (typeof (self.PrintSjmfContract) == "function")
-            win.AttachEvent("m_sjmfht", "Clicked", self.PrintSjmfContract);
+		 if(typeof(self.PrintSjmfContract)=="function") 
+			 win.AttachEvent("m_sjmfht","Clicked",self.PrintSjmfContract); 
 
-        if (typeof (self.PrintInvoice) == "function")
-            win.AttachEvent("发票打印ToolStripMenuItem", "Clicked", self.PrintInvoice);
+		 if(typeof(self.PrintInvoice)=="function") 
+			 win.AttachEvent("发票打印ToolStripMenuItem","Clicked",self.PrintInvoice); 
 
-        if (typeof (self.PrintSjmfInvoice) == "function")
-            win.AttachEvent("m_sjmffpdy", "Clicked", self.PrintSjmfInvoice);
+		 if(typeof(self.PrintSjmfInvoice)=="function") 
+			 win.AttachEvent("m_sjmffpdy","Clicked",self.PrintSjmfInvoice); 
 
-        if (typeof (self.PrintPackingList) == "function")
-            win.AttachEvent("箱单打印ToolStripMenuItem", "Clicked", self.PrintPackingList);
+		 if(typeof(self.PrintPackingList)=="function") 
+			 win.AttachEvent("箱单打印ToolStripMenuItem","Clicked",self.PrintPackingList); 
 
-        if (typeof (self.PrintSjmfPackingList) == "function")
-            win.AttachEvent("m_sjmfxd", "Clicked", self.PrintSjmfPackingList);
-
-        if (typeof (self.PrintZthqksm) == "function")
-            win.AttachEvent("直提货情况说明ToolStripMenuItem", "Clicked", self.PrintZthqksm);
-
-        if (typeof (self.Print_qksm) == "function")
-            win.AttachEvent("btn_qksmdy", "Clicked", self.Print_qksm);
-
-        if (typeof (self.Print_bzjsqs) == "function")
-            win.AttachEvent("btn_bzjsqs", "Clicked", self.Print_bzjsqs);
-
-        if (typeof (self.Print_dlbgwts) == "function")
-            win.AttachEvent("btn_dlbgwts", "Clicked", self.Print_dlbgwts);
-
-        if (typeof (self.Print_hczm) == "function")
-            win.AttachEvent("航次证明ToolStripMenuItem", "Clicked", self.Print_hczm);
-
-        if (typeof (self.Print_ecczm) == "function")
-            win.AttachEvent("二程船证明ToolStripMenuItem", "Clicked", self.Print_ecczm);
-
-        if (typeof (self.Print_dlxy) == "function")
-            win.AttachEvent("代理协议ToolStripMenuItem", "Clicked", self.Print_dlxy);
-
-        if (typeof (self.Print_forma) == "function")
-            win.AttachEvent("产地证ToolStripMenuItem", "Clicked", self.Print_forma);
-
-        if (typeof (self.Print_Cns) == "function")
-            win.AttachEvent("承诺书ToolStripMenuItem", "Clicked", self.Print_Cns);
-
-        if (typeof (self.Print_dbh) == "function")
-            win.AttachEvent("担保函ToolStripMenuItem", "Clicked", self.Print_dbh);
-
-        if (typeof (self.Print_Hhbh) == "function")
-            win.AttachEvent("航华保函ToolStripMenuItem", "Clicked", self.Print_Hhbh);
-
-        if (typeof (self.pitaya) == "function")
-            win.AttachEvent("火龙果发票ToolStripMenuItem", "Clicked", self.pitaya);
-
-        if (typeof (self.OpenYcyy) == "function")
-            win.AttachEvent("btn_ycyy", "Clicked", self.OpenYcyy);
-
-        if (typeof (self.Zgggbz) == "function")
-            win.AttachEvent("btn_zgggbz", "Clicked", self.Zgggbz);
-
-        if (typeof (self.Exit) == "function")
-            win.AttachEvent("btn_close", "Clicked", self.Exit);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("rb_zj", "Clicked", self.Retrieve);
-
-        if (typeof (self.RetrieveQb) == "function")
-            win.AttachEvent("rb_qb", "Clicked", self.RetrieveQb);
-
-        if (typeof (self.RetrieveHy) == "function")
-            win.AttachEvent("rb_hy", "Clicked", self.RetrieveHy);
-
-        if (typeof (self.RetrieveKy) == "function")
-            win.AttachEvent("rb_ky", "Clicked", self.RetrieveKy);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("ddlb_fxzt", "SelectionChanged", self.Retrieve);
-
-        if (typeof (self.Downloadtp) == "function")
-            win.AttachEvent("btn_3", "Clicked", self.Downloadtp);
-
-        if (typeof (self.Filter) == "function")
-            win.AttachEvent("单列过滤ToolStripMenuItem", "Clicked", self.Filter);
-
-        if (typeof (self.Filter_Cancle) == "function")
-            win.AttachEvent("取消过滤ToolStripMenuItem", "Clicked", self.Filter_Cancle);
-
-        if (typeof (self.Dcrz) == "function")
-            win.AttachEvent("导出ToolStripMenuItem", "Clicked", self.Dcrz);
-
-        if (typeof (self.Retrieve) == "function")
-            win.AttachEvent("刷新ToolStripMenuItem", "Clicked", self.Retrieve);
-
-        if (typeof (self.CopyCol) == "function")
-            win.AttachEvent("复制ToolStripMenuItem", "Clicked", self.CopyCol);
-
-        if (typeof (self.CopySelect) == "function")
-            win.AttachEvent("选择复制ToolStripMenuItem", "Clicked", self.CopySelect);
-
-        if (typeof (self.CopyL) == "function")
-            win.AttachEvent("整列复制ToolStripMenuItem", "Clicked", self.CopyL);
-
-        if (typeof (self.Recover) == "function")
-            win.AttachEvent("恢复默认列ToolStripMenuItem", "Clicked", self.Recover);
-
-    }
-
-    if (typeof (this.unbind) == "function") var baseUnBind = this.unbind;
-    this.unbind = function () {
-        if (typeof (this.Release) == "function") this.Release();
-        if (typeof (baseUnBind) == "function") baseUnBind();
-
-        dw_list.Detach(); dw_list = null;
-        dw_print_cns.Detach(); dw_print_cns = null;
-        tb_3.Detach(); tb_3 = null;
-        ddlb_ctr_area2.Detach(); ddlb_ctr_area2 = null;
-        ddlb_sd.Detach(); ddlb_sd = null;
-        ddlb_zbsd.Detach(); ddlb_zbsd = null;
-        sle_hth.Detach(); sle_hth = null;
-        sle_tdh.Detach(); sle_tdh = null;
-        sle_bgdh.Detach(); sle_bgdh = null;
-        ddlb_mdg.Detach(); ddlb_mdg = null;
-        tb_4.Detach(); tb_4 = null;
-        sle_ftdh.Detach(); sle_ftdh = null;
-        sle_gwgys.Detach(); sle_gwgys = null;
-        sle_jzxh.Detach(); sle_jzxh = null;
-        sle_3.Detach(); sle_3 = null;
-        sle_tgdh.Detach(); sle_tgdh = null;
-        sle_sjshrmc.Detach(); sle_sjshrmc = null;
-        cbx_tycj.Detach(); cbx_tycj = null;
-        ddlb_jyj.Detach(); ddlb_jyj = null;
-        dw_print_forma.Detach(); dw_print_forma = null;
-        dw_print_ecczm.Detach(); dw_print_ecczm = null;
-        dw_print_hczm.Detach(); dw_print_hczm = null;
-        dw_print_packinglist.Detach(); dw_print_packinglist = null;
-        dw_print_invoice.Detach(); dw_print_invoice = null;
-        dw_print_contract.Detach(); dw_print_contract = null;
-        mle_jzxh.Detach(); mle_jzxh = null;
-        tb_2.Detach(); tb_2 = null;
-        ddlb_rqlx.Detach(); ddlb_rqlx = null;
-        dp_begin.Detach(); dp_begin = null;
-        dp_end.Detach(); dp_end = null;
-        sle_1.Detach(); sle_1 = null;
-        sle_4.Detach(); sle_4 = null;
-        sle_kh.Detach(); sle_kh = null;
-        sle_2.Detach(); sle_2 = null;
-        ddlb_jdrjc.Detach(); ddlb_jdrjc = null;
-        tb_1.Detach(); tb_1 = null;
-        rb_zj.Detach(); rb_zj = null;
-        rb_qb.Detach(); rb_qb = null;
-        rb_hy.Detach(); rb_hy = null;
-        rb_ky.Detach(); rb_ky = null;
-        ddlb_fxzt.Detach(); ddlb_fxzt = null;
-        dw_print_bzjsqs.Detach(); dw_print_bzjsqs = null;
-        dw_print_qksm.Detach(); dw_print_qksm = null;
-        dw_print_dlbgwts.Detach(); dw_print_dlbgwts = null;
-        dw_print_dlxy.Detach(); dw_print_dlxy = null;
-        dw_print_sjmf_contract.Detach(); dw_print_sjmf_contract = null;
-        dw_print_sjmf_packinglist.Detach(); dw_print_sjmf_packinglist = null;
-        dw_print_sjmf_invoice.Detach(); dw_print_sjmf_invoice = null;
-        dw_1.Detach(); dw_1 = null;
-        dw_filter.Detach(); dw_filter = null;
-        dw_ygkthsj.Detach(); dw_ygkthsj = null;
-        dw_print_zthqksm.Detach(); dw_print_zthqksm = null;
-        dw_log.Detach(); dw_log = null;
-        ContextMenuStrip1.Detach(); ContextMenuStrip1 = null;
-        ds_1.Detach(); ds_1 = null;
-        ds_role.Detach(); ds_role = null;
-        ds_2.Detach(); ds_2 = null;
-        ds_role_kybmjl.Detach(); ds_role_kybmjl = null;
-        ds_role_hybmjl.Detach(); ds_role_hybmjl = null;
-        ds_sd.Detach(); ds_sd = null;
-        ds_jyj.Detach(); ds_jyj = null;
-        ds_3.Detach(); ds_3 = null;
-        ds_4.Detach(); ds_4 = null;
-        ds_zbsd.Detach(); ds_zbsd = null;
-        requestor.Detach(); requestor = null;
-
-        setTimeout(CollectGarbage, 100);
-    }
-
-    //以上代码由设计器自动生成,请不要手工修改
-    //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
+		 if(typeof(self.PrintSjmfPackingList)=="function") 
+			 win.AttachEvent("m_sjmfxd","Clicked",self.PrintSjmfPackingList); 
+
+		 if(typeof(self.PrintZthqksm)=="function") 
+			 win.AttachEvent("直提货情况说明ToolStripMenuItem","Clicked",self.PrintZthqksm); 
+
+		 if(typeof(self.Print_qksm)=="function") 
+			 win.AttachEvent("btn_qksmdy","Clicked",self.Print_qksm); 
+
+		 if(typeof(self.Print_bzjsqs)=="function") 
+			 win.AttachEvent("btn_bzjsqs","Clicked",self.Print_bzjsqs); 
+
+		 if(typeof(self.Print_dlbgwts)=="function") 
+			 win.AttachEvent("btn_dlbgwts","Clicked",self.Print_dlbgwts); 
+
+		 if(typeof(self.Print_hczm)=="function") 
+			 win.AttachEvent("航次证明ToolStripMenuItem","Clicked",self.Print_hczm); 
+
+		 if(typeof(self.Print_ecczm)=="function") 
+			 win.AttachEvent("二程船证明ToolStripMenuItem","Clicked",self.Print_ecczm); 
+
+		 if(typeof(self.Print_dlxy)=="function") 
+			 win.AttachEvent("代理协议ToolStripMenuItem","Clicked",self.Print_dlxy); 
+
+		 if(typeof(self.Print_forma)=="function") 
+			 win.AttachEvent("产地证ToolStripMenuItem","Clicked",self.Print_forma); 
+
+		 if(typeof(self.Print_Cns)=="function") 
+			 win.AttachEvent("承诺书ToolStripMenuItem","Clicked",self.Print_Cns); 
+
+		 if(typeof(self.Print_dbh)=="function") 
+			 win.AttachEvent("担保函ToolStripMenuItem","Clicked",self.Print_dbh); 
+
+		 if(typeof(self.Print_Hhbh)=="function") 
+			 win.AttachEvent("航华保函ToolStripMenuItem","Clicked",self.Print_Hhbh); 
+
+		 if(typeof(self.pitaya)=="function") 
+			 win.AttachEvent("火龙果发票ToolStripMenuItem","Clicked",self.pitaya); 
+
+		 if(typeof(self.OpenYcyy)=="function") 
+			 win.AttachEvent("btn_ycyy","Clicked",self.OpenYcyy); 
+
+		 if(typeof(self.Zgggbz)=="function") 
+			 win.AttachEvent("btn_zgggbz","Clicked",self.Zgggbz); 
+
+		 if(typeof(self.Exit)=="function") 
+			 win.AttachEvent("btn_close","Clicked",self.Exit); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("rb_zj","Clicked",self.Retrieve); 
+
+		 if(typeof(self.RetrieveQb)=="function") 
+			 win.AttachEvent("rb_qb","Clicked",self.RetrieveQb); 
+
+		 if(typeof(self.RetrieveHy)=="function") 
+			 win.AttachEvent("rb_hy","Clicked",self.RetrieveHy); 
+
+		 if(typeof(self.RetrieveKy)=="function") 
+			 win.AttachEvent("rb_ky","Clicked",self.RetrieveKy); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("ddlb_fxzt","SelectionChanged",self.Retrieve); 
+
+		 if(typeof(self.Downloadtp)=="function") 
+			 win.AttachEvent("btn_3","Clicked",self.Downloadtp); 
+
+		 if(typeof(self.Filter)=="function") 
+			 win.AttachEvent("单列过滤ToolStripMenuItem","Clicked",self.Filter); 
+
+		 if(typeof(self.Filter_Cancle)=="function") 
+			 win.AttachEvent("取消过滤ToolStripMenuItem","Clicked",self.Filter_Cancle); 
+
+		 if(typeof(self.Dcrz)=="function") 
+			 win.AttachEvent("导出ToolStripMenuItem","Clicked",self.Dcrz); 
+
+		 if(typeof(self.Retrieve)=="function") 
+			 win.AttachEvent("刷新ToolStripMenuItem","Clicked",self.Retrieve); 
+
+		 if(typeof(self.CopyCol)=="function") 
+			 win.AttachEvent("复制ToolStripMenuItem","Clicked",self.CopyCol); 
+
+		 if(typeof(self.CopySelect)=="function") 
+			 win.AttachEvent("选择复制ToolStripMenuItem","Clicked",self.CopySelect); 
+
+		 if(typeof(self.CopyL)=="function") 
+			 win.AttachEvent("整列复制ToolStripMenuItem","Clicked",self.CopyL); 
+
+		 if(typeof(self.Recover)=="function") 
+			 win.AttachEvent("恢复默认列ToolStripMenuItem","Clicked",self.Recover); 
+
+	 }
+
+	 if(typeof(this.unbind)=="function") var baseUnBind=this.unbind; 
+	 this.unbind=function() {
+	 if(typeof(this.Release)=="function") this.Release(); 
+	 if(typeof(baseUnBind)=="function") baseUnBind(); 
+
+		 dw_list.Detach(); dw_list=null; 
+		 dw_print_cns.Detach(); dw_print_cns=null; 
+		 tb_3.Detach(); tb_3=null; 
+		 ddlb_ctr_area2.Detach(); ddlb_ctr_area2=null; 
+		 ddlb_sd.Detach(); ddlb_sd=null; 
+		 ddlb_zbsd.Detach(); ddlb_zbsd=null; 
+		 sle_hth.Detach(); sle_hth=null; 
+		 sle_tdh.Detach(); sle_tdh=null; 
+		 sle_bgdh.Detach(); sle_bgdh=null; 
+		 ddlb_mdg.Detach(); ddlb_mdg=null; 
+		 tb_4.Detach(); tb_4=null; 
+		 sle_ftdh.Detach(); sle_ftdh=null; 
+		 sle_gwgys.Detach(); sle_gwgys=null; 
+		 sle_jzxh.Detach(); sle_jzxh=null; 
+		 sle_3.Detach(); sle_3=null; 
+		 sle_tgdh.Detach(); sle_tgdh=null; 
+		 sle_sjshrmc.Detach(); sle_sjshrmc=null; 
+		 cbx_tycj.Detach(); cbx_tycj=null; 
+		 ddlb_jyj.Detach(); ddlb_jyj=null; 
+		 dw_print_forma.Detach(); dw_print_forma=null; 
+		 dw_print_ecczm.Detach(); dw_print_ecczm=null; 
+		 dw_print_hczm.Detach(); dw_print_hczm=null; 
+		 dw_print_packinglist.Detach(); dw_print_packinglist=null; 
+		 dw_print_invoice.Detach(); dw_print_invoice=null; 
+		 dw_print_contract.Detach(); dw_print_contract=null; 
+		 mle_jzxh.Detach(); mle_jzxh=null; 
+		 tb_2.Detach(); tb_2=null; 
+		 ddlb_rqlx.Detach(); ddlb_rqlx=null; 
+		 dp_begin.Detach(); dp_begin=null; 
+		 dp_end.Detach(); dp_end=null; 
+		 sle_1.Detach(); sle_1=null; 
+		 sle_4.Detach(); sle_4=null; 
+		 sle_kh.Detach(); sle_kh=null; 
+		 sle_2.Detach(); sle_2=null; 
+		 ddlb_jdrjc.Detach(); ddlb_jdrjc=null; 
+		 tb_1.Detach(); tb_1=null; 
+		 rb_zj.Detach(); rb_zj=null; 
+		 rb_qb.Detach(); rb_qb=null; 
+		 rb_hy.Detach(); rb_hy=null; 
+		 rb_ky.Detach(); rb_ky=null; 
+		 ddlb_fxzt.Detach(); ddlb_fxzt=null; 
+		 dw_print_bzjsqs.Detach(); dw_print_bzjsqs=null; 
+		 dw_print_qksm.Detach(); dw_print_qksm=null; 
+		 dw_print_dlbgwts.Detach(); dw_print_dlbgwts=null; 
+		 dw_print_dlxy.Detach(); dw_print_dlxy=null; 
+		 dw_print_sjmf_contract.Detach(); dw_print_sjmf_contract=null; 
+		 dw_print_sjmf_packinglist.Detach(); dw_print_sjmf_packinglist=null; 
+		 dw_print_sjmf_invoice.Detach(); dw_print_sjmf_invoice=null; 
+		 dw_1.Detach(); dw_1=null; 
+		 dw_filter.Detach(); dw_filter=null; 
+		 dw_ygkthsj.Detach(); dw_ygkthsj=null; 
+		 dw_print_zthqksm.Detach(); dw_print_zthqksm=null; 
+		 dw_log.Detach(); dw_log=null; 
+		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
+		 ds_1.Detach(); ds_1=null; 
+		 ds_role.Detach(); ds_role=null; 
+		 ds_2.Detach(); ds_2=null; 
+		 ds_role_kybmjl.Detach(); ds_role_kybmjl=null; 
+		 ds_role_hybmjl.Detach(); ds_role_hybmjl=null; 
+		 ds_sd.Detach(); ds_sd=null; 
+		 ds_jyj.Detach(); ds_jyj=null; 
+		 ds_3.Detach(); ds_3=null; 
+		 ds_4.Detach(); ds_4=null; 
+		 ds_zbsd.Detach(); ds_zbsd=null; 
+		 requestor.Detach(); requestor=null; 
+
+		 setTimeout(CollectGarbage, 100); 
+	 }
+
+	 //以上代码由设计器自动生成,请不要手工修改
+	 //ExtPB.Net JavaScript End  设计器查找标志,请不要删除或修改
 
 
 

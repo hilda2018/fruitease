@@ -23,6 +23,8 @@ $.getScript("./FHome/lib/js/jqueryAndeasyuiAndjson.js?date=" + new Date().getTim
     });
 
 
+
+   
     /**************************/
 
     globalInfo.myBrowser = function () {
@@ -239,3 +241,11 @@ $.getScript("./FHome/lib/js/jqueryAndeasyuiAndjson.js?date=" + new Date().getTim
 
 });
 
+
+
+
+$(function () {
+
+
+    $("#west").scrollUnique();
+});

@@ -936,13 +936,11 @@ F:\水果tong\qserp2\QsWebSoft\obj\Debug\QsWebSoft.csproj.GenerateResource.Cache
 F:\水果tong\qserp2\QsWebSoft\obj\Debug\QsWebSoft.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.pdb
-F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.tlb
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interfaces.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interop.DSOFile.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\LitJSON.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Dapper.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Sybase.PowerBuilder.RTC.Interop.dll
-F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interfaces.pdb
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\QsWebSoft.csprojResolveAssemblyReference.cache
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\Interop.AccessibilityCplAdminLib.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\Interop.Scripting.dll
@@ -1083,3 +1081,6 @@ F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\QsWebSoft.Properties.Resource
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\QsWebSoft.csproj.GenerateResource.Cache
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\QsWebSoft.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Debug\QsWebSoft.pdb
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interfaces.pdb
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.tlb
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.XML

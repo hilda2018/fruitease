@@ -8,9 +8,6 @@
       <link href="FHome/lib/css/insdep_theme_default.css" rel="stylesheet" type="text/css" />
       <link href="FHome/font/iconfont.css" rel="stylesheet" type="text/css" /></head>
       <link href="http://at.alicdn.com/t/font_991114_hoqht490s8v.css" rel="stylesheet" type="text/css" />    <style type="text/css">
-     html {
-  overflow-y: scroll;  overflow-x:hidden;
-}
 
 
 .main {
@@ -22,11 +19,7 @@
     right: 0;
     top: 0;}
 
-
-body {
-  width: 100vw;background:#fff;
-  overflow: hidden;height:1200em;
-}
+body,html{height:100%;width:100%;overflow:hidden;position:relative;}
 .window-mask{
     z-index: 999999!important;
 }
@@ -243,7 +236,7 @@ body {
      <script type="text/javascript" >
 
          $.getScript("./FHome/main.js?date=" + new Date().getTime());
-
+      
     </script>
     </body>
 

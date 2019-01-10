@@ -152,9 +152,12 @@ F:\201811226\20181126\qserp\QsWebSoft\obj\Release\QsWebSoft.dll
 F:\201811226\20181126\qserp\QsWebSoft\obj\Release\QsWebSoft.pdb
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\QsWebSoft.pdb
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\BarcodeLib.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interfaces.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Interop.DSOFile.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\LitJSON.dll
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Newtonsoft.Json.dll
+F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Wilco.SyntaxHighlighter.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Dapper.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\bin\Sybase.PowerBuilder.RTC.Interop.dll
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.csprojResolveAssemblyReference.cache
@@ -283,7 +286,6 @@ F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Xt_Popwin.W_Sfdql
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Xxcx.W_TpList.win.resources
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Yw_Zjgl.W_HdfycxfList.win.resources
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Yw_Zjgl.W_HdfyjydfyyfzsfEdit.win.resources
-F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.fwbwj.W_FtpEdit.win.resources
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.xt.W_Xtdm_Dlxycsh.win.resources
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Yw_Zjgl.W_HdfybzjzfEdit.win.resources
 F:\水果tong\qserp2\fruitease\QsWebSoft\obj\Release\QsWebSoft.Import.W_Import.win.resources

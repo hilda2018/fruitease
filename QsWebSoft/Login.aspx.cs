@@ -28,12 +28,6 @@ namespace QsWebSoft
                 string error = string.Empty;
 
 
-                if (string.Compare(Code.Text, Session["CaptchaImageText"].ToString()) != 0)
-                {
-                    this.Page.ClientScript.RegisterStartupScript(this.GetType(), "Script", "alert('验证码不正确!');", true);
-                    return;
-                }
-
                 if (!QsWebSoft.AppService.Login(userID, pwd, ref error))
                 {
                     this.Page.ClientScript.RegisterStartupScript(this.GetType(), "Script", "alert('" + error + "');", true);
@@ -48,6 +42,14 @@ namespace QsWebSoft
                 {
                     Response.Cookies["UserID"].Value = UserID.Text.ToUpperInvariant();
                 }
+
+
+                if (string.Compare(Code.Text, Session["CaptchaImageText"].ToString()) != 0)
+                {
+                    this.Page.ClientScript.RegisterStartupScript(this.GetType(), "Script", "alert('验证码不正确!');", true);
+                    return;
+                }
+
 
 
 

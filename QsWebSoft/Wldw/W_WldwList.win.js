@@ -10,9 +10,9 @@ function W_WldwList() {
 	 var tb_2= new ToolStrip( requestor );
 	 var sle_1= new SingleLineEdit( requestor );
 	 var tb_1= new ToolStrip( requestor );
-	 var ContextMenuStrip1= new ContextMenu( requestor );
 	 var ds_1= new DataStore( requestor );
 	 var ds_role= new DataStore( requestor );
+	 var ContextMenuStrip1= new ContextMenu( requestor );
 
 	 if(typeof(this.bind)=="function") var baseBind=this.bind;
 	 this.bind=function(win){
@@ -28,12 +28,12 @@ function W_WldwList() {
 		 sle_1.Attach( win.Control( "sle_1") ); 
 		 if(tb_1 == null ) tb_1= new ToolStrip( requestor );
 		 tb_1.Attach( win.Control( "tb_1") ); 
-		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
-		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
 		 if(ds_1 == null ) ds_1= new DataStore( requestor );
 		 ds_1.Attach( win.Control( "ds_1") ); 
 		 if(ds_role == null ) ds_role= new DataStore( requestor );
 		 ds_role.Attach( win.Control( "ds_role") ); 
+		 if(ContextMenuStrip1 == null ) ContextMenuStrip1= new ContextMenu( requestor );
+		 ContextMenuStrip1.Attach( win.Control( "ContextMenuStrip1") ); 
 
 		 if(typeof(self.dw_List_DoubleClicked)=="function") 
 			 win.AttachEvent("dw_list","DoubleClicked",self.dw_List_DoubleClicked); 
@@ -166,9 +166,9 @@ function W_WldwList() {
 		 tb_2.Detach(); tb_2=null; 
 		 sle_1.Detach(); sle_1=null; 
 		 tb_1.Detach(); tb_1=null; 
-		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
 		 ds_1.Detach(); ds_1=null; 
 		 ds_role.Detach(); ds_role=null; 
+		 ContextMenuStrip1.Detach(); ContextMenuStrip1=null; 
 		 requestor.Detach(); requestor=null; 
 
 		 setTimeout(CollectGarbage, 100); 

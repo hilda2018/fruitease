@@ -7,13 +7,16 @@
     <link href="css/oheng.css" rel="stylesheet" type="text/css" />   
      <style type="text/css">
 #main {
-    margin: 0 10px 0 180px;height:1000px;
+    margin: 0 10px 0 180px;
+    /* height:1000px; */
+    position: fixed;
 }
 .ycyyBtnSelect .ell{width: 100px;line-height: 25px;vertical-align: top;}
 
 #left {
-    width: 180px;height:1000px;
-    float:left;
+    width: 180px;
+    /* height:1000px; */
+    /* float:left; */
 }
 
 #right {
@@ -21,7 +24,23 @@
 }
 
 #left {
-    float: left;position:absolute;left:10px;top:0;bottom:0;height:1000px;
+    /* float: left; */
+    position:absolute;
+    left:10px;
+    top: 16px;
+    bottom: 16px;
+    position: fixed;-webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    overflow: auto;
 }
 
 #right {
@@ -29,14 +48,15 @@
 }
 
 #warningContainer {
-    position: absolute;
-    left: 10px;
-    right: 0;
+    /* position: absolute; */
+    /* left: 10px; */
+    /* right: 0; */
     font-size: 12px;
-    top: 16px;
-    bottom: 0;height:12200px;
-    width: 150px;
-    overflow: auto;
+    /* top: 0; */
+    /* bottom: 0; */
+    /* height:12200px; */
+    /* width: 150px; */
+    /* overflow: auto; */
 }
 
 .datagrid-cell input[type=checkbox] {
@@ -55,7 +75,10 @@
 .gridTitleCls {
     transition: 0.5s all;
 }
-
+.menuTopTitle
+{   font-weight:bold;
+    color:#3f73ae;
+ }
 .easyui-dialog .gridBodyClsWithTitle {
     overflow: hidden !important;
     border: 1px solid #eee;
@@ -102,21 +125,25 @@
     width: 100% !important;
 }
 .gridTitleCls
-{   
-    border: 1px solid #ddd;   width:  auto!important;
+{
+    border: 1px solid #ddd;
+    width:  auto!important;
     position: absolute!Important;
     left: 16px;
-    right:16px;top:16px;
+    right:0;
+    top: 0px;
 }
 
 .menuSection ul {
     display: none;
 }
 
-.showOr ul {
+.showOr .subMenu{
     display: block !important;
 }
-
+.subMenu{
+    display: none !important;
+}
 .datagrid-view2 {
     width: 100% !important
 }
@@ -130,20 +157,21 @@
     letter-spacing: 0;
     line-height: 21px;
     position: absolute;
-    color: #888;padding-left:30px;
-   left:-60px;
-    top: 16px;
+    color: #888;
+    padding-left:30px;
+    left:-46px;
+    top: 0px;
     width: auto;
     text-indent: 0;
     z-index: 1;
     width: 30px;
     text-align: left;
     }
-#main{position:relative;}
+#main{position: absolute;top: 16px;bottom: 16px;left: 0;right: 0;}
 .showExpand #main{margin-left:40px;}
 .showExpand .left{display:none;}
 .showExpand .right{display:block;}
-.showExpand #left{margin-left:-11140px;}
+.showExpand #left{margin-left:-11140px;}#center .gridBodyClsWithTitle {right:0;bottom:0;}
     </style>
 
   </head>
@@ -356,9 +384,10 @@
             var $this = $(this);
             $(".menuListTitle").removeClass("activeMenuListTitle");
             $this.toggleClass("activeMenuListTitle");
-            $this.parent().toggleClass("showOr");
-            if (e.currentTarget.id === "00") {
+
+            if ($this.attr("id") === "00") {
                 //全部 菜单触发
+
                 $(".ui-loading").loading();
                 // 初始化datagrid
                 $.getJSON("/IFView/IndexHandler.ashx?action=GetTableData&yjlxbm=00&page=1&&rows=200", function (data) {
@@ -370,8 +399,10 @@
                     $gridDiv.datagrid("loadData", dataJson);
                     $(".ui-loading").fadeOut();
                 });
-            }
 
+                return false;
+            }
+            $this.parent().toggleClass("showOr");
             if ($this.data("data")) {
                 // 判断是否请求过数据  //已经初始化
                 console.log($this.data("data"));
@@ -383,7 +414,6 @@
             var $thisParent = $this.parent();
             var index = $thisParent.index() - 1;
 
-            $thisParent.find(".subMenu").toggleClass("hide");
             var id = $this.attr("data-id");
             if (!id) {
                 $.messager.alert("提示", "系统出错：" + errorMsg);
@@ -422,11 +452,11 @@
                     var yjlxbm = $.trim($taerget.attr("id"));
                     $(".ui-loading").loading();
                     // 初始化datagrid
-                    $.getJSON("/IFView/IndexHandler.ashx?action=GetTableData&yjlxbm="+yjlxbm+"&page=1&&rows=200", function (data) {
+                    $.getJSON("/IFView/IndexHandler.ashx?action=GetTableData&yjlxbm=" + yjlxbm + "&page=1&&rows=200", function (data) {
 
                         var dataArr = new Array();
                         dataArr = data.rows;
-                    
+
                         var dataJson = { "total": data.total, "rows": dataArr };
                         $gridDiv.datagrid("loadData", dataJson);
                         $(".ui-loading").fadeOut();

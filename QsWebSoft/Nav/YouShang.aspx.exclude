@@ -1,0 +1,74 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="YouShang.aspx.cs" Inherits="QsWebSoft.YouShang" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="/Nav/global.css" rel="stylesheet" type="text/css"/>
+    <link href="/Nav/styles.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        var ts_1 = null;
+        function OpenItem(itemData, itemLabel) {
+            //先取得页面父窗口的TabStrip控件
+            if (ts_1 == null) {
+                if (window.external != null)
+                    ts_1 = window.external.Control("ts_1");
+            }
+
+            if (ts_1 == null)
+                return;
+
+            //模块是否已打开
+            var index = ts_1.SelectItem(itemData);
+            if (index > 0)
+                return;
+
+            ts_1.Open(itemData, itemLabel, "", "/OpenWindow.aspx?FunID=" + itemData, true);
+        }
+    </script>
+</head>
+<body style="height:100%; overflow:hidden;">
+    <form id="form1" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%"  height="100%">
+    <tr>
+    <td valign="top" style="background-color:#fafafa;">
+             <div class="shortcut">
+             <h2 class="c_h2"><strong class="xs_yw">销售业务</strong></h2>
+              <div class="xiaoshou mb6 p_5">
+                <ul>
+                  <li class="p_5_1"><a onclick="OpenItem('000101','销售订单');return false" href="javascript:void(0);">销售订单</a></li>  
+                  <li class="p_5_2"><a onclick="return false" href="javascript:void(0);">销售</a></li>
+                  <li class="p_5_3"><a onclick="return false" href="javascript:void(0);">收款</a></li>
+                  <li class="p_5_4"><a onclick="return false" href="javascript:void(0);">退货</a></li>
+                  <li class="p_5_5"><a onclick="return false" href="javascript:void(0);">其他应收</a></li>
+                </ul>
+              </div>
+            </div>
+    </td>
+    <td width="5px">
+    </td>
+        <td width="150px" valign="top" style="background-color:#fafafa;" >
+              <div class="fl com_fun">
+            <h2 class="c_h2"><strong>常用功能</strong></h2>
+            <ol id="customFun"> 
+                <li><a onclick="return false" href="javascript:void(0);">客户列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售订单列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售单列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">收款单列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售退货单列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">其他应收单列表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售明细表</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售分析-依销售人员</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">销售订单跟踪</a></li>
+                <li><a onclick="return false" href="javascript:void(0);">客户账龄表</a></li>
+                 <li></li>
+            </ol>
+     
+
+  </div>
+
+         </td>
+     </tr>
+    </table>
+    </form>
+</body>
+</html>

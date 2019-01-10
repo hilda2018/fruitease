@@ -398,7 +398,7 @@ s.ui-loading-icon {
     position: absolute!Important;
     left: 16px;
     right:16px;
-    top:52px;
+    top: 36px;
     bottom: 16px;
     overflow:  auto;
     width:  auto!important;
@@ -409,8 +409,14 @@ s.ui-loading-icon {
 }
 .datagrid .panel-body{border-bottom: 1px solid #ddd;}
 
+.subMenu {
+    display: none;
+}
 
-
+.showOr .subMenu
+{
+    display:inline-block;
+ }
 .datagrid-toolbar .textbox, .datagrid-toolbar .textbox-icon, .datagrid-toolbar .textbox-text, .datagrid-toolbar .l-btn, .datagrid .panel-footer .l-btn, .datagrid-toolbar .searchbox-button, .datagrid-toolbar .textbox-label {
     height: 20px !important;line-height: 22px !important;
     border-radius: 4px;color:#4c5161;
